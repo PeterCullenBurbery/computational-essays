@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2075946,      51322]
-NotebookOptionsPosition[   1909241,      47985]
-NotebookOutlinePosition[   2023305,      50164]
-CellTagsIndexPosition[   2022940,      50151]
+NotebookDataLength[   2075974,      51322]
+NotebookOptionsPosition[   1909268,      47985]
+NotebookOutlinePosition[   2023332,      50164]
+CellTagsIndexPosition[   2022967,      50151]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47064,7 +47064,7 @@ Cell[BoxData[
      RowBox[{"{", 
       RowBox[{"x", ",", "y", ",", "z"}], "}"}]}], "}"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.872010846356661*^9, 3.8720108612137537`*^9}},
- CellLabel->"In[17]:=",
+ CellLabel->"In[18]:=",
  CellID->157900273,ExpressionUUID->"fd94124a-3423-442c-8890-5dbaaaa85312"],
 
 Cell[BoxData[
@@ -47073,9 +47073,9 @@ Cell[BoxData[
    RowBox[{"f", "[", "x", "]"}], ",", 
    RowBox[{"g", "[", "y", "]"}], ",", 
    RowBox[{"h", "[", "z", "]"}]}], "}"}]], "Output",
- CellChangeTimes->{3.8720108616043015`*^9},
- CellLabel->"Out[17]=",
- CellID->11420473,ExpressionUUID->"49e9fbfc-153c-484a-b058-cdb1706faeb6"]
+ CellChangeTimes->{{3.8720108616043015`*^9, 3.8720108858373137`*^9}},
+ CellLabel->"Out[18]=",
+ CellID->407933296,ExpressionUUID->"6cd5d49d-a60a-4685-999c-34df479c337f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -50098,40 +50098,14 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Examples"->{
-  Cell[580, 22, 248, 4, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "Your Essay Title"->{
-  Cell[580, 22, 248, 4, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "AuthorName"->{
-  Cell[831, 28, 285, 6, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
  "Abstract"->{
   Cell[1119, 36, 163, 3, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
    CellTags->{"Abstract", "TemplateCell"},
    CellID->587432573]},
- "TemplateCell"->{
-  Cell[1119, 36, 163, 3, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "SectionHeader"->{
-  Cell[1528, 50, 249, 4, 67, "Section",ExpressionUUID->"9904d468-ca7b-42fb-8d7f-8fac46d2dbc0",
-   CellTags->"SectionHeader",
-   CellID->453852445],
-  Cell[21302, 719, 225, 4, 67, "Section",ExpressionUUID->"70499c67-87e4-4791-9e4c-c72c8d6d32ca",
-   CellTags->"SectionHeader",
-   CellID->214293526]},
- "ExampleTopicSentence"->{
-  Cell[1780, 56, 149, 3, 70, "Text",ExpressionUUID->"0f8894a2-d9c8-4a34-8588-cc64e3cdeef1",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160],
-  Cell[21739, 732, 217, 4, 35, "Text",ExpressionUUID->"962aad5b-0c63-40a5-bc73-ee2ecd25db24",
-   CellTags->"ExampleTopicSentence",
-   CellID->346635380]},
+ "AuthorName"->{
+  Cell[831, 28, 285, 6, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
  "ExampleCodeText"->{
   Cell[2145, 68, 148, 3, 70, "CodeText",ExpressionUUID->"3788dbfa-8abb-4c5a-8b44-3f12c1fe49f5",
    CellTags->"ExampleCodeText",
@@ -50145,20 +50119,46 @@ CellTagsIndex->{
    CellID->844129532],
   Cell[2760, 87, 392, 9, 70, "Output",ExpressionUUID->"adf93a0a-19db-4abe-9ffe-e5a046492d6c",
    CellTags->"ExampleInput",
-   CellID->345138740]}
+   CellID->345138740]},
+ "Examples"->{
+  Cell[580, 22, 248, 4, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "ExampleTopicSentence"->{
+  Cell[1780, 56, 149, 3, 70, "Text",ExpressionUUID->"0f8894a2-d9c8-4a34-8588-cc64e3cdeef1",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160],
+  Cell[21739, 732, 217, 4, 35, "Text",ExpressionUUID->"962aad5b-0c63-40a5-bc73-ee2ecd25db24",
+   CellTags->"ExampleTopicSentence",
+   CellID->346635380]},
+ "SectionHeader"->{
+  Cell[1528, 50, 249, 4, 67, "Section",ExpressionUUID->"9904d468-ca7b-42fb-8d7f-8fac46d2dbc0",
+   CellTags->"SectionHeader",
+   CellID->453852445],
+  Cell[21302, 719, 225, 4, 67, "Section",ExpressionUUID->"70499c67-87e4-4791-9e4c-c72c8d6d32ca",
+   CellTags->"SectionHeader",
+   CellID->214293526]},
+ "TemplateCell"->{
+  Cell[1119, 36, 163, 3, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "Your Essay Title"->{
+  Cell[580, 22, 248, 4, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 2020756, 50100},
- {"Your Essay Title", 2020942, 50104},
- {"AuthorName", 2021122, 50108},
- {"Abstract", 2021281, 50112},
- {"TemplateCell", 2021463, 50116},
- {"SectionHeader", 2021646, 50120},
- {"ExampleTopicSentence", 2021972, 50127},
- {"ExampleCodeText", 2022301, 50134},
- {"ExampleInput", 2022624, 50141}
+ {"Abstract", 2020783, 50100},
+ {"AuthorName", 2020963, 50104},
+ {"ExampleCodeText", 2021129, 50108},
+ {"ExampleInput", 2021452, 50115},
+ {"Examples", 2021760, 50122},
+ {"ExampleTopicSentence", 2021950, 50126},
+ {"SectionHeader", 2022277, 50133},
+ {"TemplateCell", 2022595, 50140},
+ {"Your Essay Title", 2022781, 50144}
  }
 *)
 (*NotebookFileOutline
@@ -51287,38 +51287,38 @@ Cell[1883148, 47048, 214, 2, 35, "Text",ExpressionUUID->"bf1c5625-4d36-4a7f-a28f
 Cell[CellGroupData[{
 Cell[1883387, 47054, 473, 13, 28, "Input",ExpressionUUID->"fd94124a-3423-442c-8890-5dbaaaa85312",
  CellID->157900273],
-Cell[1883863, 47069, 312, 8, 55, "Output",ExpressionUUID->"49e9fbfc-153c-484a-b058-cdb1706faeb6",
- CellID->11420473]
+Cell[1883863, 47069, 339, 8, 32, "Output",ExpressionUUID->"6cd5d49d-a60a-4685-999c-34df479c337f",
+ CellID->407933296]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1884236, 47084, 195, 3, 67, "Section",ExpressionUUID->"eb62d492-6def-48da-8082-d77b5b4cfa3f",
+Cell[1884263, 47084, 195, 3, 67, "Section",ExpressionUUID->"eb62d492-6def-48da-8082-d77b5b4cfa3f",
  CellID->81715398],
-Cell[1884434, 47089, 220, 3, 70, "Text",ExpressionUUID->"20694deb-a1a4-42f4-9135-5a62fe3552a7",
+Cell[1884461, 47089, 220, 3, 70, "Text",ExpressionUUID->"20694deb-a1a4-42f4-9135-5a62fe3552a7",
  CellID->227655529],
 Cell[CellGroupData[{
-Cell[1884679, 47096, 346, 9, 70, "Input",ExpressionUUID->"dd62098f-49bc-4353-a28f-42cd7d178a25",
+Cell[1884706, 47096, 346, 9, 70, "Input",ExpressionUUID->"dd62098f-49bc-4353-a28f-42cd7d178a25",
  CellID->106138385],
-Cell[1885028, 47107, 646, 22, 70, "Output",ExpressionUUID->"60a7ccfe-e6f3-47ca-b69a-c1e080895299",
+Cell[1885055, 47107, 646, 22, 70, "Output",ExpressionUUID->"60a7ccfe-e6f3-47ca-b69a-c1e080895299",
  CellID->525912438]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1885711, 47134, 433, 12, 70, "Input",ExpressionUUID->"4e3949fd-9ca9-415c-b2a7-22a2b86a2aa5",
+Cell[1885738, 47134, 433, 12, 70, "Input",ExpressionUUID->"4e3949fd-9ca9-415c-b2a7-22a2b86a2aa5",
  CellID->17120150],
-Cell[1886147, 47148, 2410, 93, 70, "Output",ExpressionUUID->"677556a8-ffef-4305-8248-baf95855fe02",
+Cell[1886174, 47148, 2410, 93, 70, "Output",ExpressionUUID->"677556a8-ffef-4305-8248-baf95855fe02",
  CellID->5566714]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1888594, 47246, 485, 13, 70, "Input",ExpressionUUID->"0e4832a6-a796-4e72-87c4-cce51f291d8a",
+Cell[1888621, 47246, 485, 13, 70, "Input",ExpressionUUID->"0e4832a6-a796-4e72-87c4-cce51f291d8a",
  CellID->65029158],
-Cell[1889082, 47261, 14998, 549, 70, "Output",ExpressionUUID->"a916f229-daba-49f2-91b1-7b9803ed22fc",
+Cell[1889109, 47261, 14998, 549, 70, "Output",ExpressionUUID->"a916f229-daba-49f2-91b1-7b9803ed22fc",
  CellID->39498860]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1904117, 47815, 443, 12, 70, "Input",ExpressionUUID->"454e367a-2cc4-4811-a44b-29f8226fa6be",
+Cell[1904144, 47815, 443, 12, 70, "Input",ExpressionUUID->"454e367a-2cc4-4811-a44b-29f8226fa6be",
  CellID->513873103],
-Cell[1904563, 47829, 4626, 150, 70, "Output",ExpressionUUID->"89ecd0f2-3edf-48cd-9ff7-30849d9569d0",
+Cell[1904590, 47829, 4626, 150, 70, "Output",ExpressionUUID->"89ecd0f2-3edf-48cd-9ff7-30849d9569d0",
  CellID->11302756]
 }, Open  ]]
 }, Closed]]
