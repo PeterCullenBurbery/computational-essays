@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    146683,       3016]
-NotebookOptionsPosition[     26534,        696]
-NotebookOutlinePosition[    140153,       2867]
-CellTagsIndexPosition[    139772,       2853]
+NotebookDataLength[    158932,       3314]
+NotebookOptionsPosition[     36559,        948]
+NotebookOutlinePosition[    150178,       3119]
+CellTagsIndexPosition[    149797,       3105]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -529,6 +529,10 @@ Cell["Quantity Distribution", "Subsection",
  CellChangeTimes->{{3.8723538763947926`*^9, 3.8723538791467404`*^9}},
  CellID->622970149,ExpressionUUID->"03637794-fe7f-4bc3-85ab-9addc8ce5bec"],
 
+Cell["Define a distribution for a random height:", "Text",
+ CellChangeTimes->{{3.8723539278709908`*^9, 3.8723539334802217`*^9}},
+ CellID->621709628,ExpressionUUID->"eaa56d42-78e0-4faf-9716-86326b2887e9"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -576,8 +580,9 @@ Cell[BoxData[
  CellID->610897501,ExpressionUUID->"7223ec9c-6afd-4d5f-9916-5c3ccf317e4d"]
 }, Open  ]],
 
-Cell["Compute the probability:", "Text",
- CellChangeTimes->{{3.872338999537841*^9, 3.872339003002763*^9}},
+Cell["Compute the probability of a certain height range:", "Text",
+ CellChangeTimes->{{3.872338999537841*^9, 3.872339003002763*^9}, {
+  3.8723539357785726`*^9, 3.872353940510797*^9}},
  CellID->285830972,ExpressionUUID->"09215981-953a-4473-836f-82ef75621869"],
 
 Cell[CellGroupData[{
@@ -627,47 +632,38 @@ Cell[BoxData["0.017351750357126862`"], "Output",
  CellID->315421970,ExpressionUUID->"7584098f-4efd-40fd-8b0a-3e2297fc8e97"]
 }, Open  ]],
 
-Cell[CellGroupData[{
+Cell["Define a distribution of life expectancy:", "Text",
+ CellChangeTimes->{{3.8723539440416365`*^9, 3.8723539503037386`*^9}},
+ CellID->357014455,ExpressionUUID->"960ca1e9-8405-4fbf-bac0-112e8288d9a8"],
 
 Cell[BoxData[
- RowBox[{"\[ScriptCapitalD]", "=", 
-  RowBox[{"GompertzMakehamDistribution", "[", 
-   RowBox[{
-    FractionBox["1", 
-     TemplateBox[<|
-      "query" -> "9.82years", "boxes" -> 
-       TemplateBox[{"9.82", "\"yr\"", "years", "\"Years\""}, "Quantity", 
-         SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
-       "open" -> {1, 2}, 
-       "querystate" -> {
-        "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
-         0.4252134`7.080151935740363, "Messages" -> {}}, "contextinfo" -> 
-       Automatic, "version" -> 5|>,
-      "LinguisticAssistantTemplate"]], ",", 
-    RowBox[{"2.56", "*", 
-     SuperscriptBox["10", 
-      RowBox[{"-", "4"}]]}], ",", "394.", ",", "0"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.8723391057486143`*^9, 3.8723391322826176`*^9}},
- CellLabel->"In[13]:=",
- CellID->455870562,ExpressionUUID->"170d1d9a-93c2-42fd-8fe0-ae3565b8e2dd"],
-
-Cell[BoxData[
- RowBox[{"QuantityDistribution", "[", 
-  RowBox[{
+ RowBox[{
+  RowBox[{"\[ScriptCapitalD]", "=", 
    RowBox[{"GompertzMakehamDistribution", "[", 
     RowBox[{
-    "0.10183299389002036`", ",", "0.00025600000000000004`", ",", "394.`", ",",
-      "0"}], "]"}], ",", 
-   InterpretationBox[
-    TemplateBox[{
-      InterpretationBox["\[InvisibleSpace]", 1], "\"yr\"", "years", 
-      "\"Years\""},
-     "Quantity"],
-    "Years"]}], "]"}]], "Output",
- CellChangeTimes->{3.872339133290257*^9},
- CellLabel->"Out[13]=",
- CellID->86784002,ExpressionUUID->"32319688-f04a-4dd0-aeb9-3c636dfc8556"]
-}, Open  ]],
+     FractionBox["1", 
+      TemplateBox[<|
+       "query" -> "9.82years", "boxes" -> 
+        TemplateBox[{"9.82", "\"yr\"", "years", "\"Years\""}, "Quantity", 
+          SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+        "open" -> {1, 2}, 
+        "querystate" -> {
+         "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+          0.4252134`7.080151935740363, "Messages" -> {}}, "contextinfo" -> 
+        Automatic, "version" -> 5|>,
+       "LinguisticAssistantTemplate"]], ",", 
+     RowBox[{"2.56", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "4"}]]}], ",", "394.", ",", "0"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8723391057486143`*^9, 3.8723391322826176`*^9}, 
+   3.872353964110635*^9},
+ CellLabel->"In[2]:=",
+ CellID->455870562,ExpressionUUID->"170d1d9a-93c2-42fd-8fe0-ae3565b8e2dd"],
+
+Cell["Compute conditional life expectancy:", "Text",
+ CellChangeTimes->{{3.8723539668782787`*^9, 3.8723539748781796`*^9}},
+ CellID->88268434,ExpressionUUID->"088bd101-c04c-4efb-ac28-f14a0cc991ec"],
 
 Cell[CellGroupData[{
 
@@ -689,7 +685,263 @@ Cell[BoxData[
  CellChangeTimes->{3.8723391529401274`*^9},
  CellLabel->"Out[14]=",
  CellID->358940759,ExpressionUUID->"b8d1dd5b-200f-45bc-bfd7-7b03d174bd5d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"NExpectation", "[", 
+    RowBox[{
+     RowBox[{"t", "\[Conditioned]", 
+      RowBox[{"t", ">", 
+       RowBox[{"n", 
+        TemplateBox[{"1", "\"decades\"", "decades", "\"Decades\""},
+         "Quantity"]}]}]}], ",", 
+     RowBox[{"t", "\[Distributed]", "\[ScriptCapitalD]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8723391360244985`*^9, 3.8723391526575775`*^9}, {
+  3.8723539802023067`*^9, 3.8723539972954865`*^9}},
+ CellLabel->"In[3]:=",
+ CellID->393897120,ExpressionUUID->"13e2bfda-710e-4697-b828-daf8ad4a12d3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"57.306055038432405`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"61.95185613999851`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"66.09956603190622`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"69.79970811175016`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"73.21497146952785`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"76.69039286799222`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"80.77818631484544`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"86.09833077061838`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"93.00195923793777`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"], ",", 
+   TemplateBox[{"101.32466188365312`", "\"yr\"", "years", "\"Years\""},
+    "Quantity"]}], "}"}]], "Output",
+ CellChangeTimes->{3.872353998029296*^9},
+ CellLabel->"Out[3]=",
+ CellID->96213322,ExpressionUUID->"c3c1a53b-6b7d-472b-9a90-9f6ee7f86190"]
+}, Open  ]],
+
+Cell["Fit a model to data with units:", "Text",
+ CellChangeTimes->{{3.8723540122301674`*^9, 3.87235401748496*^9}},
+ CellID->326970798,ExpressionUUID->"b6686037-2f5f-42ff-95ee-e3ec760f5500"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"times", "=", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "2.34", ",", "1.55", ",", "2.7", ",", "0.25", ",", "1.5", ",", "3.5", 
+       ",", "3.35", ",", "1.85", ",", "0.15", ",", "2.3", ",", "0.65", ",", 
+       "0.85", ",", "5.15"}], "}"}], ",", "\"\<Minutes\>\""}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.8723540188163867`*^9, 3.8723540649242983`*^9}},
+ CellLabel->"In[4]:=",
+ CellID->156501125,ExpressionUUID->"5c077950-a66c-4c4b-b143-433efad06eb6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EstimatedDistribution", "[", 
+  RowBox[{"times", ",", 
+   RowBox[{"ExponentialDistribution", "[", "\[Lambda]", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872354066580174*^9, 3.8723540748917804`*^9}, {
+  3.8723541097389565`*^9, 3.872354117225696*^9}},
+ CellLabel->"In[8]:=",
+ CellID->147735419,ExpressionUUID->"ee219921-c479-413e-be0d-e509171fc2d7"],
+
+Cell[BoxData[
+ RowBox[{"QuantityDistribution", "[", 
+  RowBox[{
+   RowBox[{"ExponentialDistribution", "[", "0.49732211170619745`", "]"}], ",", 
+   InterpretationBox[
+    TemplateBox[{
+      InterpretationBox["\[InvisibleSpace]", 1], "\"min\"", "minutes", 
+      "\"Minutes\""},
+     "Quantity"],
+    "Minutes"]}], "]"}]], "Output",
+ CellChangeTimes->{3.8723540751729326`*^9, 3.8723541201000724`*^9},
+ CellLabel->"Out[8]=",
+ CellID->249514114,ExpressionUUID->"6ab8006e-c335-4160-96ac-11808d24db86"]
+}, Open  ]],
+
+Cell["Convert the distribution to another compatible unit:", "Text",
+ CellChangeTimes->{{3.8723540824116845`*^9, 3.872354093371725*^9}},
+ CellID->15154777,ExpressionUUID->"13db992a-e07e-4727-9bfd-d860dd4a9dc1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression", 
+       RowBox[{"EstimatedDistribution", "[", 
+         DynamicBox[
+          FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["104", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+       Dynamic[Typeset`open]},
+      "IconizedObject"]],
+    EstimatedDistribution[$CellContext`times, 
+     ExponentialDistribution[$CellContext`\[Lambda]]],
+    SelectWithContents->True,
+    Selectable->False], ",", "\"\<Hours\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8723540955122557`*^9, 3.87235411393482*^9}},
+ CellLabel->"In[9]:=",
+ CellID->146508223,ExpressionUUID->"df5433b8-2a49-4fb4-8866-71db417bc462"],
+
+Cell[BoxData[
+ RowBox[{"QuantityDistribution", "[", 
+  RowBox[{
+   RowBox[{"ExponentialDistribution", "[", "29.839326702371846`", "]"}], ",", 
+   InterpretationBox[
+    TemplateBox[{
+      InterpretationBox["\[InvisibleSpace]", 1], "\"h\"", "hours", 
+      "\"Hours\""},
+     "Quantity"],
+    "Hours"]}], "]"}]], "Output",
+ CellChangeTimes->{{3.872354104802538*^9, 3.8723541220850916`*^9}},
+ CellLabel->"Out[9]=",
+ CellID->820008500,ExpressionUUID->"7b0e5fac-4e9a-4616-afd3-bb97bcccc10e"]
+}, Open  ]],
+
+Cell["Compare with fitting to distribution in hours:", "Text",
+ CellChangeTimes->{{3.8723541265219593`*^9, 3.872354132989929*^9}},
+ CellID->395826280,ExpressionUUID->"6cc9ac63-d1dc-4d47-a7fd-247f9d11d9cb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EstimatedDistribution", "[", 
+  RowBox[{"times", ",", 
+   RowBox[{"QuantityDistribution", "[", 
+    RowBox[{
+     RowBox[{"ExponentialDistribution", "[", "\[Lambda]", "]"}], ",", 
+     "\"\<Hours\>\""}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.872354134333004*^9, 3.872354149479597*^9}},
+ CellLabel->"In[10]:=",
+ CellID->424704613,ExpressionUUID->"c81c8c6c-0d00-44c0-83f9-8523862380cf"],
+
+Cell[BoxData[
+ RowBox[{"QuantityDistribution", "[", 
+  RowBox[{
+   RowBox[{"ExponentialDistribution", "[", "29.839326702371842`", "]"}], ",", 
+   InterpretationBox[
+    TemplateBox[{
+      InterpretationBox["\[InvisibleSpace]", 1], "\"h\"", "hours", 
+      "\"Hours\""},
+     "Quantity"],
+    "Hours"]}], "]"}]], "Output",
+ CellChangeTimes->{3.872354149760388*^9},
+ CellLabel->"Out[10]=",
+ CellID->617931483,ExpressionUUID->"7a68b392-9582-479e-bd91-f6c4d9898b93"]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Applications", "Section",
+ CellChangeTimes->{{3.8723541775129786`*^9, 3.87235417934352*^9}},
+ CellID->289762414,ExpressionUUID->"c6ce428c-237c-4a88-add1-fff0990255cb"],
+
+Cell["\<\
+The average speed of cars traveling from Champaign Illinois to Chicago \
+illinois is described by a triangular random variable:\
+\>", "Text",
+ CellChangeTimes->{{3.8723541812660446`*^9, 3.872354203851137*^9}},
+ CellID->15479830,ExpressionUUID->"da2031cd-d11b-4472-be7a-663a4376717c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"speed\[ScriptCapitalD]", "=", 
+  RowBox[{"TriangularDistribution", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[<|"query" -> "55km/hr", "boxes" -> TemplateBox[{"55", 
+           
+           RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
+             "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
+           FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
+          SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+        "open" -> {1, 2}, 
+        "querystate" -> {
+         "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+          0.3433679`6.987304685880319, "Messages" -> {}}, "contextinfo" -> 
+        Automatic, "version" -> 5|>,
+       "LinguisticAssistantTemplate"], ",", 
+      TemplateBox[<|"query" -> "82km/hr", "boxes" -> TemplateBox[{"82", 
+           
+           RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
+             "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
+           FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
+          SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+        "open" -> {1, 2}, 
+        "querystate" -> {
+         "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+          0.2811949`6.900552433165436, "Messages" -> {}}, "contextinfo" -> 
+        Automatic, "version" -> 5|>,
+       "LinguisticAssistantTemplate"]}], "}"}], ",", 
+    TemplateBox[<|"query" -> "45km/hr", "boxes" -> TemplateBox[{"45", 
+         RowBox[{
+          "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+           "\"h\""}], "kilometers per hour", 
+         FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", SyntaxForm -> 
+        Mod], "allassumptions" -> {}, "assumptions" -> {}, "open" -> {1, 2}, 
+      "querystate" -> {
+       "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+        0.3124594`6.946338587971387, "Messages" -> {}}, "contextinfo" -> 
+      Automatic, "version" -> 5|>,
+     "LinguisticAssistantTemplate"]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.872354204741558*^9, 3.872354244217827*^9}},
+ CellLabel->"In[12]:=",
+ CellID->372330916,ExpressionUUID->"25dae27f-3cfd-4736-b24a-1f92975e8f09"],
+
+Cell[BoxData[
+ RowBox[{"QuantityDistribution", "[", 
+  RowBox[{
+   RowBox[{"TriangularDistribution", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"55", ",", "82"}], "}"}], ",", "45"}], "]"}], ",", 
+   InterpretationBox[
+    TemplateBox[{
+      InterpretationBox["\[InvisibleSpace]", 1], 
+      RowBox[{
+       "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
+       "kilometers per hour", 
+      FractionBox["\"Kilometers\"", "\"Hours\""]},
+     "Quantity"],
+    "Hours"^(-1) "Kilometers"]}], "]"}]], "Output",
+ CellChangeTimes->{{3.8723542375929003`*^9, 3.872354244498741*^9}},
+ CellLabel->"Out[12]=",
+ CellID->113914945,ExpressionUUID->"6a127f58-65d0-4e2d-b9b3-02ff12f73d38"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -2852,16 +3104,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 138024, 2810},
- {"Your Essay Title", 138210, 2814},
- {"AuthorName", 138390, 2818},
- {"Abstract", 138549, 2822},
- {"TemplateCell", 138731, 2826},
- {"SectionHeader", 138914, 2830},
- {"ExampleTopicSentence", 139090, 2834},
- {"ExampleCodeText", 139265, 2838},
- {"ExampleInput", 139435, 2842},
- {"ExampleOutput", 139601, 2846}
+ {"Examples", 148049, 3062},
+ {"Your Essay Title", 148235, 3066},
+ {"AuthorName", 148415, 3070},
+ {"Abstract", 148574, 3074},
+ {"TemplateCell", 148756, 3078},
+ {"SectionHeader", 148939, 3082},
+ {"ExampleTopicSentence", 149115, 3086},
+ {"ExampleCodeText", 149290, 3090},
+ {"ExampleInput", 149460, 3094},
+ {"ExampleOutput", 149626, 3098}
  }
 *)
 (*NotebookFileOutline
@@ -2983,38 +3235,84 @@ Cell[20032, 510, 427, 11, 41, "Output",ExpressionUUID->"d41cbdf4-cf52-4355-a35d-
 Cell[CellGroupData[{
 Cell[20508, 527, 188, 2, 54, "Subsection",ExpressionUUID->"03637794-fe7f-4bc3-85ab-9addc8ce5bec",
  CellID->622970149],
+Cell[20699, 531, 203, 2, 35, "Text",ExpressionUUID->"eaa56d42-78e0-4faf-9716-86326b2887e9",
+ CellID->621709628],
 Cell[CellGroupData[{
-Cell[20721, 533, 1286, 27, 43, "Input",ExpressionUUID->"48c8ffae-7ca3-4667-9ba5-bd38d572c160",
+Cell[20927, 537, 1286, 27, 43, "Input",ExpressionUUID->"48c8ffae-7ca3-4667-9ba5-bd38d572c160",
  CellID->140165564],
-Cell[22010, 562, 513, 13, 37, "Output",ExpressionUUID->"7223ec9c-6afd-4d5f-9916-5c3ccf317e4d",
+Cell[22216, 566, 513, 13, 37, "Output",ExpressionUUID->"7223ec9c-6afd-4d5f-9916-5c3ccf317e4d",
  CellID->610897501]
 }, Open  ]],
-Cell[22538, 578, 181, 2, 35, "Text",ExpressionUUID->"09215981-953a-4473-836f-82ef75621869",
+Cell[22744, 582, 258, 3, 35, "Text",ExpressionUUID->"09215981-953a-4473-836f-82ef75621869",
  CellID->285830972],
 Cell[CellGroupData[{
-Cell[22744, 584, 416, 9, 37, "Input",ExpressionUUID->"3d852423-f92e-4537-b06b-f0e9efdfca0c",
+Cell[23027, 589, 416, 9, 37, "Input",ExpressionUUID->"3d852423-f92e-4537-b06b-f0e9efdfca0c",
  CellID->37267413],
-Cell[23163, 595, 415, 12, 55, "Output",ExpressionUUID->"995e36b1-317b-434d-b503-44413798330d",
+Cell[23446, 600, 415, 12, 55, "Output",ExpressionUUID->"995e36b1-317b-434d-b503-44413798330d",
  CellID->261222596]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23615, 612, 416, 9, 37, "Input",ExpressionUUID->"4df39d63-36b2-46de-aa92-1da6e50eb753",
+Cell[23898, 617, 416, 9, 37, "Input",ExpressionUUID->"4df39d63-36b2-46de-aa92-1da6e50eb753",
  CellID->470520333],
-Cell[24034, 623, 211, 3, 32, "Output",ExpressionUUID->"7584098f-4efd-40fd-8b0a-3e2297fc8e97",
+Cell[24317, 628, 211, 3, 32, "Output",ExpressionUUID->"7584098f-4efd-40fd-8b0a-3e2297fc8e97",
  CellID->315421970]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[24282, 631, 905, 20, 66, "Input",ExpressionUUID->"170d1d9a-93c2-42fd-8fe0-ae3565b8e2dd",
+Cell[24543, 634, 202, 2, 35, "Text",ExpressionUUID->"960ca1e9-8405-4fbf-bac0-112e8288d9a8",
+ CellID->357014455],
+Cell[24748, 638, 967, 23, 66, "Input",ExpressionUUID->"170d1d9a-93c2-42fd-8fe0-ae3565b8e2dd",
  CellID->455870562],
-Cell[25190, 653, 550, 15, 42, "Output",ExpressionUUID->"32319688-f04a-4dd0-aeb9-3c636dfc8556",
- CellID->86784002]
+Cell[25718, 663, 196, 2, 35, "Text",ExpressionUUID->"088bd101-c04c-4efb-ac28-f14a0cc991ec",
+ CellID->88268434],
+Cell[CellGroupData[{
+Cell[25939, 669, 451, 10, 37, "Input",ExpressionUUID->"a6eca181-b898-4e1a-ad2f-8a92a53a35d0",
+ CellID->50722490],
+Cell[26393, 681, 251, 5, 42, "Output",ExpressionUUID->"b8d1dd5b-200f-45bc-bfd7-7b03d174bd5d",
+ CellID->358940759]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[25777, 673, 451, 10, 37, "Input",ExpressionUUID->"a6eca181-b898-4e1a-ad2f-8a92a53a35d0",
- CellID->50722490],
-Cell[26231, 685, 251, 5, 42, "Output",ExpressionUUID->"b8d1dd5b-200f-45bc-bfd7-7b03d174bd5d",
- CellID->358940759]
+Cell[26681, 691, 647, 16, 37, "Input",ExpressionUUID->"13e2bfda-710e-4697-b828-daf8ad4a12d3",
+ CellID->393897120],
+Cell[27331, 709, 1134, 25, 71, "Output",ExpressionUUID->"c3c1a53b-6b7d-472b-9a90-9f6ee7f86190",
+ CellID->96213322]
+}, Open  ]],
+Cell[28480, 737, 189, 2, 35, "Text",ExpressionUUID->"b6686037-2f5f-42ff-95ee-e3ec760f5500",
+ CellID->326970798],
+Cell[28672, 741, 538, 13, 48, "Input",ExpressionUUID->"5c077950-a66c-4c4b-b143-433efad06eb6",
+ CellID->156501125],
+Cell[CellGroupData[{
+Cell[29235, 758, 380, 8, 28, "Input",ExpressionUUID->"ee219921-c479-413e-be0d-e509171fc2d7",
+ CellID->147735419],
+Cell[29618, 768, 497, 12, 41, "Output",ExpressionUUID->"6ab8006e-c335-4160-96ac-11808d24db86",
+ CellID->249514114]
+}, Open  ]],
+Cell[30130, 783, 210, 2, 35, "Text",ExpressionUUID->"13db992a-e07e-4727-9bfd-d860dd4a9dc1",
+ CellID->15154777],
+Cell[CellGroupData[{
+Cell[30365, 789, 1071, 25, 37, "Input",ExpressionUUID->"df5433b8-2a49-4fb4-8866-71db417bc462",
+ CellID->146508223],
+Cell[31439, 816, 488, 12, 41, "Output",ExpressionUUID->"7b0e5fac-4e9a-4616-afd3-bb97bcccc10e",
+ CellID->820008500]
+}, Open  ]],
+Cell[31942, 831, 205, 2, 35, "Text",ExpressionUUID->"6cc9ac63-d1dc-4d47-a7fd-247f9d11d9cb",
+ CellID->395826280],
+Cell[CellGroupData[{
+Cell[32172, 837, 418, 9, 48, "Input",ExpressionUUID->"c81c8c6c-0d00-44c0-83f9-8523862380cf",
+ CellID->424704613],
+Cell[32593, 848, 463, 12, 41, "Output",ExpressionUUID->"7a68b392-9582-479e-bd91-f6c4d9898b93",
+ CellID->617931483]
 }, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33117, 867, 173, 2, 67, "Section",ExpressionUUID->"c6ce428c-237c-4a88-add1-fff0990255cb",
+ CellID->289762414],
+Cell[33293, 871, 293, 5, 58, "Text",ExpressionUUID->"da2031cd-d11b-4472-be7a-663a4376717c",
+ CellID->15479830],
+Cell[CellGroupData[{
+Cell[33611, 880, 2198, 43, 44, "Input",ExpressionUUID->"25dae27f-3cfd-4736-b24a-1f92975e8f09",
+ CellID->372330916],
+Cell[35812, 925, 707, 18, 41, "Output",ExpressionUUID->"6a127f58-65d0-4e2d-b9b3-02ff12f73d38",
+ CellID->113914945]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
