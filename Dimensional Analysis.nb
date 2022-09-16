@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    158932,       3314]
-NotebookOptionsPosition[     36559,        948]
-NotebookOutlinePosition[    150178,       3119]
-CellTagsIndexPosition[    149797,       3105]
+NotebookDataLength[    163141,       3396]
+NotebookOptionsPosition[     40424,       1024]
+NotebookOutlinePosition[    154043,       3195]
+CellTagsIndexPosition[    153662,       3181]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -867,82 +867,158 @@ Cell[CellGroupData[{
 
 Cell["Applications", "Section",
  CellChangeTimes->{{3.8723541775129786`*^9, 3.87235417934352*^9}},
- CellID->289762414,ExpressionUUID->"c6ce428c-237c-4a88-add1-fff0990255cb"],
+ CellID->122879595,ExpressionUUID->"51f00236-5b19-4f79-b0f9-342ffbba7fb0"],
 
 Cell["\<\
 The average speed of cars traveling from Champaign Illinois to Chicago \
-illinois is described by a triangular random variable:\
+Illinois is described by a triangular random variable:\
 \>", "Text",
- CellChangeTimes->{{3.8723541812660446`*^9, 3.872354203851137*^9}},
- CellID->15479830,ExpressionUUID->"da2031cd-d11b-4472-be7a-663a4376717c"],
+ CellChangeTimes->{{3.8723541812660446`*^9, 3.872354203851137*^9}, 
+   3.8723542626410594`*^9},
+ CellID->22348458,ExpressionUUID->"53323814-cb0d-444b-8487-3cf76ab5cb3b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"speed\[ScriptCapitalD]", "=", 
+   RowBox[{"TriangularDistribution", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       TemplateBox[<|"query" -> "55km/hr", "boxes" -> TemplateBox[{"55", 
+            
+            RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
+              "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
+            FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
+           SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+         "open" -> {1, 2}, 
+         "querystate" -> {
+          "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+           0.3284198`6.967974325778712, "Messages" -> {}}, "contextinfo" -> 
+         Automatic, "version" -> 5|>,
+        "LinguisticAssistantTemplate"], ",", 
+       TemplateBox[<|"query" -> "82km/hr", "boxes" -> TemplateBox[{"82", 
+            
+            RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
+              "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
+            FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
+           SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+         "open" -> {1, 2}, 
+         "querystate" -> {
+          "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+           0.3127892`6.9467967428026505, "Messages" -> {}}, "contextinfo" -> 
+         Automatic, "version" -> 5|>,
+        "LinguisticAssistantTemplate"]}], "}"}], ",", 
+     TemplateBox[<|"query" -> "72km/hr", "boxes" -> TemplateBox[{"72", 
+          
+          RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]",
+             "\"h\""}], "kilometers per hour", 
+          FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", SyntaxForm -> 
+         Mod], "allassumptions" -> {}, "assumptions" -> {}, "open" -> {1, 2}, 
+       "querystate" -> {
+        "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+         0.3124284`6.946295498223274, "Messages" -> {}}, "contextinfo" -> 
+       Automatic, "version" -> 5|>,
+      "LinguisticAssistantTemplate"]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.872354774486761*^9, 3.872354796213808*^9}},
+ CellLabel->"In[33]:=",
+ CellID->100492858,ExpressionUUID->"0878ebbd-6812-4d38-911e-81990ae11bcf"],
+
+Cell["Find the expected time of travel:", "Text",
+ CellChangeTimes->{{3.872354254896425*^9, 3.872354259688636*^9}},
+ CellID->1009617909,ExpressionUUID->"901a0b1d-f59a-44d3-a4ad-2f7b04a9f1d6"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"speed\[ScriptCapitalD]", "=", 
-  RowBox[{"TriangularDistribution", "[", 
+ RowBox[{"Expectation", "[", 
+  RowBox[{
    RowBox[{
-    RowBox[{"{", 
+    RowBox[{"GeoDistance", "[", 
      RowBox[{
-      TemplateBox[<|"query" -> "55km/hr", "boxes" -> TemplateBox[{"55", 
-           
-           RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
-             "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
-           FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
-          SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
-        "open" -> {1, 2}, 
+      TemplateBox[<|
+       "query" -> "champaign", "boxes" -> TemplateBox[{"\"Champaign\"", 
+           RowBox[{"Entity", "[", 
+             RowBox[{"\"City\"", ",", 
+               RowBox[{"{", 
+                 
+                 RowBox[{
+                  "\"Champaign\"", ",", "\"Illinois\"", ",", 
+                   "\"UnitedStates\""}], "}"}]}], "]"}], 
+           "\"Entity[\\\"City\\\", {\\\"Champaign\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"", "\"city\""}, "Entity"], 
+        "allassumptions" -> {{
+          "type" -> "Clash", "word" -> "champaign", "template" -> 
+           "Assuming \"champaign\" is a city${separator}Use as ${desc} \
+instead", "count" -> "2", "pulldown" -> "false", "default" -> 
+           "{\"C\", \"champaign\"} -> {\"City\", \"dflt\"}", 
+           "Values" -> {{
+             "name" -> "City", "desc" -> "a city", "input" -> 
+              "{\"C\", \"champaign\"} -> {\"City\"}"}, {
+             "name" -> "Word", "desc" -> "a word", "input" -> 
+              "{\"C\", \"champaign\"} -> {\"Word\"}"}}}}, "assumptions" -> {},
+         "open" -> {1, 2}, 
         "querystate" -> {
          "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
-          0.3433679`6.987304685880319, "Messages" -> {}}, "contextinfo" -> 
+          0.3589418`7.006569029851733, "Messages" -> {}}, "contextinfo" -> 
         Automatic, "version" -> 5|>,
        "LinguisticAssistantTemplate"], ",", 
-      TemplateBox[<|"query" -> "82km/hr", "boxes" -> TemplateBox[{"82", 
-           
-           RowBox[{"\"km\"", "\[InvisibleSpace]", "\"/\"", 
-             "\[InvisibleSpace]", "\"h\""}], "kilometers per hour", 
-           FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", 
-          SyntaxForm -> Mod], "allassumptions" -> {}, "assumptions" -> {}, 
+      TemplateBox[<|
+       "query" -> "chicago", "boxes" -> TemplateBox[{"\"Chicago\"", 
+           RowBox[{"Entity", "[", 
+             RowBox[{"\"City\"", ",", 
+               RowBox[{"{", 
+                 
+                 RowBox[{
+                  "\"Chicago\"", ",", "\"Illinois\"", ",", 
+                   "\"UnitedStates\""}], "}"}]}], "]"}], 
+           "\"Entity[\\\"City\\\", {\\\"Chicago\\\", \\\"Illinois\\\", \
+\\\"UnitedStates\\\"}]\"", "\"city\""}, "Entity"], 
+        "allassumptions" -> {{
+          "type" -> "Clash", "word" -> "chicago", "template" -> 
+           "Assuming \"chicago\" is a city${separator}Use as ${desc} or \
+${desc} or ${desc} or ${desc} or ${desc} or ${desc} instead", "count" -> "7", 
+           "pulldown" -> "false", "default" -> 
+           "{\"C\", \"chicago\"} -> {\"City\", \"dflt\"}", 
+           "Values" -> {{
+             "name" -> "City", "desc" -> "a city", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"City\"}"}, {
+             "name" -> "NFLTeam", "desc" -> "an NFL team", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"NFLTeam\"}"}, {
+             "name" -> "MLBTeam", "desc" -> "an MLB team", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"MLBTeam\"}"}, {
+             "name" -> "NBATeam", "desc" -> "an NBA team", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"NBATeam\"}"}, {
+             "name" -> "Periodical", "desc" -> "a periodical", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"Periodical\"}"}, {
+             "name" -> "MusicAct", "desc" -> "a music act", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"MusicAct\"}"}, {
+             "name" -> "Movie", "desc" -> "a movie", "input" -> 
+              "{\"C\", \"chicago\"} -> {\"Movie\"}"}}}}, "assumptions" -> {}, 
         "open" -> {1, 2}, 
         "querystate" -> {
          "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
-          0.2811949`6.900552433165436, "Messages" -> {}}, "contextinfo" -> 
+          0.3436774`6.9876959676523995, "Messages" -> {}}, "contextinfo" -> 
         Automatic, "version" -> 5|>,
-       "LinguisticAssistantTemplate"]}], "}"}], ",", 
-    TemplateBox[<|"query" -> "45km/hr", "boxes" -> TemplateBox[{"45", 
-         RowBox[{
-          "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
-           "\"h\""}], "kilometers per hour", 
-         FractionBox["\"Kilometers\"", "\"Hours\""]}, "Quantity", SyntaxForm -> 
-        Mod], "allassumptions" -> {}, "assumptions" -> {}, "open" -> {1, 2}, 
-      "querystate" -> {
-       "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
-        0.3124594`6.946338587971387, "Messages" -> {}}, "contextinfo" -> 
-      Automatic, "version" -> 5|>,
-     "LinguisticAssistantTemplate"]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.872354204741558*^9, 3.872354244217827*^9}},
- CellLabel->"In[12]:=",
- CellID->372330916,ExpressionUUID->"25dae27f-3cfd-4736-b24a-1f92975e8f09"],
+       "LinguisticAssistantTemplate"]}], "]"}], "/", "v"}], ",", 
+   RowBox[{"v", "\[Distributed]", "speed\[ScriptCapitalD]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872354802454768*^9, 3.872354821578697*^9}},
+ CellLabel->"In[34]:=",
+ CellID->396885195,ExpressionUUID->"e5b675ee-c7c5-4090-abb5-cd2dde0a883b"],
 
 Cell[BoxData[
- RowBox[{"QuantityDistribution", "[", 
-  RowBox[{
-   RowBox[{"TriangularDistribution", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"55", ",", "82"}], "}"}], ",", "45"}], "]"}], ",", 
-   InterpretationBox[
-    TemplateBox[{
-      InterpretationBox["\[InvisibleSpace]", 1], 
-      RowBox[{
-       "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
-       "kilometers per hour", 
-      FractionBox["\"Kilometers\"", "\"Hours\""]},
-     "Quantity"],
-    "Hours"^(-1) "Kilometers"]}], "]"}]], "Output",
- CellChangeTimes->{{3.8723542375929003`*^9, 3.872354244498741*^9}},
- CellLabel->"Out[12]=",
- CellID->113914945,ExpressionUUID->"6a127f58-65d0-4e2d-b9b3-02ff12f73d38"]
-}, Open  ]]
+ TemplateBox[{"2.4873797100978003`", "\"h\"", "hours", "\"Hours\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.872354822266076*^9, 3.8723548634635878`*^9},
+ CellLabel->"Out[34]=",
+ CellID->680106722,ExpressionUUID->"4f0320f4-2512-4d2a-ac8d-6acfd6c3ee7e"]
+}, Open  ]],
+
+Cell["\<\
+Define the distribution of a cube's side-length measurements:\
+\>", "Text",
+ CellChangeTimes->{{3.8723548726520586`*^9, 3.8723548825950704`*^9}},
+ CellID->204194902,ExpressionUUID->"fa5c42fd-7b31-40de-8dfc-a1156d21eb2c"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -3104,16 +3180,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 148049, 3062},
- {"Your Essay Title", 148235, 3066},
- {"AuthorName", 148415, 3070},
- {"Abstract", 148574, 3074},
- {"TemplateCell", 148756, 3078},
- {"SectionHeader", 148939, 3082},
- {"ExampleTopicSentence", 149115, 3086},
- {"ExampleCodeText", 149290, 3090},
- {"ExampleInput", 149460, 3094},
- {"ExampleOutput", 149626, 3098}
+ {"Examples", 151914, 3138},
+ {"Your Essay Title", 152100, 3142},
+ {"AuthorName", 152280, 3146},
+ {"Abstract", 152439, 3150},
+ {"TemplateCell", 152621, 3154},
+ {"SectionHeader", 152804, 3158},
+ {"ExampleTopicSentence", 152980, 3162},
+ {"ExampleCodeText", 153155, 3166},
+ {"ExampleInput", 153325, 3170},
+ {"ExampleOutput", 153491, 3174}
  }
 *)
 (*NotebookFileOutline
@@ -3304,16 +3380,22 @@ Cell[32593, 848, 463, 12, 41, "Output",ExpressionUUID->"7a68b392-9582-479e-bd91-
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33117, 867, 173, 2, 67, "Section",ExpressionUUID->"c6ce428c-237c-4a88-add1-fff0990255cb",
- CellID->289762414],
-Cell[33293, 871, 293, 5, 58, "Text",ExpressionUUID->"da2031cd-d11b-4472-be7a-663a4376717c",
- CellID->15479830],
+Cell[33117, 867, 173, 2, 67, "Section",ExpressionUUID->"51f00236-5b19-4f79-b0f9-342ffbba7fb0",
+ CellID->122879595],
+Cell[33293, 871, 321, 6, 58, "Text",ExpressionUUID->"53323814-cb0d-444b-8487-3cf76ab5cb3b",
+ CellID->22348458],
+Cell[33617, 879, 2255, 44, 44, "Input",ExpressionUUID->"0878ebbd-6812-4d38-911e-81990ae11bcf",
+ CellID->100492858],
+Cell[35875, 925, 191, 2, 35, "Text",ExpressionUUID->"901a0b1d-f59a-44d3-a4ad-2f7b04a9f1d6",
+ CellID->1009617909],
 Cell[CellGroupData[{
-Cell[33611, 880, 2198, 43, 44, "Input",ExpressionUUID->"25dae27f-3cfd-4736-b24a-1f92975e8f09",
- CellID->372330916],
-Cell[35812, 925, 707, 18, 41, "Output",ExpressionUUID->"6a127f58-65d0-4e2d-b9b3-02ff12f73d38",
- CellID->113914945]
-}, Open  ]]
+Cell[36091, 931, 3784, 75, 70, "Input",ExpressionUUID->"e5b675ee-c7c5-4090-abb5-cd2dde0a883b",
+ CellID->396885195],
+Cell[39878, 1008, 273, 5, 39, "Output",ExpressionUUID->"4f0320f4-2512-4d2a-ac8d-6acfd6c3ee7e",
+ CellID->680106722]
+}, Open  ]],
+Cell[40166, 1016, 230, 4, 35, "Text",ExpressionUUID->"fa5c42fd-7b31-40de-8dfc-a1156d21eb2c",
+ CellID->204194902]
 }, Open  ]]
 }, Open  ]]
 }
