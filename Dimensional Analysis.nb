@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1158549,      23151]
-NotebookOptionsPosition[   1022211,      20483]
-NotebookOutlinePosition[   1135995,      22658]
-CellTagsIndexPosition[   1135594,      22644]
+NotebookDataLength[   1159732,      23180]
+NotebookOptionsPosition[   1023125,      20506]
+NotebookOutlinePosition[   1136909,      22681]
+CellTagsIndexPosition[   1136508,      22667]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20078,6 +20078,8 @@ Cell[BoxData["Quit"], "Input",
  CellLabel->"In[9]:=",
  CellID->310704143,ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"EntityRegister", "[", 
   RowBox[{
@@ -20216,7 +20218,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}]}], "|>"}]}], ",", 
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\
+\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<specific energy\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20231,7 +20234,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<J \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg m s\>\""}]}], "|>"}]}], ",", 
+             "\"\<\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<thermal conductivity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20247,8 +20251,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
 \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg m \!\(\*SuperscriptBox[\(s\), \(-3\)]\) \
+\!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<energy density\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20263,7 +20267,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<electric field strength\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20278,8 +20282,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<V \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg m \!\(\*SuperscriptBox[\(s\), \(-3\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<electric charge density\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20294,9 +20298,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<C \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
-         "\[IndentingNewLine]", 
+             "\"\<A s \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}]}], 
+           "|>"}]}], ",", "\[IndentingNewLine]", 
          RowBox[{"\"\<surface charge density\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20311,8 +20314,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<C \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<A s \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}]}], 
+           "|>"}]}], ",", 
          RowBox[{"\"\<electric flux density, electric displacement\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20327,8 +20330,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<C \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<A s \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}]}], 
+           "|>"}]}], ",", 
          RowBox[{"\"\<permittivity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20342,8 +20345,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<F \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(m\), \(-3\)]\) \!\(\*SuperscriptBox[\(s\), \(4\)]\) \!\
+\(\*SuperscriptBox[\(A\), \(2\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<permeability\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20357,8 +20361,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<H \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg m \!\(\*SuperscriptBox[\(s\), \(-2\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(-2\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<molar energy\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20372,8 +20376,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<J \!\(\*SuperscriptBox[\(mol\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(mol\), \(-1\)]\)\
+\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<molar entropy, molar heat capacity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20389,8 +20394,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
 \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(mol\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<exposure (x- and \[Gamma]- rays)\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20405,8 +20411,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<C \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<A s \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}]}], 
+           "|>"}]}], ",", 
          RowBox[{"\"\<absorbed dose rate\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20421,8 +20427,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<Gy \!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<radiant intensity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20437,8 +20443,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<W \!\(\*SuperscriptBox[\(sr\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<radiance\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20453,8 +20459,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
 \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg \!\(\*SuperscriptBox[\(s\), \(-3\)]\)\>\""}]}], "|>"}]}],
+          ",", 
          RowBox[{"\"\<catalytic activity concentration\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20469,15 +20475,32 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<kat \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}]}], "|>"}]}], 
+             "\"\<mol \!\(\*SuperscriptBox[\(s\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}]}], "|>"}]}]}], "|>"}]}], 
       "|>"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.8724046948094163`*^9, 3.8724054898375945`*^9}, {
   3.872405535536311*^9, 3.872405625601375*^9}, {3.8724056605937953`*^9, 
   3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.8724062140300493`*^9}, {
-  3.872406546118978*^9, 3.8724067416745973`*^9}},
- EmphasizeSyntaxErrors->True,
- CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
+  3.872406546118978*^9, 3.8724067416745973`*^9}, {3.8724089463975306`*^9, 
+  3.8724091878046265`*^9}},
+ CellLabel->"In[4]:=",
+ CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"Examples of SI coherent derived units whose names and \
+symbols include SI coherent derived units with special names and symbols\"\>",
+   "}"}]], "Output",
+ CellChangeTimes->{3.8724091884430256`*^9},
+ CellLabel->"Out[4]=",
+ CellID->479657080,ExpressionUUID->"43a7ca2c-b533-4c8f-b7a0-a618ad195a31"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Entity", "[", 
+  "\"\<Examples of SI coherent derived units whose names and symbols include \
+SI coherent derived units with special names and symbols\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8724092023184414`*^9, 3.872409215450922*^9}},
+ CellID->14844947,ExpressionUUID->"f15ffd24-e75e-4755-8c86-191f3f146e08"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -22599,14 +22622,34 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Abstract"->{
-  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
+ "Examples"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "Your Essay Title"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
  "AuthorName"->{
   Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
    CellTags->"AuthorName",
    CellID->960727095]},
+ "Abstract"->{
+  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "TemplateCell"->{
+  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "SectionHeader"->{
+  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "ExampleTopicSentence"->{
+  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
  "ExampleCodeText"->{
   Cell[1485, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
@@ -22618,41 +22661,21 @@ CellTagsIndex->{
  "ExampleOutput"->{
   Cell[1881, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
    CellTags->"ExampleOutput",
-   CellID->171130590]},
- "Examples"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "ExampleTopicSentence"->{
-  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
- "SectionHeader"->{
-  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "TemplateCell"->{
-  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "Your Essay Title"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]}
+   CellID->171130590]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1133846, 22601},
- {"AuthorName", 1134026, 22605},
- {"ExampleCodeText", 1134192, 22609},
- {"ExampleInput", 1134362, 22613},
- {"ExampleOutput", 1134528, 22617},
- {"Examples", 1134691, 22621},
- {"ExampleTopicSentence", 1134881, 22625},
- {"SectionHeader", 1135054, 22629},
- {"TemplateCell", 1135222, 22633},
- {"Your Essay Title", 1135408, 22637}
+ {"Examples", 1134760, 22624},
+ {"Your Essay Title", 1134946, 22628},
+ {"AuthorName", 1135126, 22632},
+ {"Abstract", 1135285, 22636},
+ {"TemplateCell", 1135467, 22640},
+ {"SectionHeader", 1135650, 22644},
+ {"ExampleTopicSentence", 1135826, 22648},
+ {"ExampleCodeText", 1136001, 22652},
+ {"ExampleInput", 1136171, 22656},
+ {"ExampleOutput", 1136337, 22660}
  }
 *)
 (*NotebookFileOutline
@@ -23149,8 +23172,14 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 17800, 399, 2852, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
- CellID->98022312]
+Cell[CellGroupData[{
+Cell[1004405, 20082, 18005, 404, 2909, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+ CellID->98022312],
+Cell[1022413, 20488, 330, 6, 71, "Output",ExpressionUUID->"43a7ca2c-b533-4c8f-b7a0-a618ad195a31",
+ CellID->479657080]
+}, Open  ]],
+Cell[1022758, 20497, 339, 5, 86, "Input",ExpressionUUID->"f15ffd24-e75e-4755-8c86-191f3f146e08",
+ CellID->14844947]
 }, Open  ]]
 }, Open  ]]
 }
