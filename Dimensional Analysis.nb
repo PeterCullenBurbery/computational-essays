@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1157098,      23102]
-NotebookOptionsPosition[   1020760,      20434]
-NotebookOutlinePosition[   1134544,      22609]
-CellTagsIndexPosition[   1134143,      22595]
+NotebookDataLength[   1157125,      23102]
+NotebookOptionsPosition[   1020787,      20434]
+NotebookOutlinePosition[   1134571,      22609]
+CellTagsIndexPosition[   1134170,      22595]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20376,7 +20376,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<pascal second\>\""}], ",", 
+             "\"\<gray per second\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20390,7 +20390,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<gray per second\>\""}], ",", 
+             "\"\<watt per steradian\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20403,7 +20403,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<watt per steradian\>\""}], ",", 
+             "\"\<watt per steradian meter squared\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20417,7 +20417,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<catalytic activity concentration\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<pascal second\>\""}], ",", 
+             "\"\<katal per cubic meter\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20426,7 +20426,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
       "|>"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.8724046948094163`*^9, 3.8724054898375945`*^9}, {
   3.872405535536311*^9, 3.872405625601375*^9}, {3.8724056605937953`*^9, 
-  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872405823200981*^9}},
+  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872405872961417*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22594,16 +22594,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1132395, 22552},
- {"AuthorName", 1132575, 22556},
- {"ExampleCodeText", 1132741, 22560},
- {"ExampleInput", 1132911, 22564},
- {"ExampleOutput", 1133077, 22568},
- {"Examples", 1133240, 22572},
- {"ExampleTopicSentence", 1133430, 22576},
- {"SectionHeader", 1133603, 22580},
- {"TemplateCell", 1133771, 22584},
- {"Your Essay Title", 1133957, 22588}
+ {"Abstract", 1132422, 22552},
+ {"AuthorName", 1132602, 22556},
+ {"ExampleCodeText", 1132768, 22560},
+ {"ExampleInput", 1132938, 22564},
+ {"ExampleOutput", 1133104, 22568},
+ {"Examples", 1133267, 22572},
+ {"ExampleTopicSentence", 1133457, 22576},
+ {"SectionHeader", 1133630, 22580},
+ {"TemplateCell", 1133798, 22584},
+ {"Your Essay Title", 1133984, 22588}
  }
 *)
 (*NotebookFileOutline
@@ -23100,7 +23100,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 16349, 350, 2852, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 16376, 350, 2871, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
