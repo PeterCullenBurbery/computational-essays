@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    792978,      15935]
-NotebookOptionsPosition[    659451,      13327]
-NotebookOutlinePosition[    773226,      15502]
-CellTagsIndexPosition[    772835,      15488]
+NotebookDataLength[    818186,      16531]
+NotebookOptionsPosition[    683076,      13889]
+NotebookOutlinePosition[    796851,      16064]
+CellTagsIndexPosition[    796460,      16050]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -12039,7 +12039,7 @@ Cell[BoxData[
             "\"\<Typical symbol for quantity\>\"", "->", "\"\<t\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<T\>\""}]}], 
            "|>"}]}], ",", 
-         RowBox[{"\"\<meter\>\"", "->", 
+         RowBox[{"\"\<length\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
@@ -12047,21 +12047,21 @@ Cell[BoxData[
              "\"\<l,x,r,etc.\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<L\>\""}]}], 
            "|>"}]}], ",", 
-         RowBox[{"\"\<kilogram\>\"", "->", 
+         RowBox[{"\"\<mass\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
             "\"\<Typical symbol for quantity\>\"", "->", "\"\<m\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<M\>\""}]}], 
            "|>"}]}], ",", 
-         RowBox[{"\"\<ampere\>\"", "->", 
+         RowBox[{"\"\<electric current\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
             "\"\<Typical symbol for quantity\>\"", "->", "\"\<I,i\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<I\>\""}]}], 
            "|>"}]}], ",", 
-         RowBox[{"\"\<kelvin\>\"", "->", 
+         RowBox[{"\"\<thermodynamic temperature\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
@@ -12069,14 +12069,14 @@ Cell[BoxData[
             RowBox[{
             "\"\<Symbol for dimension\>\"", "->", 
              "\"\<\[CapitalTheta]\>\""}]}], "|>"}]}], ",", 
-         RowBox[{"\"\<mole\>\"", "->", 
+         RowBox[{"\"\<amount of substance\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
             "\"\<Typical symbol for quantity\>\"", "->", "\"\<n\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<N\>\""}]}], 
            "|>"}]}], ",", 
-         RowBox[{"\"\<candela\>\"", "->", 
+         RowBox[{"\"\<luminous intensity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
@@ -12084,16 +12084,607 @@ Cell[BoxData[
              "\"\<\!\(\*SubscriptBox[\(I\), \(v\)]\)\>\""}], ",", 
             RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<J\>\""}]}], 
            "|>"}]}]}], "|>"}]}], "|>"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.872401093807642*^9, 3.872401377186323*^9}},
- CellLabel->"In[52]:=",
+ CellChangeTimes->{{3.872401093807642*^9, 3.872401377186323*^9}, {
+  3.8724017323544407`*^9, 3.872401775944214*^9}},
+ CellLabel->"In[56]:=",
  CellID->61538602,ExpressionUUID->"4cc837a7-e4b0-44bb-872f-cae83d176491"],
 
 Cell[BoxData[
  RowBox[{"{", "\<\"Base quantities and dimensions used in the SI\"\>", 
   "}"}]], "Output",
- CellChangeTimes->{3.872401377572484*^9},
- CellLabel->"Out[52]=",
- CellID->834085902,ExpressionUUID->"52a6b9a1-3b19-4b2e-aba8-4dca2efbb437"]
+ CellChangeTimes->{3.872401377572484*^9, 3.8724017761968584`*^9},
+ CellLabel->"Out[56]=",
+ CellID->9910094,ExpressionUUID->"7d443554-7639-4fe6-a417-4ab909cfef6f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"EntityUnregister", "[", 
+  "\"\<Base quantities and dimensions used in the SI\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872401738524789*^9, 3.8724017475686803`*^9}},
+ CellLabel->"In[55]:=",
+ CellID->101701112,ExpressionUUID->"884ae7ef-b82c-4f1c-a269-08fa7ddef58e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Entity", "[", 
+  RowBox[{
+  "\"\<Base quantities and dimensions used in the SI\>\"", ",", " ", 
+   "\"\<time\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724016935482783`*^9, 3.872401707518301*^9}, {
+  3.8724017830567403`*^9, 3.8724017858389273`*^9}},
+ CellLabel->"In[58]:=",
+ CellID->626042579,ExpressionUUID->"fdad55eb-76dc-4c5b-acb0-343c5e08cf1d"],
+
+Cell[BoxData[
+ TemplateBox[{"\"time\"", 
+   RowBox[{"Entity", "[", 
+     RowBox[{
+      "\"Base quantities and dimensions used in the SI\"", ",", "\"time\""}], 
+     "]"}], "\"Entity[\\\"Base quantities and dimensions used in the SI\\\", \
+\\\"time\\\"]\"", "\"Base quantities and dimensions used in the SI\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{
+  3.872401707820922*^9, {3.872401778977997*^9, 3.8724017861289115`*^9}},
+ CellLabel->"Out[58]=",
+ CellID->106667148,ExpressionUUID->"02e150b2-14c0-47e1-a5ec-42356073e288"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AssociationMap", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Entity", "[", 
+       RowBox[{
+       "\"\<Base quantities and dimensions used in the SI\>\"", ",", " ", 
+        "\"\<time\>\""}], "]"}], "[", "#", "]"}], "}"}], "&"}], ",", 
+   RowBox[{
+    RowBox[{"Entity", "[", 
+     RowBox[{
+     "\"\<Base quantities and dimensions used in the SI\>\"", ",", " ", 
+      "\"\<time\>\""}], "]"}], "[", "\"\<Properties\>\"", "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872401791734893*^9, 3.8724018234487743`*^9}},
+ CellLabel->"In[60]:=",
+ CellID->617641310,ExpressionUUID->"721a45c5-2b1a-4149-b619-e088ace1e53a"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"Symbol for dimension\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{
+         "\"Base quantities and dimensions used in the SI\"", ",", 
+          "\"Symbol for dimension\""}], "]"}], 
+      "\"EntityProperty[\\\"Base quantities and dimensions used in the \
+SI\\\", \\\"Symbol for dimension\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", "\<\"T\"\>", "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"Typical symbol for quantity\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{
+         "\"Base quantities and dimensions used in the SI\"", ",", 
+          "\"Typical symbol for quantity\""}], "]"}], 
+      "\"EntityProperty[\\\"Base quantities and dimensions used in the \
+SI\\\", \\\"Typical symbol for quantity\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", "\<\"t\"\>", "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.872401811599415*^9, 3.8724018264130325`*^9}},
+ CellLabel->"Out[60]=",
+ CellID->114278603,ExpressionUUID->"2da350f4-6977-4d05-b49c-b9ab927a2465"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PersistResourceFunction", "[", 
+   RowBox[{"{", "\"\<PhysicalQuantityData\>\"", "}"}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.8724018327832556`*^9, 3.872401848906338*^9}},
+ CellLabel->"In[61]:=",
+ CellID->110249611,ExpressionUUID->"3dac3889-3a1c-4b32-8c38-00bf8b2c1b9b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PhysicalQuantityData", "[", "\"\<Time\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8724018504952774`*^9, 3.872401862272193*^9}},
+ CellLabel->"In[63]:=",
+ CellID->890228127,ExpressionUUID->"05cee284-46ac-49b9-8903-a856ef4fc6f4"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   TagBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     FrameBox[
+      PaneSelectorBox[{False->GridBox[{
+         {
+          PaneBox[GridBox[{
+             {
+              StyleBox[
+               StyleBox[
+                AdjustmentBox["\<\"[\[FilledSmallSquare]]\"\>",
+                 BoxBaselineShift->-0.25,
+                 BoxMargins->{{0, 0}, {-1, -1}}], "ResourceFunctionIcon",
+                
+                FontColor->RGBColor[
+                 0.8745098039215686, 0.2784313725490196, 0.03137254901960784]],
+               ShowStringCharacters->False,
+               FontFamily->"Source Sans Pro Black",
+               FontSize->0.6538461538461539 Inherited,
+               FontWeight->"Heavy",
+               PrivateFontOptions->{"OperatorSubstitution"->False}], 
+              StyleBox[
+               RowBox[{
+                StyleBox["PhysicalQuantityData", "ResourceFunctionLabel"], 
+                " "}],
+               ShowAutoStyles->False,
+               ShowStringCharacters->False,
+               FontSize->Rational[12, 13] Inherited,
+               FontColor->GrayLevel[0.1]]}
+            },
+            GridBoxSpacings->{"Columns" -> {{0.25}}}],
+           Alignment->Left,
+           BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+           BaselinePosition->Baseline,
+           FrameMargins->{{3, 0}, {0, 0}}], 
+          ItemBox[
+           PaneBox[
+            TogglerBox[Dynamic[Typeset`open], {True->
+             
+             DynamicBox[FEPrivate`FrontEndResource[
+              "FEBitmaps", "IconizeCloser"],
+              ImageSizeCache->{11., {2., 9.}}], False->
+             
+             DynamicBox[FEPrivate`FrontEndResource[
+              "FEBitmaps", "IconizeOpener"],
+              ImageSizeCache->{11., {2., 9.}}]},
+             Appearance->None,
+             BaselinePosition->Baseline,
+             ContentPadding->False,
+             FrameMargins->0],
+            Alignment->Left,
+            BaselinePosition->Baseline,
+            FrameMargins->{{1, 1}, {0, 0}}],
+           Frame->{{
+              RGBColor[
+              0.8313725490196079, 0.8470588235294118, 0.8509803921568627, 
+               0.5], False}, {False, False}}]}
+        },
+        BaselinePosition->{1, 1},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}], True->
+       GridBox[{
+         {GridBox[{
+            {
+             PaneBox[GridBox[{
+                {
+                 StyleBox[
+                  AdjustmentBox[
+                   
+                   StyleBox["\<\"[\[FilledSmallSquare]]\"\>", 
+                    "ResourceFunctionIcon",
+                    
+                    FontColor->RGBColor[
+                    0.8745098039215686, 0.2784313725490196, 
+                    0.03137254901960784]],
+                   BoxBaselineShift->-0.25,
+                   BoxMargins->{{0, 0}, {-1, -1}}],
+                  ShowStringCharacters->False,
+                  FontFamily->"Source Sans Pro Black",
+                  FontSize->0.6538461538461539 Inherited,
+                  FontWeight->"Heavy",
+                  PrivateFontOptions->{"OperatorSubstitution"->False}], 
+                 StyleBox[
+                  RowBox[{
+                   StyleBox["PhysicalQuantityData", "ResourceFunctionLabel"], 
+                   " "}],
+                  ShowAutoStyles->False,
+                  ShowStringCharacters->False,
+                  FontSize->Rational[12, 13] Inherited,
+                  FontColor->GrayLevel[0.1]]}
+               },
+               GridBoxSpacings->{"Columns" -> {{0.25}}}],
+              Alignment->Left,
+              BaseStyle->{LineSpacing -> {0, 0}, LineBreakWithin -> False},
+              BaselinePosition->Baseline,
+              FrameMargins->{{3, 0}, {0, 0}}], 
+             ItemBox[
+              PaneBox[
+               TogglerBox[Dynamic[Typeset`open], {True->
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "FEBitmaps", "IconizeCloser"]], False->
+                
+                DynamicBox[FEPrivate`FrontEndResource[
+                 "FEBitmaps", "IconizeOpener"]]},
+                Appearance->None,
+                BaselinePosition->Baseline,
+                ContentPadding->False,
+                FrameMargins->0],
+               Alignment->Left,
+               BaselinePosition->Baseline,
+               FrameMargins->{{1, 1}, {0, 0}}],
+              Frame->{{
+                 RGBColor[
+                 0.8313725490196079, 0.8470588235294118, 0.8509803921568627, 
+                  0.5], False}, {False, False}}]}
+           },
+           BaselinePosition->{1, 1},
+           GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+           
+           GridBoxItemSize->{
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+           GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}]},
+         {
+          StyleBox[
+           PaneBox[GridBox[{
+              {
+               RowBox[{
+                TagBox["\<\"Version (latest): \"\>",
+                 "IconizedLabel"], " ", 
+                TagBox["\<\"1.0.0\"\>",
+                 "IconizedItem"]}]},
+              {
+               TagBox[
+                
+                TemplateBox[{
+                 "\"Documentation \[RightGuillemet]\"", 
+                  "https://resources.wolframcloud.com/FunctionRepository/\
+resources/687f105c-d3b3-44f2-86d5-a43d58aab913/"},
+                 "HyperlinkURL"],
+                "IconizedItem"]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            Alignment->Left,
+            BaselinePosition->Baseline,
+            FrameMargins->{{5, 4}, {0, 4}}], "DialogStyle",
+           FontFamily->"Roboto",
+           FontSize->11]}
+        },
+        BaselinePosition->{1, 1},
+        GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+        GridBoxDividers->{"Columns" -> {{None}}, "Rows" -> {False, {
+             GrayLevel[0.8]}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, Dynamic[
+       Typeset`open],
+       BaselinePosition->Baseline,
+       ImageSize->Automatic],
+      Background->RGBColor[
+       0.9686274509803922, 0.9764705882352941, 0.984313725490196],
+      BaselinePosition->Baseline,
+      DefaultBaseStyle->{},
+      FrameMargins->{{0, 0}, {1, 0}},
+      FrameStyle->RGBColor[
+       0.8313725490196079, 0.8470588235294118, 0.8509803921568627],
+      RoundingRadius->4]],
+    {"FunctionResourceBox", 
+     RGBColor[0.8745098039215686, 0.2784313725490196, 0.03137254901960784], 
+     "PhysicalQuantityData"},
+    TagBoxNote->"FunctionResourceBox"],
+   ResourceFunction["PhysicalQuantityData"],
+   Selectable->False], "[", "\<\"Time\"\>", "]"}]], "Output",
+ CellChangeTimes->{{3.872401858536996*^9, 3.8724018625404053`*^9}},
+ CellLabel->"Out[63]=",
+ CellID->23952861,ExpressionUUID->"2901a2c8-b98f-4827-a5d0-35aeba27538b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Entity", "[", 
+  RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<Time\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.872401873445327*^9, 3.872401879711788*^9}},
+ CellLabel->"In[64]:=",
+ CellID->54834298,ExpressionUUID->"82d27b2a-55a3-4b00-9b6f-1b6d99e0d4b9"],
+
+Cell[BoxData[
+ TemplateBox[{"\"time\"", 
+   RowBox[{"Entity", "[", 
+     RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+   "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+   "\"physical quantity\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{3.872401880456231*^9},
+ CellLabel->"Out[64]=",
+ CellID->161424101,ExpressionUUID->"9889e9c5-ee00-44a3-b121-01340b5c13cf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Entity", "[", 
+   RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<Time\>\""}], "]"}], "[", 
+  "\"\<PropertyAssociation\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872401873445327*^9, 3.8724018915613623`*^9}},
+ CellLabel->"In[65]:=",
+ CellID->564417836,ExpressionUUID->"53535ee3-9792-4003-9391-02b10af1865a"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"abbreviations\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Abbreviations\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Abbreviations\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"algebraic types\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"AlgebraicTypes\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlgebraicTypes\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"positive real\"\>", ",", "\<\"scalar\"\>"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"alternate names\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"AlternateNames\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlternateNames\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"base physical quantity\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"BasePhysicalQuantity\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"BasePhysicalQuantity\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"canonical unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"CanonicalUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"CanonicalUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"s\"", "second", "\"Seconds\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"classes\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Classes\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Classes\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"dimensions\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Dimensions\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Dimensions\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{"\<\"TimeUnit\"\>", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"entity classes\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"EntityClasses\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"EntityClasses\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"instances\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Instances\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Instances\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[{"\"characteristic time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"CharacteristicTime\""}], 
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \\\"CharacteristicTime\\\
+\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"data transfer time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"DataTransferTime\""}], 
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"DataTransferTime\\\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"downtime\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"Downtime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"Downtime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"elapsed real time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"ElapsedRealTime\""}], "]"}],
+         "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElapsedRealTime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"lag\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"Lag\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"Lag\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"latency\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"Latency\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"Latency\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"moving time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"MovingTime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"MovingTime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"ping time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"PingTime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"PingTime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"Poincar\[EAcute] recurrence time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"PoincareRecurrenceTime\""}],
+           "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"PoincareRecurrenceTime\\\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"relaxation time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"RelaxationTime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"RelaxationTime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"reverberation time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"ReverberationTime\""}], 
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"ReverberationTime\\\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"round\[Hyphen]trip delay\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"RoundTripDelay\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"RoundTripDelay\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"time difference\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"TimeDifference\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"TimeDifference\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"time shift\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"TimeShift\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"TimeShift\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"uptime\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"Uptime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"Uptime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"working time\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"WorkingTime\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"WorkingTime\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"]}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"name\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Name\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Name\\\"]\""},
+     "EntityProperty"], "\[Rule]", "\<\"time\"\>"}], ",", 
+   RowBox[{
+    TemplateBox[{"\"named SI unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"NamedSIUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"NamedSIUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"s\"", "second", "\"Seconds\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"physical property type\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"PhysicalPropertyType\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"PhysicalPropertyType\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotApplicable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"quantity variable\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"QuantityVariable\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"QuantityVariable\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"\"t\"", "\"Time\""},
+     "QuantityVariable",
+     DisplayFunction->(TooltipBox[
+       StyleBox[#, FontColor -> GrayLevel[0.4], ShowStringCharacters -> 
+        False], 
+       RowBox[{"Quantity variable:", " time"}], TooltipStyle -> 
+       "TextStyling"]& )]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"SI base unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBaseUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIBaseUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"s\"", "second", "\"Seconds\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"SI unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"SIUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"s\"", "second", "\"Seconds\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"standard identifiers\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardIdentifiers\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"StandardIdentifiers\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/I-1978\"\>", "\[Rule]", "\<\"1-6.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-1:1992\"\>", "\[Rule]", "\<\"1-7\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2006\"\>", "\[Rule]", "\<\"3-7\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2019\"\>", "\[Rule]", "\<\"3-9\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q2199864\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"standard symbols\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardSymbols\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"StandardSymbols\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"t\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"t\"\>", 
+         ",", "\<\"\[CapitalDelta]\[InvisibleSpace]t\"\>"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"symbols\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Symbols\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Symbols\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"t\"\>", ",", "\<\"\[CapitalDelta]\[InvisibleSpace]t\"\>"}], 
+     "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724018943335624`*^9},
+ CellLabel->"Out[65]=",
+ CellID->495546465,ExpressionUUID->"bc5f59fd-bfb6-416f-9a49-6d207bab4290"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -13262,65 +13853,36 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
 
 Cell[BoxData[
  RowBox[{"EntityRegister", "[", 
-  RowBox[{"BASEQUANTITIESANDDIMENSIONSUSEDINTHESI", "=", 
+  RowBox[{"THE22SIUNITSWITHSPECIALNAMESANDSYMBOLS", "=", 
    RowBox[{"EntityStore", "[", 
-    RowBox[{"\"\<Base quantities and dimensions used in the SI\>\"", "->", 
+    RowBox[{"\"\<SI units with special names and symbols\>\"", "->", 
      RowBox[{"<|", 
       RowBox[{"\"\<Entities\>\"", "->", 
        RowBox[{"<|", 
         RowBox[{
-         RowBox[{"\"\<time\>\"", "->", 
+         RowBox[{"\"\<radian\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
             RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", "\"\<t\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<T\>\""}]}], 
-           "|>"}]}], ",", 
-         RowBox[{"\"\<meter\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", 
-             "\"\<l,x,r,etc.\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<L\>\""}]}], 
-           "|>"}]}], ",", 
-         RowBox[{"\"\<kilogram\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", "\"\<m\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<M\>\""}]}], 
-           "|>"}]}], ",", 
-         RowBox[{"\"\<ampere\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", "\"\<I,i\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<I\>\""}]}], 
-           "|>"}]}], ",", 
-         RowBox[{"\"\<kelvin\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", "\"\<T\>\""}], ",", 
-            RowBox[{
-            "\"\<Symbol for dimension\>\"", "->", 
-             "\"\<\[CapitalTheta]\>\""}]}], "|>"}]}], ",", 
-         RowBox[{"\"\<mole\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", "\"\<n\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<N\>\""}]}], 
-           "|>"}]}], ",", 
-         RowBox[{"\"\<candela\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Typical symbol for quantity\>\"", "->", 
-             "\"\<\!\(\*SubscriptBox[\(I\), \(v\)]\)\>\""}], ",", 
-            RowBox[{"\"\<Symbol for dimension\>\"", "->", "\"\<J\>\""}]}], 
-           "|>"}]}]}], "|>"}]}], "|>"}]}], "]"}]}], "]"}]], "Input",
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            "\"\<Unit expressed in terms of other SI units\>\""}], "|>"}]}], 
+         ",", 
+         RowBox[{"\"\<steradian\>\"", "->", 
+          RowBox[{"<|", "|>"}]}], ",", "\"\<frequency\>\"", ",", 
+         "\"\<newton\>\"", ",", "\"\<pascal\>\"", ",", "\"\<joule\>\"", ",", 
+         "\"\<watt\>\"", ",", "\"\<coulomb\>\"", ",", "\"\<volt\>\"", ",", 
+         "\"\<farad\>\"", ",", "\"\<ohm\>\"", ",", "\"\<siemens\>\"", ",", 
+         "\"\<weber\>\"", ",", "\"\<tesla\>\"", ",", "\"\<henry\>\"", ",", 
+         "\"\<degree Celsius\>\"", ",", "\"\<lumen\>\"", ",", "\"\<lux\>\"", 
+         ",", "\"\<becquerel\>\"", ",", "\"\<gray\>\"", ",", 
+         "\"\<sievert\>\"", ",", "\"\<katal\>\""}], "|>"}]}], "|>"}]}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724014515929255`*^9, 3.8724016789212217`*^9}},
  CellID->86422327,ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a"]
 }, Open  ]]
 }, Open  ]]
@@ -15487,16 +16049,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 771087, 15445},
- {"Your Essay Title", 771273, 15449},
- {"AuthorName", 771453, 15453},
- {"Abstract", 771612, 15457},
- {"TemplateCell", 771794, 15461},
- {"SectionHeader", 771977, 15465},
- {"ExampleTopicSentence", 772153, 15469},
- {"ExampleCodeText", 772328, 15473},
- {"ExampleInput", 772498, 15477},
- {"ExampleOutput", 772664, 15481}
+ {"Examples", 794712, 16007},
+ {"Your Essay Title", 794898, 16011},
+ {"AuthorName", 795078, 16015},
+ {"Abstract", 795237, 16019},
+ {"TemplateCell", 795419, 16023},
+ {"SectionHeader", 795602, 16027},
+ {"ExampleTopicSentence", 795778, 16031},
+ {"ExampleCodeText", 795953, 16035},
+ {"ExampleInput", 796123, 16039},
+ {"ExampleOutput", 796289, 16043}
  }
 *)
 (*NotebookFileOutline
@@ -15922,18 +16484,52 @@ Cell[518967, 10585, 75225, 1435, 597, "Output",ExpressionUUID->"35845c4c-813c-49
  CellID->53084167]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[594229, 12025, 2640, 63, 352, "Input",ExpressionUUID->"4cc837a7-e4b0-44bb-872f-cae83d176491",
+Cell[594229, 12025, 2743, 64, 428, "Input",ExpressionUUID->"4cc837a7-e4b0-44bb-872f-cae83d176491",
  CellID->61538602],
-Cell[596872, 12090, 246, 5, 32, "Output",ExpressionUUID->"52a6b9a1-3b19-4b2e-aba8-4dca2efbb437",
- CellID->834085902]
+Cell[596975, 12091, 268, 5, 32, "Output",ExpressionUUID->"7d443554-7639-4fe6-a417-4ab909cfef6f",
+ CellID->9910094]
+}, Open  ]],
+Cell[597258, 12099, 291, 5, 48, "Input",ExpressionUUID->"884ae7ef-b82c-4f1c-a269-08fa7ddef58e",
+ CellID->101701112],
+Cell[CellGroupData[{
+Cell[597574, 12108, 377, 8, 48, "Input",ExpressionUUID->"fdad55eb-76dc-4c5b-acb0-343c5e08cf1d",
+ CellID->626042579],
+Cell[597954, 12118, 527, 11, 43, "Output",ExpressionUUID->"02e150b2-14c0-47e1-a5ec-42356073e288",
+ CellID->106667148]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[597155, 12100, 571, 16, 86, "Input",ExpressionUUID->"7adea5cf-aaa0-4bde-92fa-00a27a1b72db",
+Cell[598518, 12134, 673, 18, 105, "Input",ExpressionUUID->"721a45c5-2b1a-4149-b619-e088ace1e53a",
+ CellID->617641310],
+Cell[599194, 12154, 1128, 25, 44, "Output",ExpressionUUID->"2da350f4-6977-4d05-b49c-b9ab927a2465",
+ CellID->114278603]
+}, Open  ]],
+Cell[600337, 12182, 312, 6, 28, "Input",ExpressionUUID->"3dac3889-3a1c-4b32-8c38-00bf8b2c1b9b",
+ CellID->110249611],
+Cell[CellGroupData[{
+Cell[600674, 12192, 251, 4, 28, "Input",ExpressionUUID->"05cee284-46ac-49b9-8903-a856ef4fc6f4",
+ CellID->890228127],
+Cell[600928, 12198, 7266, 180, 38, "Output",ExpressionUUID->"2901a2c8-b98f-4827-a5d0-35aeba27538b",
+ CellID->23952861]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[608231, 12383, 280, 5, 28, "Input",ExpressionUUID->"82d27b2a-55a3-4b00-9b6f-1b6d99e0d4b9",
+ CellID->54834298],
+Cell[608514, 12390, 383, 9, 43, "Output",ExpressionUUID->"9889e9c5-ee00-44a3-b121-01340b5c13cf",
+ CellID->161424101]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[608934, 12404, 341, 7, 28, "Input",ExpressionUUID->"53535ee3-9792-4003-9391-02b10af1865a",
+ CellID->564417836],
+Cell[609278, 12413, 12401, 273, 598, "Output",ExpressionUUID->"bc5f59fd-bfb6-416f-9a49-6d207bab4290",
+ CellID->495546465]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[621716, 12691, 571, 16, 86, "Input",ExpressionUUID->"7adea5cf-aaa0-4bde-92fa-00a27a1b72db",
  CellID->529148596],
-Cell[597729, 12118, 59129, 1141, 414, "Output",ExpressionUUID->"a5cc5549-8390-4e94-b4c9-2c18f31ce015",
+Cell[622290, 12709, 59129, 1141, 414, "Output",ExpressionUUID->"a5cc5549-8390-4e94-b4c9-2c18f31ce015",
  CellID->194140075]
 }, Open  ]],
-Cell[656873, 13262, 2550, 61, 352, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
+Cell[681434, 13853, 1614, 32, 257, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
  CellID->86422327]
 }, Open  ]]
 }, Open  ]]
