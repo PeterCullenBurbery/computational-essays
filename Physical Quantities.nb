@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    117200,       2279]
-NotebookOptionsPosition[      2301,         76]
-NotebookOutlinePosition[    115862,       2248]
-CellTagsIndexPosition[    115481,       2234]
+NotebookDataLength[    175178,       3604]
+NotebookOptionsPosition[     56536,       1319]
+NotebookOutlinePosition[    170046,       3489]
+CellTagsIndexPosition[    169699,       3476]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,7 +27,8 @@ Cell["Physical Quantities", "Title",
 
 Cell[BoxData[
  StyleBox[
-  RowBox[{"Author", " ", "Name"}], "Author"]], "Author",
+  RowBox[{"Peter", " ", "Burbery"}], "Author"]], "Author",
+ CellChangeTimes->{{3.872445188243578*^9, 3.8724451900492373`*^9}},
  CellTags->"AuthorName",
  CellID->960727095,ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c"],
 
@@ -41,29 +42,1271 @@ Cell["Section", "Section",
  CellTags->"SectionHeader",
  CellID->453852445,ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940"],
 
-Cell["XXXX", "Text",
+Cell["What units have only time with linear degree?", "Text",
+ CellChangeTimes->{{3.87244520324988*^9, 3.872445210972719*^9}},
  CellTags->"ExampleTopicSentence",
  CellID->816667160,ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f"],
 
-Cell["XXXX:", "CodeText",
+Cell["See which properties are important:", "CodeText",
+ CellChangeTimes->{{3.8724452137524185`*^9, 3.8724452504919443`*^9}},
  CellTags->"ExampleCodeText",
  CellID->66178570,ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0"],
 
 Cell[CellGroupData[{
 
-Cell[BoxData[Cell[BoxData[
- "XXXX"], "Input",ExpressionUUID->
-  "199b1e12-e32a-43d2-bb61-3ded10db1ed0"]], "Input",
+Cell[BoxData[
+ RowBox[{"PhysicalQuantityData", "[", 
+  RowBox[{"\"\<Length\>\"", ",", "\"\<PropertyAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724452257171593`*^9, 3.8724452648143044`*^9}},
  CellTags->"ExampleInput",
- CellLabel->"In[1]:=",
+ CellLabel->"In[2]:=",
  CellID->844129532,ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5"],
 
-Cell[BoxData[Cell[BoxData[
- "XXXX"], "Output",ExpressionUUID->
-  "3d10bd36-6381-4cae-81b3-785c45643fb1"]], "Output",
- CellTags->"ExampleOutput",
- CellLabel->"Out[1]=",
- CellID->171130590,ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9"]
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"abbreviations\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Abbreviations\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Abbreviations\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"algebraic types\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"AlgebraicTypes\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlgebraicTypes\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", "\<\"scalar\"\>", "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"alternate names\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"AlternateNames\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlternateNames\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"base physical quantity\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"BasePhysicalQuantity\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"BasePhysicalQuantity\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"canonical unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"CanonicalUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"CanonicalUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"classes\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Classes\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Classes\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"dimensions\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Dimensions\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Dimensions\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{"\<\"LengthUnit\"\>", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"entity classes\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"EntityClasses\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"EntityClasses\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"instances\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Instances\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Instances\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[{"\"bond length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"BondLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"BondLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"breaking length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"BreakingLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"BreakingLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"diagonal length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"DiagonalLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"DiagonalLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"focal length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"FocalLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"FocalLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"Jeans length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"JeansLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"JeansLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"nuclear collision length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"NuclearCollisionLength\""}],
+           "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"NuclearCollisionLength\\\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"nuclear interaction length\"", 
+        RowBox[{"Entity", "[", 
+          
+          RowBox[{"\"PhysicalQuantity\"", ",", 
+            "\"NuclearInteractionLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"NuclearInteractionLength\\\"]\
+\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"scattering length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"ScatteringLength\""}], 
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"ScatteringLength\\\"]\"", "\"physical quantity\""},
+       "Entity"]}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"name\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Name\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Name\\\"]\""},
+     "EntityProperty"], "\[Rule]", "\<\"length\"\>"}], ",", 
+   RowBox[{
+    TemplateBox[{"\"named SI unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"NamedSIUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"NamedSIUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"physical property type\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"PhysicalPropertyType\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"PhysicalPropertyType\\\"]\""},
+     "EntityProperty"], "\[Rule]", "\<\"extensive\"\>"}], ",", 
+   RowBox[{
+    TemplateBox[{"\"quantity variable\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"QuantityVariable\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"QuantityVariable\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"\"L\"", "\"Length\""},
+     "QuantityVariable",
+     DisplayFunction->(TooltipBox[
+       StyleBox[#, FontColor -> GrayLevel[0.4], ShowStringCharacters -> 
+        False], 
+       RowBox[{"Quantity variable:", " length"}], TooltipStyle -> 
+       "TextStyling"]& )]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"SI base unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBaseUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIBaseUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"SI unit\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"SIUnit\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIUnit\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"standard identifiers\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardIdentifiers\""}], 
+        "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"StandardIdentifiers\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/I-1978\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-1:1992\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2006\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2019\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q36253\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"standard symbols\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardSymbols\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"StandardSymbols\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"l\"\>", ",", "\<\"L\"\>"}], "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"L\"\>", "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"symbols\"", 
+      RowBox[{"EntityProperty", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Symbols\""}], "]"}], 
+      "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Symbols\\\"]\""},
+     "EntityProperty"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"l\"\>", ",", "\<\"L\"\>"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.872445262926931*^9, 3.8724452659167757`*^9}},
+ CellTags->"ExampleInput",
+ CellLabel->"Out[2]=",
+ CellID->7293007,ExpressionUUID->"68c583eb-0682-48b5-a9f9-231a0c91a5b4"]
+}, Open  ]],
+
+Cell["store important properties", "CodeText",
+ CellChangeTimes->{{3.872445280698573*^9, 3.8724452878457375`*^9}},
+ CellID->859976710,ExpressionUUID->"c4cdf899-81fe-4acf-8b58-80e1a324f791"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PHYSICALQUANTITYPROPERTIES", "=", 
+  RowBox[{"PhysicalQuantityData", "[", 
+   RowBox[{"\"\<Length\>\"", ",", "\"\<Properties\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8724452937754393`*^9, 3.87244531416649*^9}},
+ CellLabel->"In[3]:=",
+ CellID->645563530,ExpressionUUID->"9fffe6e6-5581-4166-b7d2-bda11d8a775a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"\"abbreviations\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Abbreviations\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Abbreviations\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"algebraic types\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"AlgebraicTypes\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlgebraicTypes\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"alternate names\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"AlternateNames\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"AlternateNames\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"base physical quantity\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"BasePhysicalQuantity\""}], 
+       "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"BasePhysicalQuantity\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"canonical unit\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"CanonicalUnit\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"CanonicalUnit\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"classes\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Classes\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Classes\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"dimensions\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Dimensions\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Dimensions\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"entity classes\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"EntityClasses\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"EntityClasses\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"instances\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Instances\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Instances\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"name\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Name\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Name\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"named SI unit\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"NamedSIUnit\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"NamedSIUnit\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"physical property type\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"PhysicalPropertyType\""}], 
+       "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"PhysicalPropertyType\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"quantity variable\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"QuantityVariable\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"QuantityVariable\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"SI base unit\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBaseUnit\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIBaseUnit\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"SI unit\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"SIUnit\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"SIUnit\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"standard identifiers\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardIdentifiers\""}], 
+       "]"}], "\"EntityProperty[\\\"PhysicalQuantity\\\", \
+\\\"StandardIdentifiers\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"standard symbols\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"StandardSymbols\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"StandardSymbols\\\"]\""},
+    "EntityProperty"], ",", 
+   TemplateBox[{"\"symbols\"", 
+     RowBox[{"EntityProperty", "[", 
+       RowBox[{"\"PhysicalQuantity\"", ",", "\"Symbols\""}], "]"}], 
+     "\"EntityProperty[\\\"PhysicalQuantity\\\", \\\"Symbols\\\"]\""},
+    "EntityProperty"]}], "}"}]], "Output",
+ CellChangeTimes->{3.8724453145672812`*^9},
+ CellLabel->"Out[3]=",
+ CellID->115439364,ExpressionUUID->"891cef0d-d3e4-48bb-8245-7484726968d6"]
+}, Open  ]],
+
+Cell["View the full names:", "CodeText",
+ CellChangeTimes->{{3.8724453186452465`*^9, 3.872445321477369*^9}},
+ CellID->14952001,ExpressionUUID->"cdc26c0d-3ee3-41ab-9fc5-6f51afdfb427"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalName", "/@", "PHYSICALQUANTITYPROPERTIES"}]], "Input",
+ CellChangeTimes->{{3.8724453224149523`*^9, 3.872445326240738*^9}},
+ CellLabel->"In[4]:=",
+ CellID->88801029,ExpressionUUID->"0a451111-af92-4878-9a01-6940e7a039c2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Abbreviations\"\>", ",", "\<\"AlgebraicTypes\"\>", 
+   ",", "\<\"AlternateNames\"\>", ",", "\<\"BasePhysicalQuantity\"\>", 
+   ",", "\<\"CanonicalUnit\"\>", ",", "\<\"Classes\"\>", 
+   ",", "\<\"Dimensions\"\>", ",", "\<\"EntityClasses\"\>", 
+   ",", "\<\"Instances\"\>", ",", "\<\"Name\"\>", ",", "\<\"NamedSIUnit\"\>", 
+   ",", "\<\"PhysicalPropertyType\"\>", ",", "\<\"QuantityVariable\"\>", 
+   ",", "\<\"SIBaseUnit\"\>", ",", "\<\"SIUnit\"\>", 
+   ",", "\<\"StandardIdentifiers\"\>", ",", "\<\"StandardSymbols\"\>", 
+   ",", "\<\"Symbols\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8724453264688206`*^9},
+ CellLabel->"Out[4]=",
+ CellID->442113348,ExpressionUUID->"0b86d00f-ba86-4068-b05f-3eb7e8122dd2"]
+}, Open  ]],
+
+Cell["Analyze length properties:", "CodeText",
+ CellChangeTimes->{{3.8724453387875733`*^9, 3.872445346287307*^9}},
+ CellID->131192809,ExpressionUUID->"f28b13c7-7f6e-4812-b090-f28c3320530d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"KeyMap", "[", 
+  RowBox[{"CanonicalName", ",", 
+   RowBox[{"PhysicalQuantityData", "[", 
+    RowBox[{"\"\<Length\>\"", ",", "\"\<PropertyAssociation\>\""}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.87244534975683*^9, 3.8724453671935167`*^9}},
+ CellLabel->"In[5]:=",
+ CellID->3591488,ExpressionUUID->"45b25a77-01cd-4371-a365-66db64077557"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Abbreviations\"\>", "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{"\<\"AlgebraicTypes\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"scalar\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"AlternateNames\"\>", "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{"\<\"BasePhysicalQuantity\"\>", "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{"\<\"CanonicalUnit\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Classes\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{"\<\"Dimensions\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{"\<\"LengthUnit\"\>", ",", "1"}], "}"}], "}"}]}], ",", 
+   RowBox[{"\<\"EntityClasses\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     TemplateBox[{"\"SI base quantities\"", 
+       RowBox[{"EntityClass", "[", 
+         RowBox[{"\"PhysicalQuantity\"", ",", "\"SIBase\""}], "]"}], 
+       "\"EntityClass[\\\"PhysicalQuantity\\\", \\\"SIBase\\\"]\"", 
+       "\"physical quantities\""},
+      "EntityClass"], "}"}]}], ",", 
+   RowBox[{"\<\"Instances\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      TemplateBox[{"\"bond length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"BondLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"BondLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"breaking length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"BreakingLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"BreakingLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"diagonal length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"DiagonalLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"DiagonalLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"focal length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"FocalLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"FocalLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"Jeans length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"JeansLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"JeansLength\\\"]\"", 
+        "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"nuclear collision length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"NuclearCollisionLength\""}],
+           "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"NuclearCollisionLength\\\"]\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"nuclear interaction length\"", 
+        RowBox[{"Entity", "[", 
+          
+          RowBox[{"\"PhysicalQuantity\"", ",", 
+            "\"NuclearInteractionLength\""}], "]"}], 
+        "\"Entity[\\\"PhysicalQuantity\\\", \\\"NuclearInteractionLength\\\"]\
+\"", "\"physical quantity\""},
+       "Entity"], ",", 
+      TemplateBox[{"\"scattering length\"", 
+        RowBox[{"Entity", "[", 
+          RowBox[{"\"PhysicalQuantity\"", ",", "\"ScatteringLength\""}], 
+          "]"}], "\"Entity[\\\"PhysicalQuantity\\\", \
+\\\"ScatteringLength\\\"]\"", "\"physical quantity\""},
+       "Entity"]}], "}"}]}], ",", 
+   RowBox[{"\<\"Name\"\>", "\[Rule]", "\<\"length\"\>"}], ",", 
+   RowBox[{"\<\"NamedSIUnit\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"PhysicalPropertyType\"\>", "\[Rule]", "\<\"extensive\"\>"}], 
+   ",", 
+   RowBox[{"\<\"QuantityVariable\"\>", "\[Rule]", 
+    TemplateBox[{"\"L\"", "\"Length\""},
+     "QuantityVariable",
+     DisplayFunction->(TooltipBox[
+       StyleBox[#, FontColor -> GrayLevel[0.4], ShowStringCharacters -> 
+        False], 
+       RowBox[{"Quantity variable:", " length"}], TooltipStyle -> 
+       "TextStyling"]& )]}], ",", 
+   RowBox[{"\<\"SIBaseUnit\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"SIUnit\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"m\"", "meter", "\"Meters\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"StandardIdentifiers\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/I-1978\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-1:1992\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2006\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2019\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q36253\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"StandardSymbols\"\>", "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"l\"\>", ",", "\<\"L\"\>"}], "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"L\"\>", "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{"\<\"Symbols\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"l\"\>", ",", "\<\"L\"\>"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724453674580107`*^9},
+ CellLabel->"Out[5]=",
+ CellID->16916339,ExpressionUUID->"125909b4-7864-4281-9935-9566b999e55a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ALLPOSSIBLEPROPERTIESTOUSEFORPHYSICALQUANTITIES", "=", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<AlgebraicTypes\>\"", ",", "\"\<CanonicalUnit\>\"", ",", 
+    "\"\<Classes\>\"", ",", "\"\<Dimensions\>\"", ",", 
+    "\"\<EntityClasses\>\"", ",", "\"\<Instances\>\"", ",", "\"\<Name\>\"", 
+    ",", "\"\<NamedSIUnit\>\"", ",", "\"\<PhysicalPropertyType\>\"", ",", 
+    "\"\<QuantityVariable\>\"", ",", "\"\<SIBaseUnit\>\"", ",", 
+    "\"\<SIUnit\>\"", ",", "\"\<Symbols\>\""}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.872445376246397*^9, 3.8724454763793807`*^9}},
+ CellLabel->"In[6]:=",
+ CellID->13582268,ExpressionUUID->"14ab2ec2-1958-4873-8691-150a06c07ab6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AlgebraicTypes\"\>", ",", "\<\"CanonicalUnit\"\>", 
+   ",", "\<\"Classes\"\>", ",", "\<\"Dimensions\"\>", 
+   ",", "\<\"EntityClasses\"\>", ",", "\<\"Instances\"\>", 
+   ",", "\<\"Name\"\>", ",", "\<\"NamedSIUnit\"\>", 
+   ",", "\<\"PhysicalPropertyType\"\>", ",", "\<\"QuantityVariable\"\>", 
+   ",", "\<\"SIBaseUnit\"\>", ",", "\<\"SIUnit\"\>", ",", "\<\"Symbols\"\>"}],
+   "}"}]], "Output",
+ CellChangeTimes->{3.8724454770317187`*^9},
+ CellLabel->"Out[6]=",
+ CellID->31768021,ExpressionUUID->"8468e4ea-4ac8-48fa-ac6b-ad677c13fca2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"OTHERPROPERTIESDISCARDED", "=", 
+  RowBox[{"Complement", "[", 
+   RowBox[{
+    RowBox[{"CanonicalName", "/@", 
+     RowBox[{"PhysicalQuantityData", "[", 
+      RowBox[{"\"\<Length\>\"", ",", "\"\<Properties\>\""}], "]"}]}], ",", 
+    "ALLPOSSIBLEPROPERTIESTOUSEFORPHYSICALQUANTITIES"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.872445484211055*^9, 3.872445515873558*^9}},
+ CellLabel->"In[8]:=",
+ CellID->98440150,ExpressionUUID->"5d7b0d17-ecf1-4959-9571-d88198cd7d72"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Abbreviations\"\>", ",", "\<\"AlternateNames\"\>", 
+   ",", "\<\"BasePhysicalQuantity\"\>", ",", "\<\"StandardIdentifiers\"\>", 
+   ",", "\<\"StandardSymbols\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8724455060317945`*^9, 3.8724455198136277`*^9}},
+ CellLabel->"Out[8]=",
+ CellID->18782635,ExpressionUUID->"ebca4b7d-6576-4a47-999a-e6c0903206bc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   RowBox[{"EntityClass", "[", 
+    RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<SIBase\>\""}], "]"}], ",", 
+   "\"\<Abbreviations\>\"", ",", "\"\<EntityAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724455292919645`*^9, 3.8724455742643795`*^9}},
+ CellLabel->"In[10]:=",
+ CellID->44516914,ExpressionUUID->"e02a61d7-f69e-42dc-a9f0-9c40ca149fd9"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"length\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Length\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Length\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"mass\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Mass\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Mass\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"time\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"electric current\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"ElectricCurrent\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElectricCurrent\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"temperature\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Temperature\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Temperature\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"temp\"\>", ",", "\<\"temp.\"\>"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"amount of substance\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Amount\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Amount\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"luminous intensity\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminousIntensity\""}], "]"}],
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminousIntensity\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724455747143097`*^9},
+ CellLabel->"Out[10]=",
+ CellID->351294,ExpressionUUID->"683f3714-9b20-4800-8345-b5b5f9ef9d6d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   RowBox[{"EntityClass", "[", 
+    RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<SIBase\>\""}], "]"}], ",", 
+   "\"\<AlternateNames\>\"", ",", "\"\<EntityAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724455292919645`*^9, 3.872445593689827*^9}},
+ CellLabel->"In[12]:=",
+ CellID->313414467,ExpressionUUID->"3d2b4472-e7a0-44a3-ba34-69ddb81e3048"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"length\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Length\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Length\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"mass\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Mass\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Mass\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"time\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"electric current\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"ElectricCurrent\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElectricCurrent\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"amperage\"\>", ",", "\<\"ampage\"\>", 
+      ",", "\<\"ampacity\"\>", ",", "\<\"current\"\>"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"temperature\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Temperature\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Temperature\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"{", "\<\"thermodynamic temperature\"\>", "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"amount of substance\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Amount\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Amount\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"chemical amount\"\>", ",", "\<\"psammity\"\>", 
+      ",", "\<\"ontcount\"\>", ",", "\<\"metromoriance\"\>", 
+      ",", "\<\"chemiance\"\>", ",", "\<\"numerosity\"\>", 
+      ",", "\<\"numerousness\"\>", ",", "\<\"enplethy\"\>", 
+      ",", "\<\"ment\"\>", ",", "\<\"posos\"\>", ",", "\<\"stoffamount\"\>", 
+      ",", "\<\"emplethy\"\>", ",", "\<\"quant\"\>", ",", "\<\"numerity\"\>", 
+      ",", "\<\"cardinality\"\>", ",", "\<\"tosos\"\>", 
+      ",", "\<\"numberzil\"\>"}], "}"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"luminous intensity\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminousIntensity\""}], "]"}],
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminousIntensity\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.8724455912219515`*^9, 3.872445594673582*^9}},
+ CellLabel->"Out[12]=",
+ CellID->52155481,ExpressionUUID->"f65ef9b3-a769-4058-b16a-1dae3df144fa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   RowBox[{"EntityClass", "[", 
+    RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<SIBase\>\""}], "]"}], ",", 
+   "\"\<BasePhysicalQuantity\>\"", ",", "\"\<EntityAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724455292919645`*^9, 3.8724456066040773`*^9}, {
+  3.8724456574870386`*^9, 3.8724456585933075`*^9}},
+ CellLabel->"In[13]:=",
+ CellID->103122168,ExpressionUUID->"a624f527-a0d1-4bb3-a8ab-4b625c00b766"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"length\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Length\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Length\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"mass\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Mass\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Mass\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"time\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"electric current\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"ElectricCurrent\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElectricCurrent\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"temperature\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Temperature\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Temperature\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"amount of substance\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Amount\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Amount\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"luminous intensity\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminousIntensity\""}], "]"}],
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminousIntensity\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.872445659528221*^9},
+ CellLabel->"Out[13]=",
+ CellID->483546941,ExpressionUUID->"3905ef27-683c-4283-9f02-0daef8709110"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   RowBox[{"EntityClass", "[", 
+    RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<SIBase\>\""}], "]"}], ",", 
+   "\"\<StandardIdentifiers\>\"", ",", "\"\<EntityAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724455292919645`*^9, 3.8724456066040773`*^9}, {
+  3.8724456574870386`*^9, 3.872445673464492*^9}},
+ CellLabel->"In[14]:=",
+ CellID->204761728,ExpressionUUID->"f3415126-c56e-40c8-b254-93faa3eedef2"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"length\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Length\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Length\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/I-1978\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-1:1992\"\>", "\[Rule]", "\<\"1-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2006\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2019\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q36253\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"mass\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Mass\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Mass\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/III-1978\"\>", "\[Rule]", "\<\"3-1.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-3:1992\"\>", "\[Rule]", "\<\"3-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-4:2006\"\>", "\[Rule]", "\<\"4-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-4:2019\"\>", "\[Rule]", "\<\"4-1\"\>"}], ",", 
+      RowBox[{"\<\"IUPACGoldBook\"\>", "\[Rule]", "\<\"M03709\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q11423\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"time\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/I-1978\"\>", "\[Rule]", "\<\"1-6.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-1:1992\"\>", "\[Rule]", "\<\"1-7\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2006\"\>", "\[Rule]", "\<\"3-7\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-3:2019\"\>", "\[Rule]", "\<\"3-9\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q2199864\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"electric current\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"ElectricCurrent\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElectricCurrent\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"IEC 27-1\"\>", "\[Rule]", "67"}], ",", 
+      RowBox[{"\<\"IEC 80000-6:2008\"\>", "\[Rule]", "\<\"6-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31/V-1979\"\>", "\[Rule]", "\<\"5-1.1\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q29996\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"temperature\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Temperature\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Temperature\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/IV-1978\"\>", "\[Rule]", "\<\"4-1.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-4:1992\"\>", "\[Rule]", "\<\"4-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-5:2007\"\>", "\[Rule]", "\<\"5-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-5:2019\"\>", "\[Rule]", "\<\"5-1\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q264647\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"amount of substance\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Amount\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Amount\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/VIII-1973\"\>", "\[Rule]", "\<\"8-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31/8-1980\"\>", "\[Rule]", "\<\"8-3.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-8:1992\"\>", "\[Rule]", "\<\"8-3\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-9:2009\"\>", "\[Rule]", "\<\"9-1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-9:2019\"\>", "\[Rule]", "\<\"9-2\"\>"}], ",", 
+      RowBox[{"\<\"IUPACGoldBook\"\>", "\[Rule]", "\<\"A00297\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q104946\"\>"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"luminous intensity\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminousIntensity\""}], "]"}],
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminousIntensity\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO 31/VI-1973\"\>", "\[Rule]", "\<\"6-19.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31/6-1980\"\>", "\[Rule]", "\<\"6-19.1\"\>"}], ",", 
+      RowBox[{"\<\"ISO 31-6:1992\"\>", "\[Rule]", "\<\"6-29\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-7:2008\"\>", "\[Rule]", "\<\"7-35\"\>"}], ",", 
+      RowBox[{"\<\"ISO 80000-7:2019\"\>", "\[Rule]", "\<\"7-14\"\>"}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", "\<\"Q104831\"\>"}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.872445674464567*^9},
+ CellLabel->"Out[14]=",
+ CellID->196200898,ExpressionUUID->"4a5b6810-8bb1-449a-93d4-c7086f01390d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EntityValue", "[", 
+  RowBox[{
+   RowBox[{"EntityClass", "[", 
+    RowBox[{"\"\<PhysicalQuantity\>\"", ",", "\"\<SIBase\>\""}], "]"}], ",", 
+   "\"\<StandardSymbols\>\"", ",", "\"\<EntityAssociation\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724455292919645`*^9, 3.8724456066040773`*^9}, {
+  3.8724456574870386`*^9, 3.872445685169668*^9}},
+ CellLabel->"In[15]:=",
+ CellID->7448383,ExpressionUUID->"4032ee69-a52d-48f7-a183-885ebaedcd36"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{
+    TemplateBox[{"\"length\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Length\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Length\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"l\"\>", ",", "\<\"L\"\>"}], "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"L\"\>", "}"}]}]}], "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"mass\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Mass\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Mass\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"m\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"IUPACGoldBook\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"m\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"IUPACGreenBook\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"m\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"M\"\>", ",", "\<\"m\"\>"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"time\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Time\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Time\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"t\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"t\"\>", 
+         ",", "\<\"\[CapitalDelta]\[InvisibleSpace]t\"\>"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"electric current\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"ElectricCurrent\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"ElectricCurrent\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{"\<\"IEC\"\>", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\<\"I\"\>", ",", "\<\"i\"\>"}], "}"}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"temperature\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Temperature\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Temperature\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"T\"\>", ",", "\<\"\[CapitalTheta]\"\>"}], "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"T\"\>", ",", "\<\"\[CapitalTheta]\"\>"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"amount of substance\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"Amount\""}], "]"}], 
+      "\"Entity[\\\"PhysicalQuantity\\\", \\\"Amount\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"\<\"n\"\>", ",", 
+         TemplateBox[{"\"n\"", "\"(\"", "\"X\"", "\")\""},
+          "RowDefault"]}], "}"}]}], ",", 
+      RowBox[{"\<\"IUPACGoldBook\"\>", "\[Rule]", 
+       RowBox[{"{", "\<\"n\"\>", "}"}]}], ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         TemplateBox[{"\"n\"", "\"(\"", "\"X\"", "\")\""},
+          "RowDefault"], ",", "\<\"n\"\>"}], "}"}]}]}], 
+     "\[RightAssociation]"}]}], ",", 
+   RowBox[{
+    TemplateBox[{"\"luminous intensity\"", 
+      RowBox[{"Entity", "[", 
+        RowBox[{"\"PhysicalQuantity\"", ",", "\"LuminousIntensity\""}], "]"}],
+       "\"Entity[\\\"PhysicalQuantity\\\", \\\"LuminousIntensity\\\"]\"", 
+      "\"physical quantity\""},
+     "Entity"], "\[Rule]", 
+    RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+      RowBox[{"\<\"ISO\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         SubscriptBox["\<\"I\"\>", "\<\"v\"\>"], ",", "\<\"I\"\>"}], "}"}]}], 
+      ",", 
+      RowBox[{"\<\"Wikidata\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        SubscriptBox["\<\"I\"\>", "\<\"v\"\>"], "}"}]}], ",", 
+      RowBox[{"\<\"Wikipedia\"\>", "\[Rule]", 
+       RowBox[{"{", 
+        SubscriptBox["\<\"I\"\>", "\<\"v\"\>"], "}"}]}]}], 
+     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.872445686110214*^9},
+ CellLabel->"Out[15]=",
+ CellID->193457220,ExpressionUUID->"d3e962ef-5bbf-4367-a92c-f2d7ff5dfda0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CountsBy", "[", 
+  RowBox[{
+   RowBox[{"EntityValue", "[", 
+    RowBox[{
+     RowBox[{"PhysicalQuantityData", "[", "]"}], ",", "\"\<Dimensions\>\""}], 
+    "]"}], ",", "MissingQ"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724457179631867`*^9, 3.872445748412775*^9}},
+ CellLabel->"In[16]:=",
+ CellID->169558120,ExpressionUUID->"fd14fff1-21f1-46bb-aea7-9b44de279f36"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"False", "\[Rule]", "3035"}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724457549108706`*^9},
+ CellLabel->"Out[16]=",
+ CellID->20519098,ExpressionUUID->"68f5428b-3491-4d31-9ab4-9d9f1dc916ee"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CountsBy", "[", 
+  RowBox[{
+   RowBox[{"EntityValue", "[", 
+    RowBox[{
+     RowBox[{"PhysicalQuantityData", "[", "]"}], ",", 
+     "\"\<Abbreviation\>\""}], "]"}], ",", "MissingQ"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724457179631867`*^9, 3.872445763515029*^9}},
+ CellLabel->"In[17]:=",
+ CellID->1604890,ExpressionUUID->"5972e5c2-1a3c-4a61-bc43-dcf30ebeddb1"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"True", "\[Rule]", "3035"}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724457647363377`*^9},
+ CellLabel->"Out[17]=",
+ CellID->680575652,ExpressionUUID->"cd7be51b-e588-41e7-af13-3debca88bb2f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AssociationMap", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"CountsBy", "[", 
+     RowBox[{
+      RowBox[{"EntityValue", "[", 
+       RowBox[{
+        RowBox[{"PhysicalQuantityData", "[", "]"}], ",", "#"}], "]"}], ",", 
+      "MissingQ"}], "]"}], "&"}], ",", 
+   RowBox[{"CanonicalName", "/@", 
+    RowBox[{"PhysicalQuantityData", "[", 
+     RowBox[{"\"\<Length\>\"", ",", "\"\<Properties\>\""}], "]"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724457179631867`*^9, 3.872445763515029*^9}, {
+  3.872445821931312*^9, 3.872445848403516*^9}},
+ CellLabel->"In[20]:=",
+ CellID->767725923,ExpressionUUID->"18d05830-79b3-47b4-bc87-8cf029533a7a"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Progress`ProgressDump`forceRedraw$$ = {{}, {}}, 
+  Progress`ProgressDump`open$$ = True, Progress`ProgressDump`clock$$ = 2, 
+  Progress`ProgressDump`maxTime$$ = DirectedInfinity[1]}, 
+  OverlayBox[{
+   AnimatorBox[Dynamic[Progress`ProgressDump`clock$$], {2., 
+     DirectedInfinity[1], 0.4},
+    AnimationRate->1,
+    AnimationRunTime->0.,
+    AppearanceElements->None,
+    ImageSize->{1, 1}], 
+   DynamicWrapperBox[
+    DynamicBox[ToBoxes[
+      Progress`GenerateProgressPanel[<|
+       "ItemAction" :> "Downloading", "ItemCurrent" :> 
+        EntityFramework`BatchDownload`Private`next$40027, "ItemName" :> 
+        "values", "ItemTotal" :> 3033|>, <|{
+        "DelayedTask" -> ScheduledTaskObject[38, 
+           HoldForm[AppendTo[Progress`ProgressDump`this$state$40029, 
+              Progress`ProgressDump`CreateProgressState[
+              Progress`ProgressDump`parameters$40029, 
+               Progress`ProgressDump`info$40029]]; 
+            Progress`ProgressDump`ProgressInit[
+             Progress`ProgressDump`this$state$40029]; Null], {2, 1}, 
+           Automatic, True, "AutoRemove" -> False, "EpilogFunction" :> Null, 
+           "TaskGroup" -> "Global`"], "State" :> 
+         Progress`ProgressDump`this$state$40029, "Title" -> "Computing...", 
+         "Type" -> "Panel", "Environment" -> "Notebook", 
+         "Parameters" -> <|
+          "ItemAction" :> "Downloading", "ItemCurrent" :> 
+           EntityFramework`BatchDownload`Private`next$40027, "ItemName" :> 
+           "values", "ItemTotal" :> 3033|>, "PreemptibleQ" -> True, 
+         "ConsoleQ" -> True, "Evaluator" -> "Local", "EvaluationCell" -> 
+         CellObject[
+          "18d05830-79b3-47b4-bc87-8cf029533a7a", 
+           "1fb6c55f-9a75-414a-8108-bb191a6011d6"], "TimeStart" -> 
+         3.8724314972321897`17.34055873305093*^9, "TimeStartLocal" -> 
+         3.8724314972321897`17.34055873305093*^9, "InitialTimeEstimate" -> 
+         Indeterminate, "UpdateInterval" -> 0.4, "OuterUpdateInterval" -> 0.4,
+          "Buttons" -> None, "Optional" -> {}, "ContainerQ" -> False, 
+         "CreateContainerQ" -> False, "CurrentContainer" -> None, 
+         "PreviousContainer" -> None, "ContainerName" -> None, "Cell" -> 
+         Hold[Progress`ProgressDump`cell$40550], "Clock" :> 
+         Dynamic[Progress`ProgressDump`clock$$], "Redraw" -> 
+         Progress`ProgressDump`forceRedraw$$, "Open" :> 
+         Dynamic[Progress`ProgressDump`open$$]}|>], StandardForm],
+     ImageSizeCache->{352., {12.900390625, 19.099609375}},
+     TrackedSymbols:>{Progress`ProgressDump`forceRedraw$$}], Refresh[
+    Progress`ProgressDump`forceRedraw$$ = 
+     With[{Progress`ProgressDump`values = Quiet[
+          
+          Values[<|"ItemAction" :> "Downloading", "ItemCurrent" :> 
+            EntityFramework`BatchDownload`Private`next$40027, "ItemName" :> 
+            "values", "ItemTotal" :> 3033|>]]}, 
+       Map[
+       Position[Progress`ProgressDump`values, #, Infinity]& , {
+        None, Automatic}]], UpdateInterval -> 
+     Lookup[<|"DelayedTask" -> ScheduledTaskObject[38, 
+          HoldForm[AppendTo[Progress`ProgressDump`this$state$40029, 
+             Progress`ProgressDump`CreateProgressState[
+             Progress`ProgressDump`parameters$40029, 
+              Progress`ProgressDump`info$40029]]; 
+           Progress`ProgressDump`ProgressInit[
+            Progress`ProgressDump`this$state$40029]; Null], {2, 1}, Automatic,
+           True, "AutoRemove" -> False, "EpilogFunction" :> Null, "TaskGroup" -> 
+          "Global`"], "State" :> Progress`ProgressDump`this$state$40029, 
+        "Title" -> "Computing...", "Type" -> "Panel", "Environment" -> 
+        "Notebook", 
+        "Parameters" -> <|
+         "ItemAction" :> "Downloading", "ItemCurrent" :> 
+          EntityFramework`BatchDownload`Private`next$40027, "ItemName" :> 
+          "values", "ItemTotal" :> 3033|>, "PreemptibleQ" -> True, "ConsoleQ" -> 
+        True, "Evaluator" -> "Local", "EvaluationCell" -> 
+        CellObject[
+         "18d05830-79b3-47b4-bc87-8cf029533a7a", 
+          "1fb6c55f-9a75-414a-8108-bb191a6011d6"], "TimeStart" -> 
+        3.8724314972321897`17.34055873305093*^9, "TimeStartLocal" -> 
+        3.8724314972321897`17.34055873305093*^9, "InitialTimeEstimate" -> 
+        Indeterminate, "UpdateInterval" -> 0.4, "OuterUpdateInterval" -> 0.4, 
+        "Buttons" -> None, "Optional" -> {}, "ContainerQ" -> False, 
+        "CreateContainerQ" -> False, "CurrentContainer" -> None, 
+        "PreviousContainer" -> None, "ContainerName" -> None, "Cell" -> 
+        Hold[Progress`ProgressDump`cell$40550], "Clock" -> Dynamic[None]|>, 
+       "OuterUpdateInterval"], TrackedSymbols :> {}],
+    ImageSizeCache->{352., {12.900390625, 19.099609375}}]}, All, 2],
+  DynamicModuleValues:>{}]], "PrintTemporary",
+ ShowCellLabel->True,
+ CellChangeTimes->{3.872445899322509*^9},
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->112086454,ExpressionUUID->"0d7ea9b3-1a1d-4154-8972-55065ddbb73a"]
 }, Open  ]],
 
 Cell["XXXX", "Item",
@@ -2189,60 +3432,58 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
+ "Abstract"->{
+  Cell[1063, 34, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "AuthorName"->{
+  Cell[809, 27, 251, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
+ "ExampleCodeText"->{
+  Cell[1603, 49, 229, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+   CellTags->"ExampleCodeText",
+   CellID->66178570]},
+ "ExampleInput"->{
+  Cell[1857, 56, 333, 7, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+   CellTags->"ExampleInput",
+   CellID->844129532],
+  Cell[2193, 65, 10143, 224, 228, "Output",ExpressionUUID->"68c583eb-0682-48b5-a9f9-231a0c91a5b4",
+   CellTags->"ExampleInput",
+   CellID->7293007]},
  "Examples"->{
   Cell[580, 22, 226, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
    CellID->805710577]},
+ "ExampleTopicSentence"->{
+  Cell[1364, 44, 236, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
+ "SectionHeader"->{
+  Cell[1232, 40, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "TemplateCell"->{
+  Cell[1063, 34, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
  "Your Essay Title"->{
   Cell[580, 22, 226, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "AuthorName"->{
-  Cell[809, 27, 181, 4, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
- "Abstract"->{
-  Cell[993, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "TemplateCell"->{
-  Cell[993, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "SectionHeader"->{
-  Cell[1162, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "ExampleTopicSentence"->{
-  Cell[1294, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
- "ExampleCodeText"->{
-  Cell[1427, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
-   CellTags->"ExampleCodeText",
-   CellID->66178570]},
- "ExampleInput"->{
-  Cell[1581, 53, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
-   CellTags->"ExampleInput",
-   CellID->844129532]},
- "ExampleOutput"->{
-  Cell[1823, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
-   CellTags->"ExampleOutput",
-   CellID->171130590]}
+   CellID->805710577]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 113735, 2191},
- {"Your Essay Title", 113921, 2195},
- {"AuthorName", 114101, 2199},
- {"Abstract", 114260, 2203},
- {"TemplateCell", 114441, 2207},
- {"SectionHeader", 114623, 2211},
- {"ExampleTopicSentence", 114799, 2215},
- {"ExampleCodeText", 114974, 2219},
- {"ExampleInput", 115144, 2223},
- {"ExampleOutput", 115310, 2227}
+ {"Abstract", 167970, 3434},
+ {"AuthorName", 168150, 3438},
+ {"ExampleCodeText", 168316, 3442},
+ {"ExampleInput", 168486, 3446},
+ {"Examples", 168796, 3453},
+ {"ExampleTopicSentence", 168986, 3457},
+ {"SectionHeader", 169159, 3461},
+ {"TemplateCell", 169327, 3465},
+ {"Your Essay Title", 169513, 3469}
  }
 *)
 (*NotebookFileOutline
@@ -2251,39 +3492,121 @@ Cell[CellGroupData[{
 Cell[580, 22, 226, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
  CellTags->{"Examples", "Your Essay Title"},
  CellID->805710577],
-Cell[809, 27, 181, 4, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+Cell[809, 27, 251, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
  CellTags->"AuthorName",
  CellID->960727095],
-Cell[993, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+Cell[1063, 34, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
  CellTags->{"Abstract", "TemplateCell"},
  CellID->587432573],
 Cell[CellGroupData[{
-Cell[1162, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+Cell[1232, 40, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
  CellTags->"SectionHeader",
  CellID->453852445],
-Cell[1294, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+Cell[1364, 44, 236, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
  CellTags->"ExampleTopicSentence",
  CellID->816667160],
-Cell[1427, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+Cell[1603, 49, 229, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
  CellTags->"ExampleCodeText",
  CellID->66178570],
 Cell[CellGroupData[{
-Cell[1581, 53, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+Cell[1857, 56, 333, 7, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
  CellTags->"ExampleInput",
  CellID->844129532],
-Cell[1823, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
- CellTags->"ExampleOutput",
- CellID->171130590]
+Cell[2193, 65, 10143, 224, 228, "Output",ExpressionUUID->"68c583eb-0682-48b5-a9f9-231a0c91a5b4",
+ CellTags->"ExampleInput",
+ CellID->7293007]
 }, Open  ]],
-Cell[2080, 68, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
+Cell[12351, 292, 189, 2, 38, "CodeText",ExpressionUUID->"c4cdf899-81fe-4acf-8b58-80e1a324f791",
+ CellID->859976710],
+Cell[CellGroupData[{
+Cell[12565, 298, 340, 6, 28, "Input",ExpressionUUID->"9fffe6e6-5581-4166-b7d2-bda11d8a775a",
+ CellID->645563530],
+Cell[12908, 306, 4792, 98, 74, "Output",ExpressionUUID->"891cef0d-d3e4-48bb-8245-7484726968d6",
+ CellID->115439364]
+}, Open  ]],
+Cell[17715, 407, 182, 2, 38, "CodeText",ExpressionUUID->"cdc26c0d-3ee3-41ab-9fc5-6f51afdfb427",
+ CellID->14952001],
+Cell[CellGroupData[{
+Cell[17922, 413, 252, 4, 28, "Input",ExpressionUUID->"0a451111-af92-4878-9a01-6940e7a039c2",
+ CellID->88801029],
+Cell[18177, 419, 754, 13, 52, "Output",ExpressionUUID->"0b86d00f-ba86-4068-b05f-3eb7e8122dd2",
+ CellID->442113348]
+}, Open  ]],
+Cell[18946, 435, 189, 2, 38, "CodeText",ExpressionUUID->"f28b13c7-7f6e-4812-b090-f28c3320530d",
+ CellID->131192809],
+Cell[CellGroupData[{
+Cell[19160, 441, 372, 8, 28, "Input",ExpressionUUID->"45b25a77-01cd-4371-a365-66db64077557",
+ CellID->3591488],
+Cell[19535, 451, 5935, 130, 227, "Output",ExpressionUUID->"125909b4-7864-4281-9935-9566b999e55a",
+ CellID->16916339]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25507, 586, 677, 12, 67, "Input",ExpressionUUID->"14ab2ec2-1958-4873-8691-150a06c07ab6",
+ CellID->13582268],
+Cell[26187, 600, 578, 11, 52, "Output",ExpressionUUID->"8468e4ea-4ac8-48fa-ac6b-ad677c13fca2",
+ CellID->31768021]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26802, 616, 492, 10, 48, "Input",ExpressionUUID->"5d7b0d17-ecf1-4959-9571-d88198cd7d72",
+ CellID->98440150],
+Cell[27297, 628, 394, 7, 32, "Output",ExpressionUUID->"ebca4b7d-6576-4a47-999a-e6c0903206bc",
+ CellID->18782635]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27728, 640, 416, 9, 28, "Input",ExpressionUUID->"e02a61d7-f69e-42dc-a9f0-9c40ca149fd9",
+ CellID->44516914],
+Cell[28147, 651, 2659, 63, 77, "Output",ExpressionUUID->"683f3714-9b20-4800-8345-b5b5f9ef9d6d",
+ CellID->351294]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30843, 719, 416, 9, 28, "Input",ExpressionUUID->"3d2b4472-e7a0-44a3-ba34-69ddb81e3048",
+ CellID->313414467],
+Cell[31262, 730, 3211, 72, 137, "Output",ExpressionUUID->"f65ef9b3-a769-4058-b16a-1dae3df144fa",
+ CellID->52155481]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34510, 807, 477, 10, 28, "Input",ExpressionUUID->"a624f527-a0d1-4bb3-a8ab-4b625c00b766",
+ CellID->103122168],
+Cell[34990, 819, 2641, 62, 77, "Output",ExpressionUUID->"3905ef27-683c-4283-9f02-0daef8709110",
+ CellID->483546941]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37668, 886, 474, 10, 28, "Input",ExpressionUUID->"f3415126-c56e-40c8-b254-93faa3eedef2",
+ CellID->204761728],
+Cell[38145, 898, 5589, 113, 244, "Output",ExpressionUUID->"4a5b6810-8bb1-449a-93d4-c7086f01390d",
+ CellID->196200898]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43771, 1016, 468, 10, 28, "Input",ExpressionUUID->"4032ee69-a52d-48f7-a183-885ebaedcd36",
+ CellID->7448383],
+Cell[44242, 1028, 4975, 125, 137, "Output",ExpressionUUID->"d3e962ef-5bbf-4367-a92c-f2d7ff5dfda0",
+ CellID->193457220]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49254, 1158, 389, 9, 28, "Input",ExpressionUUID->"fd14fff1-21f1-46bb-aea7-9b44de279f36",
+ CellID->169558120],
+Cell[49646, 1169, 263, 5, 32, "Output",ExpressionUUID->"68f5428b-3491-4d31-9ab4-9d9f1dc916ee",
+ CellID->20519098]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49946, 1179, 390, 9, 28, "Input",ExpressionUUID->"5972e5c2-1a3c-4a61-bc43-dcf30ebeddb1",
+ CellID->1604890],
+Cell[50339, 1190, 263, 5, 32, "Output",ExpressionUUID->"cd7be51b-e588-41e7-af13-3debca88bb2f",
+ CellID->680575652]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50639, 1200, 665, 17, 28, "Input",ExpressionUUID->"18d05830-79b3-47b4-bc87-8cf029533a7a",
+ CellID->767725923],
+Cell[51307, 1219, 4993, 89, 43, "PrintTemporary",ExpressionUUID->"0d7ea9b3-1a1d-4154-8972-55065ddbb73a",
+ CellID->112086454]
+}, Open  ]],
+Cell[56315, 1311, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
  CellID->316654537],
-Cell[2178, 71, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
+Cell[56413, 1314, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
  CellID->316654538]
 }, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
