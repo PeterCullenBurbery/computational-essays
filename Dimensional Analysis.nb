@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    992937,      19888]
-NotebookOptionsPosition[    857277,      17234]
-NotebookOutlinePosition[    971051,      19409]
-CellTagsIndexPosition[    970660,      19395]
+NotebookDataLength[   1042113,      20850]
+NotebookOptionsPosition[    905531,      18178]
+NotebookOutlinePosition[   1019315,      20353]
+CellTagsIndexPosition[   1018914,      20339]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -13828,13 +13828,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{567., {194.63403328722342`, 200.36596671277658`}},
+      ImageSizeCache->{467., {194.63403328722342`, 200.36596671277658`}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{567., {194.63403328722342`, 200.36596671277658`}}],
+     ImageSizeCache->{467., {194.63403328722342`, 200.36596671277658`}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -17228,6 +17228,950 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
   3.8724037654802895`*^9},
  CellLabel->"Out[74]=",
  CellID->149384848,ExpressionUUID->"f42bb588-43f6-46a4-8209-329aee8ade89"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", " ", 
+  InterpretationBox[
+   RowBox[{
+    TagBox["EntityStore",
+     "SummaryHead"], "[", 
+    DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+     TemplateBox[{
+       PaneSelectorBox[{False -> GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+                ImageSizeCache -> {
+                 10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+               None, BaseStyle -> {}, 
+               ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+               Automatic, Method -> "Preemptive"], 
+              Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GridBox[{{
+                RowBox[{
+                  TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                  "\"SI units with special names and symbols\"", 
+                   "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                   "SummaryItemAnnotation"]}]}, {
+                RowBox[{
+                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Derived quantity\"", ",", "\"Special name of unit\"", 
+                    ",", "\"Unit expressed in terms of base units\"", ",", 
+                    "\"Unit expressed in terms of other SI units\""}], "}"}], 
+                   "SummaryItem"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                   "SummaryItemAnnotation"]}]}}, AutoDelete -> False, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+           False, BaselinePosition -> {1, 1}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+         GridBox[{{
+             PaneBox[
+              ButtonBox[
+               DynamicBox[
+                FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+               Appearance -> None, BaseStyle -> {}, 
+               ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+               Automatic, Method -> "Preemptive"], 
+              Alignment -> {Center, Center}, ImageSize -> 
+              Dynamic[{
+                Automatic, 
+                 3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                  Magnification])}]], 
+             GridBox[{{
+                RowBox[{
+                  TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                  "\"SI units with special names and symbols\"", 
+                   "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                   "SummaryItemAnnotation"]}]}, {
+                RowBox[{
+                  TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox[
+                   RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Derived quantity\"", ",", "\"Special name of unit\"", 
+                    ",", "\"Unit expressed in terms of base units\"", ",", 
+                    "\"Unit expressed in terms of other SI units\""}], "}"}], 
+                   "SummaryItem"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                   "SummaryItemAnnotation"]}]}, {
+                RowBox[{
+                  TagBox["\"Entity classes: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"none\"", "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox["\"Property classes: \"", "SummaryItemAnnotation"], 
+                  "\[InvisibleSpace]", 
+                  TagBox["\"none\"", "SummaryItem"]}]}}, AutoDelete -> False, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+           False, BaselinePosition -> {1, 1}, 
+           GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+      "SummaryPanel"],
+     DynamicModuleValues:>{}], "]"}],
+   EntityStore[<|
+    "Types" -> <|
+      "SI units with special names and symbols" -> <|
+        "Entities" -> <|
+          "radian" -> <|
+            "Derived quantity" -> "plane angle", "Special name of unit" -> 
+             "radian", "Unit expressed in terms of base units" -> "rad=m/m", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "steradian" -> <|
+            "Derived quantity" -> "solid angle", "Special name of unit" -> 
+             "steradian", "Unit expressed in terms of base units" -> 
+             "sr=\!\(\*SuperscriptBox[\(m\), \
+\(2\)]\)/\!\(\*SuperscriptBox[\(m\), \(2\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "hertz" -> <|
+            "Derived quantity" -> "frequency", "Special name of unit" -> 
+             "hertz", "Unit expressed in terms of base units" -> 
+             "Hz=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "newton" -> <|
+            "Derived quantity" -> "force", "Special name of unit" -> "netwon",
+              "Unit expressed in terms of base units" -> 
+             "N=kg m \!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "pascal" -> <|
+            "Derived quantity" -> "pressure, stress", "Special name of unit" -> 
+             "pascal", "Unit expressed in terms of base units" -> 
+             "Pa=kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "joule" -> <|
+            "Derived quantity" -> "energy, work, amount of heat", 
+             "Special name of unit" -> "joule", 
+             "Unit expressed in terms of base units" -> 
+             "J=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \!\(\*SuperscriptBox[\
+\(s\), \(-2\)]\)", "Unit expressed in terms of other SI units" -> "N m"|>, 
+           "watt" -> <|
+            "Derived quantity" -> "power, radiant flux", 
+             "Special name of unit" -> "watt", 
+             "Unit expressed in terms of base units" -> 
+             "W=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \!\(\*SuperscriptBox[\
+\(s\), \(-3\)]\)", "Unit expressed in terms of other SI units" -> "J/s"|>, 
+           "coulomb" -> <|
+            "Derived quantity" -> "electric charge", "Special name of unit" -> 
+             "coulomb", "Unit expressed in terms of base units" -> "C=A s", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "volt" -> <|
+            "Derived quantity" -> "electric potential difference", 
+             "Special name of unit" -> "volt", 
+             "Unit expressed in terms of base units" -> 
+             "V=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \!\(\*SuperscriptBox[\
+\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> "W/A"|>, 
+           "farad" -> <|
+            "Derived quantity" -> "capacitance", "Special name of unit" -> 
+             "farad", "Unit expressed in terms of base units" -> 
+             "F=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(m\), \(2\)]\) \!\(\*SuperscriptBox[\(s\), \(4\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "C/V"|>, 
+           "ohm" -> <|
+            "Derived quantity" -> "electric resistance", 
+             "Special name of unit" -> "ohm", 
+             "Unit expressed in terms of base units" -> 
+             "\[CapitalOmega]=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "V/A"|>, 
+           "siemens" -> <|
+            "Derived quantity" -> "electric conductance", 
+             "Special name of unit" -> "siemens", 
+             "Unit expressed in terms of base units" -> 
+             "S=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(m\), \(-2\)]\) \!\(\*SuperscriptBox[\(s\), \(3\)]\) \!\
+\(\*SuperscriptBox[\(A\), \(2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "A/V"|>, 
+           "weber" -> <|
+            "Derived quantity" -> "magnetic flux", "Special name of unit" -> 
+             "weber", "Unit expressed in terms of base units" -> 
+             "Wb=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> "V s"|>, 
+           "tesla" -> <|
+            "Derived quantity" -> "magnetic flux density", 
+             "Special name of unit" -> "tesla", 
+             "Unit expressed in terms of base units" -> 
+             "T=kg \!\(\*SuperscriptBox[\(s\), \(-2\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> 
+             "Wb/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+           "henry" -> <|
+            "Derived quantity" -> "inductance", "Special name of unit" -> 
+             "henry", "Unit expressed in terms of base units" -> 
+             "H=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \!\(\*SuperscriptBox[\
+\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "Wb/A"|>, 
+           "degree Celsius" -> <|
+            "Derived quantity" -> "Celsius temperature", 
+             "Special name of unit" -> "degrees Celsius", 
+             "Unit expressed in terms of base units" -> "\[Degree]C=K", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "lumen" -> <|
+            "Derived quantity" -> "luminous flux", "Special name of unit" -> 
+             "lumen", "Unit expressed in terms of base units" -> "lm=cd sr", 
+             "Unit expressed in terms of other SI units" -> "cd sr"|>, 
+           "lux" -> <|
+            "Derived quantity" -> "illuminance", "Special name of unit" -> 
+             "lux", "Unit expressed in terms of base units" -> 
+             "lx=cd sr \!\(\*SuperscriptBox[\(m\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> 
+             "lm/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+           "becquerel" -> <|
+            "Derived quantity" -> "activity referred to a radionuclide", 
+             "Special name of unit" -> "becquerel", 
+             "Unit expressed in terms of base units" -> 
+             "Bq=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>, 
+           "gray" -> <|
+            "Derived quantity" -> "absored dose, kerma", 
+             "Special name of unit" -> "gray", 
+             "Unit expressed in terms of base units" -> 
+             "Gy=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+           "sievert" -> <|
+            "Derived quantity" -> "dose equivalent", "Special name of unit" -> 
+             "sievert", "Unit expressed in terms of base units" -> 
+             "Sv=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+             "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+           "katal" -> <|
+            "Derived quantity" -> "catalytic activity", 
+             "Special name of unit" -> "katal", 
+             "Unit expressed in terms of base units" -> 
+             "kat=mol \!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+             "Unit expressed in terms of other SI units" -> ""|>|>, 
+         "Properties" -> <|
+          "Derived quantity" -> <||>, "Special name of unit" -> <||>, 
+           "Unit expressed in terms of base units" -> <||>, 
+           "Unit expressed in terms of other SI units" -> <||>|>|>|>|>],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "]"}]], "Input",
+ CellChangeTimes->{{3.872403837228035*^9, 3.8724038492053843`*^9}},
+ CellLabel->"In[75]:=",
+ CellID->314597830,ExpressionUUID->"d00f8293-3f37-456f-ad2d-4278b2795971"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Remove", "ssym", 
+   "\"\\!\\(\\*RowBox[{\\\"EntityStore\\\", \\\"[\\\", \
+RowBox[{\\\"Association\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"Types\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"Association\\\", \\\"[\\\", RowBox[{\\\"\\\\\\\"SI units with \
+special names and symbols\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"Association\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"\\\\\\\"Entities\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\
+\"Association\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"22\\\", \\\
+\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Properties\\\\\\\"\\\", \\\"\[Rule]\\\", \
+RowBox[{\\\"Association\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"4\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}]\\) is not a symbol.\"", 2, 75, 12, 
+   19481186814906954857, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872403849649498*^9},
+ CellLabel->"During evaluation of In[75]:=",
+ CellID->129074459,ExpressionUUID->"41f2b021-28c4-43a7-8dad-b5a025667624"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{
+   InterpretationBox[
+    RowBox[{
+     TagBox["EntityStore",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+                 ImageSizeCache -> {
+                  10.869016023673117`, {0., 10.869016023673117`}}], 
+                Appearance -> None, BaseStyle -> {}, 
+                ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+                Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"SI units with special names and symbols\"", 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Derived quantity\"", ",", "\"Special name of unit\"", 
+                    ",", "\"Unit expressed in terms of base units\"", ",", 
+                    "\"Unit expressed in terms of other SI units\""}], "}"}], 
+                    "SummaryItem"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}}, AutoDelete -> False, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+            False, BaselinePosition -> {1, 1}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+          GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]],
+                 Appearance -> None, BaseStyle -> {}, 
+                ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+                Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"SI units with special names and symbols\"", 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"Derived quantity\"", ",", "\"Special name of unit\"", 
+                    ",", "\"Unit expressed in terms of base units\"", ",", 
+                    "\"Unit expressed in terms of other SI units\""}], "}"}], 
+                    "SummaryItem"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entity classes: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"none\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Property classes: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"none\"", "SummaryItem"]}]}}, AutoDelete -> False,
+                BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+               GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+            False, BaselinePosition -> {1, 1}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    EntityStore[<|
+     "Types" -> <|
+       "SI units with special names and symbols" -> <|
+         "Entities" -> <|
+           "radian" -> <|
+             "Derived quantity" -> "plane angle", "Special name of unit" -> 
+              "radian", "Unit expressed in terms of base units" -> "rad=m/m", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "steradian" -> <|
+             "Derived quantity" -> "solid angle", "Special name of unit" -> 
+              "steradian", "Unit expressed in terms of base units" -> 
+              "sr=\!\(\*SuperscriptBox[\(m\), \
+\(2\)]\)/\!\(\*SuperscriptBox[\(m\), \(2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "hertz" -> <|
+             "Derived quantity" -> "frequency", "Special name of unit" -> 
+              "hertz", "Unit expressed in terms of base units" -> 
+              "Hz=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "newton" -> <|
+             "Derived quantity" -> "force", "Special name of unit" -> 
+              "netwon", "Unit expressed in terms of base units" -> 
+              "N=kg m \!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "pascal" -> <|
+             "Derived quantity" -> "pressure, stress", "Special name of unit" -> 
+              "pascal", "Unit expressed in terms of base units" -> 
+              "Pa=kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "joule" -> <|
+             "Derived quantity" -> "energy, work, amount of heat", 
+              "Special name of unit" -> "joule", 
+              "Unit expressed in terms of base units" -> 
+              "J=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "N m"|>, 
+            "watt" -> <|
+             "Derived quantity" -> "power, radiant flux", 
+              "Special name of unit" -> "watt", 
+              "Unit expressed in terms of base units" -> 
+              "W=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/s"|>, 
+            "coulomb" -> <|
+             "Derived quantity" -> "electric charge", "Special name of unit" -> 
+              "coulomb", "Unit expressed in terms of base units" -> "C=A s", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "volt" -> <|
+             "Derived quantity" -> "electric potential difference", 
+              "Special name of unit" -> "volt", 
+              "Unit expressed in terms of base units" -> 
+              "V=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> "W/A"|>, 
+            "farad" -> <|
+             "Derived quantity" -> "capacitance", "Special name of unit" -> 
+              "farad", "Unit expressed in terms of base units" -> 
+              "F=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \!\(\*SuperscriptBox[\
+\(m\), \(2\)]\) \!\(\*SuperscriptBox[\(s\), \(4\)]\) \!\(\*SuperscriptBox[\(A\
+\), \(2\)]\)", "Unit expressed in terms of other SI units" -> "C/V"|>, 
+            "ohm" -> <|
+             "Derived quantity" -> "electric resistance", 
+              "Special name of unit" -> "ohm", 
+              "Unit expressed in terms of base units" -> 
+              "\[CapitalOmega]=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "V/A"|>, 
+            "siemens" -> <|
+             "Derived quantity" -> "electric conductance", 
+              "Special name of unit" -> "siemens", 
+              "Unit expressed in terms of base units" -> 
+              "S=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \!\(\*SuperscriptBox[\
+\(m\), \(-2\)]\) \!\(\*SuperscriptBox[\(s\), \(3\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "A/V"|>, 
+            "weber" -> <|
+             "Derived quantity" -> "magnetic flux", "Special name of unit" -> 
+              "weber", "Unit expressed in terms of base units" -> 
+              "Wb=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> "V s"|>, 
+            "tesla" -> <|
+             "Derived quantity" -> "magnetic flux density", 
+              "Special name of unit" -> "tesla", 
+              "Unit expressed in terms of base units" -> 
+              "T=kg \!\(\*SuperscriptBox[\(s\), \(-2\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> 
+              "Wb/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+            "henry" -> <|
+             "Derived quantity" -> "inductance", "Special name of unit" -> 
+              "henry", "Unit expressed in terms of base units" -> 
+              "H=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "Wb/A"|>, 
+            "degree Celsius" -> <|
+             "Derived quantity" -> "Celsius temperature", 
+              "Special name of unit" -> "degrees Celsius", 
+              "Unit expressed in terms of base units" -> "\[Degree]C=K", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "lumen" -> <|
+             "Derived quantity" -> "luminous flux", "Special name of unit" -> 
+              "lumen", "Unit expressed in terms of base units" -> "lm=cd sr", 
+              "Unit expressed in terms of other SI units" -> "cd sr"|>, 
+            "lux" -> <|
+             "Derived quantity" -> "illuminance", "Special name of unit" -> 
+              "lux", "Unit expressed in terms of base units" -> 
+              "lx=cd sr \!\(\*SuperscriptBox[\(m\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> 
+              "lm/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+            "becquerel" -> <|
+             "Derived quantity" -> "activity referred to a radionuclide", 
+              "Special name of unit" -> "becquerel", 
+              "Unit expressed in terms of base units" -> 
+              "Bq=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "gray" -> <|
+             "Derived quantity" -> "absored dose, kerma", 
+              "Special name of unit" -> "gray", 
+              "Unit expressed in terms of base units" -> 
+              "Gy=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+            "sievert" -> <|
+             "Derived quantity" -> "dose equivalent", "Special name of unit" -> 
+              "sievert", "Unit expressed in terms of base units" -> 
+              "Sv=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+            "katal" -> <|
+             "Derived quantity" -> "catalytic activity", 
+              "Special name of unit" -> "katal", 
+              "Unit expressed in terms of base units" -> 
+              "kat=mol \!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>|>, 
+          "Properties" -> <|
+           "Derived quantity" -> <||>, "Special name of unit" -> <||>, 
+            "Unit expressed in terms of base units" -> <||>, 
+            "Unit expressed in terms of other SI units" -> <||>|>|>|>|>],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], "=."}]}]], "Input",
+ CellChangeTimes->{{3.8724038612932925`*^9, 3.872403866508135*^9}},
+ CellLabel->"In[76]:=",
+ CellID->191582890,ExpressionUUID->"ec34cf1e-6abc-4c05-991a-a3b7f0d19d8d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Rule", "argr", 
+   "\"\\!\\(\\*RowBox[{\\\"Rule\\\"}]\\) called with 1 argument; \
+\\!\\(\\*RowBox[{\\\"2\\\"}]\\) arguments are expected.\"", 2, 76, 14, 
+   19481186814906954857, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724038672890754`*^9},
+ CellLabel->"During evaluation of In[76]:=",
+ CellID->567391360,ExpressionUUID->"3886358b-ab68-4a28-b2fd-25a3dd0da5ef"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Rule", "argr", 
+   "\"\\!\\(\\*RowBox[{\\\"Rule\\\"}]\\) called with 1 argument; \
+\\!\\(\\*RowBox[{\\\"2\\\"}]\\) arguments are expected.\"", 2, 76, 15, 
+   19481186814906954857, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724038675271826`*^9},
+ CellLabel->"During evaluation of In[76]:=",
+ CellID->90034273,ExpressionUUID->"4f02c0d2-780a-470d-88f6-4cde8ca5b4d1"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "EntityStore", "modfl", 
+   "\"The modification \\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{\\\"EntityStore\\\", \\\"[\\\", RowBox[{\\\"Association\\\", \
+\\\"[\\\", RowBox[{\\\"\\\\\\\"Types\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\
+\"Association\\\", \\\"[\\\", RowBox[{\\\"\\\\\\\"SI units with special names \
+and symbols\\\\\\\"\\\", \\\"\[Rule]\\\", RowBox[{\\\"Association\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"Rule\\\", \\\"[\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \
+\\\",\\\", RowBox[{\\\"Rule\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}]}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"]\\\"}], \\\")\\\"}], \\\"=.\\\"}]\\) could \
+not be performed.\"", 2, 76, 13, 19481186814906954857, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724038677821817`*^9},
+ CellLabel->"During evaluation of In[76]:=",
+ CellID->605052946,ExpressionUUID->"4046b3d8-eac5-4c46-8955-5baa093d0619"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   InterpretationBox[
+    RowBox[{
+     TagBox["EntityStore",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]],
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"SI units with special names and symbols\"", 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{"\"Derived quantity\"", ",", 
+                    RowBox[{"\[LeftSkeleton]", "2", "\[RightSkeleton]"}], ",", 
+                    
+                    RowBox[{
+                    "\"Unit expressed in \"", "\[Ellipsis]", 
+                    "\" of other SI units\""}]}], "}"}], Short], 
+                    "SummaryItem"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]],
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                   "\"SI units with special names and symbols\"", 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"radian\"", ",", "\"steradian\"", ",", "\"hertz\"", ",",
+                     "\"\[Ellipsis]\"", ",", "\"gray\"", ",", "\"sievert\"", 
+                    ",", "\"katal\""}], "}"}], "SummaryItem"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "22", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{"\"Derived quantity\"", ",", 
+                    RowBox[{"\[LeftSkeleton]", "2", "\[RightSkeleton]"}], ",", 
+                    
+                    RowBox[{
+                    "\"Unit expressed in \"", "\[Ellipsis]", 
+                    "\" of other SI units\""}]}], "}"}], Short], 
+                    "SummaryItem"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                    "SummaryItemAnnotation"]}]}, {
+                 RowBox[{
+                   TagBox["\"Entity classes: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"none\"", "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox["\"Property classes: \"", "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox["\"none\"", "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    EntityStore[<|
+     "Types" -> <|
+       "SI units with special names and symbols" -> <|
+         "Entities" -> <|
+           "radian" -> <|
+             "Derived quantity" -> "plane angle", "Special name of unit" -> 
+              "radian", "Unit expressed in terms of base units" -> "rad=m/m", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "steradian" -> <|
+             "Derived quantity" -> "solid angle", "Special name of unit" -> 
+              "steradian", "Unit expressed in terms of base units" -> 
+              "sr=\!\(\*SuperscriptBox[\(m\), \
+\(2\)]\)/\!\(\*SuperscriptBox[\(m\), \(2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "hertz" -> <|
+             "Derived quantity" -> "frequency", "Special name of unit" -> 
+              "hertz", "Unit expressed in terms of base units" -> 
+              "Hz=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "newton" -> <|
+             "Derived quantity" -> "force", "Special name of unit" -> 
+              "netwon", "Unit expressed in terms of base units" -> 
+              "N=kg m \!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "pascal" -> <|
+             "Derived quantity" -> "pressure, stress", "Special name of unit" -> 
+              "pascal", "Unit expressed in terms of base units" -> 
+              "Pa=kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "joule" -> <|
+             "Derived quantity" -> "energy, work, amount of heat", 
+              "Special name of unit" -> "joule", 
+              "Unit expressed in terms of base units" -> 
+              "J=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "N m"|>, 
+            "watt" -> <|
+             "Derived quantity" -> "power, radiant flux", 
+              "Special name of unit" -> "watt", 
+              "Unit expressed in terms of base units" -> 
+              "W=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/s"|>, 
+            "coulomb" -> <|
+             "Derived quantity" -> "electric charge", "Special name of unit" -> 
+              "coulomb", "Unit expressed in terms of base units" -> "C=A s", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "volt" -> <|
+             "Derived quantity" -> "electric potential difference", 
+              "Special name of unit" -> "volt", 
+              "Unit expressed in terms of base units" -> 
+              
+              "V=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> "W/A"|>, 
+            "farad" -> <|
+             "Derived quantity" -> "capacitance", "Special name of unit" -> 
+              "farad", "Unit expressed in terms of base units" -> 
+              "F=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \!\(\*SuperscriptBox[\
+\(m\), \(2\)]\) \!\(\*SuperscriptBox[\(s\), \(4\)]\) \!\(\*SuperscriptBox[\(A\
+\), \(2\)]\)", "Unit expressed in terms of other SI units" -> "C/V"|>, 
+            "ohm" -> <|
+             "Derived quantity" -> "electric resistance", 
+              "Special name of unit" -> "ohm", 
+              "Unit expressed in terms of base units" -> 
+              "\[CapitalOmega]=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "V/A"|>, 
+            "siemens" -> <|
+             "Derived quantity" -> "electric conductance", 
+              "Special name of unit" -> "siemens", 
+              "Unit expressed in terms of base units" -> 
+              "S=\!\(\*SuperscriptBox[\(kg\), \(-1\)]\) \!\(\*SuperscriptBox[\
+\(m\), \(-2\)]\) \!\(\*SuperscriptBox[\(s\), \(3\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "A/V"|>, 
+            "weber" -> <|
+             "Derived quantity" -> "magnetic flux", "Special name of unit" -> 
+              "weber", "Unit expressed in terms of base units" -> 
+              "Wb=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> "V s"|>, 
+            "tesla" -> <|
+             "Derived quantity" -> "magnetic flux density", 
+              "Special name of unit" -> "tesla", 
+              "Unit expressed in terms of base units" -> 
+              "T=kg \!\(\*SuperscriptBox[\(s\), \(-2\)]\) \
+\!\(\*SuperscriptBox[\(A\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> 
+              "Wb/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+            "henry" -> <|
+             "Derived quantity" -> "inductance", "Special name of unit" -> 
+              "henry", "Unit expressed in terms of base units" -> 
+              "H=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(A\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "Wb/A"|>, 
+            "degree Celsius" -> <|
+             "Derived quantity" -> "Celsius temperature", 
+              "Special name of unit" -> "degrees Celsius", 
+              "Unit expressed in terms of base units" -> "\[Degree]C=K", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "lumen" -> <|
+             "Derived quantity" -> "luminous flux", "Special name of unit" -> 
+              "lumen", "Unit expressed in terms of base units" -> "lm=cd sr", 
+              "Unit expressed in terms of other SI units" -> "cd sr"|>, 
+            "lux" -> <|
+             "Derived quantity" -> "illuminance", "Special name of unit" -> 
+              "lux", "Unit expressed in terms of base units" -> 
+              "lx=cd sr \!\(\*SuperscriptBox[\(m\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> 
+              "lm/\!\(\*SuperscriptBox[\(m\), \(2\)]\)"|>, 
+            "becquerel" -> <|
+             "Derived quantity" -> "activity referred to a radionuclide", 
+              "Special name of unit" -> "becquerel", 
+              "Unit expressed in terms of base units" -> 
+              "Bq=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>, 
+            "gray" -> <|
+             "Derived quantity" -> "absored dose, kerma", 
+              "Special name of unit" -> "gray", 
+              "Unit expressed in terms of base units" -> 
+              "Gy=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+            "sievert" -> <|
+             "Derived quantity" -> "dose equivalent", "Special name of unit" -> 
+              "sievert", "Unit expressed in terms of base units" -> 
+              "Sv=\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)", 
+              "Unit expressed in terms of other SI units" -> "J/kg"|>, 
+            "katal" -> <|
+             "Derived quantity" -> "catalytic activity", 
+              "Special name of unit" -> "katal", 
+              "Unit expressed in terms of base units" -> 
+              "kat=mol \!\(\*SuperscriptBox[\(s\), \(-1\)]\)", 
+              "Unit expressed in terms of other SI units" -> ""|>|>, 
+          "Properties" -> <|
+           "Derived quantity" -> <||>, "Special name of unit" -> <||>, 
+            "Unit expressed in terms of base units" -> <||>, 
+            "Unit expressed in terms of other SI units" -> <||>|>|>|>|>],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], ")"}], "=."}]], "Output",
+ CellChangeTimes->{3.872403868035201*^9},
+ CellLabel->"Out[76]=",
+ CellID->476092578,ExpressionUUID->"8b8337e7-ade2-4403-91f5-be130f6968ea"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -19394,16 +20338,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 968912, 19352},
- {"Your Essay Title", 969098, 19356},
- {"AuthorName", 969278, 19360},
- {"Abstract", 969437, 19364},
- {"TemplateCell", 969619, 19368},
- {"SectionHeader", 969802, 19372},
- {"ExampleTopicSentence", 969978, 19376},
- {"ExampleCodeText", 970153, 19380},
- {"ExampleInput", 970323, 19384},
- {"ExampleOutput", 970489, 19388}
+ {"Examples", 1017166, 20296},
+ {"Your Essay Title", 1017352, 20300},
+ {"AuthorName", 1017532, 20304},
+ {"Abstract", 1017691, 20308},
+ {"TemplateCell", 1017873, 20312},
+ {"SectionHeader", 1018056, 20316},
+ {"ExampleTopicSentence", 1018232, 20320},
+ {"ExampleCodeText", 1018407, 20324},
+ {"ExampleInput", 1018577, 20328},
+ {"ExampleOutput", 1018743, 20332}
  }
 *)
 (*NotebookFileOutline
@@ -19875,18 +20819,36 @@ Cell[622290, 12709, 59129, 1141, 414, "Output",ExpressionUUID->"a5cc5549-8390-4e
  CellID->194140075]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[681456, 13855, 14723, 335, 911, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
+Cell[681456, 13855, 14723, 335, 2262, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
  CellID->86422327],
-Cell[696182, 14192, 16642, 244, 91, "Message",ExpressionUUID->"204c7b1a-7e8e-449f-bce3-fb3948ae430a",
+Cell[696182, 14192, 16642, 244, 112, "Message",ExpressionUUID->"204c7b1a-7e8e-449f-bce3-fb3948ae430a",
  CellID->274903238],
 Cell[712827, 14438, 321, 7, 32, "Output",ExpressionUUID->"cb77651a-4ef5-4b5a-ad82-e44cb66cc4ed",
  CellID->543296537]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[713185, 14450, 540, 15, 28, "Input",ExpressionUUID->"55168cb6-d828-493b-b7b7-191817ab83e1",
+Cell[713185, 14450, 540, 15, 67, "Input",ExpressionUUID->"55168cb6-d828-493b-b7b7-191817ab83e1",
  CellID->238688022],
 Cell[713728, 14467, 143509, 2762, 797, "Output",ExpressionUUID->"f42bb588-43f6-46a4-8209-329aee8ade89",
  CellID->149384848]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[857274, 17234, 14868, 287, 98, "Input",ExpressionUUID->"d00f8293-3f37-456f-ad2d-4278b2795971",
+ CellID->314597830],
+Cell[872145, 17523, 1119, 20, 65, "Message",ExpressionUUID->"41f2b021-28c4-43a7-8dad-b5a025667624",
+ CellID->129074459]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[873301, 17548, 15137, 290, 98, "Input",ExpressionUUID->"ec34cf1e-6abc-4c05-991a-a3b7f0d19d8d",
+ CellID->191582890],
+Cell[888441, 17840, 426, 9, 28, "Message",ExpressionUUID->"3886358b-ab68-4a28-b2fd-25a3dd0da5ef",
+ CellID->567391360],
+Cell[888870, 17851, 425, 9, 28, "Message",ExpressionUUID->"4f02c0d2-780a-470d-88f6-4cde8ca5b4d1",
+ CellID->90034273],
+Cell[889298, 17862, 1058, 17, 84, "Message",ExpressionUUID->"4046b3d8-eac5-4c46-8955-5baa093d0619",
+ CellID->605052946],
+Cell[890359, 17881, 15132, 292, 158, "Output",ExpressionUUID->"8b8337e7-ade2-4403-91f5-be130f6968ea",
+ CellID->476092578]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
