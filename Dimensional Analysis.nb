@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1157250,      23106]
-NotebookOptionsPosition[   1020912,      20438]
-NotebookOutlinePosition[   1134696,      22613]
-CellTagsIndexPosition[   1134295,      22599]
+NotebookDataLength[   1158014,      23130]
+NotebookOptionsPosition[   1021676,      20462]
+NotebookOutlinePosition[   1135460,      22637]
+CellTagsIndexPosition[   1135059,      22623]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20160,7 +20160,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<radian per second squared\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<rad/\!\(\*SuperscriptBox[\(s\), \(2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20174,7 +20176,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<watt per square meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<W/\!\(\*SuperscriptBox[\(m\), \(2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20188,7 +20192,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<joule per kelvin\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<J \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20202,7 +20208,10 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<joule per kilogram kelvin\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<J \!\(\*SuperscriptBox[\(K\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20216,7 +20225,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<joule per kilogram\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<J \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20230,7 +20241,10 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<watt per meter kelvin\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<W \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20243,7 +20257,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<joule per cubic meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<J \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20257,7 +20273,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<volt per meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<V \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20271,7 +20289,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<coulomb per cubic meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<C \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20286,7 +20306,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<coulomb per square meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<C \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20300,7 +20322,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<coulomb per square meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<C \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20430,7 +20454,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
       "|>"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.8724046948094163`*^9, 3.8724054898375945`*^9}, {
   3.872405535536311*^9, 3.872405625601375*^9}, {3.8724056605937953`*^9, 
-  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872405906371767*^9}},
+  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872406072276387*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22598,16 +22622,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1132547, 22556},
- {"AuthorName", 1132727, 22560},
- {"ExampleCodeText", 1132893, 22564},
- {"ExampleInput", 1133063, 22568},
- {"ExampleOutput", 1133229, 22572},
- {"Examples", 1133392, 22576},
- {"ExampleTopicSentence", 1133582, 22580},
- {"SectionHeader", 1133755, 22584},
- {"TemplateCell", 1133923, 22588},
- {"Your Essay Title", 1134109, 22592}
+ {"Abstract", 1133311, 22580},
+ {"AuthorName", 1133491, 22584},
+ {"ExampleCodeText", 1133657, 22588},
+ {"ExampleInput", 1133827, 22592},
+ {"ExampleOutput", 1133993, 22596},
+ {"Examples", 1134156, 22600},
+ {"ExampleTopicSentence", 1134346, 22604},
+ {"SectionHeader", 1134519, 22608},
+ {"TemplateCell", 1134687, 22612},
+ {"Your Essay Title", 1134873, 22616}
  }
 *)
 (*NotebookFileOutline
@@ -23104,7 +23128,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 16501, 354, 2871, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 17265, 378, 2871, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
