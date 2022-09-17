@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1153518,      23033]
-NotebookOptionsPosition[   1017180,      20365]
-NotebookOutlinePosition[   1130964,      22540]
-CellTagsIndexPosition[   1130563,      22526]
+NotebookDataLength[   1156168,      23086]
+NotebookOptionsPosition[   1019830,      20418]
+NotebookOutlinePosition[   1133614,      22593]
+CellTagsIndexPosition[   1133213,      22579]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20113,7 +20113,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<pascal second\>\""}], ",", 
+             "\"\<newton meter\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20123,10 +20123,11 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            "\"\<Derived quantity\>\"", "->", "\"\<surface tension\>\""}], 
             ",", 
             RowBox[{
-            "\"\<surface tension\>\"", "->", "\"\<pascal second\>\""}], ",", 
+            "\"\<surface tension\>\"", "->", "\"\<newton per meter\>\""}], 
+            ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20136,11 +20137,11 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<angular velocity, angular frequency\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<pascal second\>\""}], ",", 
+             "\"\<radian per second\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
@@ -20150,8 +20151,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<angular acceleration\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20164,8 +20165,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<heat flux density, irradiance\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20178,8 +20179,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<heat capacity, entropy\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20192,7 +20193,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            "\"\<Derived quantity\>\"", "->", "\"\<specific energy\>\""}], 
             ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
@@ -20206,22 +20207,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
-            RowBox[{
-            "\"\<Name of coherent derived unit\>\"", "->", 
-             "\"\<pascal second\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
-            RowBox[{
-            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
-         RowBox[{"\"\<specific energy\>\"", "->", 
-          RowBox[{"<|", 
-           RowBox[{
-            RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<specific heat capacity, specific entropy\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20234,8 +20221,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<thermal conductivity\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20248,8 +20235,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", "\"\<energy density\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20262,8 +20248,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<electric field strength\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20276,22 +20262,23 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<electric charge density\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
             RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
 \!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<electric flux density, electric displacement\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<electric flux density, electric displacement\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20304,8 +20291,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", "\"\<permittivity\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20318,8 +20304,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", "\"\<permeability\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20332,8 +20317,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
-            ",", 
+            "\"\<Derived quantity\>\"", "->", "\"\<molar energy\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20346,8 +20330,77 @@ include SI coherent derived units with special names and symbols\>\"", "->",
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<molar entropy, molar heat capacity\>\""}], ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<exposure (x- and \[Gamma]- rays)\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<exposure (x- and \[Gamma]- rays)\>\""}], ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<absorbed dose rate\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<absorbed dose rate\>\""}], 
             ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<radiant intensity\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<radiant intensity\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<radiance\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<radiance\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<catalytic activity concentration\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<catalytic activity concentration\>\""}], ",", 
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<pascal second\>\""}], ",", 
@@ -20357,7 +20410,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
 \!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}]}], "|>"}]}], 
       "|>"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.8724046948094163`*^9, 3.8724051031028366`*^9}},
+ CellChangeTimes->{{3.8724046948094163`*^9, 3.872405422781793*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22525,16 +22578,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1128815, 22483},
- {"AuthorName", 1128995, 22487},
- {"ExampleCodeText", 1129161, 22491},
- {"ExampleInput", 1129331, 22495},
- {"ExampleOutput", 1129497, 22499},
- {"Examples", 1129660, 22503},
- {"ExampleTopicSentence", 1129850, 22507},
- {"SectionHeader", 1130023, 22511},
- {"TemplateCell", 1130191, 22515},
- {"Your Essay Title", 1130377, 22519}
+ {"Abstract", 1131465, 22536},
+ {"AuthorName", 1131645, 22540},
+ {"ExampleCodeText", 1131811, 22544},
+ {"ExampleInput", 1131981, 22548},
+ {"ExampleOutput", 1132147, 22552},
+ {"Examples", 1132310, 22556},
+ {"ExampleTopicSentence", 1132500, 22560},
+ {"SectionHeader", 1132673, 22564},
+ {"TemplateCell", 1132841, 22568},
+ {"Your Essay Title", 1133027, 22572}
  }
 *)
 (*NotebookFileOutline
@@ -23031,7 +23084,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 12769, 281, 2300, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 15419, 334, 2738, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
