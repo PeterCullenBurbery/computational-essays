@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    117507,       2286]
-NotebookOptionsPosition[      2468,         80]
-NotebookOutlinePosition[    116055,       2253]
-CellTagsIndexPosition[    115674,       2239]
+NotebookDataLength[    172364,       3737]
+NotebookOptionsPosition[     45964,       1275]
+NotebookOutlinePosition[    159550,       3448]
+CellTagsIndexPosition[    159169,       3434]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -73,13 +73,1208 @@ Cell["XXXX", "Item",
  CellID->316654538,ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell["Units", "Section",
  CellChangeTimes->{{3.8724211912856402`*^9, 3.8724211918782005`*^9}},
- CellID->914825899,ExpressionUUID->"24063eed-9386-44cc-92c4-d17c49aab2c5"]
+ CellID->914825899,ExpressionUUID->"24063eed-9386-44cc-92c4-d17c49aab2c5"],
+
+Cell[CellGroupData[{
+
+Cell["Seconds", "Subsection",
+ CellChangeTimes->{{3.872421382377885*^9, 3.872421383271383*^9}},
+ CellID->522256284,ExpressionUUID->"7ee4e9e3-fc5d-455e-b2b3-dbda118ecaf9"],
+
+Cell[CellGroupData[{
+
+Cell["Testing", "Subsubsection",
+ CellChangeTimes->{{3.8724216070044155`*^9, 3.8724216076312428`*^9}},
+ CellID->82544670,ExpressionUUID->"739ffd4c-e575-41b7-8131-866ddadfa07c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalConstantsproduct", "[", "\"\<Second\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8724213842400484`*^9, 3.872421389211294*^9}},
+ CellLabel->"In[68]:=",
+ CellID->79655222,ExpressionUUID->"616acb25-3a61-42f9-8523-3321281da73d"],
+
+Cell[BoxData[
+ TemplateBox[{"9192631770", 
+   RowBox[{"\"/\"", "\[InvisibleSpace]", "\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""]}], 
+   "reciprocal ground state hyperfine splitting frequency of the cesium\
+\[Hyphen]133 atom", 
+   FractionBox["1", "\"Cesium133HyperfineSplittingFrequency\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.872421390021165*^9},
+ CellLabel->"Out[68]=",
+ CellID->143792792,ExpressionUUID->"98ecd20b-a07f-4290-9bae-dce34d8ba6a6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalConstantsproduct", "[", 
+  RowBox[{"Quantity", "[", "\"\<Second\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724213842400484`*^9, 3.872421396095688*^9}},
+ CellLabel->"In[69]:=",
+ CellID->268426931,ExpressionUUID->"09249403-06e6-4f18-8b7e-2fbbfcfc4f27"],
+
+Cell[BoxData[
+ TemplateBox[{"9192631770", 
+   RowBox[{"\"/\"", "\[InvisibleSpace]", "\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""]}], 
+   "reciprocal ground state hyperfine splitting frequency of the cesium\
+\[Hyphen]133 atom", 
+   FractionBox["1", "\"Cesium133HyperfineSplittingFrequency\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8724213966843004`*^9},
+ CellLabel->"Out[69]=",
+ CellID->16832111,ExpressionUUID->"2f4d7f85-8c57-4925-ace9-e6b35938fbd7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalConstantsproduct", "[", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"1", ",", "\"\<Second\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724213842400484`*^9, 3.872421400431297*^9}},
+ CellLabel->"In[70]:=",
+ CellID->116744727,ExpressionUUID->"ae4928a5-225f-43dd-9d01-4749d7b3aa08"],
+
+Cell[BoxData[
+ TemplateBox[{"9192631770", 
+   RowBox[{"\"/\"", "\[InvisibleSpace]", "\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""]}], 
+   "reciprocal ground state hyperfine splitting frequency of the cesium\
+\[Hyphen]133 atom", 
+   FractionBox["1", "\"Cesium133HyperfineSplittingFrequency\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8724214007044845`*^9},
+ CellLabel->"Out[70]=",
+ CellID->681128705,ExpressionUUID->"461a5b04-35ff-4f9b-91c7-34ff290a8c03"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalConstantsproduct", "[", "\"\<Seconds\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421412706604*^9, 3.8724214143972044`*^9}},
+ CellLabel->"In[72]:=",
+ CellID->691416126,ExpressionUUID->"b9374e9b-add8-4904-a142-1435fde59ccf"],
+
+Cell[BoxData[
+ TemplateBox[{"9192631770", 
+   RowBox[{"\"/\"", "\[InvisibleSpace]", "\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""]}], 
+   "reciprocal ground state hyperfine splitting frequency of the cesium\
+\[Hyphen]133 atom", 
+   FractionBox["1", "\"Cesium133HyperfineSplittingFrequency\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8724214151968627`*^9},
+ CellLabel->"Out[72]=",
+ CellID->57286307,ExpressionUUID->"dbef8c1e-8269-4ee5-b5eb-a902e46329dc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CanonicalConstantsproduct", "[", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{"1", ",", "\"\<Seconds\>\""}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724213842400484`*^9, 3.872421406474952*^9}},
+ CellLabel->"In[71]:=",
+ CellID->67070804,ExpressionUUID->"0e943b91-58d6-4288-90be-8e0f7d7f80b4"],
+
+Cell[BoxData[
+ TemplateBox[{"9192631770", 
+   RowBox[{"\"/\"", "\[InvisibleSpace]", "\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""]}], 
+   "reciprocal ground state hyperfine splitting frequency of the cesium\
+\[Hyphen]133 atom", 
+   FractionBox["1", "\"Cesium133HyperfineSplittingFrequency\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.872421406852866*^9},
+ CellLabel->"Out[71]=",
+ CellID->182178694,ExpressionUUID->"f3e4a443-2e14-45aa-9014-7492ead23ab0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SameQ", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Second\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Seconds\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Second\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Seconds\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"1", ",", "\"\<Second\>\""}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", 
+      RowBox[{"1", ",", "\"\<Seconds\>\""}], "]"}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872421553019803*^9, 3.8724216001710243`*^9}},
+ CellLabel->"In[76]:=",
+ CellID->264854218,ExpressionUUID->"343426d9-b7d1-43bf-9d3d-c19353dbf3ca"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724216005468607`*^9},
+ CellLabel->"Out[76]=",
+ CellID->224215141,ExpressionUUID->"fdf57dd8-cc8e-415d-9219-47f4b70c1dc7"]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Testing", "Subsection",
+ CellChangeTimes->{{3.872421621464194*^9, 3.8724216221178703`*^9}},
+ CellID->446685270,ExpressionUUID->"afb42276-074b-4474-959c-d9f32c56be85"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SameQ", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Second\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Seconds\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Second\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Seconds\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"1", ",", "\"\<Second\>\""}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", 
+      RowBox[{"1", ",", "\"\<Seconds\>\""}], "]"}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellLabel->"In[77]:=",
+ CellID->296084496,ExpressionUUID->"d8c0fd28-dc67-43db-873f-109fe47a79a9"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724216299653344`*^9},
+ CellLabel->"Out[77]=",
+ CellID->796411587,ExpressionUUID->"d9eed902-4d64-41a0-ab15-b0e23c2a28ce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SameQ", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Meter\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", "\"\<Meters\>\"", "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Meters\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", "\"\<Meters\>\"", "]"}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"1", ",", "\"\<Meter\>\""}], "]"}], ",", 
+    RowBox[{"CanonicalConstantsproduct", "[", 
+     RowBox[{"Quantity", "[", 
+      RowBox[{"1", ",", "\"\<Meters\>\""}], "]"}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872421630989986*^9, 3.872421659059561*^9}},
+ CellLabel->"In[79]:=",
+ CellID->378169299,ExpressionUUID->"f71e3925-d66e-4b72-92ee-263a97f44478"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.8724216402042284`*^9, 3.8724216594065027`*^9}},
+ CellLabel->"Out[79]=",
+ CellID->91771109,ExpressionUUID->"57412b6d-5862-4e97-96f2-b9858269ba2c"]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Fast Testing", "Subsection",
+ CellChangeTimes->{{3.8724217153363075`*^9, 3.872421717305724*^9}},
+ CellID->915905202,ExpressionUUID->"ba0d3e27-5222-4080-8ea4-73d326a3b426"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UnitStringTest", "[", "str_", "]"}], ":=", 
+  RowBox[{"SameQ", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"CanonicalConstantsproduct", "[", "str", "]"}], ",", 
+     RowBox[{"CanonicalConstantsproduct", "[", 
+      RowBox[{"str", "<>", "\"\<s\>\""}], "]"}], ",", 
+     RowBox[{"CanonicalConstantsproduct", "[", 
+      RowBox[{"Quantity", "[", "str", "]"}], "]"}], ",", 
+     RowBox[{"CanonicalConstantsproduct", "[", 
+      RowBox[{"Quantity", "[", "str", "]"}], "]"}], ",", 
+     RowBox[{"CanonicalConstantsproduct", "[", 
+      RowBox[{"1", ",", "str"}], "]"}], ",", 
+     RowBox[{"CanonicalConstantsproduct", "[", 
+      RowBox[{"Quantity", "[", 
+       RowBox[{"1", ",", "str"}], "]"}], "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.872421661930151*^9, 3.872421684739605*^9}},
+ CellLabel->"In[80]:=",
+ CellID->468344816,ExpressionUUID->"cbadd117-c108-49c7-9aa7-4e550060d690"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Second\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.872421689684786*^9}},
+ CellLabel->"In[81]:=",
+ CellID->80536297,ExpressionUUID->"a72748c0-2a7e-45d6-80de-68a95747dbd4"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.872421689987381*^9},
+ CellLabel->"Out[81]=",
+ CellID->203814571,ExpressionUUID->"fd395121-d27c-433a-af84-01a6a62a215b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Meter\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724216934394464`*^9}},
+ CellLabel->"In[82]:=",
+ CellID->181462614,ExpressionUUID->"081351f0-9fa1-476f-b720-f89f2f736119"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.872421693794303*^9},
+ CellLabel->"Out[82]=",
+ CellID->492234544,ExpressionUUID->"0077c005-f1f8-41fe-b0ba-a79f462b5124"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Kilogram\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724216975379534`*^9}},
+ CellLabel->"In[83]:=",
+ CellID->123052474,ExpressionUUID->"d4a4cfbe-7355-43bf-a21d-30baa9c1679d"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724216978324904`*^9},
+ CellLabel->"Out[83]=",
+ CellID->362333587,ExpressionUUID->"b1328fa0-7335-4c71-bc38-fc5924f490df"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Ampere\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724217009305854`*^9}},
+ CellLabel->"In[84]:=",
+ CellID->106647117,ExpressionUUID->"8ce92214-305e-4012-ab6f-4ea6357a5745"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.872421701290159*^9},
+ CellLabel->"Out[84]=",
+ CellID->979928584,ExpressionUUID->"855907a0-5e0a-4bfe-aa43-126e5c731ae7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Kelvin\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.872421705008069*^9}},
+ CellLabel->"In[85]:=",
+ CellID->482741708,ExpressionUUID->"079b6db4-974c-4529-a361-868b41fa7165"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724217053575315`*^9},
+ CellLabel->"Out[85]=",
+ CellID->291128787,ExpressionUUID->"b5c13a83-1edf-4a4e-aa72-16812481854d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Mole\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724217261824255`*^9}},
+ CellLabel->"In[86]:=",
+ CellID->934550903,ExpressionUUID->"07cba393-6b8a-448d-846e-46640a02ead1"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.872421726440796*^9},
+ CellLabel->"Out[86]=",
+ CellID->837526592,ExpressionUUID->"1c89cf7b-9ef4-4a6e-9278-95c01370109e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Candela\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724217301821346`*^9}},
+ CellLabel->"In[87]:=",
+ CellID->429186730,ExpressionUUID->"48311514-f1ab-4dc2-aac5-cc5c42cdabdf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "compat", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Candelas\\\\\\\"\\\"}]\\) and \
+\\!\\(\\*RowBox[{SuperscriptBox[\\\"\\\\\\\"\
+Cesium133HyperfineSplittingFrequency\\\\\\\"\\\", \\\"2\\\"], \\\" \\\", \\\"\
+\\\\\\\"MonochromaticRadiation540THzLuminousEfficacy\\\\\\\"\\\", \\\" \\\", \
+\\\"\\\\\\\"PlanckConstant\\\\\\\"\\\"}]\\) are incompatible units\"", 2, 87, 
+   23, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872421731261042*^9},
+ CellLabel->"During evaluation of In[87]:=",
+ CellID->407602601,ExpressionUUID->"1fd65690-4b09-486f-9d4f-8474c649cecb"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "compat", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Candelas\\\\\\\"\\\"}]\\) and \
+\\!\\(\\*RowBox[{SuperscriptBox[\\\"\\\\\\\"\
+Cesium133HyperfineSplittingFrequency\\\\\\\"\\\", \\\"2\\\"], \\\" \\\", \\\"\
+\\\\\\\"MonochromaticRadiation540THzLuminousEfficacy\\\\\\\"\\\", \\\" \\\", \
+\\\"\\\\\\\"PlanckConstant\\\\\\\"\\\"}]\\) are incompatible units\"", 2, 87, 
+   24, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872421731382039*^9},
+ CellLabel->"During evaluation of In[87]:=",
+ CellID->35795164,ExpressionUUID->"c29a1c44-e6fd-445d-89ed-42c102a6abae"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "compat", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Candelas\\\\\\\"\\\"}]\\) and \
+\\!\\(\\*RowBox[{SuperscriptBox[\\\"\\\\\\\"\
+Cesium133HyperfineSplittingFrequency\\\\\\\"\\\", \\\"2\\\"], \\\" \\\", \\\"\
+\\\\\\\"MonochromaticRadiation540THzLuminousEfficacy\\\\\\\"\\\", \\\" \\\", \
+\\\"\\\\\\\"PlanckConstant\\\\\\\"\\\"}]\\) are incompatible units\"", 2, 87, 
+   25, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872421731502037*^9},
+ CellLabel->"During evaluation of In[87]:=",
+ CellID->15669036,ExpressionUUID->"03339d41-a7de-473d-b934-3c277b5c3373"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General", "stop", 
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Quantity\\\", \
+\\\"::\\\", \\\"compat\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"", 2, 87, 26, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724217316210337`*^9},
+ CellLabel->"During evaluation of In[87]:=",
+ CellID->425251468,ExpressionUUID->"701cb353-b218-4871-ad9e-a193296da5c8"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724217317410336`*^9},
+ CellLabel->"Out[87]=",
+ CellID->165754986,ExpressionUUID->"89b3ac45-0cfb-4502-82af-c0c48496349b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitStringTest", "[", "\"\<Lumen\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.872421685999002*^9, 3.8724217301821346`*^9}, {
+  3.8724217654906826`*^9, 3.8724217679923935`*^9}},
+ CellLabel->"In[89]:=",
+ CellID->116650942,ExpressionUUID->"2c28c81f-b817-401a-b3e2-3d97ddae5209"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.8724217684639215`*^9},
+ CellLabel->"Out[89]=",
+ CellID->237729637,ExpressionUUID->"6bcd42e5-51a1-4843-b36c-40b5251fceed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitDimensions", "[", "\"\<Lumens\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.8724217557662983`*^9, 3.8724217590271792`*^9}},
+ CellLabel->"In[88]:=",
+ CellID->249102857,ExpressionUUID->"ab9c2747-6b75-46fd-bfa6-c0cac89b302c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"AngleUnit\"\>", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.872421759294733*^9},
+ CellLabel->"Out[88]=",
+ CellID->247047624,ExpressionUUID->"179a08e0-f3a7-43a7-8567-5a60f6ab9a59"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitSimplify", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "/", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+     SuperscriptBox["\"\<Cesium133HyperfineSplittingFrequency\>\"", "2"], 
+     "\"\<PlanckConstant\>\"", 
+     "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[90]:=",
+ CellID->33034904,ExpressionUUID->"a0d79401-90bc-43bd-b356-f41b8d66b6d4"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+   "2000000000000000000000000000000000000000", 
+    "76486793830390329632626020921"], 
+   RowBox[{"\"per \"", "\[InvisibleSpace]", 
+     SuperscriptBox["\"radian\"", "2"]}], "per radians squared", 
+   FractionBox["1", 
+    SuperscriptBox["\"Radians\"", "2"]]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8724218351552534`*^9},
+ CellLabel->"Out[90]=",
+ CellID->244970113,ExpressionUUID->"c54f08ee-df82-4353-a52d-53f8a80e0e52"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], ",", 
+   RowBox[{
+    RowBox[{"Quantity", "[", 
+     RowBox[{
+     "\"\<Cesium133HyperfineSplittingFrequency\>\"", 
+      "\"\<PlanckConstant\>\"", 
+      "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}], 
+    RowBox[{"UnitSimplify", "[", 
+     RowBox[{
+      RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "/", 
+      RowBox[{"Quantity", "[", 
+       RowBox[{
+       "\"\<Cesium133HyperfineSplittingFrequency\>\"", 
+        "\"\<PlanckConstant\>\"", 
+        "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}]}], 
+     "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.872421852552782*^9, 3.8724218710754766`*^9}},
+ CellLabel->"In[93]:=",
+ CellID->150964265,ExpressionUUID->"e7adaa24-cb01-47ae-9e31-2f5893ce4c8a"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+   "20000000000000000000000000000000000000000", "83204457378575417073"], 
+   RowBox[{"\"\[CapitalDelta]\[Nu]\"", 
+     SubscriptBox[
+      TemplateBox[{"\"(\"", 
+        TemplateBox[{
+          
+          TemplateBox[{"\"\"", "133"}, "Superscript", SyntaxForm -> 
+           SuperscriptBox], "\"Cs\""}, "RowDefault"], "\")\""}, "RowDefault"],
+       "\"hfs\""], "\[ThinSpace]", 
+     SubscriptBox[
+      StyleBox["\"K\"", StripOnInput -> False, FontSlant -> Italic], 
+      "\"cd\""], "\[ThinSpace]", 
+     StyleBox["\"h\"", StripOnInput -> False, FontSlant -> Italic], 
+     "\[InvisibleSpace]", "\"/(\"", "\[InvisibleSpace]", "\"s\"", 
+     "\[ThinSpace]", 
+     SuperscriptBox["\"rad\"", "2"], "\[InvisibleSpace]", "\")\""}], 
+   "ground state hyperfine splitting frequency of the cesium\[Hyphen]133 atom \
+luminous efficacy of monochromatic radiation of frequency 540 THz Planck \
+constants per second radian squared", 
+   FractionBox[
+    RowBox[{
+     "\"Cesium133HyperfineSplittingFrequency\"", " ", 
+      "\"MonochromaticRadiation540THzLuminousEfficacy\"", " ", 
+      "\"PlanckConstant\""}], 
+    RowBox[{
+      SuperscriptBox["\"Radians\"", "2"], " ", "\"Seconds\""}]]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.8724218628766804`*^9, 3.872421871349719*^9}},
+ CellLabel->"Out[93]=",
+ CellID->361318312,ExpressionUUID->"98d8f64f-57a7-4e3a-bfa4-ea1486daa687"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ExtraAnglePart", "[", "unit_", "]"}], ":=", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+    RowBox[{"QuantityUnit", "[", 
+     RowBox[{"UnitSimplify", "[", 
+      RowBox[{"unit", "/", 
+       RowBox[{"Quantity", "[", 
+        RowBox[{
+         SuperscriptBox["\"\<Cesium133HyperfineSplittingFrequency\>\"", "2"], 
+         "\"\<PlanckConstant\>\"", 
+         "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}]}], 
+      "]"}], "]"}], "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8724219597336006`*^9, 3.8724220065163665`*^9}, {
+  3.8724220440015306`*^9, 3.8724220489921923`*^9}, {3.8724220891442494`*^9, 
+  3.87242209779677*^9}},
+ CellLabel->"In[110]:=",
+ CellID->8558890,ExpressionUUID->"6a28ea90-9ac6-4654-9edc-929c9af12452"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ExtraAnglePart", "[", 
+  RowBox[{"Quantity", "[", "\"\<Candela\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724219772697754`*^9, 3.8724220116336403`*^9}},
+ CellLabel->"In[111]:=",
+ CellID->68850102,ExpressionUUID->"4fbb7743-d92c-4865-9c83-61ee16799b91"],
+
+Cell[BoxData[
+ TemplateBox[{"1", "\"rad\"", "radian", "\"Radians\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.872421979384953*^9, 3.8724220119596066`*^9}, 
+   3.872422050078196*^9, {3.8724220911798525`*^9, 3.8724220996177034`*^9}},
+ CellLabel->"Out[111]=",
+ CellID->433054897,ExpressionUUID->"ecf745fb-2d89-4fbe-92a0-48f3503d8d7c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullForm", "[", 
+  RowBox[{"ExtraAnglePart", "[", 
+   RowBox[{"Quantity", "[", "\"\<Candela\>\"", "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724220777357116`*^9, 3.872422079198143*^9}},
+ CellLabel->"In[107]:=",
+ CellID->178093520,ExpressionUUID->"73db0c32-bb17-4285-aa3f-d494d6d96621"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   RowBox[{"Power", "[", 
+    RowBox[{"\"\<Radians\>\"", ",", 
+     RowBox[{"-", "2"}]}], "]"}],
+   ShowSpecialCharacters->False,
+   ShowStringCharacters->True,
+   NumberMarks->True],
+  FullForm]], "Output",
+ CellChangeTimes->{3.872422079469678*^9},
+ CellLabel->"Out[107]//FullForm=",
+ CellID->279825538,ExpressionUUID->"69b4b424-a386-4172-acb2-449c05d7276e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ExtraAnglePart", "[", 
+   RowBox[{"Quantity", "[", "\"\<Lumens\>\"", "]"}], "]"}], "//", 
+  "N"}]], "Input",
+ CellChangeTimes->{{3.8724220145060463`*^9, 3.872422033706929*^9}},
+ CellLabel->"In[112]:=",
+ CellID->187465437,ExpressionUUID->"57399a4f-a5c9-4bde-aa97-453559e7551d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part", "partd", 
+   "\"Part specification \\!\\(\\*RowBox[{\\\"\\\\\\\"DimensionlessUnit\\\\\\\
+\"\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}]\\) is longer than depth of object.\"", 2, 112,
+    27, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724221023086157`*^9},
+ CellLabel->"During evaluation of In[112]:=",
+ CellID->176538106,ExpressionUUID->"e8b8d026-166e-488c-9bff-1457ce4af055"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "unkunit", 
+   "\"Unable to interpret unit specification \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"DimensionlessUnit\\\\\\\"\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\).\"", 
+   2, 112, 28, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872422102448621*^9},
+ CellLabel->"During evaluation of In[112]:=",
+ CellID->88244255,ExpressionUUID->"c9bf98c5-697d-46b3-9260-fd3e3518ad00"],
+
+Cell[BoxData[
+ RowBox[{"Quantity", "[", 
+  RowBox[{"\<\"DimensionlessUnit\"\>", "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Output",
+ CellChangeTimes->{{3.8724220199986157`*^9, 3.872422052449561*^9}, 
+   3.8724221025876136`*^9},
+ CellLabel->"Out[112]=",
+ CellID->529291303,ExpressionUUID->"d6001a9c-7c5f-4e6d-86e1-88542d70edc1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], ",", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+    "\"\<Cesium133HyperfineSplittingFrequency\>\"", "\"\<PlanckConstant\>\"", 
+     "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.872422062532834*^9, 3.8724220699103374`*^9}, {
+  3.8724221976533723`*^9, 3.872422216701825*^9}},
+ CellLabel->"In[113]:=",
+ CellID->4157523,ExpressionUUID->"fc4f33c9-190e-4b20-80ab-68cbeedaa6c8"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "compat", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Candelas\\\\\\\"\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Cesium133HyperfineSplittingFrequency\\\\\\\"\\\",\
+ \\\" \\\", \
+\\\"\\\\\\\"MonochromaticRadiation540THzLuminousEfficacy\\\\\\\"\\\", \\\" \\\
+\", \\\"\\\\\\\"PlanckConstant\\\\\\\"\\\"}]\\) are incompatible units\"", 2, 
+   113, 29, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.8724222169848413`*^9},
+ CellLabel->"During evaluation of In[113]:=",
+ CellID->257601170,ExpressionUUID->"9ef88e8c-2be2-4828-9962-919a8b1b6c02"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{3.872422217130023*^9},
+ CellLabel->"Out[113]=",
+ CellID->525601918,ExpressionUUID->"8ab8737f-6ef3-439c-ba8d-7ade082c9734"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitDimensions", "[", 
+  RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724222563989253`*^9, 3.8724222621113358`*^9}},
+ CellLabel->"In[114]:=",
+ CellID->895232469,ExpressionUUID->"4c9ed563-c31d-4228-bd77-22ed55810ffb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.872422262329858*^9},
+ CellLabel->"Out[114]=",
+ CellID->122916114,ExpressionUUID->"a3c3a3b2-a359-4a1e-a237-e97da9fb66fd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitDimensions", "[", 
+  RowBox[{"Quantity", "[", 
+   RowBox[{
+   "\"\<Cesium133HyperfineSplittingFrequency\>\"", "\"\<PlanckConstant\>\"", 
+    "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724222672774887`*^9, 3.8724222810239644`*^9}},
+ CellLabel->"In[116]:=",
+ CellID->242003422,ExpressionUUID->"f7a6b730-be98-45a8-8659-0401f736c33c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"AngleUnit\"\>", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TimeUnit\"\>", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8724222749297323`*^9, 3.872422281615356*^9}},
+ CellLabel->"Out[116]=",
+ CellID->161848502,ExpressionUUID->"4e14e748-3a68-419c-aea7-307599ece425"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+   "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+    "]"}], ",", "\"\<SI\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.872422302568184*^9, 3.8724223113574142`*^9}},
+ CellLabel->"In[117]:=",
+ CellID->590690403,ExpressionUUID->"a5ee50ae-c0ef-46c4-afd0-70bef0b016db"],
+
+Cell[BoxData[
+ TemplateBox[{"683", 
+   RowBox[{
+    "\"lm\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"W\""}], 
+   "lumens per watt", 
+   FractionBox["\"Lumens\"", "\"Watts\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.872422311805485*^9},
+ CellLabel->"Out[117]=",
+ CellID->161513525,ExpressionUUID->"f0c8d1d8-9915-4e15-9ade-28a3b1586cfb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+   "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+    "]"}], ",", "\"\<SIBase\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.872422302568184*^9, 3.8724223140129557`*^9}},
+ CellLabel->"In[118]:=",
+ CellID->318910119,ExpressionUUID->"09c0315d-fa03-47b3-adc1-eb919a790733"],
+
+Cell[BoxData[
+ TemplateBox[{"683", 
+   RowBox[{
+     SuperscriptBox["\"s\"", "3"], "\[InvisibleSpace]", "\"cd\"", 
+     "\[ThinSpace]", 
+     SuperscriptBox["\"rad\"", "2"], "\[NegativeMediumSpace]", "\"/(\"", 
+     "\[InvisibleSpace]", "\"kg\"", "\[ThinSpace]", 
+     SuperscriptBox["\"m\"", "2"], "\[InvisibleSpace]", "\")\""}], 
+   "second cubed candela radians squared per kilogram meter squared", 
+   FractionBox[
+    RowBox[{"\"Candelas\"", " ", 
+      SuperscriptBox["\"Radians\"", "2"], " ", 
+      SuperscriptBox["\"Seconds\"", "3"]}], 
+    RowBox[{"\"Kilograms\"", " ", 
+      SuperscriptBox["\"Meters\"", "2"]}]]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.872422314344851*^9},
+ CellLabel->"Out[118]=",
+ CellID->26138578,ExpressionUUID->"1dd95c0d-cef5-47a6-b7a2-dd012a8f6e9a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitDimensions", "[", 
+  RowBox[{
+  "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.872422318586111*^9, 3.872422330881019*^9}},
+ CellLabel->"In[119]:=",
+ CellID->830411979,ExpressionUUID->"c47223df-5808-4547-8539-6898b771f342"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"AngleUnit\"\>", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"LengthUnit\"\>", ",", 
+     RowBox[{"-", "2"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"MassUnit\"\>", ",", 
+     RowBox[{"-", "1"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TimeUnit\"\>", ",", "3"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.872422331277403*^9},
+ CellLabel->"Out[119]=",
+ CellID->414125234,ExpressionUUID->"ddcd53d2-a7f5-4e2d-bb52-4f4bcbb0fd2e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitSimplify", "[", 
+  RowBox[{
+   RowBox[{
+   "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+    "]"}], ",", 
+   RowBox[{"UnityDimensions", "->", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.872422334847105*^9, 3.8724223443236294`*^9}},
+ CellLabel->"In[120]:=",
+ CellID->261946224,ExpressionUUID->"0794a23f-ee1f-4373-b13b-be461352dbf6"],
+
+Cell[BoxData[
+ TemplateBox[{"1", 
+   RowBox[{
+     SubscriptBox[
+      StyleBox["\"K\"", Italic, StripOnInput -> False], "\"cd\""], 
+     "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+     SuperscriptBox["\"rad\"", "2"]}], 
+   "luminous efficacy of monochromatic radiation of frequency 540 THz per \
+radian squared", 
+   FractionBox["\"MonochromaticRadiation540THzLuminousEfficacy\"", 
+    SuperscriptBox["\"Radians\"", "2"]]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.8724223446497955`*^9},
+ CellLabel->"Out[120]=",
+ CellID->54640515,ExpressionUUID->"9e9d54a9-8c41-4cb5-8cc5-baf5339c430a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UnitData", "[", "unit_", "]"}], ":=", 
+  RowBox[{"<|", 
+   RowBox[{
+    RowBox[{"\"\<dimensions\>\"", "->", 
+     RowBox[{"UnitDimensions", "[", "unit", "]"}]}], ",", 
+    RowBox[{"\"\<SI\>\"", "->", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"unit", ",", "\"\<SI\>\""}], "]"}]}], ",", 
+    RowBox[{"\"\<SIBase\>\"", "->", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"unit", ",", "\"\<SIBase\>\""}], "]"}]}], ",", 
+    RowBox[{"\"\<simplified\>\"", "->", 
+     RowBox[{"UnitSimplify", "[", "unit", "]"}]}], ",", 
+    RowBox[{"\"\<simplifyall\>\"", "->", 
+     RowBox[{"UnitSimplify", "[", 
+      RowBox[{"unit", ",", 
+       RowBox[{"UnityDimensions", "->", "Automatic"}]}], "]"}]}]}], 
+   "|>"}]}]], "Input",
+ CellChangeTimes->{{3.8724223783325386`*^9, 3.8724224354430356`*^9}},
+ CellLabel->"In[122]:=",
+ CellID->68108753,ExpressionUUID->"f5932946-844e-4d7c-96ff-f595178efb76"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitData", "[", 
+  RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724224368451347`*^9, 3.872422445940709*^9}},
+ CellLabel->"In[123]:=",
+ CellID->157009607,ExpressionUUID->"5f55c94d-dc35-4127-af1f-2131a0eb9ac5"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"dimensions\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"SI\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"SIBase\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplified\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplifyall\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724224462510595`*^9},
+ CellLabel->"Out[123]=",
+ CellID->15238658,ExpressionUUID->"5cfa17be-deb3-4338-9c8a-d6c5cbe7303b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitData", "[", 
+  RowBox[{
+  "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724224368451347`*^9, 3.872422455778829*^9}},
+ CellLabel->"In[124]:=",
+ CellID->174336949,ExpressionUUID->"d29ce549-33a1-4d5c-b08c-4541b259b1af"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"dimensions\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\<\"AngleUnit\"\>", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\<\"LengthUnit\"\>", ",", 
+        RowBox[{"-", "2"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\<\"MassUnit\"\>", ",", 
+        RowBox[{"-", "1"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\<\"TimeUnit\"\>", ",", "3"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"\<\"SI\"\>", "\[Rule]", 
+    TemplateBox[{"683", 
+      RowBox[{
+       "\"lm\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"W\""}],
+       "lumens per watt", 
+      FractionBox["\"Lumens\"", "\"Watts\""]},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"SIBase\"\>", "\[Rule]", 
+    TemplateBox[{"683", 
+      RowBox[{
+        SuperscriptBox["\"s\"", "3"], "\[InvisibleSpace]", "\"cd\"", 
+        "\[ThinSpace]", 
+        SuperscriptBox["\"rad\"", "2"], "\[NegativeMediumSpace]", "\"/(\"", 
+        "\[InvisibleSpace]", "\"kg\"", "\[ThinSpace]", 
+        SuperscriptBox["\"m\"", "2"], "\[InvisibleSpace]", "\")\""}], 
+      "second cubed candela radians squared per kilogram meter squared", 
+      FractionBox[
+       RowBox[{"\"Candelas\"", " ", 
+         SuperscriptBox["\"Radians\"", "2"], " ", 
+         SuperscriptBox["\"Seconds\"", "3"]}], 
+       RowBox[{"\"Kilograms\"", " ", 
+         SuperscriptBox["\"Meters\"", "2"]}]]},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplified\"\>", "\[Rule]", 
+    TemplateBox[{
+      InterpretationBox["\[InvisibleSpace]", 1], 
+      SubscriptBox[
+       StyleBox["\"K\"", Italic, StripOnInput -> False], "\"cd\""], 
+      "luminous efficacy of monochromatic radiation of frequency 540 THz", 
+      "\"MonochromaticRadiation540THzLuminousEfficacy\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplifyall\"\>", "\[Rule]", 
+    TemplateBox[{"1", 
+      RowBox[{
+        SubscriptBox[
+         StyleBox["\"K\"", Italic, StripOnInput -> False], "\"cd\""], 
+        "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+        SuperscriptBox["\"rad\"", "2"]}], 
+      "luminous efficacy of monochromatic radiation of frequency 540 THz per \
+radian squared", 
+      FractionBox["\"MonochromaticRadiation540THzLuminousEfficacy\"", 
+       SuperscriptBox["\"Radians\"", "2"]]},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724224560229836`*^9},
+ CellLabel->"Out[124]=",
+ CellID->146954543,ExpressionUUID->"6d0627ab-2f54-49ab-8a35-360c4caae3a2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitData", "[", 
+  RowBox[{"Quantity", "[", "\"\<Lumens\>\"", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724224368451347`*^9, 3.872422462234185*^9}},
+ CellLabel->"In[125]:=",
+ CellID->637400925,ExpressionUUID->"5c7fae36-bc4f-4e83-8404-2a787ed1f39f"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"dimensions\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\<\"AngleUnit\"\>", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\<\"LuminousIntensityUnit\"\>", ",", "1"}], "}"}]}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"SI\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"lm\"", "lumen", "\"Lumens\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"SIBase\"\>", "\[Rule]", 
+    TemplateBox[{"1", 
+      RowBox[{"\"cd\"", "\[ThinSpace]", 
+        SuperscriptBox["\"rad\"", "2"]}], "candela radian squared", 
+      RowBox[{"\"Candelas\"", " ", 
+        SuperscriptBox["\"Radians\"", "2"]}]},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplified\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"lm\"", "lumen", "\"Lumens\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"simplifyall\"\>", "\[Rule]", 
+    TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8724224627447453`*^9},
+ CellLabel->"Out[125]=",
+ CellID->2994526,ExpressionUUID->"43975c77-e72c-44c6-9da7-26cc9527af9a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lookup", "[", 
+  RowBox[{
+   RowBox[{"UnitData", "[", 
+    RowBox[{"Quantity", "[", "\"\<Lumens\>\"", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<simplified\>\"", ",", "\"\<simplifyall\>\"", ",", "\"\<SIBase\>\""}],
+     "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87242251581548*^9, 3.872422589785612*^9}},
+ CellLabel->"In[132]:=",
+ CellID->353399810,ExpressionUUID->"8ca0b653-cee1-45bb-9bbd-ef256bd5a874"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"1", "\"lm\"", "lumen", "\"Lumens\""},
+    "Quantity"], ",", 
+   TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+    "Quantity"], ",", 
+   TemplateBox[{"1", 
+     RowBox[{"\"cd\"", "\[ThinSpace]", 
+       SuperscriptBox["\"rad\"", "2"]}], "candela radian squared", 
+     RowBox[{"\"Candelas\"", " ", 
+       SuperscriptBox["\"Radians\"", "2"]}]},
+    "Quantity"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8724225300289497`*^9, 3.8724225902926884`*^9}},
+ CellLabel->"Out[132]=",
+ CellID->17369412,ExpressionUUID->"6cce0566-f65c-4cd9-85bc-b425d5bbc0c0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lookup", "[", 
+  RowBox[{
+   RowBox[{"UnitData", "[", 
+    RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<simplified\>\"", ",", "\"\<simplifyall\>\"", ",", "\"\<SIBase\>\""}],
+     "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87242251581548*^9, 3.872422593792943*^9}},
+ CellLabel->"In[133]:=",
+ CellID->487720270,ExpressionUUID->"a24bc0e6-b608-4333-9833-9a0c2d3c345e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+    "Quantity"], ",", 
+   TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+    "Quantity"], ",", 
+   TemplateBox[{"1", "\"cd\"", "candela", "\"Candelas\""},
+    "Quantity"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8724225642935224`*^9, 3.872422594076742*^9}},
+ CellLabel->"Out[133]=",
+ CellID->35249105,ExpressionUUID->"4dcc3f93-d049-4a29-8d41-f0bf7c7f4610"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Lookup", "[", 
+  RowBox[{
+   RowBox[{"UnitData", "[", 
+    RowBox[{
+    "Quantity", "[", "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+     "]"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<simplified\>\"", ",", "\"\<simplifyall\>\"", ",", "\"\<SIBase\>\""}],
+     "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87242251581548*^9, 3.8724225979855947`*^9}},
+ CellLabel->"In[134]:=",
+ CellID->253049790,ExpressionUUID->"b97f18aa-3396-42c7-b5df-21faf13644c2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{
+     InterpretationBox["\[InvisibleSpace]", 1], 
+     SubscriptBox[
+      StyleBox["\"K\"", Italic, StripOnInput -> False], "\"cd\""], 
+     "luminous efficacy of monochromatic radiation of frequency 540 THz", 
+     "\"MonochromaticRadiation540THzLuminousEfficacy\""},
+    "Quantity"], ",", 
+   TemplateBox[{"1", 
+     RowBox[{
+       SubscriptBox[
+        StyleBox["\"K\"", Italic, StripOnInput -> False], "\"cd\""], 
+       "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+       SuperscriptBox["\"rad\"", "2"]}], 
+     "luminous efficacy of monochromatic radiation of frequency 540 THz per \
+radian squared", 
+     FractionBox["\"MonochromaticRadiation540THzLuminousEfficacy\"", 
+      SuperscriptBox["\"Radians\"", "2"]]},
+    "Quantity"], ",", 
+   TemplateBox[{"683", 
+     RowBox[{
+       SuperscriptBox["\"s\"", "3"], "\[InvisibleSpace]", "\"cd\"", 
+       "\[ThinSpace]", 
+       SuperscriptBox["\"rad\"", "2"], "\[NegativeMediumSpace]", "\"/(\"", 
+       "\[InvisibleSpace]", "\"kg\"", "\[ThinSpace]", 
+       SuperscriptBox["\"m\"", "2"], "\[InvisibleSpace]", "\")\""}], 
+     "second cubed candela radians squared per kilogram meter squared", 
+     FractionBox[
+      RowBox[{"\"Candelas\"", " ", 
+        SuperscriptBox["\"Radians\"", "2"], " ", 
+        SuperscriptBox["\"Seconds\"", "3"]}], 
+      RowBox[{"\"Kilograms\"", " ", 
+        SuperscriptBox["\"Meters\"", "2"]}]]},
+    "Quantity"]}], "}"}]], "Output",
+ CellChangeTimes->{{3.872422569250826*^9, 3.8724225982591176`*^9}},
+ CellLabel->"Out[134]=",
+ CellID->157268719,ExpressionUUID->"c09040b4-2f9e-41df-872e-706100f39556"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"UnitSimplify", "[", 
+    RowBox[{"Quantity", "[", "\"\<Candelas\>\"", "]"}], "]"}], ",", 
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+    "\"\<Cesium133HyperfineSplittingFrequency\>\"", "\"\<PlanckConstant\>\"", 
+     "\"\<MonochromaticRadiation540THzLuminousEfficacy\>\"", 
+     SuperscriptBox["\"\<Radians\>\"", "2"]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.872422632294855*^9, 3.872422682110118*^9}},
+ CellLabel->"In[140]:=",
+ CellID->160357522,ExpressionUUID->"406d30de-c58f-41f4-879f-041c2e2ac6ff"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Quantity", "compat", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Candelas\\\\\\\"\\\"}]\\) and \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Cesium133HyperfineSplittingFrequency\\\\\\\"\\\",\
+ \\\" \\\", \
+\\\"\\\\\\\"MonochromaticRadiation540THzLuminousEfficacy\\\\\\\"\\\", \\\" \\\
+\", \\\"\\\\\\\"PlanckConstant\\\\\\\"\\\", \\\" \\\", \
+SuperscriptBox[\\\"\\\\\\\"Radians\\\\\\\"\\\", \\\"2\\\"]}]\\) are \
+incompatible units\"", 2, 140, 35, 19481530930193409726, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.872422653530772*^9, 3.872422682403073*^9}},
+ CellLabel->"During evaluation of In[140]:=",
+ CellID->97235139,ExpressionUUID->"7cf870a8-a52d-499b-8d6d-92a85846df7e"],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{{3.8724226537057557`*^9, 3.872422682574437*^9}},
+ CellLabel->"Out[140]=",
+ CellID->286056226,ExpressionUUID->"c8f5f355-040f-4abe-aa63-54a418e3b1ed"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 },
 ClosingSaveDialog->False,
-WindowSize->{1152., 585.6},
+WindowSize->{576., 585.6},
 WindowMargins->{{
   Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 TaggingRules->{
@@ -2238,16 +3433,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 113928, 2196},
- {"Your Essay Title", 114114, 2200},
- {"AuthorName", 114294, 2204},
- {"Abstract", 114453, 2208},
- {"TemplateCell", 114634, 2212},
- {"SectionHeader", 114816, 2216},
- {"ExampleTopicSentence", 114992, 2220},
- {"ExampleCodeText", 115167, 2224},
- {"ExampleInput", 115337, 2228},
- {"ExampleOutput", 115503, 2232}
+ {"Examples", 157423, 3391},
+ {"Your Essay Title", 157609, 3395},
+ {"AuthorName", 157789, 3399},
+ {"Abstract", 157948, 3403},
+ {"TemplateCell", 158129, 3407},
+ {"SectionHeader", 158311, 3411},
+ {"ExampleTopicSentence", 158487, 3415},
+ {"ExampleCodeText", 158662, 3419},
+ {"ExampleInput", 158832, 3423},
+ {"ExampleOutput", 158998, 3427}
  }
 *)
 (*NotebookFileOutline
@@ -2285,12 +3480,266 @@ Cell[2075, 68, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b
 Cell[2173, 71, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
  CellID->316654538]
 }, Open  ]],
-Cell[2283, 75, 169, 2, 67, "Section",ExpressionUUID->"24063eed-9386-44cc-92c4-d17c49aab2c5",
- CellID->914825899]
+Cell[CellGroupData[{
+Cell[2305, 77, 169, 2, 67, "Section",ExpressionUUID->"24063eed-9386-44cc-92c4-d17c49aab2c5",
+ CellID->914825899],
+Cell[CellGroupData[{
+Cell[2499, 83, 170, 2, 54, "Subsection",ExpressionUUID->"7ee4e9e3-fc5d-455e-b2b3-dbda118ecaf9",
+ CellID->522256284],
+Cell[CellGroupData[{
+Cell[2694, 89, 176, 2, 45, "Subsubsection",ExpressionUUID->"739ffd4c-e575-41b7-8131-866ddadfa07c",
+ CellID->82544670],
+Cell[CellGroupData[{
+Cell[2895, 95, 257, 4, 28, "Input",ExpressionUUID->"616acb25-3a61-42f9-8523-3321281da73d",
+ CellID->79655222],
+Cell[3155, 101, 690, 16, 44, "Output",ExpressionUUID->"98ecd20b-a07f-4290-9bae-dce34d8ba6a6",
+ CellID->143792792]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3882, 122, 293, 5, 28, "Input",ExpressionUUID->"09249403-06e6-4f18-8b7e-2fbbfcfc4f27",
+ CellID->268426931],
+Cell[4178, 129, 691, 16, 44, "Output",ExpressionUUID->"2f4d7f85-8c57-4925-ace9-e6b35938fbd7",
+ CellID->16832111]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4906, 150, 317, 6, 28, "Input",ExpressionUUID->"ae4928a5-225f-43dd-9d01-4749d7b3aa08",
+ CellID->116744727],
+Cell[5226, 158, 692, 16, 44, "Output",ExpressionUUID->"461a5b04-35ff-4f9b-91c7-34ff290a8c03",
+ CellID->681128705]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5955, 179, 259, 4, 28, "Input",ExpressionUUID->"b9374e9b-add8-4904-a142-1435fde59ccf",
+ CellID->691416126],
+Cell[6217, 185, 691, 16, 44, "Output",ExpressionUUID->"dbef8c1e-8269-4ee5-b5eb-a902e46329dc",
+ CellID->57286307]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6945, 206, 317, 6, 28, "Input",ExpressionUUID->"0e943b91-58d6-4288-90be-8e0f7d7f80b4",
+ CellID->67070804],
+Cell[7265, 214, 690, 16, 44, "Output",ExpressionUUID->"f3e4a443-2e14-45aa-9014-7492ead23ab0",
+ CellID->182178694]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7992, 235, 887, 18, 48, "Input",ExpressionUUID->"343426d9-b7d1-43bf-9d3d-c19353dbf3ca",
+ CellID->264854218],
+Cell[8882, 255, 174, 3, 32, "Output",ExpressionUUID->"fdf57dd8-cc8e-415d-9219-47f4b70c1dc7",
+ CellID->224215141]
+}, Open  ]]
+}, Closed]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[9117, 265, 172, 2, 38, "Subsection",ExpressionUUID->"afb42276-074b-4474-959c-d9f32c56be85",
+ CellID->446685270],
+Cell[CellGroupData[{
+Cell[9314, 271, 819, 17, 48, "Input",ExpressionUUID->"d8c0fd28-dc67-43db-873f-109fe47a79a9",
+ CellID->296084496],
+Cell[10136, 290, 174, 3, 32, "Output",ExpressionUUID->"d9eed902-4d64-41a0-ab15-b0e23c2a28ce",
+ CellID->796411587]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10347, 298, 880, 18, 48, "Input",ExpressionUUID->"f71e3925-d66e-4b72-92ee-263a97f44478",
+ CellID->378169299],
+Cell[11230, 318, 199, 3, 32, "Output",ExpressionUUID->"57412b6d-5862-4e97-96f2-b9858269ba2c",
+ CellID->91771109]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[11478, 327, 177, 2, 38, "Subsection",ExpressionUUID->"ba0d3e27-5222-4080-8ea4-73d326a3b426",
+ CellID->915905202],
+Cell[11658, 331, 930, 20, 67, "Input",ExpressionUUID->"cbadd117-c108-49c7-9aa7-4e550060d690",
+ CellID->468344816],
+Cell[CellGroupData[{
+Cell[12613, 355, 244, 4, 28, "Input",ExpressionUUID->"a72748c0-2a7e-45d6-80de-68a95747dbd4",
+ CellID->80536297],
+Cell[12860, 361, 172, 3, 32, "Output",ExpressionUUID->"fd395121-d27c-433a-af84-01a6a62a215b",
+ CellID->203814571]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13069, 369, 246, 4, 28, "Input",ExpressionUUID->"081351f0-9fa1-476f-b720-f89f2f736119",
+ CellID->181462614],
+Cell[13318, 375, 172, 3, 32, "Output",ExpressionUUID->"0077c005-f1f8-41fe-b0ba-a79f462b5124",
+ CellID->492234544]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13527, 383, 249, 4, 28, "Input",ExpressionUUID->"d4a4cfbe-7355-43bf-a21d-30baa9c1679d",
+ CellID->123052474],
+Cell[13779, 389, 174, 3, 32, "Output",ExpressionUUID->"b1328fa0-7335-4c71-bc38-fc5924f490df",
+ CellID->362333587]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13990, 397, 247, 4, 28, "Input",ExpressionUUID->"8ce92214-305e-4012-ab6f-4ea6357a5745",
+ CellID->106647117],
+Cell[14240, 403, 172, 3, 32, "Output",ExpressionUUID->"855907a0-5e0a-4bfe-aa43-126e5c731ae7",
+ CellID->979928584]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14449, 411, 245, 4, 28, "Input",ExpressionUUID->"079b6db4-974c-4529-a361-868b41fa7165",
+ CellID->482741708],
+Cell[14697, 417, 174, 3, 32, "Output",ExpressionUUID->"b5c13a83-1edf-4a4e-aa72-16812481854d",
+ CellID->291128787]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14908, 425, 245, 4, 28, "Input",ExpressionUUID->"07cba393-6b8a-448d-846e-46640a02ead1",
+ CellID->934550903],
+Cell[15156, 431, 172, 3, 32, "Output",ExpressionUUID->"1c89cf7b-9ef4-4a6e-9278-95c01370109e",
+ CellID->837526592]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15365, 439, 248, 4, 28, "Input",ExpressionUUID->"48311514-f1ab-4dc2-aac5-cc5c42cdabdf",
+ CellID->429186730],
+Cell[15616, 445, 645, 12, 28, "Message",ExpressionUUID->"1fd65690-4b09-486f-9d4f-8474c649cecb",
+ CellID->407602601],
+Cell[16264, 459, 644, 12, 28, "Message",ExpressionUUID->"c29a1c44-e6fd-445d-89ed-42c102a6abae",
+ CellID->35795164],
+Cell[16911, 473, 644, 12, 28, "Message",ExpressionUUID->"03339d41-a7de-473d-b934-3c277b5c3373",
+ CellID->15669036],
+Cell[17558, 487, 472, 9, 28, "Message",ExpressionUUID->"701cb353-b218-4871-ad9e-a193296da5c8",
+ CellID->425251468],
+Cell[18033, 498, 174, 3, 32, "Output",ExpressionUUID->"89b3ac45-0cfb-4502-82af-c0c48496349b",
+ CellID->165754986]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18244, 506, 299, 5, 28, "Input",ExpressionUUID->"2c28c81f-b817-401a-b3e2-3d97ddae5209",
+ CellID->116650942],
+Cell[18546, 513, 174, 3, 32, "Output",ExpressionUUID->"6bcd42e5-51a1-4843-b36c-40b5251fceed",
+ CellID->237729637]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18757, 521, 249, 4, 28, "Input",ExpressionUUID->"ab9c2747-6b75-46fd-bfa6-c0cac89b302c",
+ CellID->249102857],
+Cell[19009, 527, 359, 10, 32, "Output",ExpressionUUID->"179a08e0-f3a7-43a7-8567-5a60f6ab9a59",
+ CellID->247047624]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19405, 542, 455, 11, 93, "Input",ExpressionUUID->"a0d79401-90bc-43bd-b356-f41b8d66b6d4",
+ CellID->33034904],
+Cell[19863, 555, 474, 12, 59, "Output",ExpressionUUID->"c54f08ee-df82-4353-a52d-53f8a80e0e52",
+ CellID->244970113]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20374, 572, 857, 21, 162, "Input",ExpressionUUID->"e7adaa24-cb01-47ae-9e31-2f5893ce4c8a",
+ CellID->150964265],
+Cell[21234, 595, 1419, 32, 80, "Output",ExpressionUUID->"98d8f64f-57a7-4e3a-bfa4-ea1486daa687",
+ CellID->361318312]
+}, Open  ]],
+Cell[22668, 630, 810, 19, 156, "Input",ExpressionUUID->"6a28ea90-9ac6-4654-9edc-929c9af12452",
+ CellID->8558890],
+Cell[CellGroupData[{
+Cell[23503, 653, 285, 5, 28, "Input",ExpressionUUID->"4fbb7743-d92c-4865-9c83-61ee16799b91",
+ CellID->68850102],
+Cell[23791, 660, 339, 6, 38, "Output",ExpressionUUID->"ecf745fb-2d89-4fbe-92a0-48f3503d8d7c",
+ CellID->433054897]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24167, 671, 320, 6, 28, "Input",ExpressionUUID->"73db0c32-bb17-4285-aa3f-d494d6d96621",
+ CellID->178093520],
+Cell[24490, 679, 394, 12, 46, "Output",ExpressionUUID->"69b4b424-a386-4172-acb2-449c05d7276e",
+ CellID->279825538]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24921, 696, 311, 7, 28, "Input",ExpressionUUID->"57399a4f-a5c9-4bde-aa97-453559e7551d",
+ CellID->187465437],
+Cell[25235, 705, 503, 10, 28, "Message",ExpressionUUID->"e8b8d026-166e-488c-9bff-1457ce4af055",
+ CellID->176538106],
+Cell[25741, 717, 495, 10, 28, "Message",ExpressionUUID->"c9bf98c5-697d-46b3-9260-fd3e3518ad00",
+ CellID->88244255],
+Cell[26239, 729, 353, 7, 32, "Output",ExpressionUUID->"d6001a9c-7c5f-4e6d-86e1-88542d70edc1",
+ CellID->529291303]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26629, 741, 545, 12, 86, "Input",ExpressionUUID->"fc4f33c9-190e-4b20-80ab-68cbeedaa6c8",
+ CellID->4157523],
+Cell[27177, 755, 622, 12, 65, "Message",ExpressionUUID->"9ef88e8c-2be2-4828-9962-919a8b1b6c02",
+ CellID->257601170],
+Cell[27802, 769, 176, 3, 32, "Output",ExpressionUUID->"8ab8737f-6ef3-439c-ba8d-7ade082c9734",
+ CellID->525601918]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28015, 777, 287, 5, 28, "Input",ExpressionUUID->"4c9ed563-c31d-4228-bd77-22ed55810ffb",
+ CellID->895232469],
+Cell[28305, 784, 270, 7, 32, "Output",ExpressionUUID->"a3c3a3b2-a359-4a1e-a237-e97da9fb66fd",
+ CellID->122916114]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28612, 796, 423, 9, 86, "Input",ExpressionUUID->"f7a6b730-be98-45a8-8659-0401f736c33c",
+ CellID->242003422],
+Cell[29038, 807, 457, 11, 32, "Output",ExpressionUUID->"4e14e748-3a68-419c-aea7-307599ece425",
+ CellID->161848502]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29532, 823, 360, 8, 67, "Input",ExpressionUUID->"a5ee50ae-c0ef-46c4-afd0-70bef0b016db",
+ CellID->590690403],
+Cell[29895, 833, 359, 9, 39, "Output",ExpressionUUID->"f0c8d1d8-9915-4e15-9ade-28a3b1586cfb",
+ CellID->161513525]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30291, 847, 364, 8, 67, "Input",ExpressionUUID->"09c0315d-fa03-47b3-adc1-eb919a790733",
+ CellID->318910119],
+Cell[30658, 857, 792, 18, 44, "Output",ExpressionUUID->"1dd95c0d-cef5-47a6-b7a2-dd012a8f6e9a",
+ CellID->26138578]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31487, 880, 326, 7, 48, "Input",ExpressionUUID->"c47223df-5808-4547-8539-6898b771f342",
+ CellID->830411979],
+Cell[31816, 889, 623, 17, 52, "Output",ExpressionUUID->"ddcd53d2-a7f5-4e2d-bb52-4f4bcbb0fd2e",
+ CellID->414125234]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32476, 911, 399, 9, 67, "Input",ExpressionUUID->"0794a23f-ee1f-4373-b13b-be461352dbf6",
+ CellID->261946224],
+Cell[32878, 922, 602, 14, 44, "Output",ExpressionUUID->"9e9d54a9-8c41-4cb5-8cc5-baf5339c430a",
+ CellID->54640515]
+}, Open  ]],
+Cell[33495, 939, 924, 22, 124, "Input",ExpressionUUID->"f5932946-844e-4d7c-96ff-f595178efb76",
+ CellID->68108753],
+Cell[CellGroupData[{
+Cell[34444, 965, 279, 5, 28, "Input",ExpressionUUID->"5f55c94d-dc35-4127-af1f-2131a0eb9ac5",
+ CellID->157009607],
+Cell[34726, 972, 911, 22, 66, "Output",ExpressionUUID->"5cfa17be-deb3-4338-9c8a-d6c5cbe7303b",
+ CellID->15238658]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35674, 999, 322, 7, 48, "Input",ExpressionUUID->"d29ce549-33a1-4d5c-b08c-4541b259b1af",
+ CellID->174336949],
+Cell[35999, 1008, 2643, 63, 126, "Output",ExpressionUUID->"6d0627ab-2f54-49ab-8a35-360c4caae3a2",
+ CellID->146954543]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[38679, 1076, 277, 5, 28, "Input",ExpressionUUID->"5c7fae36-bc4f-4e83-8404-2a787ed1f39f",
+ CellID->637400925],
+Cell[38959, 1083, 1157, 29, 101, "Output",ExpressionUUID->"43975c77-e72c-44c6-9da7-26cc9527af9a",
+ CellID->2994526]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40153, 1117, 450, 11, 48, "Input",ExpressionUUID->"8ca0b653-cee1-45bb-9bbd-ef256bd5a874",
+ CellID->353399810],
+Cell[40606, 1130, 616, 15, 44, "Output",ExpressionUUID->"6cce0566-f65c-4cd9-85bc-b425d5bbc0c0",
+ CellID->17369412]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41259, 1150, 452, 11, 48, "Input",ExpressionUUID->"a24bc0e6-b608-4333-9833-9a0c2d3c345e",
+ CellID->487720270],
+Cell[41714, 1163, 466, 11, 41, "Output",ExpressionUUID->"4dcc3f93-d049-4a29-8d41-f0bf7c7f4610",
+ CellID->35249105]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42217, 1179, 501, 13, 86, "Input",ExpressionUUID->"b97f18aa-3396-42c7-b5df-21faf13644c2",
+ CellID->253049790],
+Cell[42721, 1194, 1654, 38, 44, "Output",ExpressionUUID->"c09040b4-2f9e-41df-872e-706100f39556",
+ CellID->157268719]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44412, 1237, 578, 12, 93, "Input",ExpressionUUID->"406d30de-c58f-41f4-879f-041c2e2ac6ff",
+ CellID->160357522],
+Cell[44993, 1251, 714, 13, 65, "Message",ExpressionUUID->"7cf870a8-a52d-499b-8d6d-92a85846df7e",
+ CellID->97235139],
+Cell[45710, 1266, 202, 3, 32, "Output",ExpressionUUID->"c8f5f355-040f-4abe-aa63-54a418e3b1ed",
+ CellID->286056226]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
