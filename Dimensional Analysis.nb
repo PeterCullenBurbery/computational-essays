@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    640348,      12923]
-NotebookOptionsPosition[    508022,      10342]
-NotebookOutlinePosition[    621685,      12514]
-CellTagsIndexPosition[    621294,      12500]
+NotebookDataLength[    646539,      13051]
+NotebookOptionsPosition[    514332,      10472]
+NotebookOutlinePosition[    627994,      12644]
+CellTagsIndexPosition[    627603,      12630]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10207,140 +10207,270 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"SIBASEUNITS", "=", 
   RowBox[{"EntityStore", "[", 
-   RowBox[{"<|", 
-    RowBox[{"\"\<SI Base Units\>\"", "->", 
-     RowBox[{"<|", 
-      RowBox[{
-       RowBox[{"\"\<second\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
-          RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<time\>\""}], ",", 
-          RowBox[{"\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<t\>\""}],
+   RowBox[{"\"\<SI Base Units\>\"", "->", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Entities\>\"", "->", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<second\>\"", "->", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<time\>\""}], ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<t\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<second\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<s\>\""}]}], 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<meter\>\"", "->", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<length\>\""}], 
            ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<second\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<s\>\""}]}], "|>"}]}],
-        ",", 
-       RowBox[{"\"\<meter\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
-          RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<length\>\""}], ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", 
+            "\"\<l,x,r,etc.\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<meter\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<m\>\""}]}], " ", 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<kilogram\>\"", "->", 
+         RowBox[{"<|", 
           RowBox[{
-          "\"\<Base Quantity Typical Symbol\>\"", "->", 
-           "\"\<l,x,r,etc.\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<meter\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<m\>\""}]}], " ", 
-         "|>"}]}], ",", 
-       RowBox[{"\"\<kilogram\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
-          RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<mass\>\""}], ",", 
-          RowBox[{"\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<m\>\""}],
+           RowBox[{"\"\<Base Quantity Name\>\"", "->", "\"\<mass\>\""}], ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<m\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<kilogram\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<kg\>\""}]}], 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<ampere\>\"", "->", 
+         RowBox[{"<|", 
+          RowBox[{
+           RowBox[{
+           "\"\<Base Quantity Name\>\"", "->", "\"\<electric current\>\""}], 
            ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<kilogram\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<kg\>\""}]}], 
-         "|>"}]}], ",", 
-       RowBox[{"\"\<ampere\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<I,i\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<ampere\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<A\>\""}]}], 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<kelvin\>\"", "->", 
+         RowBox[{"<|", 
           RowBox[{
-          "\"\<Base Quantity Name\>\"", "->", "\"\<electric current\>\""}], 
-          ",", 
+           RowBox[{
+           "\"\<Base Quantity Name\>\"", "->", 
+            "\"\<thermodynamic temperature\>\""}], ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<T\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<kelvin\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<K\>\""}]}], 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<mole\>\"", "->", 
+         RowBox[{"<|", 
           RowBox[{
-          "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<I,i\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<ampere\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<A\>\""}]}], "|>"}]}],
-        ",", 
-       RowBox[{"\"\<kelvin\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
+           RowBox[{
+           "\"\<Base Quantity Name\>\"", "->", 
+            "\"\<amount of substance\>\""}], ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<n\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<mole\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<mol\>\""}]}], 
+          "|>"}]}], ",", 
+        RowBox[{"\"\<candela\>\"", "->", 
+         RowBox[{"<|", 
           RowBox[{
-          "\"\<Base Quantity Name\>\"", "->", 
-           "\"\<thermodynamic temperature\>\""}], ",", 
-          RowBox[{"\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<T\>\""}],
-           ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<kelvin\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<K\>\""}]}], "|>"}]}],
-        ",", 
-       RowBox[{"\"\<mole\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
-          RowBox[{
-          "\"\<Base Quantity Name\>\"", "->", "\"\<amount of substance\>\""}],
-           ",", 
-          RowBox[{"\"\<Base Quantity Typical Symbol\>\"", "->", "\"\<n\>\""}],
-           ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<mole\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<mol\>\""}]}], 
-         "|>"}]}], ",", 
-       RowBox[{"\"\<candela\>\"", "->", 
-        RowBox[{"<|", 
-         RowBox[{
-          RowBox[{
-          "\"\<Base Quantity Name\>\"", "->", "\"\<luminous intensity\>\""}], 
-          ",", 
-          RowBox[{
-          "\"\<Base Quantity Typical Symbol\>\"", "->", 
-           "\"\<\!\(\*SubscriptBox[\(I\), \(\[Nu]\)]\)\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<candela\>\""}], ",", 
-          RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<cd\>\""}]}], 
-         "|>"}]}]}], "|>"}]}], "|>"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.8723683391213903`*^9, 3.872368916099375*^9}},
- CellLabel->"In[46]:=",
+           RowBox[{
+           "\"\<Base Quantity Name\>\"", "->", "\"\<luminous intensity\>\""}],
+            ",", 
+           RowBox[{
+           "\"\<Base Quantity Typical Symbol\>\"", "->", 
+            "\"\<\!\(\*SubscriptBox[\(I\), \(\[Nu]\)]\)\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Name\>\"", "->", "\"\<candela\>\""}], ",", 
+           RowBox[{"\"\<Base Unit Symbol\>\"", "->", "\"\<cd\>\""}]}], 
+          "|>"}]}]}], "|>"}]}], "|>"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8723683391213903`*^9, 3.872368916099375*^9}, {
+  3.8723690330830536`*^9, 3.8723690430450172`*^9}},
+ CellLabel->"In[49]:=",
  CellID->103332365,ExpressionUUID->"ebaff3a7-7e97-4934-8ed2-598bae50bf0d"],
 
 Cell[BoxData[
- TemplateBox[{
-  "Keys", "invrl", 
-   "\"The argument \\!\\(\\*RowBox[{\\\"Missing\\\", \\\"[\\\", \
-RowBox[{\\\"\\\\\\\"KeyAbsent\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Types\\\\\\\
-\"\\\"}], \\\"]\\\"}]\\) is not a valid Association or a list of rules.\"", 2,
-    46, 5, 19481186814906954857, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.872368916459364*^9},
- CellLabel->"During evaluation of In[46]:=",
- CellID->124723172,ExpressionUUID->"10f16afe-cb77-4fa2-8fbd-d6e9a4873593"],
-
-Cell[BoxData[
- BoxForm`ArrangeSummaryBox[EntityStore, 
+ InterpretationBox[
+  RowBox[{
+   TagBox["EntityStore",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"SI Base Units\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"second\"", ",", "\"meter\"", ",", "\"kilogram\"", ",", 
+                    "\"\[Ellipsis]\"", ",", "\"kelvin\"", ",", "\"mole\"", 
+                    ",", "\"candela\""}], "}"}], "SummaryItem"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\" (\"", "7", "\")\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"]}]}, {
+               RowBox[{
+                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    RowBox[{"\"Base Quantity Name\"", ",", 
+                    RowBox[{"\"Base Qu\"", "\[Ellipsis]", "\" Symbol\""}], 
+                    ",", 
+                    RowBox[{"\"\"", "\[Ellipsis]", "\"\""}], ",", 
+                    "\"Base Unit Symbol\""}], "}"}], Short], "SummaryItem"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"SI Base Units\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Entities: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    
+                    RowBox[{
+                    "\"second\"", ",", "\"meter\"", ",", "\"kilogram\"", ",", 
+                    "\"\[Ellipsis]\"", ",", "\"kelvin\"", ",", "\"mole\"", 
+                    ",", "\"candela\""}], "}"}], "SummaryItem"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\" (\"", "7", "\")\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"]}]}, {
+               RowBox[{
+                 TagBox["\"Properties: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    RowBox[{"\"Base Quantity Name\"", ",", 
+                    RowBox[{"\"Base Qu\"", "\[Ellipsis]", "\" Symbol\""}], 
+                    ",", 
+                    RowBox[{"\"\"", "\[Ellipsis]", "\"\""}], ",", 
+                    "\"Base Unit Symbol\""}], "}"}], Short], "SummaryItem"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{"\" (\"", "4", "\")\""}, "RowDefault"], 
+                  "SummaryItemAnnotation"]}]}, {
+               RowBox[{
+                 TagBox["\"Entity classes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"none\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Property classes: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"none\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
   EntityStore[<|
-   "SI Base Units" -> <|
-     "second" -> <|
-       "Base Quantity Name" -> "time", "Base Quantity Typical Symbol" -> "t", 
-        "Base Unit Name" -> "second", "Base Unit Symbol" -> "s"|>, 
-      "meter" -> <|
-       "Base Quantity Name" -> "length", "Base Quantity Typical Symbol" -> 
-        "l,x,r,etc.", "Base Unit Name" -> "meter", "Base Unit Symbol" -> 
-        "m"|>, "kilogram" -> <|
-       "Base Quantity Name" -> "mass", "Base Quantity Typical Symbol" -> "m", 
-        "Base Unit Name" -> "kilogram", "Base Unit Symbol" -> "kg"|>, 
-      "ampere" -> <|
-       "Base Quantity Name" -> "electric current", 
-        "Base Quantity Typical Symbol" -> "I,i", "Base Unit Name" -> "ampere",
-         "Base Unit Symbol" -> "A"|>, 
-      "kelvin" -> <|
-       "Base Quantity Name" -> "thermodynamic temperature", 
-        "Base Quantity Typical Symbol" -> "T", "Base Unit Name" -> "kelvin", 
-        "Base Unit Symbol" -> "K"|>, 
-      "mole" -> <|
-       "Base Quantity Name" -> "amount of substance", 
-        "Base Quantity Typical Symbol" -> "n", "Base Unit Name" -> "mole", 
-        "Base Unit Symbol" -> "mol"|>, 
-      "candela" -> <|
-       "Base Quantity Name" -> "luminous intensity", 
-        "Base Quantity Typical Symbol" -> 
-        "\!\(\*SubscriptBox[\(I\), \(\[Nu]\)]\)", "Base Unit Name" -> 
-        "candela", "Base Unit Symbol" -> "cd"|>|>|>], None, 
-  EntityFramework`EntityStore`Private`always$63648, 
-  EntityFramework`EntityStore`Private`sometimes$63648, 
-  StandardForm]], "Output",
- CellChangeTimes->{3.872368916669338*^9},
- CellLabel->"Out[46]=",
- CellID->178479400,ExpressionUUID->"64ff7854-94cf-4d29-8b13-f457390ac1f5"]
+   "Types" -> <|
+     "SI Base Units" -> <|
+       "Entities" -> <|
+         "second" -> <|
+           "Base Quantity Name" -> "time", "Base Quantity Typical Symbol" -> 
+            "t", "Base Unit Name" -> "second", "Base Unit Symbol" -> "s"|>, 
+          "meter" -> <|
+           "Base Quantity Name" -> "length", "Base Quantity Typical Symbol" -> 
+            "l,x,r,etc.", "Base Unit Name" -> "meter", "Base Unit Symbol" -> 
+            "m"|>, "kilogram" -> <|
+           "Base Quantity Name" -> "mass", "Base Quantity Typical Symbol" -> 
+            "m", "Base Unit Name" -> "kilogram", "Base Unit Symbol" -> "kg"|>,
+           "ampere" -> <|
+           "Base Quantity Name" -> "electric current", 
+            "Base Quantity Typical Symbol" -> "I,i", "Base Unit Name" -> 
+            "ampere", "Base Unit Symbol" -> "A"|>, 
+          "kelvin" -> <|
+           "Base Quantity Name" -> "thermodynamic temperature", 
+            "Base Quantity Typical Symbol" -> "T", "Base Unit Name" -> 
+            "kelvin", "Base Unit Symbol" -> "K"|>, 
+          "mole" -> <|
+           "Base Quantity Name" -> "amount of substance", 
+            "Base Quantity Typical Symbol" -> "n", "Base Unit Name" -> "mole",
+             "Base Unit Symbol" -> "mol"|>, 
+          "candela" -> <|
+           "Base Quantity Name" -> "luminous intensity", 
+            "Base Quantity Typical Symbol" -> 
+            "\!\(\*SubscriptBox[\(I\), \(\[Nu]\)]\)", "Base Unit Name" -> 
+            "candela", "Base Unit Symbol" -> "cd"|>|>, 
+        "Properties" -> <|
+         "Base Quantity Name" -> <||>, "Base Quantity Typical Symbol" -> <||>,
+           "Base Unit Name" -> <||>, "Base Unit Symbol" -> <||>|>|>|>|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.872368916669338*^9, 3.872368968405659*^9, 
+  3.8723690434487696`*^9},
+ CellLabel->"Out[49]=",
+ CellID->330688880,ExpressionUUID->"52ff5739-f607-4e72-8880-0fdc70a70ec3"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152., 585.6},
+WindowSize->{576., 585.6},
 WindowMargins->{{
   Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 TaggingRules->{
@@ -12499,16 +12629,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 619546, 12457},
- {"Your Essay Title", 619732, 12461},
- {"AuthorName", 619912, 12465},
- {"Abstract", 620071, 12469},
- {"TemplateCell", 620253, 12473},
- {"SectionHeader", 620436, 12477},
- {"ExampleTopicSentence", 620612, 12481},
- {"ExampleCodeText", 620787, 12485},
- {"ExampleInput", 620957, 12489},
- {"ExampleOutput", 621123, 12493}
+ {"Examples", 625855, 12587},
+ {"Your Essay Title", 626041, 12591},
+ {"AuthorName", 626221, 12595},
+ {"Abstract", 626380, 12599},
+ {"TemplateCell", 626562, 12603},
+ {"SectionHeader", 626745, 12607},
+ {"ExampleTopicSentence", 626921, 12611},
+ {"ExampleCodeText", 627096, 12615},
+ {"ExampleInput", 627266, 12619},
+ {"ExampleOutput", 627432, 12623}
  }
 *)
 (*NotebookFileOutline
@@ -12910,18 +13040,16 @@ Cell[492114, 9957, 8771, 205, 400, "Output",ExpressionUUID->"8f096556-662c-4e99-
 Cell[500900, 10165, 244, 4, 28, "Input",ExpressionUUID->"c0c5b5f1-e4f0-47eb-b918-641e5db43014",
  CellID->273763095],
 Cell[CellGroupData[{
-Cell[501169, 10173, 491, 14, 28, "Input",ExpressionUUID->"c90e74a4-df1c-4bbb-b47c-35c3610ad680",
+Cell[501169, 10173, 491, 14, 86, "Input",ExpressionUUID->"c90e74a4-df1c-4bbb-b47c-35c3610ad680",
  CellID->69952282],
-Cell[501663, 10189, 454, 12, 32, "Output",ExpressionUUID->"a7a8f06b-b641-4a73-8841-8a8e894d29d0",
+Cell[501663, 10189, 454, 12, 52, "Output",ExpressionUUID->"a7a8f06b-b641-4a73-8841-8a8e894d29d0",
  CellID->32444764]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[502154, 10206, 3581, 82, 314, "Input",ExpressionUUID->"ebaff3a7-7e97-4934-8ed2-598bae50bf0d",
+Cell[502154, 10206, 3770, 85, 542, "Input",ExpressionUUID->"ebaff3a7-7e97-4934-8ed2-598bae50bf0d",
  CellID->103332365],
-Cell[505738, 10290, 518, 10, 28, "Message",ExpressionUUID->"10f16afe-cb77-4fa2-8fbd-d6e9a4873593",
- CellID->124723172],
-Cell[506259, 10302, 1723, 35, 35, "Output",ExpressionUUID->"64ff7854-94cf-4d29-8b13-f457390ac1f5",
- CellID->178479400]
+Cell[505927, 10293, 8365, 174, 113, "Output",ExpressionUUID->"52ff5739-f607-4e72-8880-0fdc70a70ec3",
+ CellID->330688880]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
