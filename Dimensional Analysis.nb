@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    818185,      16531]
-NotebookOptionsPosition[    683076,      13889]
-NotebookOutlinePosition[    796851,      16064]
-CellTagsIndexPosition[    796460,      16050]
+NotebookDataLength[    829778,      16807]
+NotebookOptionsPosition[    694667,      14165]
+NotebookOutlinePosition[    808441,      16340]
+CellTagsIndexPosition[    808050,      16326]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -13828,13 +13828,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{567., {194.63403328722342`, 200.36596671277658`}},
+      ImageSizeCache->{467., {194.63403328722342`, 200.36596671277658`}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{567., {194.63403328722342`, 200.36596671277658`}}],
+     ImageSizeCache->{467., {194.63403328722342`, 200.36596671277658`}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -13870,24 +13870,300 @@ Cell[BoxData[
             RowBox[{
             "\"\<Unit expresses in terms of base units\>\"", "->", 
              "\"\<rad=m/m\>\""}], ",", 
-            "\"\<Unit expressed in terms of other SI units\>\""}], "|>"}]}], 
-         ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<steradian\>\"", "->", 
-          RowBox[{"<|", "|>"}]}], ",", "\"\<frequency\>\"", ",", 
-         "\"\<newton\>\"", ",", "\"\<pascal\>\"", ",", "\"\<joule\>\"", ",", 
-         "\"\<watt\>\"", ",", "\"\<coulomb\>\"", ",", "\"\<volt\>\"", ",", 
-         "\"\<farad\>\"", ",", "\"\<ohm\>\"", ",", "\"\<siemens\>\"", ",", 
-         "\"\<weber\>\"", ",", "\"\<tesla\>\"", ",", "\"\<henry\>\"", ",", 
-         "\"\<degree Celsius\>\"", ",", "\"\<lumen\>\"", ",", "\"\<lux\>\"", 
-         ",", "\"\<becquerel\>\"", ",", "\"\<gray\>\"", ",", 
-         "\"\<sievert\>\"", ",", "\"\<katal\>\""}], "|>"}]}], "|>"}]}], 
-    "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.8724014515929255`*^9, 3.8724016789212217`*^9}},
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<solid angle\>\""}],
+             ",", 
+            RowBox[{
+            "\"\<Special name of unit\>\"", "->", "\"\<steradian\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<sr=\!\(\*SuperscriptBox[\(m\), \
+\(2\)]\)/\!\(\*SuperscriptBox[\(m\), \(2\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<hertz\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<frequency\>\""}], 
+            ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<hertz\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<Hz=\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<newton\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<force\>\""}], ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<netwon\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<N=kg m \!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<pascal\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<pressure, stress\>\""}], 
+            ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<pascal\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<Pa=kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<joule\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<energy, work, amount of heat\>\""}], ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<joule\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<J=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<N m\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<watt\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<power, radiant flux\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<watt\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<W=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\)\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<J/s\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<coulomb\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<electric charge\>\""}], 
+            ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<coulomb\>\""}],
+             ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<C=A s\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<volt\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", 
+             "\"\<electric potential difference\>\""}], ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<volt\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<V=kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-3\)]\) \!\(\*SuperscriptBox[\(A\), \(-1\)]\)\>\
+\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<W/A\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<farad\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<capacitance\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<ohm\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<siemens\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<weber\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<tesla\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<henry\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<degree Celsius\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<lumen\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<lux\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<becquerel\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<gray\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<sievert\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<katal\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<Derived quantity\>\"", "->", "\"\<plane angle\>\""}],
+             ",", 
+            RowBox[{"\"\<Special name of unit\>\"", "->", "\"\<radian\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Unit expresses in terms of base units\>\"", "->", 
+             "\"\<rad=m/m\>\""}], ",", 
+            RowBox[{
+            "\"\<Unit expressed in terms of other SI units\>\"", "->", 
+             "\"\<\>\""}]}], "|>"}]}]}], "|>"}]}], "|>"}]}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8724014515929255`*^9, 3.8724016789212217`*^9}, {
+  3.8724020075744677`*^9, 3.8724024543290515`*^9}},
  CellID->86422327,ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1152., 585.6},
+WindowSize->{576., 585.6},
 WindowMargins->{{
   Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 TaggingRules->{
@@ -16005,34 +16281,14 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Examples"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "Your Essay Title"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "AuthorName"->{
-  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
  "Abstract"->{
   Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
    CellTags->{"Abstract", "TemplateCell"},
    CellID->587432573]},
- "TemplateCell"->{
-  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "SectionHeader"->{
-  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "ExampleTopicSentence"->{
-  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
+ "AuthorName"->{
+  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
  "ExampleCodeText"->{
   Cell[1485, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
@@ -16044,21 +16300,41 @@ CellTagsIndex->{
  "ExampleOutput"->{
   Cell[1881, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
    CellTags->"ExampleOutput",
-   CellID->171130590]}
+   CellID->171130590]},
+ "Examples"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "ExampleTopicSentence"->{
+  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
+ "SectionHeader"->{
+  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "TemplateCell"->{
+  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "Your Essay Title"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 794712, 16007},
- {"Your Essay Title", 794898, 16011},
- {"AuthorName", 795078, 16015},
- {"Abstract", 795237, 16019},
- {"TemplateCell", 795419, 16023},
- {"SectionHeader", 795602, 16027},
- {"ExampleTopicSentence", 795778, 16031},
- {"ExampleCodeText", 795953, 16035},
- {"ExampleInput", 796123, 16039},
- {"ExampleOutput", 796289, 16043}
+ {"Abstract", 806302, 16283},
+ {"AuthorName", 806482, 16287},
+ {"ExampleCodeText", 806648, 16291},
+ {"ExampleInput", 806818, 16295},
+ {"ExampleOutput", 806984, 16299},
+ {"Examples", 807147, 16303},
+ {"ExampleTopicSentence", 807337, 16307},
+ {"SectionHeader", 807510, 16311},
+ {"TemplateCell", 807678, 16315},
+ {"Your Essay Title", 807864, 16319}
  }
 *)
 (*NotebookFileOutline
@@ -16524,12 +16800,12 @@ Cell[609278, 12413, 12401, 273, 259, "Output",ExpressionUUID->"bc5f59fd-bfb6-416
  CellID->495546465]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[621716, 12691, 571, 16, 28, "Input",ExpressionUUID->"7adea5cf-aaa0-4bde-92fa-00a27a1b72db",
+Cell[621716, 12691, 571, 16, 86, "Input",ExpressionUUID->"7adea5cf-aaa0-4bde-92fa-00a27a1b72db",
  CellID->529148596],
 Cell[622290, 12709, 59129, 1141, 414, "Output",ExpressionUUID->"a5cc5549-8390-4e94-b4c9-2c18f31ce015",
  CellID->194140075]
 }, Open  ]],
-Cell[681434, 13853, 1614, 32, 143, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
+Cell[681434, 13853, 13205, 308, 1901, "Input",ExpressionUUID->"879b285e-841e-4a82-9fb1-558fcdc6877a",
  CellID->86422327]
 }, Open  ]]
 }, Open  ]]
