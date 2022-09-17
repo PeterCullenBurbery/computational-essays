@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1150988,      22977]
-NotebookOptionsPosition[   1014650,      20309]
-NotebookOutlinePosition[   1128434,      22484]
-CellTagsIndexPosition[   1128033,      22470]
+NotebookDataLength[   1153501,      23033]
+NotebookOptionsPosition[   1017163,      20365]
+NotebookOutlinePosition[   1130947,      22540]
+CellTagsIndexPosition[   1130546,      22526]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20299,9 +20299,65 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<permittivity\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<permeability\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<molar energy\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+         RowBox[{"\"\<dynamic viscosity\>\"", "->", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<Derived quantity\>\"", "->", "\"\<dynamic viscosity\>\""}], 
+            ",", 
+            RowBox[{
+            "\"\<Name of coherent derived unit\>\"", "->", 
+             "\"\<pascal second\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
 \!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}]}], "|>"}]}], 
       "|>"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.8724046948094163`*^9, 3.8724050379431868`*^9}},
+ CellChangeTimes->{{3.8724046948094163`*^9, 3.8724050882106547`*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22469,16 +22525,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1126285, 22427},
- {"AuthorName", 1126465, 22431},
- {"ExampleCodeText", 1126631, 22435},
- {"ExampleInput", 1126801, 22439},
- {"ExampleOutput", 1126967, 22443},
- {"Examples", 1127130, 22447},
- {"ExampleTopicSentence", 1127320, 22451},
- {"SectionHeader", 1127493, 22455},
- {"TemplateCell", 1127661, 22459},
- {"Your Essay Title", 1127847, 22463}
+ {"Abstract", 1128798, 22483},
+ {"AuthorName", 1128978, 22487},
+ {"ExampleCodeText", 1129144, 22491},
+ {"ExampleInput", 1129314, 22495},
+ {"ExampleOutput", 1129480, 22499},
+ {"Examples", 1129643, 22503},
+ {"ExampleTopicSentence", 1129833, 22507},
+ {"SectionHeader", 1130006, 22511},
+ {"TemplateCell", 1130174, 22515},
+ {"Your Essay Title", 1130360, 22519}
  }
 *)
 (*NotebookFileOutline
@@ -22975,7 +23031,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 10239, 225, 1844, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 12752, 281, 2300, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
