@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1157125,      23102]
-NotebookOptionsPosition[   1020787,      20434]
-NotebookOutlinePosition[   1134571,      22609]
-CellTagsIndexPosition[   1134170,      22595]
+NotebookDataLength[   1157250,      23106]
+NotebookOptionsPosition[   1020912,      20438]
+NotebookOutlinePosition[   1134696,      22613]
+CellTagsIndexPosition[   1134295,      22599]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20114,7 +20114,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<newton meter\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{"\"\<Symbol\>\"", "->", "\"\<N m\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20128,7 +20128,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<surface tension\>\"", "->", "\"\<newton per meter\>\""}], 
             ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<N \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20142,7 +20144,9 @@ include SI coherent derived units with special names and symbols\>\"", "->",
             RowBox[{
             "\"\<Name of coherent derived unit\>\"", "->", 
              "\"\<radian per second\>\""}], ",", 
-            RowBox[{"\"\<Symbol\>\"", "->", "\"\<Pa s\>\""}], ",", 
+            RowBox[{
+            "\"\<Symbol\>\"", "->", 
+             "\"\<rad \!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
              "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
@@ -20426,7 +20430,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
       "|>"}]}], "]"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.8724046948094163`*^9, 3.8724054898375945`*^9}, {
   3.872405535536311*^9, 3.872405625601375*^9}, {3.8724056605937953`*^9, 
-  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872405872961417*^9}},
+  3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.872405906371767*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22594,16 +22598,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1132422, 22552},
- {"AuthorName", 1132602, 22556},
- {"ExampleCodeText", 1132768, 22560},
- {"ExampleInput", 1132938, 22564},
- {"ExampleOutput", 1133104, 22568},
- {"Examples", 1133267, 22572},
- {"ExampleTopicSentence", 1133457, 22576},
- {"SectionHeader", 1133630, 22580},
- {"TemplateCell", 1133798, 22584},
- {"Your Essay Title", 1133984, 22588}
+ {"Abstract", 1132547, 22556},
+ {"AuthorName", 1132727, 22560},
+ {"ExampleCodeText", 1132893, 22564},
+ {"ExampleInput", 1133063, 22568},
+ {"ExampleOutput", 1133229, 22572},
+ {"Examples", 1133392, 22576},
+ {"ExampleTopicSentence", 1133582, 22580},
+ {"SectionHeader", 1133755, 22584},
+ {"TemplateCell", 1133923, 22588},
+ {"Your Essay Title", 1134109, 22592}
  }
 *)
 (*NotebookFileOutline
@@ -23100,7 +23104,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 16376, 350, 2871, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 16501, 354, 2871, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
