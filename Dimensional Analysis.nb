@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1141020,      22758]
-NotebookOptionsPosition[   1004805,      20092]
-NotebookOutlinePosition[   1118589,      22267]
-CellTagsIndexPosition[   1118188,      22253]
+NotebookDataLength[   1141391,      22765]
+NotebookOptionsPosition[   1005057,      20097]
+NotebookOutlinePosition[   1118841,      22272]
+CellTagsIndexPosition[   1118440,      22258]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20034,17 +20034,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], FrameStyle -> 
       None, ImageMargins -> 0, FrameMargins -> 0, Alignment -> Top, 
       ImageSize -> {Automatic, 15}], FontSize -> 1], 
-    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
-    TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
-    "3f0ad506-c64f-4e36-b4f6-b3fc65a2913c"][{
-      Key[
-       Entity[
-       "Examples of coherent derived units in the SI expressed in terms of \
-base units", "surface density"]], 
-      Key[
-       EntityProperty[
-       "Examples of coherent derived units in the SI expressed in terms of \
-base units", "Derived quantity"]]}, "Item", False]}, 
+    TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
     DynamicWrapperBox[
      DynamicBox[ToBoxes[
        Dataset`DatasetContent[
@@ -20086,7 +20076,22 @@ base units", "Derived quantity"]]}, "Item", False]},
 Cell[BoxData["Quit"], "Input",
  CellChangeTimes->{{3.872404453977728*^9, 3.872404454506527*^9}},
  CellLabel->"In[9]:=",
- CellID->310704143,ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094"]
+ CellID->310704143,ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094"],
+
+Cell[BoxData[
+ RowBox[{"EntityRegister", "[", 
+  RowBox[{
+  "EXAMPLESOFSICOHERENTDERIVEDUNITSWHOSENAMESANDSYMBOLSINCLUDESICOHERENTDERIVE\
+DUNITSWITHSPECIALNAMESANDSYMBOLS", "=", 
+   RowBox[{"EntityStore", "[", 
+    RowBox[{
+    "\"\<Examples of SI coherent derived units whose names and symbols \
+include SI coherent derived units with special names and symbols\>\"", "->", 
+     RowBox[{"<|", 
+      RowBox[{"\"\<Entities\>\"", "->", 
+       RowBox[{"<|", "|>"}]}], "|>"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724046948094163`*^9, 3.8724047653690996`*^9}},
+ CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -22208,34 +22213,14 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Examples"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "Your Essay Title"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "AuthorName"->{
-  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
  "Abstract"->{
   Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
    CellTags->{"Abstract", "TemplateCell"},
    CellID->587432573]},
- "TemplateCell"->{
-  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "SectionHeader"->{
-  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "ExampleTopicSentence"->{
-  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
+ "AuthorName"->{
+  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
  "ExampleCodeText"->{
   Cell[1485, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
@@ -22247,21 +22232,41 @@ CellTagsIndex->{
  "ExampleOutput"->{
   Cell[1881, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
    CellTags->"ExampleOutput",
-   CellID->171130590]}
+   CellID->171130590]},
+ "Examples"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "ExampleTopicSentence"->{
+  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
+ "SectionHeader"->{
+  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "TemplateCell"->{
+  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "Your Essay Title"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 1116440, 22210},
- {"Your Essay Title", 1116626, 22214},
- {"AuthorName", 1116806, 22218},
- {"Abstract", 1116965, 22222},
- {"TemplateCell", 1117147, 22226},
- {"SectionHeader", 1117330, 22230},
- {"ExampleTopicSentence", 1117506, 22234},
- {"ExampleCodeText", 1117681, 22238},
- {"ExampleInput", 1117851, 22242},
- {"ExampleOutput", 1118017, 22246}
+ {"Abstract", 1116692, 22215},
+ {"AuthorName", 1116872, 22219},
+ {"ExampleCodeText", 1117038, 22223},
+ {"ExampleInput", 1117208, 22227},
+ {"ExampleOutput", 1117374, 22231},
+ {"Examples", 1117537, 22235},
+ {"ExampleTopicSentence", 1117727, 22239},
+ {"SectionHeader", 1117900, 22243},
+ {"TemplateCell", 1118068, 22247},
+ {"Your Essay Title", 1118254, 22251}
  }
 *)
 (*NotebookFileOutline
@@ -22753,11 +22758,13 @@ Cell[860165, 17349, 343, 6, 52, "Output",ExpressionUUID->"0f26a553-110d-4bbd-af6
 Cell[CellGroupData[{
 Cell[860545, 17360, 631, 17, 105, "Input",ExpressionUUID->"8295125a-6be3-4687-b0bd-666de66d19c9",
  CellID->91500145],
-Cell[861179, 17379, 143389, 2703, 797, "Output",ExpressionUUID->"31f6f126-2261-4a46-ab92-8dd692ef5ef8",
+Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4a46-ab92-8dd692ef5ef8",
  CellID->30068017]
 }, Open  ]],
-Cell[1004583, 20085, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
- CellID->310704143]
+Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
+ CellID->310704143],
+Cell[1004383, 20080, 646, 13, 162, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+ CellID->98022312]
 }, Open  ]]
 }, Open  ]]
 }
