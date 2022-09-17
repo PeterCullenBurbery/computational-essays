@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1158680,      23153]
-NotebookOptionsPosition[   1022342,      20485]
-NotebookOutlinePosition[   1136126,      22660]
-CellTagsIndexPosition[   1135725,      22646]
+NotebookDataLength[   1158549,      23151]
+NotebookOptionsPosition[   1022211,      20483]
+NotebookOutlinePosition[   1135995,      22658]
+CellTagsIndexPosition[   1135594,      22644]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -20194,13 +20194,12 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<joule per kelvin\>\""}], ",", 
             RowBox[{
             "\"\<Symbol\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(K\), \(\
-\[Placeholder]\)]\)\>\""}], ",", 
+             "\"\<J \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\) \!\(\*SuperscriptBox[\(K\), \(-1\)]\)\>\
+\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<specific heat capacity, specific entropy\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20216,8 +20215,8 @@ include SI coherent derived units with special names and symbols\>\"", "->",
 \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<\!\(\*SuperscriptBox[\(m\), \(2\)]\) \
+\!\(\*SuperscriptBox[\(s\), \(-2\)]\)\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<specific energy\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20232,8 +20231,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
              "\"\<J \!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-1\)]\) \
-\!\(\*SuperscriptBox[\(s\), \(-1\)]\)\>\""}]}], "|>"}]}], ",", 
+             "\"\<kg m s\>\""}]}], "|>"}]}], ",", 
          RowBox[{"\"\<thermal conductivity\>\"", "->", 
           RowBox[{"<|", 
            RowBox[{
@@ -20477,7 +20475,7 @@ include SI coherent derived units with special names and symbols\>\"", "->",
  CellChangeTimes->{{3.8724046948094163`*^9, 3.8724054898375945`*^9}, {
   3.872405535536311*^9, 3.872405625601375*^9}, {3.8724056605937953`*^9, 
   3.8724057153593254`*^9}, {3.8724057568480635`*^9, 3.8724062140300493`*^9}, {
-  3.872406546118978*^9, 3.8724066656415663`*^9}},
+  3.872406546118978*^9, 3.8724067416745973`*^9}},
  EmphasizeSyntaxErrors->True,
  CellID->98022312,ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac"]
 }, Open  ]]
@@ -22645,16 +22643,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 1133977, 22603},
- {"AuthorName", 1134157, 22607},
- {"ExampleCodeText", 1134323, 22611},
- {"ExampleInput", 1134493, 22615},
- {"ExampleOutput", 1134659, 22619},
- {"Examples", 1134822, 22623},
- {"ExampleTopicSentence", 1135012, 22627},
- {"SectionHeader", 1135185, 22631},
- {"TemplateCell", 1135353, 22635},
- {"Your Essay Title", 1135539, 22639}
+ {"Abstract", 1133846, 22601},
+ {"AuthorName", 1134026, 22605},
+ {"ExampleCodeText", 1134192, 22609},
+ {"ExampleInput", 1134362, 22613},
+ {"ExampleOutput", 1134528, 22617},
+ {"Examples", 1134691, 22621},
+ {"ExampleTopicSentence", 1134881, 22625},
+ {"SectionHeader", 1135054, 22629},
+ {"TemplateCell", 1135222, 22633},
+ {"Your Essay Title", 1135408, 22637}
  }
 *)
 (*NotebookFileOutline
@@ -23151,7 +23149,7 @@ Cell[861179, 17379, 142992, 2693, 797, "Output",ExpressionUUID->"31f6f126-2261-4
 }, Open  ]],
 Cell[1004186, 20075, 194, 3, 28, "Input",ExpressionUUID->"537bd7d5-a84b-41d7-857d-c62730dd5094",
  CellID->310704143],
-Cell[1004383, 20080, 17931, 401, 2852, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
+Cell[1004383, 20080, 17800, 399, 2852, "Input",ExpressionUUID->"ad50b773-0b31-4b8f-9768-630ee87933ac",
  CellID->98022312]
 }, Open  ]]
 }, Open  ]]
