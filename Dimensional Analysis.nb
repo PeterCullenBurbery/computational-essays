@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    991153,      19898]
-NotebookOptionsPosition[    855495,      17244]
-NotebookOutlinePosition[    969269,      19419]
-CellTagsIndexPosition[    968878,      19405]
+NotebookDataLength[   1008095,      20186]
+NotebookOptionsPosition[    872162,      17526]
+NotebookOutlinePosition[    985936,      19701]
+CellTagsIndexPosition[    985545,      19687]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -17161,6 +17161,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
  CellID->465427970,ExpressionUUID->"525d5eba-ec86-4779-ac9e-3b073ad07d80"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"EntityRegister", "[", 
   RowBox[{"THE22SIUNITSWITHSPECIALNAMESANDSYMBOLS", "=", 
@@ -17231,14 +17233,294 @@ Cell[BoxData[
             RowBox[{
             "\"\<Derived quantity\>\"", "->", 
              "\"\<density, mass density\>\""}], ",", 
-            RowBox[{"\"\<Typical symbol or quantity\>\"", "->", "\"\<A\>\""}],
-             ",", 
+            RowBox[{
+            "\"\<Typical symbol or quantity\>\"", "->", "\"\<\[Rho]\>\""}], 
+            ",", 
             RowBox[{
             "\"\<Derived unit expressed in terms of base units\>\"", "->", 
-             "\"\<\!\(\*SuperscriptBox[\(m\), \(2\)]\)\>\""}]}], "|>"}]}]}], 
-        "|>"}]}], "|>"}]}], "]"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.8724039269248705`*^9, 3.8724041410250187`*^9}},
- CellID->187757423,ExpressionUUID->"db5c1977-2eee-472d-8b52-383621f3d0fd"]
+             "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-3\)]\)\>\""}], ",", 
+            RowBox[{"\"\<surface density\>\"", "->", 
+             RowBox[{"<|", 
+              RowBox[{
+               RowBox[{
+               "\"\<Derived quantity\>\"", "->", "\"\<surface density\>\""}], 
+               ",", 
+               RowBox[{
+               "\"\<Typical symbol or quantity\>\"", "->", 
+                "\"\<\!\(\*SubscriptBox[\(\[Rho]\), \(A\)]\)\>\""}], ",", 
+               RowBox[{
+               "\"\<Derived unit expressed in terms of base units\>\"", "->", 
+                "\"\<kg \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}], ",", 
+               RowBox[{"\"\<specific volume\>\"", "->", 
+                RowBox[{"<|", 
+                 RowBox[{
+                  RowBox[{
+                  "\"\<Derived quantity\>\"", "->", 
+                   "\"\<specific volume\>\""}], ",", 
+                  RowBox[{
+                  "\"\<Typical symbol or quantity\>\"", "->", "\"\<v\>\""}], 
+                  ",", 
+                  RowBox[{
+                  "\"\<Derived unit expressed in terms of base units\>\"", 
+                   "->", "\"\<\!\(\*SuperscriptBox[\(m\), \(3\)]\) \
+\!\(\*SuperscriptBox[\(kg\), \(-1\)]\)\>\""}], ",", 
+                  RowBox[{"\"\<current density\>\"", "->", 
+                   RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{
+                    "\"\<Derived quantity\>\"", "->", 
+                    "\"\<current density\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Typical symbol or quantity\>\"", "->", "\"\<j\>\""}],
+                     ",", 
+                    RowBox[{
+                    "\"\<Derived unit expressed in terms of base units\>\"", 
+                    "->", "\"\<A \!\(\*SuperscriptBox[\(m\), \(-2\)]\)\>\""}],
+                     ",", 
+                    RowBox[{"\"\<magnetic field strength\>\"", "->", 
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{
+                    "\"\<Derived quantity\>\"", "->", 
+                    "\"\<magnetic field strength\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Typical symbol or quantity\>\"", "->", "\"\<H\>\""}],
+                     ",", 
+                    RowBox[{
+                    "\"\<Derived unit expressed in terms of base units\>\"", 
+                    "->", "\"\<A \!\(\*SuperscriptBox[\(m\), \(-1\)]\)\>\""}],
+                     ",", 
+                    RowBox[{"\"\<amount of substance concentration\>\"", "->", 
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{
+                    "\"\<Derived quantity\>\"", "->", 
+                    "\"\<amount of substance concentration\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Typical symbol or quantity\>\"", "->", "\"\<A\>\""}],
+                     ",", 
+                    RowBox[{
+                    "\"\<Derived unit expressed in terms of base units\>\"", 
+                    "->", "\"\<mol \!\(\*SuperscriptBox[\(m\), \
+\(-3\)]\)\>\""}], ",", 
+                    RowBox[{"\"\<mass concentration\>\"", "->", 
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{
+                    "\"\<Derived quantity\>\"", "->", 
+                    "\"\<mass concentration\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Typical symbol or quantity\>\"", "->", 
+                    "\"\<\[Rho],\[Gamma]\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Derived unit expressed in terms of base units\>\"", 
+                    "->", "\"\<kg \!\(\*SuperscriptBox[\(m\), \
+\(-3\)]\)\>\""}], ",", 
+                    RowBox[{"\"\<luminance\>\"", "->", 
+                    RowBox[{"<|", 
+                    RowBox[{
+                    RowBox[{
+                    "\"\<Derived quantity\>\"", "->", "\"\<luminance\>\""}], 
+                    ",", 
+                    RowBox[{
+                    "\"\<Typical symbol or quantity\>\"", "->", 
+                    "\"\<\!\(\*SubscriptBox[\(L\), \(v\)]\)\>\""}], ",", 
+                    RowBox[{
+                    "\"\<Derived unit expressed in terms of base units\>\"", 
+                    "->", "\"\<cd \!\(\*SuperscriptBox[\(m\), \
+\(-2\)]\)\>\""}]}], "|>"}]}]}], "|>"}]}]}], "|>"}]}]}], "|>"}]}]}], 
+                    "|>"}]}]}], "|>"}]}]}], "|>"}]}]}], "|>"}]}]}], "|>"}]}], 
+      "|>"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8724039269248705`*^9, 3.8724044103627844`*^9}},
+ CellLabel->"In[3]:=",
+ CellID->187757423,ExpressionUUID->"db5c1977-2eee-472d-8b52-383621f3d0fd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "EntityRegister", "shadow", 
+   "\"Types \\!\\(\\*RowBox[{\\\"{\\\", \\\"\\\\\\\"SI units with special \
+names and symbols\\\\\\\"\\\", \\\"}\\\"}]\\) in \
+\\!\\(\\*InterpretationBox[RowBox[{TagBox[\\\"EntityStore\\\", \
+\\\"SummaryHead\\\"], \\\"[\\\", DynamicModuleBox[{Typeset`open$$ = False, \
+Set[Typeset`embedState$$, \\\"Ready\\\"]}, \
+TemplateBox[List[PaneSelectorBox[List[Rule[False, \
+GridBox[List[List[PaneBox[ButtonBox[DynamicBox[FEPrivate`FrontEndResource[\\\"\
+FEBitmaps\\\", \\\"SummaryBoxOpener\\\"]], RuleDelayed[ButtonFunction, \
+Set[Typeset`open$$, True]], Rule[Appearance, None], Rule[BaseStyle, List[]], \
+Rule[Evaluator, Automatic], Rule[Method, \\\"Preemptive\\\"]], \
+Rule[Alignment, List[Center, Center]], Rule[ImageSize, \
+Dynamic[List[Automatic, Times[3.5`, \
+Times[CurrentValue[\\\"FontCapHeight\\\"], \
+Power[AbsoluteCurrentValue[Magnification], -1]]]]]]], \
+GridBox[List[List[RowBox[List[TagBox[\\\"\\\\\\\"Type: \\\\\\\"\\\", \
+\\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", TagBox[\\\"\\\\\
+\\\"SI units with special names and symbols\\\\\\\"\\\", \
+\\\"SummaryItem\\\"]]]], List[RowBox[List[TagBox[\\\"\\\\\\\"Entities: \\\\\\\
+\"\\\", \\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[RowBox[List[\\\"{\\\", RowBox[List[\\\"\\\\\\\"area\\\\\\\"\\\", \\\",\
+\\\", \\\"\\\\\\\"volume\\\\\\\"\\\", \\\",\\\", RowBox[List[\\\"\\\\\\\"\\\\\
+\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\\\\\"\\\\\\\"\\\"]], \\\",\\\", \
+RowBox[List[\\\"\\\\\\\"\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \
+\\\"\\\\\\\"\\\\\\\"\\\"]], \\\",\\\", \\\"\\\\\\\"wavenumber\\\\\\\"\\\", \\\
+\",\\\", \\\"\\\\\\\"density, mass density\\\\\\\"\\\"]], \\\"}\\\"]], \
+\\\"SummaryItem\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[TemplateBox[List[\\\"\\\\\\\" (\\\\\\\"\\\", \\\"6\\\", \
+\\\"\\\\\\\")\\\\\\\"\\\"], \\\"RowDefault\\\"], \
+\\\"SummaryItemAnnotation\\\"]]]], \
+List[RowBox[List[TagBox[\\\"\\\\\\\"Properties: \\\\\\\"\\\", \
+\\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[RowBox[List[\\\"{\\\", RowBox[List[\\\"\\\\\\\"Derived \
+quantity\\\\\\\"\\\", \\\",\\\", RowBox[List[\\\"\\\\\\\"Typical \
+\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\\\\\" quantity\\\\\\\"\\\"]], \\\
+\",\\\", RowBox[List[\\\"\\\\\\\"\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\
+\\\\\"\\\\\\\"\\\"]], \\\",\\\", \\\"\\\\\\\"surface density\\\\\\\"\\\"]], \
+\\\"}\\\"]], \\\"SummaryItem\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[TemplateBox[List[\\\"\\\\\\\" (\\\\\\\"\\\", \\\"4\\\", \
+\\\"\\\\\\\")\\\\\\\"\\\"], \\\"RowDefault\\\"], \
+\\\"SummaryItemAnnotation\\\"]]]]], Rule[GridBoxAlignment, \
+List[Rule[\\\"Columns\\\", List[List[Left]]], Rule[\\\"Rows\\\", \
+List[List[Automatic]]]]], Rule[AutoDelete, False], Rule[GridBoxItemSize, \
+List[Rule[\\\"Columns\\\", List[List[Automatic]]], Rule[\\\"Rows\\\", \
+List[List[Automatic]]]]], Rule[GridBoxSpacings, List[Rule[\\\"Columns\\\", \
+List[List[2]]], Rule[\\\"Rows\\\", List[List[Automatic]]]]], Rule[BaseStyle, \
+List[Rule[ShowStringCharacters, False], Rule[NumberMarks, False], \
+Rule[PrintPrecision, 3], Rule[ShowSyntaxStyles, False]]]]]], \
+Rule[GridBoxAlignment, List[Rule[\\\"Columns\\\", List[List[Left]]], \
+Rule[\\\"Rows\\\", List[List[Top]]]]], Rule[AutoDelete, False], \
+Rule[GridBoxItemSize, List[Rule[\\\"Columns\\\", List[List[Automatic]]], \
+Rule[\\\"Rows\\\", List[List[Automatic]]]]], Rule[BaselinePosition, List[1, \
+1]]]], Rule[True, \
+GridBox[List[List[PaneBox[ButtonBox[DynamicBox[FEPrivate`FrontEndResource[\\\"\
+FEBitmaps\\\", \\\"SummaryBoxCloser\\\"]], RuleDelayed[ButtonFunction, \
+Set[Typeset`open$$, False]], Rule[Appearance, None], Rule[BaseStyle, List[]], \
+Rule[Evaluator, Automatic], Rule[Method, \\\"Preemptive\\\"]], \
+Rule[Alignment, List[Center, Center]], Rule[ImageSize, \
+Dynamic[List[Automatic, Times[3.5`, \
+Times[CurrentValue[\\\"FontCapHeight\\\"], \
+Power[AbsoluteCurrentValue[Magnification], -1]]]]]]], \
+GridBox[List[List[RowBox[List[TagBox[\\\"\\\\\\\"Type: \\\\\\\"\\\", \
+\\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", TagBox[\\\"\\\\\
+\\\"SI units with special names and symbols\\\\\\\"\\\", \
+\\\"SummaryItem\\\"]]]], List[RowBox[List[TagBox[\\\"\\\\\\\"Entities: \\\\\\\
+\"\\\", \\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[RowBox[List[\\\"{\\\", RowBox[List[\\\"\\\\\\\"area\\\\\\\"\\\", \\\",\
+\\\", \\\"\\\\\\\"volume\\\\\\\"\\\", \\\",\\\", RowBox[List[\\\"\\\\\\\"\\\\\
+\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\\\\\"\\\\\\\"\\\"]], \\\",\\\", \
+RowBox[List[\\\"\\\\\\\"\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \
+\\\"\\\\\\\"\\\\\\\"\\\"]], \\\",\\\", \\\"\\\\\\\"wavenumber\\\\\\\"\\\", \\\
+\",\\\", \\\"\\\\\\\"density, mass density\\\\\\\"\\\"]], \\\"}\\\"]], \
+\\\"SummaryItem\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[TemplateBox[List[\\\"\\\\\\\" (\\\\\\\"\\\", \\\"6\\\", \
+\\\"\\\\\\\")\\\\\\\"\\\"], \\\"RowDefault\\\"], \
+\\\"SummaryItemAnnotation\\\"]]]], \
+List[RowBox[List[TagBox[\\\"\\\\\\\"Properties: \\\\\\\"\\\", \
+\\\"SummaryItemAnnotation\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[RowBox[List[\\\"{\\\", RowBox[List[\\\"\\\\\\\"Derived \
+quantity\\\\\\\"\\\", \\\",\\\", RowBox[List[\\\"\\\\\\\"Typical \
+\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\\\\\" quantity\\\\\\\"\\\"]], \\\
+\",\\\", RowBox[List[\\\"\\\\\\\"\\\\\\\"\\\", \\\"\\\\[Ellipsis]\\\", \\\"\\\
+\\\\\"\\\\\\\"\\\"]], \\\",\\\", \\\"\\\\\\\"surface density\\\\\\\"\\\"]], \
+\\\"}\\\"]], \\\"SummaryItem\\\"], \\\"\\\\[InvisibleSpace]\\\", \
+TagBox[TemplateBox[List[\\\"\\\\\\\" (\\\\\\\"\\\", \\\"4\\\", \
+\\\"\\\\\\\")\\\\\\\"\\\"], \\\"RowDefault\\\"], \
+\\\"SummaryItemAnnotation\\\"]]]], List[RowBox[List[TagBox[\\\"\\\\\\\"Entity \
+classes: \\\\\\\"\\\", \\\"SummaryItemAnnotation\\\"], \
+\\\"\\\\[InvisibleSpace]\\\", TagBox[\\\"\\\\\\\"none\\\\\\\"\\\", \
+\\\"SummaryItem\\\"]]]], List[RowBox[List[TagBox[\\\"\\\\\\\"Property \
+classes: \\\\\\\"\\\", \\\"SummaryItemAnnotation\\\"], \
+\\\"\\\\[InvisibleSpace]\\\", TagBox[\\\"\\\\\\\"none\\\\\\\"\\\", \
+\\\"SummaryItem\\\"]]]]], Rule[GridBoxAlignment, List[Rule[\\\"Columns\\\", \
+List[List[Left]]], Rule[\\\"Rows\\\", List[List[Automatic]]]]], \
+Rule[AutoDelete, False], Rule[GridBoxItemSize, List[Rule[\\\"Columns\\\", \
+List[List[Automatic]]], Rule[\\\"Rows\\\", List[List[Automatic]]]]], \
+Rule[GridBoxSpacings, List[Rule[\\\"Columns\\\", List[List[2]]], \
+Rule[\\\"Rows\\\", List[List[Automatic]]]]], Rule[BaseStyle, \
+List[Rule[ShowStringCharacters, False], Rule[NumberMarks, False], \
+Rule[PrintPrecision, 3], Rule[ShowSyntaxStyles, False]]]]]], \
+Rule[GridBoxAlignment, List[Rule[\\\"Columns\\\", List[List[Left]]], \
+Rule[\\\"Rows\\\", List[List[Top]]]]], Rule[AutoDelete, False], \
+Rule[GridBoxItemSize, List[Rule[\\\"Columns\\\", List[List[Automatic]]], \
+Rule[\\\"Rows\\\", List[List[Automatic]]]]], Rule[BaselinePosition, List[1, \
+1]]]]], Dynamic[Typeset`open$$], Rule[ImageSize, Automatic]]], \
+\\\"SummaryPanel\\\"], RuleDelayed[DynamicModuleValues, List[]]], \
+\\\"]\\\"}], EntityStore[Association[Rule[\\\"Types\\\", \
+Association[Rule[\\\"SI units with special names and symbols\\\", \
+Association[Rule[\\\"Entities\\\", Association[Rule[\\\"area\\\", \
+Association[Rule[\\\"Derived quantity\\\", \\\"area\\\"], Rule[\\\"Typical \
+symbol or quantity\\\", \\\"A\\\"], Rule[\\\"Derived unit expressed in terms \
+of base units\\\", \\\"\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \
+\\\\(2\\\\)]\\\\)\\\"]]], Rule[\\\"volume\\\", Association[Rule[\\\"Derived \
+quantity\\\", \\\"volume\\\"], Rule[\\\"Typical symbol or quantity\\\", \\\"V\
+\\\"], Rule[\\\"Derived unit expressed in terms of base units\\\", \
+\\\"\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(3\\\\)]\\\\)\\\"]]], \
+Rule[\\\"speed, velocity\\\", Association[Rule[\\\"Derived quantity\\\", \
+\\\"speed, velocity\\\"], Rule[\\\"Typical symbol or quantity\\\", \
+\\\"v\\\"], Rule[\\\"Derived unit expressed in terms of base units\\\", \\\"m \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(s\\\\), \\\\(-1\\\\)]\\\\)\\\"]]], Rule[\\\
+\"acceleration\\\", Association[Rule[\\\"Derived quantity\\\", \
+\\\"acceleration\\\"], Rule[\\\"Typical symbol or quantity\\\", \\\"a\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \\\"m \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(s\\\\), \\\\(-2\\\\)]\\\\)\\\"]]], Rule[\\\
+\"wavenumber\\\", Association[Rule[\\\"Derived quantity\\\", \\\"wavenumber\\\
+\"], Rule[\\\"Typical symbol or quantity\\\", \\\"\\\\[Sigma]\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \
+\\\"\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(-1\\\\)]\\\\)\\\"]]], \
+Rule[\\\"density, mass density\\\", Association[Rule[\\\"Derived \
+quantity\\\", \\\"density, mass density\\\"], Rule[\\\"Typical symbol or \
+quantity\\\", \\\"\\\\[Rho]\\\"], Rule[\\\"Derived unit expressed in terms of \
+base units\\\", \\\"kg \\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \
+\\\\(-3\\\\)]\\\\)\\\"], Rule[\\\"surface density\\\", \
+Association[Rule[\\\"Derived quantity\\\", \\\"surface density\\\"], \
+Rule[\\\"Typical symbol or quantity\\\", \
+\\\"\\\\!\\\\(\\\\*SubscriptBox[\\\\(\\\\[Rho]\\\\), \\\\(A\\\\)]\\\\)\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \\\"kg \\\\!\\\\(\
+\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(-2\\\\)]\\\\)\\\"], Rule[\\\"specific \
+volume\\\", Association[Rule[\\\"Derived quantity\\\", \\\"specific \
+volume\\\"], Rule[\\\"Typical symbol or quantity\\\", \\\"v\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \
+\\\"\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(3\\\\)]\\\\) \\\\!\\\\(\\\
+\\*SuperscriptBox[\\\\(kg\\\\), \\\\(-1\\\\)]\\\\)\\\"], Rule[\\\"current \
+density\\\", Association[Rule[\\\"Derived quantity\\\", \\\"current density\\\
+\"], Rule[\\\"Typical symbol or quantity\\\", \\\"j\\\"], Rule[\\\"Derived \
+unit expressed in terms of base units\\\", \\\"A \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(-2\\\\)]\\\\)\\\"], \
+Rule[\\\"magnetic field strength\\\", Association[Rule[\\\"Derived quantity\\\
+\", \\\"magnetic field strength\\\"], Rule[\\\"Typical symbol or \
+quantity\\\", \\\"H\\\"], Rule[\\\"Derived unit expressed in terms of base \
+units\\\", \\\"A \\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \
+\\\\(-1\\\\)]\\\\)\\\"], Rule[\\\"amount of substance concentration\\\", \
+Association[Rule[\\\"Derived quantity\\\", \\\"amount of substance \
+concentration\\\"], Rule[\\\"Typical symbol or quantity\\\", \\\"A\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \\\"mol \
+\\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(-3\\\\)]\\\\)\\\"], \
+Rule[\\\"mass concentration\\\", Association[Rule[\\\"Derived quantity\\\", \
+\\\"mass concentration\\\"], Rule[\\\"Typical symbol or quantity\\\", \
+\\\"\\\\[Rho],\\\\[Gamma]\\\"], Rule[\\\"Derived unit expressed in terms of \
+base units\\\", \\\"kg \\\\!\\\\(\\\\*SuperscriptBox[\\\\(m\\\\), \
+\\\\(-3\\\\)]\\\\)\\\"], Rule[\\\"luminance\\\", Association[Rule[\\\"Derived \
+quantity\\\", \\\"luminance\\\"], Rule[\\\"Typical symbol or quantity\\\", \\\
+\"\\\\!\\\\(\\\\*SubscriptBox[\\\\(L\\\\), \\\\(v\\\\)]\\\\)\\\"], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", \\\"cd \\\\!\\\\(\
+\\\\*SuperscriptBox[\\\\(m\\\\), \\\\(-2\\\\)]\\\\)\\\"]]]]]]]]]]]]]]]]]]], \
+Rule[\\\"Properties\\\", Association[Rule[\\\"Derived quantity\\\", \
+Association[]], Rule[\\\"Typical symbol or quantity\\\", Association[]], \
+Rule[\\\"Derived unit expressed in terms of base units\\\", Association[]], \
+Rule[\\\"surface density\\\", Association[]]]]]]]]]], Rule[Selectable, \
+False], Rule[Editable, False], Rule[SelectWithContents, True]]\\) already \
+exist. The existing ones will be shadowed.\"", 2, 3, 1, 19481427421945794378, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.872404410968094*^9},
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1789528,ExpressionUUID->"121282b4-f1f1-4160-b365-f06e3f7deeec"],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"SI units with special names and symbols\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{3.872404411223098*^9},
+ CellLabel->"Out[3]=",
+ CellID->641186796,ExpressionUUID->"f9d62cba-f452-4e14-a5e5-610948bd70cb"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
@@ -19360,34 +19642,14 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Examples"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "Your Essay Title"->{
-  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "AuthorName"->{
-  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
  "Abstract"->{
   Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
    CellTags->{"Abstract", "TemplateCell"},
    CellID->587432573]},
- "TemplateCell"->{
-  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "SectionHeader"->{
-  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "ExampleTopicSentence"->{
-  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
+ "AuthorName"->{
+  Cell[807, 27, 241, 4, 29, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
  "ExampleCodeText"->{
   Cell[1485, 47, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
@@ -19399,21 +19661,41 @@ CellTagsIndex->{
  "ExampleOutput"->{
   Cell[1881, 60, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
    CellTags->"ExampleOutput",
-   CellID->171130590]}
+   CellID->171130590]},
+ "Examples"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "ExampleTopicSentence"->{
+  Cell[1352, 43, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
+ "SectionHeader"->{
+  Cell[1220, 39, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "TemplateCell"->{
+  Cell[1051, 33, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "Your Essay Title"->{
+  Cell[580, 22, 224, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 967130, 19362},
- {"Your Essay Title", 967316, 19366},
- {"AuthorName", 967496, 19370},
- {"Abstract", 967655, 19374},
- {"TemplateCell", 967837, 19378},
- {"SectionHeader", 968020, 19382},
- {"ExampleTopicSentence", 968196, 19386},
- {"ExampleCodeText", 968371, 19390},
- {"ExampleInput", 968541, 19394},
- {"ExampleOutput", 968707, 19398}
+ {"Abstract", 983797, 19644},
+ {"AuthorName", 983977, 19648},
+ {"ExampleCodeText", 984143, 19652},
+ {"ExampleInput", 984313, 19656},
+ {"ExampleOutput", 984479, 19660},
+ {"Examples", 984642, 19664},
+ {"ExampleTopicSentence", 984832, 19668},
+ {"SectionHeader", 985005, 19672},
+ {"TemplateCell", 985173, 19676},
+ {"Your Essay Title", 985359, 19680}
  }
 *)
 (*NotebookFileOutline
@@ -19896,8 +20178,14 @@ Cell[696562, 14204, 539, 15, 67, "Input",ExpressionUUID->"55168cb6-d828-493b-b7b
 Cell[697104, 14221, 154968, 2939, 797, "Output",ExpressionUUID->"525d5eba-ec86-4779-ac9e-3b073ad07d80",
  CellID->465427970]
 }, Open  ]],
-Cell[852087, 17163, 3380, 77, 550, "Input",ExpressionUUID->"db5c1977-2eee-472d-8b52-383621f3d0fd",
- CellID->187757423]
+Cell[CellGroupData[{
+Cell[852109, 17165, 7799, 170, 1311, "Input",ExpressionUUID->"db5c1977-2eee-472d-8b52-383621f3d0fd",
+ CellID->187757423],
+Cell[859911, 17337, 11969, 177, 119, "Message",ExpressionUUID->"121282b4-f1f1-4160-b365-f06e3f7deeec",
+ CellID->1789528],
+Cell[871883, 17516, 239, 5, 32, "Output",ExpressionUUID->"f9d62cba-f452-4e14-a5e5-610948bd70cb",
+ CellID->641186796]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
