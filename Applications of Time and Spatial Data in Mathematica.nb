@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    887545,      19241]
+NotebookDataLength[    887529,      19241]
 NotebookOptionsPosition[    737431,      16283]
-NotebookOutlinePosition[    851085,      18454]
-CellTagsIndexPosition[    850694,      18440]
+NotebookOutlinePosition[    851068,      18454]
+CellTagsIndexPosition[    850677,      18440]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -16281,8 +16281,8 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{574.8, 579.6},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+WindowSize->{574.8, 575.4},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -18396,11 +18396,11 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (*CellTagsOutline
 CellTagsIndex->{
  "Examples"->{
-  Cell[580, 22, 257, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+  Cell[580, 22, 257, 3, 222, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
    CellID->805710577]},
  "Your Essay Title"->{
-  Cell[580, 22, 257, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+  Cell[580, 22, 257, 3, 222, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
    CellID->805710577]},
  "AuthorName"->{
@@ -18439,22 +18439,22 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 848937, 18397},
- {"Your Essay Title", 849123, 18401},
- {"AuthorName", 849303, 18405},
- {"Abstract", 849462, 18409},
- {"TemplateCell", 849644, 18413},
- {"SectionHeader", 849827, 18417},
- {"ExampleTopicSentence", 850003, 18421},
- {"ExampleCodeText", 850178, 18425},
- {"ExampleInput", 850351, 18429},
- {"ExampleOutput", 850520, 18433}
+ {"Examples", 848918, 18397},
+ {"Your Essay Title", 849105, 18401},
+ {"AuthorName", 849286, 18405},
+ {"Abstract", 849445, 18409},
+ {"TemplateCell", 849627, 18413},
+ {"SectionHeader", 849810, 18417},
+ {"ExampleTopicSentence", 849986, 18421},
+ {"ExampleCodeText", 850161, 18425},
+ {"ExampleInput", 850334, 18429},
+ {"ExampleOutput", 850503, 18433}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 257, 3, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+Cell[580, 22, 257, 3, 222, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
  CellTags->{"Examples", "Your Essay Title"},
  CellID->805710577],
 Cell[840, 27, 181, 4, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
@@ -18569,7 +18569,7 @@ Cell[14531, 424, 243, 4, 28, "Input",ExpressionUUID->"15285e52-4af6-44c6-a29a-02
 Cell[14777, 430, 768, 19, 42, "Output",ExpressionUUID->"a2f41fa9-6d42-43ae-89c6-ea1474c7e1a3",
  CellID->509084134]
 }, Closed]],
-Cell[15560, 452, 310, 4, 35, "Text",ExpressionUUID->"3b934961-2fe7-41fc-a496-6c1fbde6df1e",
+Cell[15560, 452, 310, 4, 31, "Text",ExpressionUUID->"3b934961-2fe7-41fc-a496-6c1fbde6df1e",
  CellID->283655409],
 Cell[CellGroupData[{
 Cell[15895, 460, 448, 7, 67, "Input",ExpressionUUID->"d1d0d101-5bbc-4b9d-8809-b8b6a8bf9218",

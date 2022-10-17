@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    404754,       8283]
-NotebookOptionsPosition[    282521,       5921]
-NotebookOutlinePosition[    396038,       8090]
-CellTagsIndexPosition[    395691,       8077]
+NotebookDataLength[    404856,       8284]
+NotebookOptionsPosition[    282560,       5922]
+NotebookOutlinePosition[    396140,       8091]
+CellTagsIndexPosition[    395793,       8078]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2125,13 +2125,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{1156., {265.13403309800196`, 270.86596690199804`}},
+      ImageSizeCache->{1156., {265.1340332872234, 270.8659667127766}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{1156., {265.13403309800196`, 270.86596690199804`}}],
+     ImageSizeCache->{1156., {265.1340332872234, 270.8659667127766}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -3473,32 +3473,32 @@ Cell[BoxData[
            Superscript["M", 1], 
            Superscript["L", 1]], "planck-form" -> 
          Quantity[
-          8.26272075671756457181477739488337`4.051368277467217*^-45, 
-           "PlanckLength" "PlanckMass" "PlanckTime"^(-2)], 
+          8.26272075671756457181477739488337`4.051368277467217*^-45, (
+            "PlanckLength" "PlanckMass") "PlanckTime"^(-2)], 
          "base-10-exponent" -> -45|>, 
        Quantity[1, "Pascals"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -2], 
            Superscript["M", 1], 
            Superscript["L", -1]], "planck-form" -> 
          Quantity[
-          2.158454203767690402295`4.051368277467217*^-114, 
-           "PlanckLength"^(-1) "PlanckMass" "PlanckTime"^(-2)], 
+          2.158454203767690402295`4.051368277467217*^-114, (
+            "PlanckLength"^(-1) "PlanckMass") "PlanckTime"^(-2)], 
          "base-10-exponent" -> -114|>, 
        Quantity[1, "Joules"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -2], 
            Superscript["M", 1], 
            Superscript["L", 2]], "planck-form" -> 
          Quantity[
-          5.1122630752681745090977756667`3.954213812101825*^-10, 
-           "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-2)], 
+          5.1122630752681745090977756667`3.954213812101825*^-10, (
+            "PlanckLength"^2 "PlanckMass") "PlanckTime"^(-2)], 
          "base-10-exponent" -> -10|>, 
        Quantity[1, "Watts"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -3], 
            Superscript["M", 1], 
            Superscript["L", 2]], "planck-form" -> 
          Quantity[
-          2.756147296775032733026256`3.8749198541608103*^-53, 
-           "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-3)], 
+          2.756147296775032733026256`3.8749198541608103*^-53, (
+            "PlanckLength"^2 "PlanckMass") "PlanckTime"^(-3)], 
          "base-10-exponent" -> -53|>, 
        Quantity[1, "Coulombs"] -> <|"dimensions" -> CenterDot[
            Superscript["T", 1], 
@@ -3512,17 +3512,17 @@ Cell[BoxData[
            Superscript["L", 2], 
            Superscript["I", -1]], "planck-form" -> 
          Quantity[
-          2.756147296775032733026256`3.8749198541608103*^-53, "Amperes"^(-1) 
-           "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-3)], 
-         "base-10-exponent" -> -53|>, 
+          2.756147296775032733026256`3.8749198541608103*^-53, ((
+             "Amperes"^(-1) "PlanckLength"^2) "PlanckMass") 
+           "PlanckTime"^(-3)], "base-10-exponent" -> -53|>, 
        Quantity[1, "Farads"] -> <|"dimensions" -> CenterDot[
            Superscript["T", 4], 
            Superscript["M", -1], 
            Superscript["L", -2], 
            Superscript["I", 2]], "planck-form" -> 
          Quantity[
-          6.729895902720875722`3.8078925739405287*^95, "Amperes"^2 
-           "PlanckLength"^(-2) "PlanckMass"^(-1) "PlanckTime"^4], 
+          6.729895902720875722`3.8078925739405287*^95, (("Amperes"^2 
+             "PlanckLength"^(-2))/"PlanckMass") "PlanckTime"^4], 
          "base-10-exponent" -> 95|>, 
        Quantity[1, "Ohms"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -3], 
@@ -3530,17 +3530,17 @@ Cell[BoxData[
            Superscript["L", 2], 
            Superscript["I", -2]], "planck-form" -> 
          Quantity[
-          2.756147296775032733026256`3.8749198541608103*^-53, "Amperes"^(-2) 
-           "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-3)], 
-         "base-10-exponent" -> -53|>, 
+          2.756147296775032733026256`3.8749198541608103*^-53, ((
+             "Amperes"^(-2) "PlanckLength"^2) "PlanckMass") 
+           "PlanckTime"^(-3)], "base-10-exponent" -> -53|>, 
        Quantity[1, "Siemens"] -> <|"dimensions" -> CenterDot[
            Superscript["T", 3], 
            Superscript["M", -1], 
            Superscript["L", -2], 
            Superscript["I", 2]], "planck-form" -> 
          Quantity[
-          3.6282531095856`3.8749198541608103*^52, "Amperes"^2 
-           "PlanckLength"^(-2) "PlanckMass"^(-1) "PlanckTime"^3], 
+          3.6282531095856`3.8749198541608103*^52, (("Amperes"^2 
+             "PlanckLength"^(-2))/"PlanckMass") "PlanckTime"^3], 
          "base-10-exponent" -> 52|>, 
        Quantity[1, "Webers"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -2], 
@@ -3548,25 +3548,25 @@ Cell[BoxData[
            Superscript["L", 2], 
            Superscript["I", -1]], "planck-form" -> 
          Quantity[
-          5.1122630752681745090977756667`3.954213812101825*^-10, 
-           "Amperes"^(-1) "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-2)], 
-         "base-10-exponent" -> -10|>, 
+          5.1122630752681745090977756667`3.954213812101825*^-10, ((
+             "Amperes"^(-1) "PlanckLength"^2) "PlanckMass") 
+           "PlanckTime"^(-2)], "base-10-exponent" -> -10|>, 
        Quantity[1, "Teslas"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -2], 
            Superscript["M", 1], 
            Superscript["I", -1]], "planck-form" -> 
          Quantity[
-          1.33546637366485492`4.176714740687622*^-79, "Amperes"^(-1) 
-           "PlanckMass" "PlanckTime"^(-2)], "base-10-exponent" -> -79|>, 
+          1.33546637366485492`4.176714740687622*^-79, ("Amperes"^(-1) 
+            "PlanckMass") "PlanckTime"^(-2)], "base-10-exponent" -> -79|>, 
        Quantity[1, "Henries"] -> <|"dimensions" -> CenterDot[
            Superscript["T", -2], 
            Superscript["M", 1], 
            Superscript["L", 2], 
            Superscript["I", -2]], "planck-form" -> 
          Quantity[
-          5.1122630752681745090977756667`3.954213812101825*^-10, 
-           "Amperes"^(-2) "PlanckLength"^2 "PlanckMass" "PlanckTime"^(-2)], 
-         "base-10-exponent" -> -10|>, 
+          5.1122630752681745090977756667`3.954213812101825*^-10, ((
+             "Amperes"^(-2) "PlanckLength"^2) "PlanckMass") 
+           "PlanckTime"^(-2)], "base-10-exponent" -> -10|>, 
        Quantity[1, "DegreesCelsius"] -> <|
         "dimensions" -> Superscript["\[CapitalTheta]", 1], "planck-form" -> 
          Quantity[
@@ -3622,6 +3622,7 @@ Cell[BoxData[
          TypeSystem`PackageScope`KeyValueShape[
           TypeSystem`PackageScope`UnknownShape[True], 
           TypeSystem`PackageScope`Limited[
+           
            TypeSystem`PackageScope`RowShape[<|
             "dimensions" -> TypeSystem`PackageScope`UnknownShape[False], 
              "planck-form" -> TypeSystem`PackageScope`UnknownShape[False], 
@@ -5283,7 +5284,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[True, 22, 1], {1, 22 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -5332,7 +5333,7 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$], 
                     TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
-                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ - 20 
                     If[False, 22, 1], {1, 22 - -20 + 1}]; 
                     TypeSystem`NestedGrid`PackagePrivate`updateState[
                     TypeSystem`NestedGrid`PackagePrivate`$state$$, 
@@ -5818,13 +5819,13 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
         Hold[
           TypeSystem`NestedGrid`PackagePrivate`localHold[
           TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], StandardForm],
-      ImageSizeCache->{543., {299.63403309800196`, 305.36596690199804`}},
+      ImageSizeCache->{543., {299.6340332872234, 305.3659667127766}},
       TrackedSymbols:>{
        TypeSystem`NestedGrid`PackagePrivate`$state$$, 
         TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
      TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
      MouseAnnotation[],
-     ImageSizeCache->{543., {299.63403309800196`, 305.36596690199804`}}],
+     ImageSizeCache->{543., {299.6340332872234, 305.3659667127766}}],
     BaseStyle->{LineBreakWithin -> False},
     DynamicModuleValues:>{},
     Initialization:>(TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
@@ -5919,8 +5920,8 @@ Cell["XXXX", "Item",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{718.5, 741.},
-WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+WindowSize->{718.8, 574.8},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -6492,9 +6493,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Section", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "4" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Section", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "4") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6518,9 +6519,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "5" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "5") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6544,9 +6545,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsubsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "6" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsubsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "6") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6570,9 +6571,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], Delimiter, DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Title", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "1" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Title", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "1") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6596,9 +6597,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subtitle", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "2" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subtitle", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "2") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6622,9 +6623,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Chapter", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "3" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Chapter", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "3") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6767,9 +6768,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Text", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Text", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -6793,9 +6794,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"CodeText", " (" <> "Shift+" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"CodeText", ((((" (" <> "Shift+") <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -8054,37 +8055,37 @@ CellTagsIndex->{
    CellTags->{"Abstract", "TemplateCell"},
    CellID->587432573]},
  "SectionHeader"->{
-  Cell[128875, 2760, 197, 3, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+  Cell[128867, 2760, 197, 3, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
    CellTags->"SectionHeader",
    CellID->453852445]},
  "ExampleTopicSentence"->{
-  Cell[129075, 2765, 222, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+  Cell[129067, 2765, 222, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
    CellTags->"ExampleTopicSentence",
    CellID->816667160]},
  "ExampleCodeText"->{
-  Cell[129300, 2770, 218, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+  Cell[129292, 2770, 218, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
    CellID->66178570]},
  "ExampleInput"->{
-  Cell[129543, 2777, 349, 6, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+  Cell[129535, 2777, 349, 6, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
    CellTags->"ExampleInput",
    CellID->844129532],
-  Cell[129895, 2785, 419, 10, 41, "Output",ExpressionUUID->"eed77647-941e-44e5-938f-5ebf7f026647",
+  Cell[129887, 2785, 419, 10, 40, "Output",ExpressionUUID->"eed77647-941e-44e5-938f-5ebf7f026647",
    CellTags->"ExampleInput",
    CellID->26902839]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 393945, 8035},
- {"Your Essay Title", 394131, 8039},
- {"AuthorName", 394311, 8043},
- {"Abstract", 394470, 8047},
- {"TemplateCell", 394652, 8051},
- {"SectionHeader", 394835, 8055},
- {"ExampleTopicSentence", 395015, 8059},
- {"ExampleCodeText", 395194, 8063},
- {"ExampleInput", 395368, 8067}
+ {"Examples", 394047, 8036},
+ {"Your Essay Title", 394233, 8040},
+ {"AuthorName", 394413, 8044},
+ {"Abstract", 394572, 8048},
+ {"TemplateCell", 394754, 8052},
+ {"SectionHeader", 394937, 8056},
+ {"ExampleTopicSentence", 395117, 8060},
+ {"ExampleCodeText", 395296, 8064},
+ {"ExampleInput", 395470, 8068}
  }
 *)
 (*NotebookFileOutline
@@ -8141,147 +8142,147 @@ Cell[51415, 1069, 391, 9, 43, "Output",ExpressionUUID->"300a980c-1a46-46d7-8bc7-
 Cell[CellGroupData[{
 Cell[51843, 1083, 408, 9, 28, "Input",ExpressionUUID->"670ab396-8402-4b51-83e1-8abb0ba1e85c",
  CellID->728975774],
-Cell[52254, 1094, 55961, 1053, 555, "Output",ExpressionUUID->"65f9c5d2-66eb-4a38-9855-80e2aa969069",
+Cell[52254, 1094, 55953, 1053, 555, "Output",ExpressionUUID->"65f9c5d2-66eb-4a38-9855-80e2aa969069",
  CellID->427397361]
 }, Open  ]],
-Cell[108230, 2150, 528, 13, 58, "Text",ExpressionUUID->"bf6911e5-e088-4fef-96f6-400302c5dd4d",
+Cell[108222, 2150, 528, 13, 58, "Text",ExpressionUUID->"bf6911e5-e088-4fef-96f6-400302c5dd4d",
  CellID->870557477],
 Cell[CellGroupData[{
-Cell[108783, 2167, 757, 17, 105, "Input",ExpressionUUID->"8d4a9318-fcac-4cab-8daf-70315be4e1bb",
+Cell[108775, 2167, 757, 17, 105, "Input",ExpressionUUID->"8d4a9318-fcac-4cab-8daf-70315be4e1bb",
  CellID->330008970],
-Cell[109543, 2186, 752, 14, 52, "Output",ExpressionUUID->"81176376-ed60-4fba-bf23-e568c8db50b1",
+Cell[109535, 2186, 752, 14, 52, "Output",ExpressionUUID->"81176376-ed60-4fba-bf23-e568c8db50b1",
  CellID->268904778]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110332, 2205, 370, 8, 37, "Input",ExpressionUUID->"6d7f81fd-b9a1-4dac-9dff-092acb8a2c7b",
+Cell[110324, 2205, 370, 8, 37, "Input",ExpressionUUID->"6d7f81fd-b9a1-4dac-9dff-092acb8a2c7b",
  CellID->67273667],
-Cell[110705, 2215, 248, 6, 32, "Output",ExpressionUUID->"16449928-a1f6-4adb-a285-02e7bd635145",
+Cell[110697, 2215, 248, 6, 32, "Output",ExpressionUUID->"16449928-a1f6-4adb-a285-02e7bd635145",
  CellID->142560227]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[110990, 2226, 408, 9, 37, "Input",ExpressionUUID->"9f3dfef8-2823-41b0-8edb-d47fd8d9e686",
+Cell[110982, 2226, 408, 9, 37, "Input",ExpressionUUID->"9f3dfef8-2823-41b0-8edb-d47fd8d9e686",
  CellID->14735985],
-Cell[111401, 2237, 236, 6, 35, "Output",ExpressionUUID->"54bcb2dd-efd1-4c6c-9ee2-7059cf961595",
+Cell[111393, 2237, 236, 6, 35, "Output",ExpressionUUID->"54bcb2dd-efd1-4c6c-9ee2-7059cf961595",
  CellID->266260410]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[111674, 2248, 440, 10, 37, "Input",ExpressionUUID->"1a2328d2-8649-4049-80f6-15f9fa05c5ae",
+Cell[111666, 2248, 440, 10, 37, "Input",ExpressionUUID->"1a2328d2-8649-4049-80f6-15f9fa05c5ae",
  CellID->159473210],
-Cell[112117, 2260, 238, 5, 32, "Output",ExpressionUUID->"0b8a8496-f662-4be6-8687-cefe4d131bf1",
+Cell[112109, 2260, 238, 5, 32, "Output",ExpressionUUID->"0b8a8496-f662-4be6-8687-cefe4d131bf1",
  CellID->152773353]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[112392, 2270, 441, 10, 37, "Input",ExpressionUUID->"4047d2bf-074c-4884-9248-cfa0f43e46c5",
+Cell[112384, 2270, 441, 10, 37, "Input",ExpressionUUID->"4047d2bf-074c-4884-9248-cfa0f43e46c5",
  CellID->615081274],
-Cell[112836, 2282, 402, 12, 32, "Output",ExpressionUUID->"4a382b9d-928a-4c5b-8d06-d59ce283af89",
+Cell[112828, 2282, 402, 12, 32, "Output",ExpressionUUID->"4a382b9d-928a-4c5b-8d06-d59ce283af89",
  CellID->188260935]
 }, Open  ]],
-Cell[113253, 2297, 197, 2, 35, "Text",ExpressionUUID->"b4232440-9968-463c-a7bd-1c1bd09c6ee1",
+Cell[113245, 2297, 197, 2, 35, "Text",ExpressionUUID->"b4232440-9968-463c-a7bd-1c1bd09c6ee1",
  CellID->134302041],
 Cell[CellGroupData[{
-Cell[113475, 2303, 758, 19, 84, "Input",ExpressionUUID->"4f563c07-454a-4742-be04-843bfe73fb30",
+Cell[113467, 2303, 758, 19, 83, "Input",ExpressionUUID->"4f563c07-454a-4742-be04-843bfe73fb30",
  CellID->487148059],
-Cell[114236, 2324, 451, 13, 32, "Output",ExpressionUUID->"dc6acb3c-0ba0-4a75-957a-e86ecdf91294",
+Cell[114228, 2324, 451, 13, 32, "Output",ExpressionUUID->"dc6acb3c-0ba0-4a75-957a-e86ecdf91294",
  CellID->79509807]
 }, Open  ]],
-Cell[114702, 2340, 230, 4, 35, "Text",ExpressionUUID->"2f6a9219-22c2-4373-93f0-28028e2dda2d",
+Cell[114694, 2340, 230, 4, 35, "Text",ExpressionUUID->"2f6a9219-22c2-4373-93f0-28028e2dda2d",
  CellID->73501208],
-Cell[114935, 2346, 1729, 44, 181, "Input",ExpressionUUID->"9ff4555f-9fc9-421c-bf36-7e7cd2adcad0",
+Cell[114927, 2346, 1729, 44, 181, "Input",ExpressionUUID->"9ff4555f-9fc9-421c-bf36-7e7cd2adcad0",
  CellID->47505829],
 Cell[CellGroupData[{
-Cell[116689, 2394, 508, 12, 48, "Input",ExpressionUUID->"42c1fc16-0e5f-41fe-a121-059bcb0ae8f5",
+Cell[116681, 2394, 508, 12, 48, "Input",ExpressionUUID->"42c1fc16-0e5f-41fe-a121-059bcb0ae8f5",
  CellID->250084041],
-Cell[117200, 2408, 779, 19, 42, "Output",ExpressionUUID->"9b1911fa-04e3-4a2b-8c9b-5c0facd46fbf",
+Cell[117192, 2408, 779, 19, 41, "Output",ExpressionUUID->"9b1911fa-04e3-4a2b-8c9b-5c0facd46fbf",
  CellID->492845518]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118016, 2432, 571, 13, 48, "Input",ExpressionUUID->"bf3a987c-80d0-4b8b-a212-2d080fdd9fc8",
+Cell[118008, 2432, 571, 13, 48, "Input",ExpressionUUID->"bf3a987c-80d0-4b8b-a212-2d080fdd9fc8",
  CellID->19996617],
-Cell[118590, 2447, 1418, 41, 42, "Output",ExpressionUUID->"8458685e-c4b4-4507-ae5e-dea869c6b9fe",
+Cell[118582, 2447, 1418, 41, 41, "Output",ExpressionUUID->"8458685e-c4b4-4507-ae5e-dea869c6b9fe",
  CellID->110414119]
 }, Open  ]],
-Cell[120023, 2491, 1991, 47, 87, "Input",ExpressionUUID->"88e24816-ffb2-4079-a291-81884a57391a",
+Cell[120015, 2491, 1991, 47, 85, "Input",ExpressionUUID->"88e24816-ffb2-4079-a291-81884a57391a",
  CellID->981741212],
 Cell[CellGroupData[{
-Cell[122039, 2542, 519, 11, 86, "Input",ExpressionUUID->"a976b893-bf63-4991-9884-6c1717087d22",
+Cell[122031, 2542, 519, 11, 86, "Input",ExpressionUUID->"a976b893-bf63-4991-9884-6c1717087d22",
  CellID->173915885],
-Cell[122561, 2555, 6265, 199, 121, "Output",ExpressionUUID->"65136e8f-e398-4a35-aff1-51d31c171299",
+Cell[122553, 2555, 6265, 199, 116, "Output",ExpressionUUID->"65136e8f-e398-4a35-aff1-51d31c171299",
  CellID->582569298]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[128875, 2760, 197, 3, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+Cell[128867, 2760, 197, 3, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
  CellTags->"SectionHeader",
  CellID->453852445],
-Cell[129075, 2765, 222, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+Cell[129067, 2765, 222, 3, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
  CellTags->"ExampleTopicSentence",
  CellID->816667160],
-Cell[129300, 2770, 218, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+Cell[129292, 2770, 218, 3, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
  CellTags->"ExampleCodeText",
  CellID->66178570],
 Cell[CellGroupData[{
-Cell[129543, 2777, 349, 6, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+Cell[129535, 2777, 349, 6, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
  CellTags->"ExampleInput",
  CellID->844129532],
-Cell[129895, 2785, 419, 10, 41, "Output",ExpressionUUID->"eed77647-941e-44e5-938f-5ebf7f026647",
+Cell[129887, 2785, 419, 10, 40, "Output",ExpressionUUID->"eed77647-941e-44e5-938f-5ebf7f026647",
  CellTags->"ExampleInput",
  CellID->26902839]
 }, Open  ]],
-Cell[130329, 2798, 186, 2, 35, "Text",ExpressionUUID->"f7478052-0b91-4a50-b5a3-2e75e6aba399",
+Cell[130321, 2798, 186, 2, 35, "Text",ExpressionUUID->"f7478052-0b91-4a50-b5a3-2e75e6aba399",
  CellID->204485247],
 Cell[CellGroupData[{
-Cell[130540, 2804, 273, 5, 28, "Input",ExpressionUUID->"52831f50-6c51-46f3-b7b5-2d89f64da953",
+Cell[130532, 2804, 273, 5, 28, "Input",ExpressionUUID->"52831f50-6c51-46f3-b7b5-2d89f64da953",
  CellID->102840374],
-Cell[130816, 2811, 22007, 431, 96, "Output",ExpressionUUID->"61075fa0-4daf-451d-acc1-097122dd6c3e",
+Cell[130808, 2811, 22007, 431, 96, "Output",ExpressionUUID->"61075fa0-4daf-451d-acc1-097122dd6c3e",
  CellID->720031]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[152860, 3247, 286, 5, 28, "Input",ExpressionUUID->"c42bf711-820b-48de-a441-6ba51b436c05",
+Cell[152852, 3247, 286, 5, 28, "Input",ExpressionUUID->"c42bf711-820b-48de-a441-6ba51b436c05",
  CellID->791993303],
-Cell[153149, 3254, 408, 9, 45, "Output",ExpressionUUID->"f756639e-5b41-476a-8d4f-fc3a6ffd6122",
+Cell[153141, 3254, 408, 9, 44, "Output",ExpressionUUID->"f756639e-5b41-476a-8d4f-fc3a6ffd6122",
  CellID->825771876]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[153594, 3268, 287, 5, 28, "Input",ExpressionUUID->"c59eda2c-9d63-4e60-9cb3-e7936ef3be8d",
+Cell[153586, 3268, 287, 5, 28, "Input",ExpressionUUID->"c59eda2c-9d63-4e60-9cb3-e7936ef3be8d",
  CellID->414648637],
-Cell[153884, 3275, 239, 5, 39, "Output",ExpressionUUID->"ead7ec83-9e7f-4a42-9910-ebcffb04565f",
+Cell[153876, 3275, 239, 5, 38, "Output",ExpressionUUID->"ead7ec83-9e7f-4a42-9910-ebcffb04565f",
  CellID->480440853]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[154160, 3285, 284, 5, 28, "Input",ExpressionUUID->"091d1725-b7ad-4460-8dab-8351753754eb",
+Cell[154152, 3285, 284, 5, 28, "Input",ExpressionUUID->"091d1725-b7ad-4460-8dab-8351753754eb",
  CellID->60658887],
-Cell[154447, 3292, 735, 16, 46, "Output",ExpressionUUID->"c0e220bd-ca63-4352-9709-e1a998d61e59",
+Cell[154439, 3292, 735, 16, 45, "Output",ExpressionUUID->"c0e220bd-ca63-4352-9709-e1a998d61e59",
  CellID->542983757]
 }, Open  ]],
-Cell[155197, 3311, 689, 17, 67, "Input",ExpressionUUID->"ddab1933-6f67-4c02-ac80-39eef6a0c04f",
+Cell[155189, 3311, 689, 17, 67, "Input",ExpressionUUID->"ddab1933-6f67-4c02-ac80-39eef6a0c04f",
  CellID->483012643],
 Cell[CellGroupData[{
-Cell[155911, 3332, 291, 5, 28, "Input",ExpressionUUID->"ffb295f4-efc7-47e3-b513-e873559d7ca1",
+Cell[155903, 3332, 291, 5, 28, "Input",ExpressionUUID->"ffb295f4-efc7-47e3-b513-e873559d7ca1",
  CellID->27579095],
-Cell[156205, 3339, 198, 3, 32, "Output",ExpressionUUID->"00410cde-b091-4d6c-99f4-1c501b047754",
+Cell[156197, 3339, 198, 3, 32, "Output",ExpressionUUID->"00410cde-b091-4d6c-99f4-1c501b047754",
  CellID->7079227]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[156440, 3347, 439, 9, 67, "Input",ExpressionUUID->"5b2ee54c-b59e-4321-94ea-d808c7c1c70f",
+Cell[156432, 3347, 439, 9, 67, "Input",ExpressionUUID->"5b2ee54c-b59e-4321-94ea-d808c7c1c70f",
  CellID->79630526],
-Cell[156882, 3358, 1961, 49, 71, "Output",ExpressionUUID->"3f63fd93-e253-4e46-8ea2-1a64973400ab",
+Cell[156874, 3358, 1961, 49, 69, "Output",ExpressionUUID->"3f63fd93-e253-4e46-8ea2-1a64973400ab",
  CellID->243462640]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[158880, 3412, 1251, 28, 162, "Input",ExpressionUUID->"68d28ed6-af03-4930-b71d-8f046b256c1f",
+Cell[158872, 3412, 1251, 28, 162, "Input",ExpressionUUID->"68d28ed6-af03-4930-b71d-8f046b256c1f",
  CellID->5758660],
-Cell[160134, 3442, 119563, 2399, 624, "Output",ExpressionUUID->"75b5f3e6-160e-4048-b2bf-1078c8d11a66",
+Cell[160126, 3442, 119610, 2400, 624, "Output",ExpressionUUID->"75b5f3e6-160e-4048-b2bf-1078c8d11a66",
  CellID->1865023]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[279734, 5846, 358, 7, 28, "Input",ExpressionUUID->"3981b1ce-6cd6-4a98-9fa2-47858d297b84",
+Cell[279773, 5847, 358, 7, 28, "Input",ExpressionUUID->"3981b1ce-6cd6-4a98-9fa2-47858d297b84",
  CellID->374394923],
-Cell[280095, 5855, 2190, 55, 71, "Output",ExpressionUUID->"7b6c1ed9-14bb-4274-a778-45508bdc3265",
+Cell[280134, 5856, 2190, 55, 71, "Output",ExpressionUUID->"7b6c1ed9-14bb-4274-a778-45508bdc3265",
  CellID->330054452]
 }, Open  ]],
-Cell[282300, 5913, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
+Cell[282339, 5914, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
  CellID->316654537],
-Cell[282398, 5916, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
+Cell[282437, 5917, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
  CellID->316654538]
 }, Open  ]]
 }, Open  ]]
