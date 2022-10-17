@@ -10,23 +10,27 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    631448,      10835]
-NotebookOptionsPosition[    514595,       8591]
-NotebookOutlinePosition[    628153,      10762]
-CellTagsIndexPosition[    627762,      10748]
+NotebookDataLength[    631736,      10838]
+NotebookOptionsPosition[    514831,       8595]
+NotebookOutlinePosition[    628440,      10765]
+CellTagsIndexPosition[    628049,      10751]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Title", "Title",
+Cell["\<\
+Working through the American Association of Physics Teacher's 2011 F=ma exam\
+\>", "Title",
+ CellChangeTimes->{{3.8750113122633576`*^9, 3.8750113365028753`*^9}},
  CellTags->{"Examples", "Your Essay Title"},
  CellID->805710577,ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36"],
 
 Cell[BoxData[
  StyleBox[
-  RowBox[{"Author", " ", "Name"}], "Author"]], "Author",
+  RowBox[{"Peter", " ", "Cullen", " ", "Burbery"}], "Author"]], "Author",
+ CellChangeTimes->{{3.8750113401123466`*^9, 3.8750113431752586`*^9}},
  CellTags->"AuthorName",
  CellID->960727095,ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c"],
 
@@ -8589,8 +8593,7 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{Full, Full},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowMargins->{{Automatic, -20.25}, {Automatic, 35.25}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -9162,9 +9165,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Section", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "4" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Section", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "4") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9188,9 +9191,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "5" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "5") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9214,9 +9217,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsubsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "6" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsubsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "6") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9240,9 +9243,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], Delimiter, DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Title", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "1" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Title", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "1") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9266,9 +9269,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subtitle", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "2" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subtitle", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "2") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9292,9 +9295,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Chapter", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "3" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Chapter", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "3") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9437,9 +9440,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Text", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Text", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -9463,9 +9466,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"CodeText", " (" <> "Shift+" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"CodeText", ((((" (" <> "Shift+") <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -10703,136 +10706,136 @@ ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Abstract"->{
-  Cell[909, 32, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
+ "Examples"->{
+  Cell[580, 22, 291, 5, 284, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
+ "Your Essay Title"->{
+  Cell[580, 22, 291, 5, 284, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+   CellTags->{"Examples", "Your Essay Title"},
+   CellID->805710577]},
  "AuthorName"->{
-  Cell[725, 26, 181, 4, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+  Cell[874, 29, 268, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
    CellTags->"AuthorName",
    CellID->960727095]},
+ "Abstract"->{
+  Cell[1145, 36, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "TemplateCell"->{
+  Cell[1145, 36, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "SectionHeader"->{
+  Cell[1314, 42, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+   CellTags->"SectionHeader",
+   CellID->453852445]},
+ "ExampleTopicSentence"->{
+  Cell[1446, 46, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+   CellTags->"ExampleTopicSentence",
+   CellID->816667160]},
  "ExampleCodeText"->{
-  Cell[1343, 46, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+  Cell[1579, 50, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
    CellTags->"ExampleCodeText",
    CellID->66178570]},
  "ExampleInput"->{
-  Cell[1497, 52, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+  Cell[1733, 56, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
    CellTags->"ExampleInput",
    CellID->844129532]},
  "ExampleOutput"->{
-  Cell[1739, 59, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
+  Cell[1975, 63, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
    CellTags->"ExampleOutput",
-   CellID->171130590]},
- "Examples"->{
-  Cell[580, 22, 142, 2, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]},
- "ExampleTopicSentence"->{
-  Cell[1210, 42, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
-   CellTags->"ExampleTopicSentence",
-   CellID->816667160]},
- "SectionHeader"->{
-  Cell[1078, 38, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
-   CellTags->"SectionHeader",
-   CellID->453852445]},
- "TemplateCell"->{
-  Cell[909, 32, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "Your Essay Title"->{
-  Cell[580, 22, 142, 2, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
-   CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]}
+   CellID->171130590]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 626016, 10705},
- {"AuthorName", 626195, 10709},
- {"ExampleCodeText", 626361, 10713},
- {"ExampleInput", 626531, 10717},
- {"ExampleOutput", 626697, 10721},
- {"Examples", 626860, 10725},
- {"ExampleTopicSentence", 627050, 10729},
- {"SectionHeader", 627223, 10733},
- {"TemplateCell", 627391, 10737},
- {"Your Essay Title", 627576, 10741}
+ {"Examples", 626299, 10708},
+ {"Your Essay Title", 626486, 10712},
+ {"AuthorName", 626667, 10716},
+ {"Abstract", 626826, 10720},
+ {"TemplateCell", 627008, 10724},
+ {"SectionHeader", 627191, 10728},
+ {"ExampleTopicSentence", 627367, 10732},
+ {"ExampleCodeText", 627542, 10736},
+ {"ExampleInput", 627712, 10740},
+ {"ExampleOutput", 627878, 10744}
  }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 142, 2, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
+Cell[580, 22, 291, 5, 284, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
  CellTags->{"Examples", "Your Essay Title"},
  CellID->805710577],
-Cell[725, 26, 181, 4, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+Cell[874, 29, 268, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
  CellTags->"AuthorName",
  CellID->960727095],
-Cell[909, 32, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+Cell[1145, 36, 144, 2, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
  CellTags->{"Abstract", "TemplateCell"},
  CellID->587432573],
 Cell[CellGroupData[{
-Cell[1078, 38, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
+Cell[1314, 42, 129, 2, 67, "Section",ExpressionUUID->"34c50aa5-39dc-40c2-9e96-2d752d36a940",
  CellTags->"SectionHeader",
  CellID->453852445],
-Cell[1210, 42, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
+Cell[1446, 46, 130, 2, 35, "Text",ExpressionUUID->"59801345-6d3c-49da-94f6-ef747999241f",
  CellTags->"ExampleTopicSentence",
  CellID->816667160],
-Cell[1343, 46, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
+Cell[1579, 50, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1b11a6b7b3c0",
  CellTags->"ExampleCodeText",
  CellID->66178570],
 Cell[CellGroupData[{
-Cell[1497, 52, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
+Cell[1733, 56, 239, 5, 28, "Input",ExpressionUUID->"e756100c-540c-43b9-be4c-21761a8079e5",
  CellTags->"ExampleInput",
  CellID->844129532],
-Cell[1739, 59, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
+Cell[1975, 63, 242, 5, 32, "Output",ExpressionUUID->"c00f4ee8-0557-49a4-ab3b-dadc018208b9",
  CellTags->"ExampleOutput",
  CellID->171130590]
 }, Open  ]],
-Cell[1996, 67, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
+Cell[2232, 71, 95, 1, 32, "Item",ExpressionUUID->"acdb2ad8-0a92-4f50-8bae-de040b09b38c",
  CellID->316654537],
-Cell[2094, 70, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
+Cell[2330, 74, 95, 1, 32, "Item",ExpressionUUID->"8090181c-e17a-4c99-bc3c-696fb19cb01c",
  CellID->316654538]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2226, 76, 174, 2, 67, "Section",ExpressionUUID->"9b524eb1-9b9b-441c-abe8-3f43ac118cf6",
+Cell[2462, 80, 174, 2, 67, "Section",ExpressionUUID->"9b524eb1-9b9b-441c-abe8-3f43ac118cf6",
  CellID->24105505],
-Cell[2403, 80, 216921, 3560, 78, "Input",ExpressionUUID->"3921f36c-d3dd-482e-b45b-6e57e31dbd24",
+Cell[2639, 84, 216921, 3560, 36, "Input",ExpressionUUID->"3921f36c-d3dd-482e-b45b-6e57e31dbd24",
  CellID->426823816],
-Cell[219327, 3642, 990, 24, 66, "Input",ExpressionUUID->"abf564b0-ac43-426d-b2c7-1aea3c1b4491",
+Cell[219563, 3646, 990, 24, 66, "Input",ExpressionUUID->"abf564b0-ac43-426d-b2c7-1aea3c1b4491",
  CellID->87125716],
-Cell[220320, 3668, 270972, 4446, 136, "Input",ExpressionUUID->"1921bd54-7258-40c2-b089-6d91338ade12",
+Cell[220556, 3672, 270972, 4446, 75, "Input",ExpressionUUID->"1921bd54-7258-40c2-b089-6d91338ade12",
  CellID->328278282],
 Cell[CellGroupData[{
-Cell[491317, 8118, 917, 25, 65, "Input",ExpressionUUID->"3b4e7ffd-96c1-476b-8de7-268fd70ec13c",
+Cell[491553, 8122, 917, 25, 65, "Input",ExpressionUUID->"3b4e7ffd-96c1-476b-8de7-268fd70ec13c",
  CellID->306499452],
-Cell[492237, 8145, 358, 8, 41, "Output",ExpressionUUID->"db8b35c0-7d9f-4f0c-962a-99905d046b2a",
+Cell[492473, 8149, 358, 8, 41, "Output",ExpressionUUID->"db8b35c0-7d9f-4f0c-962a-99905d046b2a",
  CellID->184941930]
 }, Open  ]],
-Cell[492610, 8156, 14487, 241, 123, "Input",ExpressionUUID->"298f5e40-8710-41dd-bc85-d2a471122319",
+Cell[492846, 8160, 14487, 241, 123, "Input",ExpressionUUID->"298f5e40-8710-41dd-bc85-d2a471122319",
  CellID->712638741],
 Cell[CellGroupData[{
-Cell[507122, 8401, 1399, 38, 65, "Input",ExpressionUUID->"5f7a6eee-845f-4e31-a0e8-85c969caf338",
+Cell[507358, 8405, 1399, 38, 65, "Input",ExpressionUUID->"5f7a6eee-845f-4e31-a0e8-85c969caf338",
  CellID->106500118],
-Cell[508524, 8441, 434, 9, 43, "Output",ExpressionUUID->"6b38af2b-bc80-445c-bfb2-e81d1ec8af0d",
+Cell[508760, 8445, 434, 9, 43, "Output",ExpressionUUID->"6b38af2b-bc80-445c-bfb2-e81d1ec8af0d",
  CellID->15185201]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[508995, 8455, 575, 15, 65, "Input",ExpressionUUID->"3ce2097a-6492-48bd-8e01-7cf168354b3a",
+Cell[509231, 8459, 575, 15, 65, "Input",ExpressionUUID->"3ce2097a-6492-48bd-8e01-7cf168354b3a",
  CellID->53664267],
-Cell[509573, 8472, 435, 9, 43, "Output",ExpressionUUID->"6e29ad31-39b8-4fb7-b285-19b38c6d5f09",
+Cell[509809, 8476, 435, 9, 43, "Output",ExpressionUUID->"6e29ad31-39b8-4fb7-b285-19b38c6d5f09",
  CellID->114210713]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[510045, 8486, 3718, 77, 88, "Input",ExpressionUUID->"b1ab7a8e-4bbb-49b1-b3db-ff2feaf3d7ca",
+Cell[510281, 8490, 3718, 77, 88, "Input",ExpressionUUID->"b1ab7a8e-4bbb-49b1-b3db-ff2feaf3d7ca",
  CellID->228610164],
-Cell[513766, 8565, 258, 5, 39, "Output",ExpressionUUID->"7fbdab12-a3d9-4de6-8239-acb68609b795",
+Cell[514002, 8569, 258, 5, 39, "Output",ExpressionUUID->"7fbdab12-a3d9-4de6-8239-acb68609b795",
  CellID->599988378]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[514061, 8575, 231, 4, 28, "Input",ExpressionUUID->"b9f543c6-009a-4664-93e5-884daf2742da",
+Cell[514297, 8579, 231, 4, 28, "Input",ExpressionUUID->"b9f543c6-009a-4664-93e5-884daf2742da",
  CellID->99736697],
-Cell[514295, 8581, 260, 5, 39, "Output",ExpressionUUID->"b62fb00b-5184-4256-ac5c-fdb48b1dcfc2",
+Cell[514531, 8585, 260, 5, 39, "Output",ExpressionUUID->"b62fb00b-5184-4256-ac5c-fdb48b1dcfc2",
  CellID->263404697]
 }, Open  ]]
 }, Open  ]]
