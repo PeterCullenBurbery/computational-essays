@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    693749,      13545]
+NotebookDataLength[    693747,      13545]
 NotebookOptionsPosition[    555632,      10853]
-NotebookOutlinePosition[    668225,      12999]
-CellTagsIndexPosition[    668017,      12990]
+NotebookOutlinePosition[    668223,      12999]
+CellTagsIndexPosition[    668015,      12990]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10851,8 +10851,8 @@ Cell["I think the correct answer is 140N/m or D.", "Text",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{1440., 747.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{1428., 741.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -12989,11 +12989,11 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 667122, 12967},
- {"Your Essay Title", 667309, 12971},
- {"AuthorName", 667490, 12975},
- {"Abstract", 667649, 12979},
- {"TemplateCell", 667831, 12983}
+ {"Examples", 667120, 12967},
+ {"Your Essay Title", 667307, 12971},
+ {"AuthorName", 667488, 12975},
+ {"Abstract", 667647, 12979},
+ {"TemplateCell", 667829, 12983}
  }
 *)
 (*NotebookFileOutline
