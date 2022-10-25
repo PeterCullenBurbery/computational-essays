@@ -10,14 +10,206 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       840,         34]
-NotebookOptionsPosition[       561,         21]
-NotebookOutlinePosition[       980,         37]
-CellTagsIndexPosition[       937,         34]
+NotebookDataLength[      9937,        232]
+NotebookOptionsPosition[      9241,        213]
+NotebookOutlinePosition[      9660,        229]
+CellTagsIndexPosition[      9617,        226]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"VideoCapture", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.8752741585410614`*^9, 
+  3.8752741936757665`*^9}},ExpressionUUID->"0ed6340a-95be-4451-ba12-\
+82fe96575aa8"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Video`CaptureDump`stream$$ = VideoStream[
+  "Internal", "cb837d19-8561-49eb-b1f8-6efbb3a238d1"], 
+  Video`CaptureDump`fstart$$ = None, Video`CaptureDump`f$$ = 
+  Function[{Video`CaptureDump`val, Video`CaptureDump`expr}, 
+   Video`CaptureDump`expr = Video`CaptureDump`val, HoldRest], 
+  Video`CaptureDump`fend$$ = None, Video`CaptureDump`success$$ = True, 
+  Video`CaptureDump`thumbnailStream$$ = VideoStream[
+  "Internal", "6f4e3049-4f11-460e-bda6-e16da2d89496"], 
+  Video`CaptureDump`source$$ = "HP Wide Vision HD Camera", 
+  Video`CaptureDump`displayedSource$$ = "HP Wide Vision HD Camera", 
+  Video`CaptureDump`audioSource$$ = "System Setting", 
+  Video`CaptureDump`fps$$ = Automatic, Video`CaptureDump`status$$ = "Stopped",
+   Video`CaptureDump`openQ$$ = True, Video`CaptureDump`opts$$ = {}}, 
+  FrameBox[
+   DynamicBox[ToBoxes[
+     Grid[{
+       Video`CaptureDump`controlsRow[
+        Dynamic[{
+         Video`CaptureDump`stream$$, Video`CaptureDump`thumbnailStream$$}], 
+        Dynamic[{Video`CaptureDump`status$$, Video`CaptureDump`openQ$$}], 
+        Dynamic[{
+         Video`CaptureDump`fstart$$, Video`CaptureDump`f$$, 
+          Video`CaptureDump`fend$$}], 
+        Dynamic[Video`CaptureDump`var$68084], 
+        Dynamic[Video`CaptureDump`source$68084], 
+        Dynamic[{
+         Video`CaptureDump`source$$, Video`CaptureDump`displayedSource$$}], 
+        Dynamic[Video`CaptureDump`fps$$], 
+        Dynamic[Video`CaptureDump`audioSource$$], 
+        Dynamic[Video`CaptureDump`audioDevice$68084], 
+        Dynamic[Video`CaptureDump`success$$], VideoCapture, {}], 
+       If[Video`CaptureDump`openQ$$, {
+         Item[
+          Video`CaptureDump`thumbnail[
+           
+           Dynamic[{
+            Video`CaptureDump`stream$$, Video`CaptureDump`thumbnailStream$$}], 
+           Dynamic[Video`CaptureDump`status$$], Identity]], SpanFromLeft}, 
+        Nothing], 
+       If[Video`CaptureDump`openQ$$, {
+         Item[
+          Video`CaptureDump`dimensions[
+           Dynamic[Video`CaptureDump`stream$$]], Alignment -> Right], 
+         SpanFromLeft}, Nothing], {
+        Video`CaptureDump`opener[
+         Dynamic[{
+          Video`CaptureDump`stream$$, Video`CaptureDump`thumbnailStream$$}], 
+         Dynamic[{Video`CaptureDump`status$$, Video`CaptureDump`openQ$$}], 
+         Dynamic[Video`CaptureDump`var$68084], 
+         Dynamic[{
+          Video`CaptureDump`fstart$$, Video`CaptureDump`f$$, 
+           Video`CaptureDump`fend$$}], 
+         Dynamic[Video`CaptureDump`source$$], 
+         Dynamic[Video`CaptureDump`audioSource$$], 
+         Dynamic[Video`CaptureDump`fps$$], 
+         Dynamic[Video`CaptureDump`success$$], {}], SpanFromLeft}}, 
+      Spacings -> {0, 0}], StandardForm],
+    ImageSizeCache->{266., {109.65869130771607`, 115.34130869228393`}},
+    TrackedSymbols:>{Video`CaptureDump`openQ$$}],
+   BaseStyle->{
+    ShowStringCharacters -> False, NumberMarks -> False, FontFamily -> 
+     "Roboto", FontSize -> 11, FontColor -> 
+     RGBColor[0.39215686274509803`, 0.39215686274509803`, 
+       0.39215686274509803`], 
+     FrameBoxOptions -> {
+      Background -> GrayLevel[1], FrameStyle -> 
+       RGBColor[0.8980392156862745, 0.8980392156862745, 0.8980392156862745], 
+       RoundingRadius -> 4}, 
+     GridBoxOptions -> {
+      FrameStyle -> 
+       RGBColor[0.8980392156862745, 0.8980392156862745, 0.8980392156862745], 
+       GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Baseline}}}}},
+   FrameMargins->0,
+   StripOnInput->False],
+  Deinitialization:>(Quiet[
+     RemoveVideoStream[Video`CaptureDump`stream$$]]; Quiet[
+     RemoveVideoStream[Video`CaptureDump`thumbnailStream$$]]; 
+   If[True, Video`CaptureDump`var$68084 = $Canceled]; Null),
+  DynamicModuleValues:>{},
+  Initialization:>(Progress`ProgressPanel; Video`VideoGUI; 
+   Video`CaptureDump`openQ$$ = False; If[
+     Not[
+      Video`VideoStreamQ[Video`CaptureDump`stream$$]], 
+     Video`CaptureDump`status$$ = "Stopped"]; If[
+     FailureQ[Video`CaptureDump`var$68084], Quiet, Identity][
+     Video`CaptureDump`initializeStream[
+      Dynamic[{
+       Video`CaptureDump`stream$$, Video`CaptureDump`thumbnailStream$$}], 
+      Dynamic[Video`CaptureDump`source$$], 
+      Dynamic[Video`CaptureDump`audioSource$$], 
+      Dynamic[Video`CaptureDump`fps$$], 
+      Dynamic[Video`CaptureDump`success$$], 
+      Dynamic[{Video`CaptureDump`status$$, Video`CaptureDump`openQ$$}], 
+      Dynamic[Video`CaptureDump`var$68084], 
+      Dynamic[{
+       Video`CaptureDump`fstart$$, Video`CaptureDump`f$$, 
+        Video`CaptureDump`fend$$}], True, Video`CaptureDump`opts$$]]; Quiet[
+     If[
+      And[
+       Not[Video`CaptureDump`success$$], True], 
+      Video`CaptureDump`var$68084 = $Failed]]; Quiet[
+     If[
+      Not[
+       Video`VideoStreamQ[Video`CaptureDump`stream$$]], 
+      Video`CaptureDump`stream$$ = $Failed; 
+      If[True, Video`CaptureDump`var$68084 = $Failed]; Null, 
+      Video`VideoStreamInternals`setVideoStreamProperty[
+       Video`CaptureDump`stream$$, "UserCallback", 
+        Function[{
+         Video`CaptureDump`asynch$, Video`CaptureDump`tag$, 
+          Video`CaptureDump`data$}, 
+         Switch[Video`CaptureDump`tag$, "StateChanged", 
+          If[
+           And[
+           Part[Video`CaptureDump`data$, 1] === 
+            FFmpegTools`Video`$VideoPlaybackStateEnded, 
+            Video`CaptureDump`status$$ =!= "Stopped"], 
+           Video`CaptureDump`status$$ = "Stopped"; FE`Evaluate[
+             FEPrivate`Set[Video`CaptureDump`status$$, "Stopped"]]; 
+           Video`CaptureDump`stopAndSave[
+             
+             Dynamic[{
+              Video`CaptureDump`stream$$, 
+               Video`CaptureDump`thumbnailStream$$}], 
+             Dynamic[{Video`CaptureDump`status$$, Video`CaptureDump`openQ$$}], 
+             
+             Dynamic[{
+              Video`CaptureDump`fstart$$, Video`CaptureDump`f$$, 
+               Video`CaptureDump`fend$$}], 
+             Dynamic[Video`CaptureDump`var$68084], 
+             Dynamic[Video`CaptureDump`source$$], 
+             Video`CaptureDump`opts$$]]]]]; Null]]; Null)]], "PrintTemporary",
+ Selectable->False,
+ Copyable->False,
+ CellChangeTimes->{3.8752741667951927`*^9},
+ CellLabel->
+  "During evaluation of \
+In[63]:=",ExpressionUUID->"de23567f-ca64-41fa-a2b0-5c2b4d74afd1"],
+
+Cell[BoxData[
+ TemplateBox[<|"opts" -> Sequence[
+     RowBox[{"AudioOutputDevice", "\[Rule]", "Automatic"}]], "resourcePath" -> 
+   "C:\\Users\\peter\\Documents\\Wolfram\\Video\\VideoCapture-2022-10-20T13-\
+02-46.mp4", "appearance" -> "Basic", "position" -> 0., "currentVideoTrack" -> 
+   1, "currentAudioTrack" -> 1, "currentSubtitleTrack" -> 0, "volume" -> 1, 
+   "audioDevice" -> Automatic, "currentRasterSize" -> {739, 416}, 
+   "imageSizeOption" -> Automatic, "cachedFrame" -> ByteArray[CompressedData["
+1:eJxTTMoPSmJkYGBIFGNg+H/j/wMGAS83TzcGRkZGBg8gZPj/kOGKa0VmGgOD
+p6cWAwdQJRAzcjKA9DxmAjKh7AVAQoqRFczOA2JpKLsMiDWgaoDKGQwZmRhM
+gHQdEBsB2VJAehMQa3VA1Pz5//8/kAJZDebDaOei1MSS1BSF8sySDIWSjFSF
+8PyctKLEXAWfxLz00sT0VAUrhfLycr1yiLBecn4ug5GBkZGVoYGVkYGCobGV
+gbGVsbmugYmVgQHD/9sMzgwcbGzsbKwc7OzsnJwcXDwivDzc3DySQsL8IrJS
+8nKyUjIyCip66gpKOsoyMhrmmjoGhiYmJvLqlrYWRjZ6xiZGIEMYOTk5ebh5
+JHh5JYwUZRSNSAb/DzAIcjAuYHrMzKjEwCTIyCzI+P8IgzzQ06yMYMAABYxM
+zCysbOwcnFzcQAVbBRiYGJmZmViYWVlZWICytUB5BhZBViFFQ0c24cBEdqVC
+EaPGiQs5lJ02HhQNuvhBxTipqImTS0xcQlJKVU1dQ1PLxNTM3MLSytnF1c3d
+w9MrOCQ0LDwiMio5JTUtPSMzq7iktKy8orKquaW1rb2js2vS5ClTp02fMXPW
+osVLli5bvmLlqk2bt2zdtn3Hzl2HDh85euz4iZOnLl2+cvXa9Rs3bz189PjJ
+02fPX7x89fHT5y9fv33/8fMXyF+MDMyMMIDVX4JAfzGxsDCzsIP8xchUDlIg
+yMKqaMgm5BjInlgorGTUyCHiNHHhxoOcysZBH0STii5yiamYPFT9CPIa2GfE
+eayJLJ/BPYbw1y0GHmZGYOQxCzLYM/z816WxgGkUj+JRPIpH8SgexaN4FI/i
+UTyKR/EoHsWjeBSP4hGG+f/fBAAc+09i
+     "]], 
+   "properties" -> <|
+    "duration" -> 13.034, 
+     "trackDescriptors" -> <|
+      "Video" -> {1 -> "Track 1"}, "Audio" -> {1 -> "Track 1"}, 
+       "Subtitle" -> {}|>, "originalRasterSizes" -> {{1280, 720}}, 
+     "rasterSizeOption" -> Automatic, "fileSize" -> 3094763|>, "version" -> 2,
+    "form" -> StandardForm|>,
+  "VideoBox2",
+  Editable->False,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8752742188707695`*^9},
+ CellLabel->"Out[63]=",ExpressionUUID->"79e74160-07a5-41aa-ad17-7138c81a918a"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"VideoFrameList", "[", 
+  RowBox[{"%", ",", "5"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8752741965477657`*^9, 
+  3.8752742027857637`*^9}},ExpressionUUID->"39499e0b-e058-4d6b-9bbd-\
+b65e92508235"]
 },
 WindowSize->{574.8, 579.6},
 WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
@@ -36,9 +228,13 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 190, 4, 28, "Input",ExpressionUUID->"0ed6340a-95be-4451-ba12-82fe96575aa8"],
+Cell[773, 28, 6307, 138, 238, "PrintTemporary",ExpressionUUID->"de23567f-ca64-41fa-a2b0-5c2b4d74afd1"],
+Cell[7083, 168, 1919, 35, 291, "Output",ExpressionUUID->"79e74160-07a5-41aa-ad17-7138c81a918a"]
+}, Open  ]],
+Cell[9017, 206, 220, 5, 28, "Input",ExpressionUUID->"39499e0b-e058-4d6b-9bbd-b65e92508235"]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
