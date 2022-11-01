@@ -2176,7 +2176,7 @@ lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1141.2, 580.8},
+WindowSize->{1141.2, 574.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
@@ -4290,35 +4290,35 @@ ExpressionUUID->"05be17d3-7ae9-488e-b1c5-fb6610c9c083"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "Abstract"->{
-  Cell[1171, 36, 285, 4, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
- "AuthorName"->{
-  Cell[902, 29, 266, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
-   CellTags->"AuthorName",
-   CellID->960727095]},
  "Examples"->{
   Cell[580, 22, 319, 5, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
    CellID->805710577]},
- "TemplateCell"->{
-  Cell[1171, 36, 285, 4, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
-   CellTags->{"Abstract", "TemplateCell"},
-   CellID->587432573]},
  "Your Essay Title"->{
   Cell[580, 22, 319, 5, 98, "Title",ExpressionUUID->"1d92d1b8-f6d7-48ed-8825-cd049ebbaf36",
    CellTags->{"Examples", "Your Essay Title"},
-   CellID->805710577]}
+   CellID->805710577]},
+ "AuthorName"->{
+  Cell[902, 29, 266, 5, 30, "Author",ExpressionUUID->"3a631b5a-3636-4c6d-8965-482ae9171f2c",
+   CellTags->"AuthorName",
+   CellID->960727095]},
+ "Abstract"->{
+  Cell[1171, 36, 285, 4, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]},
+ "TemplateCell"->{
+  Cell[1171, 36, 285, 4, 62, "Abstract",ExpressionUUID->"2ac58def-5955-4744-85c7-434e15df125e",
+   CellTags->{"Abstract", "TemplateCell"},
+   CellID->587432573]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Abstract", 225864, 4292},
- {"AuthorName", 226044, 4296},
- {"Examples", 226203, 4300},
- {"TemplateCell", 226385, 4304},
- {"Your Essay Title", 226571, 4308}
+ {"Examples", 225864, 4292},
+ {"Your Essay Title", 226050, 4296},
+ {"AuthorName", 226230, 4300},
+ {"Abstract", 226389, 4304},
+ {"TemplateCell", 226571, 4308}
  }
 *)
 (*NotebookFileOutline

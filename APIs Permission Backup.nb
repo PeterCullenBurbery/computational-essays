@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3970280,      75297]
-NotebookOptionsPosition[   3819251,      72297]
-NotebookOutlinePosition[   3932916,      74468]
-CellTagsIndexPosition[   3932515,      74454]
+NotebookDataLength[   4051357,      77288]
+NotebookOptionsPosition[   3897122,      74219]
+NotebookOutlinePosition[   4010796,      76391]
+CellTagsIndexPosition[   4010395,      76377]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -71776,7 +71776,7 @@ Cell[BoxData[
   3.875692434393651*^9, {3.8756924901379743`*^9, 3.875692514491002*^9}},
  CellLabel->"Out[33]=",
  CellID->89397372,ExpressionUUID->"7677149a-2805-4add-98f6-8bb372b06647"]
-}, Open  ]],
+}, {2}]],
 
 Cell[CellGroupData[{
 
@@ -72292,11 +72292,1934 @@ Cell[BoxData[
  CellLabel->"Out[30]=",
  CellID->211148402,ExpressionUUID->"c42d1922-1757-4403-9746-2b84990e0334"]
 }, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["api", "Section",
+ CellChangeTimes->{{3.875710595089179*^9, 3.8757105984136543`*^9}},
+ CellID->74619411,ExpressionUUID->"0fdad48b-67f8-436a-9247-a77a2978be7e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{
+   RowBox[{"Delayed", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "$RequesterAddress", ",", "$GeoLocation", ",", "$GeoLocationCountry", 
+      ",", "$GeoLocationCity"}], "}"}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.87571061034089*^9, 3.8757106317797213`*^9}},
+ CellLabel->"In[2]:=",
+ CellID->90010466,ExpressionUUID->"dda20e86-50e4-4f4d-9d34-ab2c4451fe66"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/162914f8-85b2-4867-a37a-d89d7c237e28\"\
+", "https://www.wolframcloud.com/obj/162914f8-85b2-4867-a37a-d89d7c237e28"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/162914f8-85b2-4867-a37a-d89d7c237e28"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.8757106143020773`*^9, 3.875710632154889*^9}},
+ CellLabel->"Out[2]=",
+ CellID->207267268,ExpressionUUID->"0fde5c2e-907a-4568-b8b5-5e0eb17f1e3e"]
+}, Open  ]],
+
+Cell["It seems like its working but the cache is an issue.", "Text",
+ CellChangeTimes->{{3.8757109327713223`*^9, 3.8757109415781946`*^9}},
+ CellID->270216095,ExpressionUUID->"94882904-9a08-4c08-8de2-86e9e38516b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["community", "Section",
+ CellChangeTimes->{{3.8757109478622866`*^9, 3.875710949418417*^9}},
+ CellID->593588862,ExpressionUUID->"eb913279-858d-4b36-a4d1-2abae2459ddf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<country\>\"", "->", 
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Interpreter\>\"", "->", "\"\<Country\>\""}], ",", 
+        RowBox[{"\"\<Input\>\"", ":>", 
+         RowBox[{"$GeoLocationCountry", "[", "\"\<Name\>\"", "]"}]}]}], 
+       "|>"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\<Country\>\"", "->", "#country"}], ",", 
+       RowBox[{"\"\<Population\>\"", "->", 
+        RowBox[{"#country", "[", "\"\<Population\>\"", "]"}]}]}], "}"}], 
+     "&"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8757109505915337`*^9, 3.875710950592514*^9}},
+ CellLabel->"In[3]:=",
+ CellID->756332398,ExpressionUUID->"e4d599d5-50b9-44d8-870e-118e16e8bb4b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/937592d6-7de7-41a3-b451-be7d35e284d5\"\
+", "https://www.wolframcloud.com/obj/937592d6-7de7-41a3-b451-be7d35e284d5"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/937592d6-7de7-41a3-b451-be7d35e284d5"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8757109519127035`*^9},
+ CellLabel->"Out[3]=",
+ CellID->118243393,ExpressionUUID->"9bce2acf-f549-4f96-9232-db227649c280"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"Delayed", "@", 
+    RowBox[{"FormFunction", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", 
+        RowBox[{"<|", 
+         RowBox[{
+          RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+          RowBox[{"\"\<Input\>\"", ":>", 
+           RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+         "|>"}]}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\"\<Population\>\"", "->", 
+          RowBox[{"#city", "[", "\"\<Population\>\"", "]"}]}], ",", 
+         RowBox[{"\"\<City\>\"", "->", 
+          RowBox[{"#city", "[", "\"\<Name\>\"", "]"}]}]}], "}"}], "&"}], ",", 
+      "\"\<CloudCDF\>\""}], "]"}]}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8757109505915337`*^9, 3.875710950592514*^9}, {
+  3.8757109835977325`*^9, 3.8757110283567104`*^9}, {3.87571106526985*^9, 
+  3.8757110865691533`*^9}, {3.875711249730302*^9, 3.8757112640219307`*^9}},
+ CellLabel->"In[11]:=",
+ CellID->599165741,ExpressionUUID->"3bc612d1-daf8-45a8-8af6-1fb36e9125a6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/62564568-45cb-4612-a37f-e5204f283f5f\"\
+", "https://www.wolframcloud.com/obj/62564568-45cb-4612-a37f-e5204f283f5f"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/62564568-45cb-4612-a37f-e5204f283f5f"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{
+  3.875710988157711*^9, {3.8757110215526857`*^9, 3.875711028679699*^9}, {
+   3.8757110732568617`*^9, 3.8757110868409953`*^9}, {3.8757112528124666`*^9, 
+   3.8757112643544064`*^9}},
+ CellLabel->"Out[11]=",
+ CellID->132664967,ExpressionUUID->"422a5b97-a91e-4809-bb37-8230aa538542"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"Delayed", "@", 
+    RowBox[{"FormFunction", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", 
+        RowBox[{"<|", 
+         RowBox[{
+          RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+          RowBox[{"\"\<Input\>\"", ":>", 
+           RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+         "|>"}]}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"Grid", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Style", "[", 
+             RowBox[{
+              RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+              "\"\<Title\>\""}], "]"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{
+              "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+              "]"}], ",", 
+             RowBox[{"IconData", "[", 
+              RowBox[{"\"\<AirTemperature\>\"", ",", 
+               RowBox[{"WeatherData", "[", 
+                RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}],
+              ",", 
+             RowBox[{"QuantityForm", "[", 
+              RowBox[{
+               RowBox[{"WeatherData", "[", 
+                RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+               "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+             ",", 
+             RowBox[{"GeoGraphics", "[", 
+              RowBox[{
+               RowBox[{"EntityValue", "[", 
+                RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+               RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+               RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+             ",", 
+             RowBox[{"GeoImage", "[", 
+              RowBox[{
+               RowBox[{"EntityValue", "[", 
+                RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+               RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{
+              "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}],
+               "]"}], ",", 
+             RowBox[{"GeoImage", "[", 
+              RowBox[{
+               RowBox[{"EntityValue", "[", 
+                RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+               RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+               RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], 
+          "}"}], ",", 
+         RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+      "\"\<CloudCDF\>\""}], "]"}]}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8757109505915337`*^9, 3.875710950592514*^9}, {
+  3.8757109835977325`*^9, 3.8757110283567104`*^9}, {3.87571106526985*^9, 
+  3.8757110865691533`*^9}, {3.875711249730302*^9, 3.8757112640219307`*^9}, {
+  3.8757113012906294`*^9, 3.8757113046438513`*^9}},
+ CellLabel->"In[12]:=",
+ CellID->356332354,ExpressionUUID->"c841b27a-3409-407d-b089-eeea9fb25703"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/511f458b-22f0-4c7f-8862-0cf04fb93c70\"\
+", "https://www.wolframcloud.com/obj/511f458b-22f0-4c7f-8862-0cf04fb93c70"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/511f458b-22f0-4c7f-8862-0cf04fb93c70"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8757113078345685`*^9},
+ CellLabel->"Out[12]=",
+ CellID->55571585,ExpressionUUID->"168e22b0-db14-47a5-9661-d09c5363ec43"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{3.8757120079618444`*^9},
+ CellLabel->"In[13]:=",
+ CellID->359656242,ExpressionUUID->"24f3032a-b6af-4967-9dc2-65bdb0a04f6b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/03c5ae06-e4ca-4034-91de-b7f4717f4f4b\"\
+", "https://www.wolframcloud.com/obj/03c5ae06-e4ca-4034-91de-b7f4717f4f4b"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/03c5ae06-e4ca-4034-91de-b7f4717f4f4b"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.875712009192505*^9},
+ CellLabel->"Out[13]=",
+ CellID->431325990,ExpressionUUID->"1a3b4e82-fcbc-45b4-bc13-d350ae453076"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Gravity potential data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic magnitude data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Magnitude\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic north component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<NorthComponent\>\""}], "]"}], 
+                ",", "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}],
+              "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic east component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<EastComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic down component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<DownComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic horizontal component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<HorizontalComponent\>\""}], "]"}],
+                 ",", "\"\<SIBase\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic declination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Declination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic inclination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Inclination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic potential data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Cloud Cover Fraction Data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<CloudCoverFraction\>\""}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Dew Point Data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<DewPoint\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Pressure Data\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Pressure\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Visibility Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Visibility\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Wind Chill Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<WindChill\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunrise\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunrise", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunset\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunset", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase with positive or negative sign\>\"", 
+              ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<SignedFraction\>\"", "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{
+             RowBox[{"MoonPhase", "[", "\"\<Name\>\"", "]"}], "[", 
+             "\"\<Name\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase icon\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<Icon\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next annular solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Annular\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next hybrid solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Hybrid\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next total solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Total\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial lunar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"LunarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Solar Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SolarTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sidereal time Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SiderealTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Julian date\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"Floor", "@", 
+             RowBox[{"JulianDate", "[", "]"}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<City Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.8757120079618444`*^9, {3.875712518540233*^9, 3.875712595248864*^9}, {
+   3.8757135272263403`*^9, 3.875713549711478*^9}, {3.8757139392548895`*^9, 
+   3.8757139397990227`*^9}, {3.8757143517913494`*^9, 3.875714355650061*^9}},
+ CellLabel->"In[24]:=",
+ CellID->254380963,ExpressionUUID->"8ff61a7f-fce2-48b2-8b7b-a1fd77e3fa97"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/308c9d97-5e72-465d-b31d-e27c935b8db6\"\
+", "https://www.wolframcloud.com/obj/308c9d97-5e72-465d-b31d-e27c935b8db6"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/308c9d97-5e72-465d-b31d-e27c935b8db6"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8757125964157887`*^9, 3.8757135520293427`*^9, 
+  3.875714097274355*^9, 3.8757143568022056`*^9},
+ CellLabel->"Out[24]=",
+ CellID->222336408,ExpressionUUID->"54020410-dedd-4848-abc8-1ac8c3104dad"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/308c9d97-5e72-465d-b31d-\
+e27c935b8db6\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[25]:=",
+ CellID->623110387,ExpressionUUID->"fbb61ca4-61db-41e1-9405-b4d0e26f6355"],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/84a6f3a0-cf3c-4e4b-95db-\
+4ac2713a57a3\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[23]:=",
+ CellID->3811456,ExpressionUUID->"88ccff8f-c50e-469a-bd07-ae0b31ad4709"],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/853db64a-01a4-4884-8709-\
+1f648818a7f8\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[21]:=",
+ CellID->174315368,ExpressionUUID->"e8c4dc31-e189-4471-a6c1-0710bb8f5e85"],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/78a3bad5-c3d6-4ba3-b670-\
+ecd0011cfd7a\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[19]:=",
+ CellID->20679747,ExpressionUUID->"ff88b46c-a133-47fd-9bf7-2042ab6473d9"],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/03c5ae06-e4ca-4034-91de-\
+b7f4717f4f4b\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[14]:=",
+ CellID->32700218,ExpressionUUID->"7d5067d5-389f-4d76-95e8-443907390d77"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Relative Humidity\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<Humidity\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<RelativeHumidity\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Humidity\>\""}], "]"}]}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Wind Speed\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<WindSpeed\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<WindSpeed\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<WindSpeed\>\""}], "]"}]}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Wind Direction\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<WindDirection\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<WindDirection\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<WindDirection\>\""}], "]"}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Gravity potential data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic magnitude data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Magnitude\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic north component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<NorthComponent\>\""}], "]"}], 
+                ",", "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}],
+              "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic east component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<EastComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic down component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<DownComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic horizontal component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<HorizontalComponent\>\""}], "]"}],
+                 ",", "\"\<SIBase\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic declination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Declination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic inclination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Inclination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic potential data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Cloud Cover Fraction Data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<CloudCoverFraction\>\""}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Dew Point Data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<DewPoint\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Pressure Data\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Pressure\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Visibility Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Visibility\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Wind Chill Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<WindChill\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunrise\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunrise", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunset\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunset", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase with positive or negative sign\>\"", 
+              ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<SignedFraction\>\"", "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{
+             RowBox[{"MoonPhase", "[", "\"\<Name\>\"", "]"}], "[", 
+             "\"\<Name\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase icon\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<Icon\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next annular solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Annular\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next hybrid solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Hybrid\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next total solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Total\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial lunar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"LunarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Solar Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SolarTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sidereal time Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SiderealTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Julian date\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"Floor", "@", 
+             RowBox[{"JulianDate", "[", "]"}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<City Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{"#city", ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8757148599091578`*^9, 3.8757149022074747`*^9}, {
+  3.8757149917211046`*^9, 3.8757149944540453`*^9}, {3.875715412839141*^9, 
+  3.8757154133289175`*^9}, {3.875715495167841*^9, 3.8757156140024757`*^9}},
+ CellLabel->"In[28]:=",
+ CellID->3678104,ExpressionUUID->"c191f34b-bceb-4649-bf71-bdf7b624a2f1"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/fbde4362-4166-499e-b6c0-88787b38d0bc\"\
+", "https://www.wolframcloud.com/obj/fbde4362-4166-499e-b6c0-88787b38d0bc"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/fbde4362-4166-499e-b6c0-88787b38d0bc"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8757149189584675`*^9, 3.8757149981712103`*^9, 
+  3.8757156842355537`*^9},
+ CellLabel->"Out[28]=",
+ CellID->45448998,ExpressionUUID->"459f8ed0-7f4c-4259-ae8b-f43b6b3206ed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Geographical location\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DMSString", "@", 
+             RowBox[{"GeoPosition", "[", "#city", "]"}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Geographical location\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"First", "@", 
+             RowBox[{"GeoPosition", "[", "#city", "]"}]}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Relative Humidity\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<Humidity\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<RelativeHumidity\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Humidity\>\""}], "]"}]}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Wind Speed\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<WindSpeed\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<WindSpeed\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<WindSpeed\>\""}], "]"}]}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Wind Direction\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<WindDirection\>\""}], "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<WindDirection\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<WindDirection\>\""}], "]"}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Gravity potential data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic magnitude data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Magnitude\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic north component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<NorthComponent\>\""}], "]"}], 
+                ",", "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}],
+              "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic east component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<EastComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic down component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<DownComponent\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic horizontal component data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<HorizontalComponent\>\""}], "]"}],
+                 ",", "\"\<SIBase\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic declination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Declination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic inclination data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeogravityModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Inclination\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Magnetic potential data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"GeomagneticModelData", "[", 
+                 RowBox[{"#city", ",", "\"\<Potential\>\""}], "]"}], ",", 
+                "\"\<SIBase\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Cloud Cover Fraction Data\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"WeatherData", "[", 
+             RowBox[{"#city", ",", "\"\<CloudCoverFraction\>\""}], "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Dew Point Data\>\"", ",", "\"\<Subsubsection\>\""}],
+              "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<DewPoint\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Pressure Data\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Pressure\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Visibility Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<Visibility\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Wind Chill Data\>\"", ",", "\"\<Subsubsection\>\""}], "]"}],
+             ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"UnitConvert", "[", 
+               RowBox[{
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{"#city", ",", "\"\<WindChill\>\""}], "]"}], ",", 
+                "\"\<SI\>\""}], "]"}], ",", "\"\<Abbreviation\>\""}], "]"}]}],
+            "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination without \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Right Ascension and Declination with \
+atmospheric refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Equatorial\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude without atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<TrueAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sun Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"SunPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Moon Position Azimuth and Altitude with atmospheric \
+refraction corrections\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPosition", "[", 
+             RowBox[{
+              RowBox[{"CelestialSystem", "->", "\"\<Horizon\>\""}], ",", 
+              RowBox[{"AltitudeMethod", "->", "\"\<ApparentAltitude\>\""}]}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunrise\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunrise", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next upcoming sunset\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"Sunset", "[", "]"}], ",", "\"\<DateTime\>\""}], 
+             "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase with positive or negative sign\>\"", 
+              ",", "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<SignedFraction\>\"", "]"}]}], 
+           "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{
+             RowBox[{"MoonPhase", "[", "\"\<Name\>\"", "]"}], "[", 
+             "\"\<Name\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current moon phase icon\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"MoonPhase", "[", "\"\<Icon\>\"", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next annular solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Annular\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next hybrid solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Hybrid\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next total solar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"SolarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Total\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Next partial lunar eclipse\>\"", ",", 
+              "\"\<Subsubsection\>\""}], "]"}], ",", 
+            RowBox[{"DateString", "[", 
+             RowBox[{
+              RowBox[{"LunarEclipse", "[", 
+               RowBox[{"EclipseType", "->", "\"\<Partial\>\""}], "]"}], ",", 
+              "\"\<DateTime\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Solar Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SolarTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Sidereal time Time\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"ToString", "[", 
+             RowBox[{"SiderealTime", "[", "]"}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Julian date\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"Floor", "@", 
+             RowBox[{"JulianDate", "[", "]"}]}]}], "}"}]}], "}"}], ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.875716684366062*^9, 3.8757167716095376`*^9}, {
+   3.8757168355211306`*^9, 3.8757168525714846`*^9}, {3.8757170008678527`*^9, 
+   3.8757170101217265`*^9}, 3.875717060666338*^9},
+ CellLabel->"In[43]:=",
+ CellID->196974722,ExpressionUUID->"6560713c-dbb9-4dea-b75e-e016042de335"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/915b400f-8d96-491a-ba79-fe70c2c92cf0\"\
+", "https://www.wolframcloud.com/obj/915b400f-8d96-491a-ba79-fe70c2c92cf0"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/915b400f-8d96-491a-ba79-fe70c2c92cf0"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{{3.875716747453969*^9, 3.875716772673063*^9}, 
+   3.875716854314165*^9, 3.875717010733796*^9, 3.8757170636857977`*^9},
+ CellLabel->"Out[43]=",
+ CellID->373279179,ExpressionUUID->"a2d30d46-9f92-4df9-9320-f1e553ce6de1"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{574.8, 574.8},
-WindowMargins->{{276, Automatic}, {-19.799999999999955`, Automatic}},
+WindowSize->{576., 585.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -72323,7 +74246,7 @@ TaggingRules->{
       160, 228, 58, 74, 226, 74, 173, 202, 104, 249, 9, 89, 192, 149, 140}]]],
    "ToolsOpen" -> True, "StatusMessage" -> "", "TryRealOnly" -> False},
 CreateCellID->True,
-FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (October 15, 2022)",
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
@@ -74400,8 +76323,8 @@ ACBxmlc=
     CellMargins -> {{66, 66}, {16, 5}}, Evaluatable -> False, ShowCellLabel -> 
     False, MenuSortingValue -> 10000, 
     RasterBoxOptions -> {ImageEditMode -> False}]}, Visible -> False, 
-  FrontEndVersion -> "13.2 for Microsoft Windows (64-bit) (October 15, 2022)",
-   StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  FrontEndVersion -> "13.1 for Microsoft Windows (64-bit) (June 16, 2022)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"efc4965e-afd4-4df5-83f3-16e5c812f8f6"
 ]
 (* End of Notebook Content *)
@@ -74453,16 +76376,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 3930765, 74411},
- {"Your Essay Title", 3930951, 74415},
- {"AuthorName", 3931131, 74419},
- {"Abstract", 3931290, 74423},
- {"TemplateCell", 3931471, 74427},
- {"SectionHeader", 3931653, 74431},
- {"ExampleTopicSentence", 3931829, 74435},
- {"ExampleCodeText", 3932004, 74439},
- {"ExampleInput", 3932174, 74443},
- {"ExampleOutput", 3932342, 74447}
+ {"Examples", 4008645, 76334},
+ {"Your Essay Title", 4008831, 76338},
+ {"AuthorName", 4009011, 76342},
+ {"Abstract", 4009170, 76346},
+ {"TemplateCell", 4009351, 76350},
+ {"SectionHeader", 4009533, 76354},
+ {"ExampleTopicSentence", 4009709, 76358},
+ {"ExampleCodeText", 4009884, 76362},
+ {"ExampleInput", 4010054, 76366},
+ {"ExampleOutput", 4010222, 76370}
  }
 *)
 (*NotebookFileOutline
@@ -74490,11 +76413,11 @@ Cell[1343, 46, 129, 2, 38, "CodeText",ExpressionUUID->"b8f16d1a-9cf8-4c1c-995b-1
 Cell[CellGroupData[{
 Cell[1497, 52, 435, 10, 48, "Input",ExpressionUUID->"c298fda7-be57-4199-9a77-faa57c9fc272",
  CellID->287322934],
-Cell[1935, 64, 537, 12, 56, "Output",ExpressionUUID->"a30fbdf5-31f7-49bf-9ef5-f132c62506de",
+Cell[1935, 64, 537, 12, 35, "Output",ExpressionUUID->"a30fbdf5-31f7-49bf-9ef5-f132c62506de",
  CellID->218238693]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2509, 81, 21091, 488, 2826, "Input",ExpressionUUID->"2d82e008-bcc4-458f-a454-64029a37ce3c",
+Cell[2509, 81, 21091, 488, 1132, "Input",ExpressionUUID->"2d82e008-bcc4-458f-a454-64029a37ce3c",
  CellID->231248302],
 Cell[23603, 571, 538, 12, 56, "Output",ExpressionUUID->"84d36eee-9ecf-43e3-929f-6cd6c151490f",
  CellID->15952068]
@@ -74531,96 +76454,96 @@ Cell[1547190, 27859, 1014388, 18205, 595, "Output",ExpressionUUID->"06829a3d-2df
 Cell[CellGroupData[{
 Cell[2561639, 46071, 167, 2, 53, "Section",ExpressionUUID->"dbacca49-cbb4-43d2-93f7-5f521c3e3e6d",
  CellID->665762864],
-Cell[2561809, 46075, 463, 12, 48, "Input",ExpressionUUID->"2a521e08-9cd9-4e6c-bdbc-a0cb43b5ae06",
+Cell[2561809, 46075, 463, 12, 28, "Input",ExpressionUUID->"2a521e08-9cd9-4e6c-bdbc-a0cb43b5ae06",
  CellID->117327104],
 Cell[CellGroupData[{
 Cell[2562297, 46091, 341, 7, 28, "Input",ExpressionUUID->"93ad72e1-4328-477d-b46d-5c229c2dcad4",
  CellID->173936738],
-Cell[2562641, 46100, 538, 12, 85, "Output",ExpressionUUID->"6edc319b-1e9c-4604-b6e8-418b35f4e93b",
+Cell[2562641, 46100, 538, 12, 35, "Output",ExpressionUUID->"6edc319b-1e9c-4604-b6e8-418b35f4e93b",
  CellID->484347796]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2563216, 46117, 337, 7, 28, "Input",ExpressionUUID->"05c9c50c-3259-4584-bcc6-3cd31d5d9f7a",
  CellID->153297249],
-Cell[2563556, 46126, 260, 5, 36, "Output",ExpressionUUID->"b09a97c5-db34-4b3b-9c98-f491a15f609f",
+Cell[2563556, 46126, 260, 5, 38, "Output",ExpressionUUID->"b09a97c5-db34-4b3b-9c98-f491a15f609f",
  CellID->588290497]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2563853, 46136, 347, 8, 28, "Input",ExpressionUUID->"541bd5d0-4b2a-414a-8182-95f079a3cf16",
  CellID->278055026],
-Cell[2564203, 46146, 268, 6, 36, "Output",ExpressionUUID->"37a241c1-13ce-4cb8-b991-fa7938749ccf",
+Cell[2564203, 46146, 268, 6, 38, "Output",ExpressionUUID->"37a241c1-13ce-4cb8-b991-fa7938749ccf",
  CellID->407198002]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2564508, 46157, 340, 8, 28, "Input",ExpressionUUID->"9787d00b-fc43-4347-bf9a-4a0937248c11",
  CellID->49738249],
-Cell[2564851, 46167, 271, 6, 36, "Output",ExpressionUUID->"59004ccc-1ab4-463d-9a26-d32643950867",
+Cell[2564851, 46167, 271, 6, 38, "Output",ExpressionUUID->"59004ccc-1ab4-463d-9a26-d32643950867",
  CellID->100719106]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2565159, 46178, 338, 7, 28, "Input",ExpressionUUID->"5f75f4f9-90df-4940-bc07-a7e9843b465c",
  CellID->809762766],
-Cell[2565500, 46187, 260, 5, 36, "Output",ExpressionUUID->"36158d99-9d9a-43ff-b7cb-d2f47cd2a8ce",
+Cell[2565500, 46187, 260, 5, 38, "Output",ExpressionUUID->"36158d99-9d9a-43ff-b7cb-d2f47cd2a8ce",
  CellID->690854947]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2565797, 46197, 344, 8, 28, "Input",ExpressionUUID->"bf6ba7ae-e158-4e3b-b7eb-c797e1bbf022",
  CellID->35475030],
-Cell[2566144, 46207, 262, 5, 36, "Output",ExpressionUUID->"caf13d1e-e70b-403a-8e49-32007d9b8d01",
+Cell[2566144, 46207, 262, 5, 38, "Output",ExpressionUUID->"caf13d1e-e70b-403a-8e49-32007d9b8d01",
  CellID->217173708]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2566443, 46217, 337, 7, 28, "Input",ExpressionUUID->"8579b7f8-d0bf-4b54-ad2b-65701cd0b583",
  CellID->189677845],
-Cell[2566783, 46226, 271, 6, 36, "Output",ExpressionUUID->"f7572d0f-7d5f-447c-af98-684750695e9b",
+Cell[2566783, 46226, 271, 6, 38, "Output",ExpressionUUID->"f7572d0f-7d5f-447c-af98-684750695e9b",
  CellID->479743586]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2567091, 46237, 336, 7, 28, "Input",ExpressionUUID->"447263f4-65b8-445c-ac23-9e635b4824e5",
  CellID->495510704],
-Cell[2567430, 46246, 296, 6, 36, "Output",ExpressionUUID->"9c0f35f6-e1a7-4193-835e-f528144f3011",
+Cell[2567430, 46246, 296, 6, 38, "Output",ExpressionUUID->"9c0f35f6-e1a7-4193-835e-f528144f3011",
  CellID->12824715]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2567763, 46257, 387, 8, 28, "Input",ExpressionUUID->"95150561-d938-48e5-bcad-df4ae35b661d",
  CellID->247668809],
-Cell[2568153, 46267, 260, 5, 36, "Output",ExpressionUUID->"8513fd5a-fb98-4de7-a433-f079d969b95e",
+Cell[2568153, 46267, 260, 5, 38, "Output",ExpressionUUID->"8513fd5a-fb98-4de7-a433-f079d969b95e",
  CellID->155686271]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2568450, 46277, 554, 13, 48, "Input",ExpressionUUID->"caaec4a5-f9c8-4cfe-8459-06b0b6ad9e5e",
  CellID->292418489],
-Cell[2569007, 46292, 538, 12, 85, "Output",ExpressionUUID->"092cc274-3688-466d-b8a7-2950f944f914",
+Cell[2569007, 46292, 538, 12, 35, "Output",ExpressionUUID->"092cc274-3688-466d-b8a7-2950f944f914",
  CellID->644181846]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2569582, 46309, 574, 14, 48, "Input",ExpressionUUID->"8e5ff395-44cc-4dab-a4c5-82b3f036c6f6",
+Cell[2569582, 46309, 574, 14, 28, "Input",ExpressionUUID->"8e5ff395-44cc-4dab-a4c5-82b3f036c6f6",
  CellID->26835253],
-Cell[2570159, 46325, 539, 12, 85, "Output",ExpressionUUID->"2ac75303-c692-417f-9d75-fb6c29675598",
+Cell[2570159, 46325, 539, 12, 35, "Output",ExpressionUUID->"2ac75303-c692-417f-9d75-fb6c29675598",
  CellID->46362109]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2570735, 46342, 959, 24, 105, "Input",ExpressionUUID->"1d27ec45-af75-451f-ae20-35f4896e5687",
+Cell[2570735, 46342, 959, 24, 67, "Input",ExpressionUUID->"1d27ec45-af75-451f-ae20-35f4896e5687",
  CellID->132907941],
-Cell[2571697, 46368, 538, 12, 85, "Output",ExpressionUUID->"f7ac7a96-a2c8-4f18-8ba7-e0fba2d6feea",
+Cell[2571697, 46368, 538, 12, 35, "Output",ExpressionUUID->"f7ac7a96-a2c8-4f18-8ba7-e0fba2d6feea",
  CellID->113053920]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2572272, 46385, 1294, 33, 124, "Input",ExpressionUUID->"46a02b5e-f9ad-45cb-b41e-1bd1c8901f7f",
+Cell[2572272, 46385, 1294, 33, 67, "Input",ExpressionUUID->"46a02b5e-f9ad-45cb-b41e-1bd1c8901f7f",
  CellID->60578226],
-Cell[2573569, 46420, 538, 12, 85, "Output",ExpressionUUID->"0f6a621a-0200-49f2-b031-3a1a6a45b906",
+Cell[2573569, 46420, 538, 12, 35, "Output",ExpressionUUID->"0f6a621a-0200-49f2-b031-3a1a6a45b906",
  CellID->195071319]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2574144, 46437, 3989, 92, 428, "Input",ExpressionUUID->"6a59aace-92a1-45ff-bbf9-49436e16e4f1",
+Cell[2574144, 46437, 3989, 92, 181, "Input",ExpressionUUID->"6a59aace-92a1-45ff-bbf9-49436e16e4f1",
  CellID->106885632],
-Cell[2578136, 46531, 735, 15, 85, "Output",ExpressionUUID->"406b4b35-f7ff-4431-bc1b-699a69f0988d",
+Cell[2578136, 46531, 735, 15, 35, "Output",ExpressionUUID->"406b4b35-f7ff-4431-bc1b-699a69f0988d",
  CellID->795009710]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2578908, 46551, 216, 4, 28, "Input",ExpressionUUID->"538f7fca-3050-4dd1-9528-ae270f1b338c",
  CellID->781721890],
-Cell[2579127, 46557, 12254, 296, 120, "Output",ExpressionUUID->"6d211e73-867a-4bd4-b822-8816df58b837",
+Cell[2579127, 46557, 12254, 296, 95, "Output",ExpressionUUID->"6d211e73-867a-4bd4-b822-8816df58b837",
  CellID->162564159]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -74650,7 +76573,7 @@ Cell[2593602, 46922, 193, 3, 32, "Output",ExpressionUUID->"42845905-8b3b-4522-82
 Cell[CellGroupData[{
 Cell[2593832, 46930, 240, 4, 28, "Input",ExpressionUUID->"6fa9f94c-c539-4e1f-8b14-cfc364f5cda7",
  CellID->113740191],
-Cell[2594075, 46936, 739, 17, 117, "Output",ExpressionUUID->"a7eb7860-7aa9-4daf-8d4e-299db5ab8dd7",
+Cell[2594075, 46936, 739, 17, 116, "Output",ExpressionUUID->"a7eb7860-7aa9-4daf-8d4e-299db5ab8dd7",
  CellID->189145978]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -74666,7 +76589,7 @@ Cell[2595678, 46981, 188, 3, 32, "Output",ExpressionUUID->"9be490d3-393f-4acc-9c
  CellID->423385561]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2595903, 46989, 694, 18, 138, "Input",ExpressionUUID->"e3fc8e62-5520-4b1f-a149-838d66a4c4be",
+Cell[2595903, 46989, 694, 18, 32, "Input",ExpressionUUID->"e3fc8e62-5520-4b1f-a149-838d66a4c4be",
  CellID->12994183],
 Cell[2596600, 47009, 176, 3, 32, "Output",ExpressionUUID->"4ea2791d-ddf0-4bae-8422-4219cc6f3595",
  CellID->874413953]
@@ -74680,9 +76603,9 @@ Cell[2597261, 47028, 173, 3, 32, "Output",ExpressionUUID->"393b1956-1edd-49f2-ab
  CellID->360462703]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2597471, 47036, 3135, 74, 314, "Input",ExpressionUUID->"66fed58d-e35a-4bfd-b300-c6d96ea47eb4",
+Cell[2597471, 47036, 3135, 74, 143, "Input",ExpressionUUID->"66fed58d-e35a-4bfd-b300-c6d96ea47eb4",
  CellID->87771230],
-Cell[2600609, 47112, 612, 13, 56, "Output",ExpressionUUID->"5f661878-0c67-41e6-977a-8da2d8ad8428",
+Cell[2600609, 47112, 612, 13, 35, "Output",ExpressionUUID->"5f661878-0c67-41e6-977a-8da2d8ad8428",
  CellID->97266807]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -75280,22 +77203,90 @@ Cell[3788790, 71586, 558, 13, 35, "Output",ExpressionUUID->"87fc76d2-b4ed-4258-9
  CellID->29573588]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3789385, 71604, 1647, 39, 219, "Input",ExpressionUUID->"a2807276-9710-4513-b08c-8f07c504733e",
+Cell[3789385, 71604, 1647, 39, 124, "Input",ExpressionUUID->"a2807276-9710-4513-b08c-8f07c504733e",
  CellID->77434640],
-Cell[3791035, 71645, 558, 12, 56, "Output",ExpressionUUID->"02d855d7-8e33-430a-a664-8048eafe3dc3",
+Cell[3791035, 71645, 558, 12, 35, "Output",ExpressionUUID->"02d855d7-8e33-430a-a664-8048eafe3dc3",
  CellID->48944550]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3791630, 71662, 4379, 101, 542, "Input",ExpressionUUID->"2d9e0925-d69e-4b1e-b488-0926498702d1",
+Cell[3791630, 71662, 4379, 101, 257, "Input",ExpressionUUID->"2d9e0925-d69e-4b1e-b488-0926498702d1",
  CellID->953133960],
-Cell[3796012, 71765, 553, 12, 60, "Output",ExpressionUUID->"7677149a-2805-4add-98f6-8bb372b06647",
+Cell[3796012, 71765, 553, 12, 35, "Output",ExpressionUUID->"7677149a-2805-4add-98f6-8bb372b06647",
  CellID->89397372]
+}, {2}]],
+Cell[CellGroupData[{
+Cell[3796599, 71782, 22103, 497, 1151, "Input",ExpressionUUID->"ba9a2a1e-a6e7-4898-8a03-0da167bc8dcc",
+ CellID->410493315],
+Cell[3818705, 72281, 503, 11, 35, "Output",ExpressionUUID->"c42d1922-1757-4403-9746-2b84990e0334",
+ CellID->211148402]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[3819257, 72298, 164, 2, 53, "Section",ExpressionUUID->"0fdad48b-67f8-436a-9247-a77a2978be7e",
+ CellID->74619411],
+Cell[CellGroupData[{
+Cell[3819446, 72304, 478, 11, 67, "Input",ExpressionUUID->"dda20e86-50e4-4f4d-9d34-ab2c4451fe66",
+ CellID->90010466],
+Cell[3819927, 72317, 563, 12, 35, "Output",ExpressionUUID->"0fde5c2e-907a-4568-b8b5-5e0eb17f1e3e",
+ CellID->207267268]
+}, Open  ]],
+Cell[3820505, 72332, 213, 2, 35, "Text",ExpressionUUID->"94882904-9a08-4c08-8de2-86e9e38516b4",
+ CellID->270216095]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3796602, 71782, 22103, 497, 1151, "Input",ExpressionUUID->"ba9a2a1e-a6e7-4898-8a03-0da167bc8dcc",
- CellID->410493315],
-Cell[3818708, 72281, 503, 11, 35, "Output",ExpressionUUID->"c42d1922-1757-4403-9746-2b84990e0334",
- CellID->211148402]
+Cell[3820755, 72339, 171, 2, 67, "Section",ExpressionUUID->"eb913279-858d-4b36-a4d1-2abae2459ddf",
+ CellID->593588862],
+Cell[CellGroupData[{
+Cell[3820951, 72345, 826, 21, 48, "Input",ExpressionUUID->"e4d599d5-50b9-44d8-870e-118e16e8bb4b",
+ CellID->756332398],
+Cell[3821780, 72368, 539, 12, 35, "Output",ExpressionUUID->"9bce2acf-f549-4f96-9232-db227649c280",
+ CellID->118243393]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3822356, 72385, 1166, 27, 67, "Input",ExpressionUUID->"3bc612d1-daf8-45a8-8af6-1fb36e9125a6",
+ CellID->599165741],
+Cell[3823525, 72414, 697, 15, 35, "Output",ExpressionUUID->"422a5b97-a91e-4809-bb37-8230aa538542",
+ CellID->132664967]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3824259, 72434, 3497, 82, 162, "Input",ExpressionUUID->"c841b27a-3409-407d-b089-eeea9fb25703",
+ CellID->356332354],
+Cell[3827759, 72518, 539, 12, 35, "Output",ExpressionUUID->"168e22b0-db14-47a5-9661-d09c5363ec43",
+ CellID->55571585]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3828335, 72535, 3166, 78, 371, "Input",ExpressionUUID->"24f3032a-b6af-4967-9dc2-65bdb0a04f6b",
+ CellID->359656242],
+Cell[3831504, 72615, 538, 12, 85, "Output",ExpressionUUID->"1a3b4e82-fcbc-45b4-bc13-d350ae453076",
+ CellID->431325990]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3832079, 72632, 19145, 461, 2769, "Input",ExpressionUUID->"8ff61a7f-fce2-48b2-8b7b-a1fd77e3fa97",
+ CellID->254380963],
+Cell[3851227, 73095, 613, 13, 85, "Output",ExpressionUUID->"54020410-dedd-4848-abc8-1ac8c3104dad",
+ CellID->222336408]
+}, Open  ]],
+Cell[3851855, 73111, 385, 10, 86, "Input",ExpressionUUID->"fbb61ca4-61db-41e1-9405-b4d0e26f6355",
+ CellID->623110387],
+Cell[3852243, 73123, 383, 10, 86, "Input",ExpressionUUID->"88ccff8f-c50e-469a-bd07-ae0b31ad4709",
+ CellID->3811456],
+Cell[3852629, 73135, 385, 10, 86, "Input",ExpressionUUID->"e8c4dc31-e189-4471-a6c1-0710bb8f5e85",
+ CellID->174315368],
+Cell[3853017, 73147, 384, 10, 86, "Input",ExpressionUUID->"ff88b46c-a133-47fd-9bf7-2042ab6473d9",
+ CellID->20679747],
+Cell[3853404, 73159, 384, 10, 86, "Input",ExpressionUUID->"7d5067d5-389f-4d76-95e8-443907390d77",
+ CellID->32700218],
+Cell[CellGroupData[{
+Cell[3853813, 73173, 21274, 509, 3054, "Input",ExpressionUUID->"c191f34b-bceb-4649-bf71-bdf7b624a2f1",
+ CellID->3678104],
+Cell[3875090, 73684, 590, 13, 56, "Output",ExpressionUUID->"459f8ed0-7f4c-4259-ae8b-f43b6b3206ed",
+ CellID->45448998]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3875717, 73702, 20728, 497, 2997, "Input",ExpressionUUID->"6560713c-dbb9-4dea-b75e-e016042de335",
+ CellID->196974722],
+Cell[3896448, 74201, 634, 13, 85, "Output",ExpressionUUID->"a2d30d46-9f92-4df9-9320-f1e553ce6de1",
+ CellID->373279179]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
