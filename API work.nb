@@ -1,0 +1,2220 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     97430,       2210]
+NotebookOptionsPosition[     92942,       2125]
+NotebookOutlinePosition[     93361,       2141]
+CellTagsIndexPosition[     93318,       2138]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8764818753356385`*^9, 3.8764818753356385`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"89672ec8-0bc1-43b7-af5f-5510fcb69214"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/7a41580d-673f-4fe3-8b36-69dee3ccfecf\"\
+", "https://www.wolframcloud.com/obj/7a41580d-673f-4fe3-8b36-69dee3ccfecf"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/7a41580d-673f-4fe3-8b36-69dee3ccfecf"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8764819164497757`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"ed2c346b-21e9-4a1b-b8d5-0e9950b611ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8764818753356385`*^9, 3.8764818753356385`*^9}, {
+  3.8764821016038733`*^9, 3.876482106642661*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"47a4ee47-6b4a-458e-a1e0-9cc726c1597e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297\"\
+", "https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8764821074620795`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"9ea1b1b4-93b4-4488-9f75-91014a4a8d38"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CopyToClipboard", "[", 
+  RowBox[{
+   RowBox[{
+   "CloudObject", "[", 
+    "\"\<https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-\
+03dd7b8e1297\>\"", "]"}], "\[LeftDoubleBracket]", "1", 
+   "\[RightDoubleBracket]"}], "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[3]:=",ExpressionUUID->"cce14854-8f85-45a2-b2cd-d89c0a8ebd2a"],
+
+Cell["MathematicaAPIFunction[]", "Text",
+ CellChangeTimes->{{3.876482194456047*^9, 
+  3.8764822469477634`*^9}},ExpressionUUID->"e7e113b1-94a4-4987-8d68-\
+c7f613b1d6c7"],
+
+Cell["MathematicaAPIFunction[\[OpenCurlyDoubleQuote]New York City\
+\[CloseCurlyDoubleQuote]]", "Text",
+ CellChangeTimes->{{3.8764822536170835`*^9, 
+  3.8764822639648294`*^9}},ExpressionUUID->"04f63387-8b86-4cef-bc9c-\
+e90ae3191d70"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLRead", "[", 
+  InterpretationBox[
+   RowBox[{"CloudObject", "[", 
+    TemplateBox[{
+     "\"https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297\
+\"", "https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297"},
+     "HyperlinkURL"], "]"}],
+   CloudObject[
+   "https://www.wolframcloud.com/obj/c5247831-76fb-44dd-b71f-03dd7b8e1297"],
+   SelectWithContents->True], "]"}]], "Input",
+ CellChangeTimes->{{3.8764822812900896`*^9, 3.8764822927787714`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"d3de8883-aa13-43f9-a727-f09ae9ade3d7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["HTTPResponse",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"200\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Status: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"OK\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"text/html;charset=utf-8\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"200\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Status: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"OK\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"text/html;charset=utf-8\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  HTTPResponse[
+   ByteArray[CompressedData["
+1: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
+    "]], <|
+   "Headers" -> {{"date", "Thu, 03 Nov 2022 16:38:15 GMT"}, {
+      "strict-transport-security", "max-age=2592000;"}, {
+      "vary", "Origin,Accept-Encoding"}, {
+      "x-generatedfrom", 
+       "Generated from the Wolfram Cloud: http://www.wolfram.com/cloud"}, {
+      "x-terms-of-use", 
+       "Terms of use: \
+http://www.wolfram.com/legal/terms/wolfram-cloud.html"}, {
+      "x-data-source-information", 
+       "Data source information: \
+http://wolfram.com/knowledgebase/source-information"}, {
+      "access-control-allow-origin", "*"}, {
+      "x-content-type-options", "nosniff"}, {
+      "x-xss-protection", "1; mode=block"}, {
+      "content-type", "text/html;charset=utf-8"}, {
+      "content-encoding", "gzip"}, {"content-length", "7051"}}, "StatusCode" -> 
+    200, "Cookies" -> {}|>, CharacterEncoding -> Automatic],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8764822962883463`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"bd30f7cf-7d3e-4248-81a6-0afd09b37fe0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"<|", 
+       RowBox[{"\"\<CurrentTemperature\>\"", "->", 
+        RowBox[{"WeatherData", "[", 
+         RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "|>"}], 
+      RowBox[{"(*", 
+       RowBox[{"Association", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         "]"}], "*)"}], "&"}]}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.876482378971361*^9, 3.876482380035474*^9}, {
+  3.876482435778702*^9, 3.8764824910351167`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"c2aae59a-9d31-45dd-887f-d94fa6ac56ae"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c\"\
+", "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.876482505691013*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"e1e1a862-fefc-4331-bcbc-1152a98fed97"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", "URLRead", "]"}]], "Input",
+ CellChangeTimes->{{3.876482520226038*^9, 3.876482523148864*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"72f902df-6dcb-4ac3-815f-2adc0ccf7bdf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/URLRead",
+              ButtonNote->"paclet:ref/URLRead"],
+             "\"paclet:ref/URLRead\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+StyleBox[\\\"url\\\", \\\"TI\\\"], \\\"]\\\"}]\\) sends a request to a URL \
+and reads back the response, returning it as a response \
+object.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+StyleBox[\\\"assoc\\\", \\\"TI\\\"], \\\"]\\\"}]\\) sends a request to a URL \
+built from an association of components and metadata \
+elements.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", StyleBox[\\\"\[Ellipsis]\\\", \
+\\\"TR\\\"], \\\"]\\\"}], \\\"]\\\"}]\\) sends a request specified by a \
+symbolic HTTPRequest object.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"req\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\\\\\\\"\\\
+\\!\\\\(\\\\*StyleBox[\\\\\\\"elem\\\\\\\",\\\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\
+\", ShowStringCharacters->True]}], \\\"]\\\"}]\\) returns only the element \
+\\!\\(\\*StyleBox[\\\"elem\\\", \\\"TI\\\"]\\) from the \
+response.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"req\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"elem\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"elem\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) returns an association of the \
+values of the elements \\!\\(\\*SubscriptBox[StyleBox[\\\"elem\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"req\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"req\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \
+\\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\
+\"}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) \
+sends the requests \\!\\(\\*SubscriptBox[StyleBox[\\\"req\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\\) in parallel, giving a list of the results \
+obtained.\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/URLRead", 
+                    "paclet:ref/URLRead", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/URLRead.html"],
+                     None}, 
+                    "http://reference.wolfram.com/language/ref/URLRead.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    RowBox[{"Authentication", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"CharacterEncoding", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ConnectionSettings", "\[Rule]", 
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    
+                    RowBox[{"\<\"MaxUploadSpeed\"\>", "\[Rule]", 
+                    "Automatic"}], ",", 
+                    
+                    RowBox[{"\<\"MaxDownloadSpeed\"\>", "\[Rule]", 
+                    "Automatic"}], ",", 
+                    RowBox[{"\<\"Decompress\"\>", "\[Rule]", "Automatic"}]}], 
+                    "\[RightAssociation]"}]}]},
+                    {
+                    RowBox[{"CookieFunction", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"FollowRedirects", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"Interactive", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"TimeConstraint", "\[Rule]", "\[Infinity]"}]},
+                    {
+                    RowBox[{"VerifySecurityCertificates", "\[Rule]", "True"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    RowBox[{"Authentication", "\[Rule]", "Automatic"}], 
+                    "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`URLRead\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/URLRead",
+              ButtonNote->"paclet:ref/URLRead"],
+             "\"paclet:ref/URLRead\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+StyleBox[\\\"url\\\", \\\"TI\\\"], \\\"]\\\"}]\\) sends a request to a URL \
+and reads back the response, returning it as a response \
+object.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+StyleBox[\\\"assoc\\\", \\\"TI\\\"], \\\"]\\\"}]\\) sends a request to a URL \
+built from an association of components and metadata \
+elements.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", StyleBox[\\\"\[Ellipsis]\\\", \
+\\\"TR\\\"], \\\"]\\\"}], \\\"]\\\"}]\\) sends a request specified by a \
+symbolic HTTPRequest object.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"req\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\\\\\\\"\\\
+\\!\\\\(\\\\*StyleBox[\\\\\\\"elem\\\\\\\",\\\\\\\"TI\\\\\\\"]\\\\)\\\\\\\"\\\
+\", ShowStringCharacters->True]}], \\\"]\\\"}]\\) returns only the element \
+\\!\\(\\*StyleBox[\\\"elem\\\", \\\"TI\\\"]\\) from the \
+response.\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"req\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"elem\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"elem\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) returns an association of the \
+values of the elements \\!\\(\\*SubscriptBox[StyleBox[\\\"elem\\\", \
+\\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\).\\n\\!\\(\\*RowBox[{\\\"URLRead\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"req\\\", \
+\\\"TI\\\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"req\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \
+\\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\
+\"}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) \
+sends the requests \\!\\(\\*SubscriptBox[StyleBox[\\\"req\\\", \\\"TI\\\"], \
+StyleBox[\\\"i\\\", \\\"TI\\\"]]\\) in parallel, giving a list of the results \
+obtained.\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"URLRead\", \"[\", StyleBox[\"url\", \"TI\"], \"]\"}]\) \
+sends a request to a URL and reads back the response, returning it as a \
+response object.\n\!\(\*RowBox[{\"URLRead\", \"[\", StyleBox[\"assoc\", \
+\"TI\"], \"]\"}]\) sends a request to a URL built from an association of \
+components and metadata elements.\n\!\(\*RowBox[{\"URLRead\", \"[\", RowBox[{\
+\"HTTPRequest\", \"[\", StyleBox[\"\[Ellipsis]\", \"TR\"], \"]\"}], \"]\"}]\) \
+sends a request specified by a symbolic HTTPRequest object.\n\
+\!\(\*RowBox[{\"URLRead\", \"[\", RowBox[{StyleBox[\"req\", \"TI\"], \",\", \
+StyleBox[\"\\\"\\!\\(\\*StyleBox[\\\"elem\\\",\\\"TI\\\"]\\)\\\"\", \
+ShowStringCharacters->True]}], \"]\"}]\) returns only the element \
+\!\(\*StyleBox[\"elem\", \"TI\"]\) from the response.\n\
+\!\(\*RowBox[{\"URLRead\", \"[\", RowBox[{StyleBox[\"req\", \"TI\"], \",\", \
+RowBox[{\"{\", RowBox[{SubscriptBox[StyleBox[\"elem\", \"TI\"], \
+StyleBox[\"1\", \"TR\"]], \",\", SubscriptBox[StyleBox[\"elem\", \"TI\"], \
+StyleBox[\"2\", \"TR\"]], \",\", StyleBox[\"\[Ellipsis]\", \"TR\"]}], \
+\"}\"}]}], \"]\"}]\) returns an association of the values of the elements \
+\!\(\*SubscriptBox[StyleBox[\"elem\", \"TI\"], StyleBox[\"i\", \"TI\"]]\).\n\
+\!\(\*RowBox[{\"URLRead\", \"[\", RowBox[{RowBox[{\"{\", \
+RowBox[{SubscriptBox[StyleBox[\"req\", \"TI\"], StyleBox[\"1\", \"TR\"]], \",\
+\", SubscriptBox[StyleBox[\"req\", \"TI\"], StyleBox[\"2\", \"TR\"]], \",\", \
+StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"}\"}], \",\", \
+StyleBox[\"\[Ellipsis]\", \"TR\"]}], \"]\"}]\) sends the requests \
+\!\(\*SubscriptBox[StyleBox[\"req\", \"TI\"], StyleBox[\"i\", \"TI\"]]\) in \
+parallel, giving a list of the results obtained.", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/URLRead", "Web" -> 
+      "http://reference.wolfram.com/language/ref/URLRead.html"|>, "OwnValues" -> 
+    None, "UpValues" -> None, "DownValues" -> None, "SubValues" -> None, 
+    "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> {
+     Authentication -> Automatic, CharacterEncoding -> Automatic, 
+      ConnectionSettings -> <|
+       "MaxUploadSpeed" -> Automatic, "MaxDownloadSpeed" -> Automatic, 
+        "Decompress" -> Automatic|>, CookieFunction -> Automatic, 
+      FollowRedirects -> True, Interactive -> True, TimeConstraint -> 
+      DirectedInfinity[1], VerifySecurityCertificates -> True}, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`URLRead"|>, True]]], "Output",
+ CellChangeTimes->{3.8764825234694676`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"115cf127-c3c7-4e59-ade0-f5dc2d55fd88"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Information", "[", "HTTPRequest", "]"}]], "Input",
+ CellChangeTimes->{{3.876482532548794*^9, 3.8764825373237696`*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"db612034-dc09-4df9-b99b-3bdabf520a0f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = True, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/HTTPRequest",
+              ButtonNote->"paclet:ref/HTTPRequest"],
+             "\"paclet:ref/HTTPRequest\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+StyleBox[\\\"url\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an HTTP request \
+for the specified URL.\\n\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+StyleBox[\\\"assoc\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an HTTP \
+request built from the components in the association \
+\\!\\(\\*StyleBox[\\\"assoc\\\", \\\"TI\\\"]\\). \
+\\n\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"url\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"assoc\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) represents an HTTP request for the specified \
+URL with additional elements such as headers given by \
+\\!\\(\\*StyleBox[\\\"assoc\\\", \\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/HTTPRequest", 
+                    "paclet:ref/HTTPRequest", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/HTTPRequest.\
+html"], None}, "http://reference.wolfram.com/language/ref/HTTPRequest.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    RowBox[{"Authentication", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"CharacterEncoding", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ConnectionSettings", "\[Rule]", 
+                    RowBox[{"\[LeftAssociation]", 
+                    RowBox[{
+                    
+                    RowBox[{"\<\"MaxUploadSpeed\"\>", "\[Rule]", 
+                    "Automatic"}], ",", 
+                    
+                    RowBox[{"\<\"MaxDownloadSpeed\"\>", "\[Rule]", 
+                    "Automatic"}], ",", 
+                    RowBox[{"\<\"Decompress\"\>", "\[Rule]", "Automatic"}]}], 
+                    "\[RightAssociation]"}]}]},
+                    {
+                    RowBox[{"CookieFunction", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"FollowRedirects", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"Interactive", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"TimeConstraint", "\[Rule]", "\[Infinity]"}]},
+                    {
+                    RowBox[{"VerifySecurityCertificates", "\[Rule]", "True"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    RowBox[{"Authentication", "\[Rule]", "Automatic"}], 
+                    "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "8", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"Protected", ",", "ReadProtected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`HTTPRequest\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox["\<\" Symbol\"\>", "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/HTTPRequest",
+              ButtonNote->"paclet:ref/HTTPRequest"],
+             "\"paclet:ref/HTTPRequest\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+StyleBox[\\\"url\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an HTTP request \
+for the specified URL.\\n\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+StyleBox[\\\"assoc\\\", \\\"TI\\\"], \\\"]\\\"}]\\) represents an HTTP \
+request built from the components in the association \
+\\!\\(\\*StyleBox[\\\"assoc\\\", \\\"TI\\\"]\\). \
+\\n\\!\\(\\*RowBox[{\\\"HTTPRequest\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"url\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"assoc\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) represents an HTTP request for the specified \
+URL with additional elements such as headers given by \
+\\!\\(\\*StyleBox[\\\"assoc\\\", \\\"TI\\\"]\\).\"\>", "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"HTTPRequest\", \"[\", StyleBox[\"url\", \"TI\"], \"]\"}]\
+\) represents an HTTP request for the specified URL.\n\
+\!\(\*RowBox[{\"HTTPRequest\", \"[\", StyleBox[\"assoc\", \"TI\"], \"]\"}]\) \
+represents an HTTP request built from the components in the association \
+\!\(\*StyleBox[\"assoc\", \"TI\"]\). \n\!\(\*RowBox[{\"HTTPRequest\", \"[\", \
+RowBox[{StyleBox[\"url\", \"TI\"], \",\", StyleBox[\"assoc\", \"TI\"]}], \
+\"]\"}]\) represents an HTTP request for the specified URL with additional \
+elements such as headers given by \!\(\*StyleBox[\"assoc\", \"TI\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/HTTPRequest", "Web" -> 
+      "http://reference.wolfram.com/language/ref/HTTPRequest.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> None, 
+    "SubValues" -> None, "DefaultValues" -> None, "NValues" -> None, 
+    "FormatValues" -> None, 
+    "Options" -> {
+     Authentication -> Automatic, CharacterEncoding -> Automatic, 
+      ConnectionSettings -> <|
+       "MaxUploadSpeed" -> Automatic, "MaxDownloadSpeed" -> Automatic, 
+        "Decompress" -> Automatic|>, CookieFunction -> Automatic, 
+      FollowRedirects -> True, Interactive -> True, TimeConstraint -> 
+      DirectedInfinity[1], VerifySecurityCertificates -> True}, 
+    "Attributes" -> {Protected, ReadProtected}, "FullName" -> 
+    "System`HTTPRequest"|>, True]]], "Output",
+ CellChangeTimes->{3.8764825376981535`*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"6bb6e73a-24f8-4681-9e4d-76e0f221b46e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HTTPRequest", "[", 
+  RowBox[{
+   InterpretationBox[
+    RowBox[{"CloudObject", "[", 
+     TemplateBox[{
+      "\"https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c\"", 
+       "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"},
+      "HyperlinkURL"], "]"}],
+    CloudObject[
+    "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"],
+    SelectWithContents->True], ",", 
+   RowBox[{"<|", 
+    RowBox[{"Query", "->", 
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", "\"\<New York City\>\""}], "}"}]}], 
+    "|>"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.876482544724424*^9, 3.876482628158448*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"3f8dd01a-8cd8-4c4e-a704-81d677e8a4f4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["HTTPRequest",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"GET\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{
+                    TagBox[
+                    
+                    RowBox[{
+                    "\"https://www.wolframcloud.com/o\"", "\[Ellipsis]", 
+                    "\"db8-064b-4984-852b-e26e0764904c\""}], Short], 
+                    "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"}, "HyperlinkURL"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"ContentType: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"GET\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"URL: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TemplateBox[{
+                    TagBox[
+                    
+                    RowBox[{
+                    "\"https://www.wolframcloud.com/o\"", "\[Ellipsis]", 
+                    "\"db8-064b-4984-852b-e26e0764904c\""}], Short], 
+                    "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"}, "HyperlinkURL"], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"ContentType: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  HTTPRequest[
+   CloudObject[
+   "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"], <|
+   Query -> {"city" -> "New York City"}|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.876482629013082*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"00dfa039-a78a-42f2-97a7-21efe3fe146d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c\"", 
+        "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", "\"\<New York City\>\""}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8764826445894413`*^9, 3.8764826807782803`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"4e61ff75-e070-453e-981a-f295b573c227"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"CurrentTemperature\"\>", "\[Rule]", 
+   TemplateBox[{
+    "17.8`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+    "Quantity"]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8764826510746*^9, 3.876482684832916*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLRead", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c\"", 
+        "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", "\"\<New York City\>\""}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8764826445894413`*^9, 3.8764826807782803`*^9}, {
+  3.876482721947935*^9, 3.876482725574236*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"fd75af22-9899-49ce-bc90-4aa75421dd19"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["HTTPResponse",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"200\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Status: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"OK\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"text/plain;charset=utf-8\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GraphicsBox[{
+              RGBColor[0, 
+               NCache[
+                Rational[2, 3], 0.6666666666666666], 0], 
+              DiskBox[{0, 0}], 
+              InsetBox[
+               FormBox[
+                StyleBox["\"200\"", 
+                 Directive[10, 
+                  GrayLevel[1], Bold], StripOnInput -> False], 
+                TraditionalForm], 
+               Scaled[{0.53, 0.48}]]}, ImageSize -> 
+             Dynamic[{
+               Automatic, (3 CurrentValue["FontCapHeight"])/
+                AbsoluteCurrentValue[Magnification]}], Background -> None], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Status: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"OK\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Content type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"text/plain;charset=utf-8\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  HTTPResponse[
+   ByteArray[{60, 124, 34, 67, 117, 114, 114, 101, 110, 116, 84, 101, 109, 
+    112, 101, 114, 97, 116, 117, 114, 101, 34, 32, 45, 62, 32, 81, 117, 97, 
+    110, 116, 105, 116, 121, 91, 49, 55, 46, 56, 44, 32, 34, 68, 101, 103, 
+    114, 101, 101, 115, 67, 101, 108, 115, 105, 117, 115, 34, 93, 124, 62}], <|
+   "Headers" -> {{"date", "Thu, 03 Nov 2022 16:45:28 GMT"}, {
+      "strict-transport-security", "max-age=2592000;"}, {
+      "vary", "Origin,Accept-Encoding"}, {
+      "x-generatedfrom", 
+       "Generated from the Wolfram Cloud: http://www.wolfram.com/cloud"}, {
+      "x-terms-of-use", 
+       "Terms of use: \
+http://www.wolfram.com/legal/terms/wolfram-cloud.html"}, {
+      "x-data-source-information", 
+       "Data source information: \
+http://wolfram.com/knowledgebase/source-information"}, {
+      "access-control-allow-origin", "*"}, {
+      "x-content-type-options", "nosniff"}, {
+      "x-xss-protection", "1; mode=block"}, {
+      "content-type", "text/plain;charset=utf-8"}, {
+      "content-encoding", "gzip"}, {"content-length", "80"}}, "StatusCode" -> 
+    200, "Cookies" -> {}|>, CharacterEncoding -> Automatic],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8764827293628607`*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"482ef059-3445-4a92-ae1b-4aafb17d1e79"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%10", "//", "Head"}]], "Input",
+ CellChangeTimes->{{3.8764827816661615`*^9, 3.876482802187874*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"9ff6e7ae-9b9a-4541-9a0a-3c7b2c761ebb"],
+
+Cell[BoxData["Association"], "Output",
+ CellChangeTimes->{3.8764828024974527`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"c8ad7932-da62-4249-8dee-fd2bc7620e3f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%13", "//", "Head"}]], "Input",
+ CellChangeTimes->{{3.8764828061666975`*^9, 3.8764828088396506`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"c49e3772-d974-4d85-b012-718bc98a02d0"],
+
+Cell[BoxData["String"], "Output",
+ CellChangeTimes->{3.8764828091097813`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"e90b93c9-41c7-423b-84ce-ac424a13bcd5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%11", "[", "\"\<Body\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.876482736413439*^9, 3.8764827551372447`*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"6fbd8345-ee5b-45fe-911f-09657f39f873"],
+
+Cell[BoxData["\<\"<|\\\"CurrentTemperature\\\" -> Quantity[17.8, \
+\\\"DegreesCelsius\\\"]|>\"\>"], "Output",
+ CellChangeTimes->{{3.876482748961622*^9, 3.8764827553835535`*^9}},
+ CellLabel->"Out[13]=",ExpressionUUID->"d60b41be-37f1-477a-9889-771e0119a141"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ToExpression", "[", 
+  RowBox[{"%13", ",", "InputForm", ",", "Hold"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8764828693945417`*^9, 3.876482870447799*^9}, {
+  3.8764829020907955`*^9, 3.8764829504876604`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"1c2ddea2-78b1-4f68-8510-dce165e995bf"],
+
+Cell[BoxData[
+ RowBox[{"Hold", "[", 
+  RowBox[{"Association", "[", 
+   RowBox[{"\<\"CurrentTemperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "17.8`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], "]"}], "]"}]], "Output",
+ CellChangeTimes->{{3.876482933078642*^9, 3.8764829509132633`*^9}},
+ CellLabel->"Out[17]=",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c\"", 
+        "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-\
+e26e0764904c"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/f2632db8-064b-4984-852b-e26e0764904c"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", 
+        RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.876483021324494*^9, 3.8764830352466955`*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"da2842b0-838f-4975-8ac2-ce94def4afae"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{"\<\"CurrentTemperature\"\>", "\[Rule]", 
+   TemplateBox[{
+    "20", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+    "Quantity"]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.8764830286984377`*^9, 3.8764830399206753`*^9}},
+ CellLabel->"Out[19]=",ExpressionUUID->"837c345e-325e-419d-8395-fca8b7b127a3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"\"\<City\>\"", ":>", 
+        RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], "}"}], 
+     ",", 
+     RowBox[{
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<CurrentTemperature\>\"", "->", 
+         RowBox[{"WeatherData", "[", 
+          RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], ",", 
+        RowBox[{"\"\<position\>\"", "->", 
+         RowBox[{"#city", "[", "\"\<Position\>\"", "]"}]}]}], "|>"}], 
+      RowBox[{"(*", 
+       RowBox[{"Association", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         "]"}], "*)"}], "&"}]}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.876483161884516*^9, 3.8764831714760833`*^9}, {
+  3.876483242627934*^9, 3.8764832512147655`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"5cdbb54f-e975-4c79-990c-6daecdb3fdea"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-7151456abd81\"\
+", "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-7151456abd81"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-7151456abd81"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.876483172724927*^9, 3.876483252689638*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"19d4d11c-6cf6-4fe7-bcf7-f8b5b680e281"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-\
+7151456abd81\"", 
+        "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-\
+7151456abd81"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-7151456abd81"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", "}"}]}], "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.876483181905483*^9, 3.8764831877509766`*^9}, 
+   3.8764832579071364`*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"1c870e73-c632-494a-bdcd-21c0f82c20e6"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"CurrentTemperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "16.7`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"position\"\>", "\[Rule]", 
+    RowBox[{"\<\"Huntington\"\>", "[", "\<\"Position\"\>", "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8764831949490323`*^9, 3.876483264116126*^9},
+ CellLabel->"Out[24]=",ExpressionUUID->"d1a1197a-f1be-4301-847e-71bd3e9e2ae8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-\
+7151456abd81\"", 
+        "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-\
+7151456abd81"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/554e8edc-1184-4ca2-91b6-7151456abd81"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", "\"\<Champaign Illinois\>\""}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.876483181905483*^9, 3.876483224313215*^9}, 
+   3.87648326403403*^9},
+ CellLabel->"In[25]:=",ExpressionUUID->"35e6a6d7-1f9f-4e4d-9e8b-274483c8e523"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"CurrentTemperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "18.3`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"position\"\>", "\[Rule]", 
+    RowBox[{"GeoPosition", "[", 
+     RowBox[{"{", 
+      RowBox[{"40.115057`", ",", 
+       RowBox[{"-", "88.2736523`"}]}], "}"}], "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.876483228479336*^9, 3.8764832686241646`*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"cc53d75d-c239-4184-8184-c9ded9f46658"]
+}, Open  ]],
+
+Cell["Interesting", "Text",
+ CellChangeTimes->{{3.876486964002914*^9, 
+  3.876486973368389*^9}},ExpressionUUID->"be29cbda-84b6-44b4-9599-\
+f8e0d8f1dea4"]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"f5d113fb-d48b-4bdc-8ca6-c1abba68edc9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3171, 77, 371, "Input",ExpressionUUID->"89672ec8-0bc1-43b7-af5f-5510fcb69214"],
+Cell[3754, 101, 519, 11, 85, "Output",ExpressionUUID->"ed2c346b-21e9-4a1b-b8d5-0e9950b611ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4310, 117, 2717, 67, 314, "Input",ExpressionUUID->"47a4ee47-6b4a-458e-a1e0-9cc726c1597e"],
+Cell[7030, 186, 519, 11, 85, "Output",ExpressionUUID->"9ea1b1b4-93b4-4488-9f75-91014a4a8d38"]
+}, Open  ]],
+Cell[7564, 200, 364, 9, 86, "Input",ExpressionUUID->"cce14854-8f85-45a2-b2cd-d89c0a8ebd2a"],
+Cell[7931, 211, 168, 3, 35, "Text",ExpressionUUID->"e7e113b1-94a4-4987-8d68-c7f613b1d6c7"],
+Cell[8102, 216, 232, 4, 35, "Text",ExpressionUUID->"04f63387-8b86-4cef-bc9c-e90ae3191d70"],
+Cell[CellGroupData[{
+Cell[8359, 224, 585, 12, 108, "Input",ExpressionUUID->"d3de8883-aa13-43f9-a727-f09ae9ade3d7"],
+Cell[8947, 238, 14489, 266, 64, "Output",ExpressionUUID->"bd30f7cf-7d3e-4248-81a6-0afd09b37fe0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23473, 509, 2833, 69, 295, "Input",ExpressionUUID->"c2aae59a-9d31-45dd-887f-d94fa6ac56ae"],
+Cell[26309, 580, 517, 11, 85, "Output",ExpressionUUID->"e1e1a862-fefc-4331-bcbc-1152a98fed97"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26863, 596, 214, 3, 28, "Input",ExpressionUUID->"72f902df-6dcb-4ac3-815f-2adc0ccf7bdf"],
+Cell[27080, 601, 23319, 495, 436, "Output",ExpressionUUID->"115cf127-c3c7-4e59-ade0-f5dc2d55fd88"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50436, 1101, 220, 3, 28, "Input",ExpressionUUID->"db612034-dc09-4df9-b99b-3bdabf520a0f"],
+Cell[50659, 1106, 19441, 439, 282, "Output",ExpressionUUID->"6bb6e73a-24f8-4681-9e4d-76e0f221b46e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[70137, 1550, 772, 20, 76, "Input",ExpressionUUID->"3f8dd01a-8cd8-4c4e-a704-81d677e8a4f4"],
+Cell[70912, 1572, 4842, 109, 69, "Output",ExpressionUUID->"00dfa039-a78a-42f2-97a7-21efe3fe146d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75791, 1686, 837, 21, 98, "Input",ExpressionUUID->"4e61ff75-e070-453e-981a-f295b573c227"],
+Cell[76631, 1709, 383, 7, 45, "Output",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77051, 1721, 883, 22, 165, "Input",ExpressionUUID->"fd75af22-9899-49ce-bc90-4aa75421dd19"],
+Cell[77937, 1745, 5187, 111, 64, "Output",ExpressionUUID->"482ef059-3445-4a92-ae1b-4aafb17d1e79"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83161, 1861, 202, 3, 28, "Input",ExpressionUUID->"9ff6e7ae-9b9a-4541-9a0a-3c7b2c761ebb"],
+Cell[83366, 1866, 161, 2, 32, "Output",ExpressionUUID->"c8ad7932-da62-4249-8dee-fd2bc7620e3f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83564, 1873, 204, 3, 28, "Input",ExpressionUUID->"c49e3772-d974-4d85-b012-718bc98a02d0"],
+Cell[83771, 1878, 156, 2, 32, "Output",ExpressionUUID->"e90b93c9-41c7-423b-84ce-ac424a13bcd5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83964, 1885, 214, 3, 28, "Input",ExpressionUUID->"6fbd8345-ee5b-45fe-911f-09657f39f873"],
+Cell[84181, 1890, 256, 3, 32, "Output",ExpressionUUID->"d60b41be-37f1-477a-9889-771e0119a141"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84474, 1898, 311, 5, 28, "Input",ExpressionUUID->"1c2ddea2-78b1-4f68-8510-dce165e995bf"],
+Cell[84788, 1905, 404, 8, 40, "Output",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85229, 1918, 875, 22, 165, "Input",ExpressionUUID->"da2842b0-838f-4975-8ac2-ce94def4afae"],
+Cell[86107, 1942, 388, 7, 40, "Output",ExpressionUUID->"837c345e-325e-419d-8395-fca8b7b127a3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[86532, 1954, 2839, 69, 295, "Input",ExpressionUUID->"5cdbb54f-e975-4c79-990c-6daecdb3fdea"],
+Cell[89374, 2025, 540, 11, 56, "Output",ExpressionUUID->"19d4d11c-6cf6-4fe7-bcf7-f8b5b680e281"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[89951, 2041, 792, 20, 51, "Input",ExpressionUUID->"1c870e73-c632-494a-bdcd-21c0f82c20e6"],
+Cell[90746, 2063, 524, 11, 40, "Output",ExpressionUUID->"d1a1197a-f1be-4301-847e-71bd3e9e2ae8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91307, 2079, 863, 22, 110, "Input",ExpressionUUID->"35e6a6d7-1f9f-4e4d-9e8b-274483c8e523"],
+Cell[92173, 2103, 597, 14, 65, "Output",ExpressionUUID->"cc53d75d-c239-4184-8184-c9ded9f46658"]
+}, Open  ]],
+Cell[92785, 2120, 153, 3, 35, "Text",ExpressionUUID->"be29cbda-84b6-44b4-9599-f8e0d8f1dea4"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
