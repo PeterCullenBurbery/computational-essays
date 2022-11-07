@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     97430,       2210]
-NotebookOptionsPosition[     92942,       2125]
-NotebookOutlinePosition[     93361,       2141]
-CellTagsIndexPosition[     93318,       2138]
+NotebookDataLength[    102017,       2327]
+NotebookOptionsPosition[     97085,       2234]
+NotebookOutlinePosition[     97490,       2250]
+CellTagsIndexPosition[     97447,       2247]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2121,10 +2121,119 @@ Cell[BoxData[
 Cell["Interesting", "Text",
  CellChangeTimes->{{3.876486964002914*^9, 
   3.876486973368389*^9}},ExpressionUUID->"be29cbda-84b6-44b4-9599-\
-f8e0d8f1dea4"]
+f8e0d8f1dea4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"APIFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"<|", 
+       RowBox[{
+        RowBox[{"\"\<Temperature\>\"", "->", 
+         RowBox[{"WeatherData", "[", 
+          RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], ",", 
+        RowBox[{"\"\<Wind-speed\>\"", "->", 
+         RowBox[{"WeatherData", "[", 
+          RowBox[{"#city", ",", "\"\<WindSpeed\>\""}], "]"}]}], ",", 
+        RowBox[{"\"\<Wind-direction\>\"", "->", 
+         RowBox[{"WeatherData", "[", 
+          RowBox[{"#city", ",", "\"\<WindDirection\>\""}], "]"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\"\<Wind-chill\>\"", "->", 
+         RowBox[{"WeatherData", "[", 
+          RowBox[{"#city", ",", "\"\<WindChill\>\""}], "]"}]}]}], "|>"}], 
+      "&"}]}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8768468007245636`*^9, 3.876846850971912*^9}, {
+  3.87684701351392*^9, 3.876847104075837*^9}, {3.87684713506771*^9, 
+  3.876847137292132*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"9b8fb0df-3043-4454-9fb5-614649bb163d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-6517775042ea\"\
+", "https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-6517775042ea"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-6517775042ea"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{
+  3.8768468527374496`*^9, {3.876847026952944*^9, 3.87684708931806*^9}, 
+   3.8768471381140614`*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"80e79277-7275-4863-9a47-0c6f4e6f7cf2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    InterpretationBox[
+     RowBox[{"CloudObject", "[", 
+      TemplateBox[{
+       "\"https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-\
+6517775042ea\"", 
+        "https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-\
+6517775042ea"},
+       "HyperlinkURL"], "]"}],
+     CloudObject[
+     "https://www.wolframcloud.com/obj/874e7cfd-b7d0-4e81-8c7d-6517775042ea"],
+     SelectWithContents->True], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", "\"\<Champaign Illinois\>\""}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.876846859575988*^9, 3.8768468654151726`*^9}, {
+   3.876847030842968*^9, 3.876847111243045*^9}, 3.876847142764326*^9},
+ CellLabel->"In[81]:=",ExpressionUUID->"ce6cb358-76ce-4a52-9218-011d19fe3882"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Temperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "14.4`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Wind-speed\"\>", "\[Rule]", 
+    TemplateBox[{"16.56`", 
+      RowBox[{
+       "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
+       "kilometers per hour", 
+      FractionBox["\"Kilometers\"", "\"Hours\""]},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Wind-direction\"\>", "\[Rule]", 
+    TemplateBox[{"40", 
+      RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], "degrees", 
+      "\"AngularDegrees\""},
+     "QuantityPostfix"]}], ",", 
+   RowBox[{"\<\"Wind-chill\"\>", "\[Rule]", 
+    TemplateBox[{
+     "13.21`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{
+  3.8768468700994854`*^9, {3.8768470355964203`*^9, 3.876847073896616*^9}, 
+   3.8768471484179926`*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"db1750d5-c037-4acd-aa58-2869793f7a6e"]
+}, Open  ]]
 },
-WindowSize->{574.8, 579.6},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+WindowSize->{575.25, 579.75},
+WindowMargins->{{Automatic, -4.5}, {Automatic, 0}},
 FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"f5d113fb-d48b-4bdc-8ca6-c1abba68edc9"
@@ -2168,12 +2277,12 @@ Cell[50436, 1101, 220, 3, 28, "Input",ExpressionUUID->"db612034-dc09-4df9-b99b-3
 Cell[50659, 1106, 19441, 439, 282, "Output",ExpressionUUID->"6bb6e73a-24f8-4681-9e4d-76e0f221b46e"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[70137, 1550, 772, 20, 76, "Input",ExpressionUUID->"3f8dd01a-8cd8-4c4e-a704-81d677e8a4f4"],
-Cell[70912, 1572, 4842, 109, 69, "Output",ExpressionUUID->"00dfa039-a78a-42f2-97a7-21efe3fe146d"]
+Cell[70137, 1550, 772, 20, 138, "Input",ExpressionUUID->"3f8dd01a-8cd8-4c4e-a704-81d677e8a4f4"],
+Cell[70912, 1572, 4842, 109, 98, "Output",ExpressionUUID->"00dfa039-a78a-42f2-97a7-21efe3fe146d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[75791, 1686, 837, 21, 98, "Input",ExpressionUUID->"4e61ff75-e070-453e-981a-f295b573c227"],
-Cell[76631, 1709, 383, 7, 45, "Output",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
+Cell[75791, 1686, 837, 21, 165, "Input",ExpressionUUID->"4e61ff75-e070-453e-981a-f295b573c227"],
+Cell[76631, 1709, 383, 7, 40, "Output",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[77051, 1721, 883, 22, 165, "Input",ExpressionUUID->"fd75af22-9899-49ce-bc90-4aa75421dd19"],
@@ -2193,7 +2302,7 @@ Cell[84181, 1890, 256, 3, 32, "Output",ExpressionUUID->"d60b41be-37f1-477a-9889-
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[84474, 1898, 311, 5, 28, "Input",ExpressionUUID->"1c2ddea2-78b1-4f68-8510-dce165e995bf"],
-Cell[84788, 1905, 404, 8, 40, "Output",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
+Cell[84788, 1905, 404, 8, 41, "Output",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[85229, 1918, 875, 22, 165, "Input",ExpressionUUID->"da2842b0-838f-4975-8ac2-ce94def4afae"],
@@ -2211,10 +2320,16 @@ Cell[CellGroupData[{
 Cell[91307, 2079, 863, 22, 110, "Input",ExpressionUUID->"35e6a6d7-1f9f-4e4d-9e8b-274483c8e523"],
 Cell[92173, 2103, 597, 14, 65, "Output",ExpressionUUID->"cc53d75d-c239-4184-8184-c9ded9f46658"]
 }, Open  ]],
-Cell[92785, 2120, 153, 3, 35, "Text",ExpressionUUID->"be29cbda-84b6-44b4-9599-f8e0d8f1dea4"]
+Cell[92785, 2120, 153, 3, 35, "Text",ExpressionUUID->"be29cbda-84b6-44b4-9599-f8e0d8f1dea4"],
+Cell[CellGroupData[{
+Cell[92963, 2127, 1461, 34, 181, "Input",ExpressionUUID->"9b8fb0df-3043-4454-9fb5-614649bb163d"],
+Cell[94427, 2163, 596, 13, 85, "Output",ExpressionUUID->"80e79277-7275-4863-9a47-0c6f4e6f7cf2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[95060, 2181, 912, 22, 165, "Input",ExpressionUUID->"ce6cb358-76ce-4a52-9218-011d19fe3882"],
+Cell[95975, 2205, 1094, 26, 68, "Output",ExpressionUUID->"db1750d5-c037-4acd-aa58-2869793f7a6e"]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
