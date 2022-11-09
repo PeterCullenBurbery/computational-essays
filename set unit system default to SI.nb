@@ -1,0 +1,98 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3051,         88]
+NotebookOptionsPosition[      2549,         71]
+NotebookOutlinePosition[      2971,         87]
+CellTagsIndexPosition[      2928,         84]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Button", "[", 
+  RowBox[{"\"\<Set unit system to SI\>\"", ",", 
+   RowBox[{
+    RowBox[{"userBaseDirectoryStream", "=", 
+     RowBox[{"OpenAppend", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$UserBaseDirectory", ",", "\"\<Kernel\>\"", ",", "\"\<init.m\>\""}], 
+        "}"}], "]"}], "]"}]}], ";", "\n", 
+    RowBox[{"WriteLine", "[", 
+     RowBox[{
+     "userBaseDirectoryStream", ",", "\"\<$UnitSystem=\\\"Metric\\\";\>\""}], 
+     "]"}], ";", "\n", 
+    RowBox[{"Close", "[", "userBaseDirectoryStream", "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"BaseDirectoryStream", "=", 
+     RowBox[{"OpenAppend", "[", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$BaseDirectory", ",", "\"\<Kernel\>\"", ",", "\"\<init.m\>\""}], 
+        "}"}], "]"}], "]"}]}], ";", "\n", 
+    RowBox[{"WriteLine", "[", 
+     RowBox[{
+     "BaseDirectoryStream", ",", "\"\<$UnitSystem=\\\"Metric\\\";\>\""}], 
+     "]"}], ";", "\n", 
+    RowBox[{"Close", "[", "BaseDirectoryStream", "]"}], ";"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[17]:=",ExpressionUUID->"fcee2373-92d4-4ae4-b323-923434d5f4ad"],
+
+Cell[BoxData[
+ ButtonBox["\<\"Set unit system to SI\"\>",
+  Appearance->Automatic,
+  ButtonFunction:>($CellContext`userBaseDirectoryStream = OpenAppend[
+      FileNameJoin[{$UserBaseDirectory, "Kernel", "init.m"}]]; 
+   WriteLine[$CellContext`userBaseDirectoryStream, "$UnitSystem=\"Metric\";"]; 
+   Close[$CellContext`userBaseDirectoryStream]; \
+$CellContext`BaseDirectoryStream = OpenAppend[
+      FileNameJoin[{$BaseDirectory, "Kernel", "init.m"}]]; 
+   WriteLine[$CellContext`BaseDirectoryStream, "$UnitSystem=\"Metric\";"]; 
+   Close[$CellContext`BaseDirectoryStream]; Null),
+  Evaluator->Automatic,
+  Method->"Preemptive"]], "Output",
+ CellChangeTimes->{3.876995481861236*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"4e7cc8ca-0446-401a-b254-13f56d198cf1"]
+}, Open  ]]
+},
+WindowSize->{574.8, 579.6},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 5, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"df75e057-3081-43a4-b0cf-1e1c402292f4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1189, 30, 219, "Input",ExpressionUUID->"fcee2373-92d4-4ae4-b323-923434d5f4ad"],
+Cell[1772, 54, 761, 14, 64, "Output",ExpressionUUID->"4e7cc8ca-0446-401a-b254-13f56d198cf1"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
