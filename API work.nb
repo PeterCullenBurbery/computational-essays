@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    102017,       2327]
-NotebookOptionsPosition[     97085,       2234]
-NotebookOutlinePosition[     97490,       2250]
-CellTagsIndexPosition[     97447,       2247]
+NotebookDataLength[    118877,       2749]
+NotebookOptionsPosition[    112683,       2635]
+NotebookOutlinePosition[    113103,       2651]
+CellTagsIndexPosition[    113060,       2648]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2230,11 +2230,412 @@ Cell[BoxData[
   3.8768468700994854`*^9, {3.8768470355964203`*^9, 3.876847073896616*^9}, 
    3.8768471484179926`*^9},
  CellLabel->"Out[81]=",ExpressionUUID->"db1750d5-c037-4acd-aa58-2869793f7a6e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    RowBox[{
+    "CloudObject", "[", 
+     "\"\<https://www.wolframcloud.com/obj/17846929-623c-4a7a-8172-\
+9837ec51a19d\>\"", "]"}], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", "}"}]}], "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{3.876946761004504*^9},
+ CellLabel->"In[1]:=",ExpressionUUID->"da97fefe-eda6-4639-9284-332de2f83eef"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"CloudCoverFraction\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"DewPoint\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"-", "2.19999`"}], "\"\[Degree]C\"", "degrees Celsius", 
+      "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Humidity\"\>", "\[Rule]", "0.352`"}], ",", 
+   RowBox[{"\<\"Pressure\"\>", "\[Rule]", 
+    TemplateBox[{"1032", "\"mbar\"", "millibars", "\"Millibars\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Temperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "12.8`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Visibility\"\>", "\[Rule]", 
+    TemplateBox[{"11.27`", "\"km\"", "kilometers", "\"Kilometers\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"WindChill\"\>", "\[Rule]", 
+    TemplateBox[{
+     "12.39`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"WindDirection\"\>", "\[Rule]", 
+    TemplateBox[{"60", 
+      RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], "degrees", 
+      "\"AngularDegrees\""},
+     "QuantityPostfix"]}], ",", 
+   RowBox[{"\<\"WindSpeed\"\>", "\[Rule]", 
+    TemplateBox[{"7.56`", 
+      RowBox[{
+       "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
+       "kilometers per hour", 
+      FractionBox["\"Kilometers\"", "\"Hours\""]},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.8769467739875045`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"c51fa9d9-3f7b-40c8-be01-da80686f4c80"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLExecute", "[", 
+  RowBox[{"HTTPRequest", "[", 
+   RowBox[{
+    RowBox[{
+    "CloudObject", "[", 
+     "\"\<https://www.wolframcloud.com/obj/17846929-623c-4a7a-8172-\
+9837ec51a19d\>\"", "]"}], ",", 
+    RowBox[{"<|", 
+     RowBox[{"\"\<Query\>\"", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<city\>\"", "->", "\"\<New York City\>\""}], "}"}]}], 
+     "|>"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.876946761004504*^9, 3.876946780580519*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"7ac6e147-d9ea-4f14-b26e-0f2d3a6a68e7"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"CloudCoverFraction\"\>", "\[Rule]", "0"}], ",", 
+   RowBox[{"\<\"DewPoint\"\>", "\[Rule]", 
+    TemplateBox[{
+      RowBox[{"-", "8.29999`"}], "\"\[Degree]C\"", "degrees Celsius", 
+      "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Humidity\"\>", "\[Rule]", "0.248`"}], ",", 
+   RowBox[{"\<\"Pressure\"\>", "\[Rule]", 
+    TemplateBox[{"1035.8`", "\"mbar\"", "millibars", "\"Millibars\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Temperature\"\>", "\[Rule]", 
+    TemplateBox[{
+     "11.1`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"Visibility\"\>", "\[Rule]", 
+    TemplateBox[{"16.09`", "\"km\"", "kilometers", "\"Kilometers\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"WindChill\"\>", "\[Rule]", 
+    TemplateBox[{
+     "8.93`", "\"\[Degree]C\"", "degrees Celsius", "\"DegreesCelsius\""},
+     "Quantity"]}], ",", 
+   RowBox[{"\<\"WindDirection\"\>", "\[Rule]", 
+    TemplateBox[{"40", 
+      RowBox[{"\[InvisibleSpace]", "\"\[Degree]\""}], "degrees", 
+      "\"AngularDegrees\""},
+     "QuantityPostfix"]}], ",", 
+   RowBox[{"\<\"WindSpeed\"\>", "\[Rule]", 
+    TemplateBox[{"18.36`", 
+      RowBox[{
+       "\"km\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"h\""}],
+       "kilometers per hour", 
+      FractionBox["\"Kilometers\"", "\"Hours\""]},
+     "Quantity"]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.876946788831674*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"1fd46706-e8ec-4e6e-94a6-d3ba37ebba2c"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",Expressi\
+onUUID->"ff623888-d641-48b1-9cd5-0c4eb08f310f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"\"\<City\>\"", ":>", "$GeoLocationCity"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"DeleteMissing", "[", 
+       RowBox[{"AssociationMap", "[", 
+        RowBox[{
+         RowBox[{"Function", "[", 
+          RowBox[{"property", ",", 
+           RowBox[{"WeatherData", "[", 
+            RowBox[{
+             RowBox[{"First", "@", 
+              RowBox[{"GeoNearest", "[", 
+               RowBox[{"\"\<WeatherStation\>\"", ",", "#city"}], "]"}]}], ",",
+              "property"}], "]"}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+          "\"\<CloudCoverFraction\>\"", ",", "\"\<DewPoint\>\"", ",", 
+           "\"\<Humidity\>\"", ",", "\"\<Pressure\>\"", ",", 
+           "\"\<Temperature\>\"", ",", "\"\<Visibility\>\"", ",", 
+           "\"\<WindChill\>\"", ",", "\"\<WindDirection\>\"", ",", 
+           "\"\<WindSpeed\>\""}], "}"}]}], "]"}], "]"}], "&"}]}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8769470101860085`*^9, 3.8769470164689603`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"22850095-9fb0-46cf-b172-e2d16c4f40e4"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/fb2c126d-f423-408c-83e8-2b7332bfd740\"\
+", "https://www.wolframcloud.com/obj/fb2c126d-f423-408c-83e8-2b7332bfd740"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/fb2c126d-f423-408c-83e8-2b7332bfd740"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8769470267539597`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"5619ebf9-c77c-4d70-bf31-77bbfa2792bb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<Current Temperature\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"IconData", "[", 
+             RowBox[{"\"\<AirTemperature\>\"", ",", 
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}]}], "]"}], 
+            ",", 
+            RowBox[{"QuantityForm", "[", 
+             RowBox[{
+              RowBox[{"WeatherData", "[", 
+               RowBox[{"#city", ",", "\"\<Temperature\>\""}], "]"}], ",", 
+              "\"\<Abbreviation\>\""}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Map\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoGraphics", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoBackground", "->", "\"\<VectorClassic\>\""}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Image\>\"", ",", "\"\<Subsubsection\>\""}], "]"}], 
+            ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<High Resolution Image\>\"", ",", "\"\<Subsubsection\>\""}], 
+             "]"}], ",", 
+            RowBox[{"GeoImage", "[", 
+             RowBox[{
+              RowBox[{"EntityValue", "[", 
+               RowBox[{"#city", ",", "\"\<Position\>\""}], "]"}], ",", 
+              RowBox[{"GeoZoomLevel", "->", "15"}], ",", 
+              RowBox[{"ImageSize", "->", "Large"}]}], "]"}]}], "}"}]}], "}"}],
+         ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.876947108173995*^9, 3.87694710817496*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"0facae8a-3849-4bfd-848c-17f5dca4d5f3"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/6203dd57-0b4b-46ca-a10b-72e393689796\"\
+", "https://www.wolframcloud.com/obj/6203dd57-0b4b-46ca-a10b-72e393689796"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/6203dd57-0b4b-46ca-a10b-72e393689796"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.87694711016897*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"e52954c0-6018-48cf-b463-2091f9afa7f1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudPublish", "[", 
+  RowBox[{
+   RowBox[{"FormFunction", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<city\>\"", "->", 
+       RowBox[{"<|", 
+        RowBox[{
+         RowBox[{"\"\<Interpreter\>\"", "->", "\"\<City\>\""}], ",", 
+         RowBox[{"\"\<Input\>\"", ":>", 
+          RowBox[{"$GeoLocationCity", "[", "\"\<Name\>\"", "]"}]}]}], 
+        "|>"}]}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"Grid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"Style", "[", 
+            RowBox[{
+             RowBox[{"#city", "[", "\"\<Name\>\"", "]"}], ",", 
+             "\"\<Title\>\""}], "]"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"DeleteMissing", "[", 
+            RowBox[{"AssociationMap", "[", 
+             RowBox[{
+              RowBox[{"Function", "[", 
+               RowBox[{"property", ",", 
+                RowBox[{"WeatherData", "[", 
+                 RowBox[{
+                  RowBox[{"First", "@", 
+                   RowBox[{"GeoNearest", "[", 
+                    RowBox[{"\"\<WeatherStation\>\"", ",", "#city"}], "]"}]}],
+                   ",", "property"}], "]"}]}], "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{
+               "\"\<CloudCoverFraction\>\"", ",", "\"\<DewPoint\>\"", ",", 
+                "\"\<Humidity\>\"", ",", "\"\<Pressure\>\"", ",", 
+                "\"\<Temperature\>\"", ",", "\"\<Visibility\>\"", ",", 
+                "\"\<WindChill\>\"", ",", "\"\<WindDirection\>\"", ",", 
+                "\"\<WindSpeed\>\""}], "}"}]}], "]"}], "]"}], "}"}]}], "}"}], 
+        ",", 
+        RowBox[{"Alignment", "->", "Left"}]}], "]"}], "&"}], ",", 
+     "\"\<CloudCDF\>\""}], "]"}], ",", 
+   RowBox[{"Permissions", "->", "\"\<Public\>\""}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.876947108173995*^9, 3.87694710817496*^9}, {
+  3.876947162718966*^9, 3.87694717984201*^9}, {3.8769472214750223`*^9, 
+  3.8769472246880136`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"39da3046-1a37-4257-ad35-ef1405b6d110"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/obj/1cd9a744-54fa-407c-b25e-b8162ab6d213\"\
+", "https://www.wolframcloud.com/obj/1cd9a744-54fa-407c-b25e-b8162ab6d213"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/obj/1cd9a744-54fa-407c-b25e-b8162ab6d213"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.8769471853750496`*^9, 3.876947225255018*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"917ea4b6-d143-4b14-bab8-15e5de1e63ae"]
 }, Open  ]]
 },
-WindowSize->{575.25, 579.75},
-WindowMargins->{{Automatic, -4.5}, {Automatic, 0}},
-FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+WindowSize->{575.4, 574.8},
+WindowMargins->{{Automatic, 0.6000000000001364}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 5, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"f5d113fb-d48b-4bdc-8ca6-c1abba68edc9"
 ]
@@ -2282,7 +2683,7 @@ Cell[70912, 1572, 4842, 109, 98, "Output",ExpressionUUID->"00dfa039-a78a-42f2-97
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[75791, 1686, 837, 21, 165, "Input",ExpressionUUID->"4e61ff75-e070-453e-981a-f295b573c227"],
-Cell[76631, 1709, 383, 7, 40, "Output",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
+Cell[76631, 1709, 383, 7, 39, "Output",ExpressionUUID->"19655e32-23fb-4c07-827f-b0d765d82cd8"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[77051, 1721, 883, 22, 165, "Input",ExpressionUUID->"fd75af22-9899-49ce-bc90-4aa75421dd19"],
@@ -2302,11 +2703,11 @@ Cell[84181, 1890, 256, 3, 32, "Output",ExpressionUUID->"d60b41be-37f1-477a-9889-
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[84474, 1898, 311, 5, 28, "Input",ExpressionUUID->"1c2ddea2-78b1-4f68-8510-dce165e995bf"],
-Cell[84788, 1905, 404, 8, 41, "Output",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
+Cell[84788, 1905, 404, 8, 37, "Output",ExpressionUUID->"fcea95e4-903b-4313-bb3e-1db49c403e9c"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[85229, 1918, 875, 22, 165, "Input",ExpressionUUID->"da2842b0-838f-4975-8ac2-ce94def4afae"],
-Cell[86107, 1942, 388, 7, 40, "Output",ExpressionUUID->"837c345e-325e-419d-8395-fca8b7b127a3"]
+Cell[86107, 1942, 388, 7, 39, "Output",ExpressionUUID->"837c345e-325e-419d-8395-fca8b7b127a3"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[86532, 1954, 2839, 69, 295, "Input",ExpressionUUID->"5cdbb54f-e975-4c79-990c-6daecdb3fdea"],
@@ -2314,11 +2715,11 @@ Cell[89374, 2025, 540, 11, 56, "Output",ExpressionUUID->"19d4d11c-6cf6-4fe7-bcf7
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[89951, 2041, 792, 20, 51, "Input",ExpressionUUID->"1c870e73-c632-494a-bdcd-21c0f82c20e6"],
-Cell[90746, 2063, 524, 11, 40, "Output",ExpressionUUID->"d1a1197a-f1be-4301-847e-71bd3e9e2ae8"]
+Cell[90746, 2063, 524, 11, 39, "Output",ExpressionUUID->"d1a1197a-f1be-4301-847e-71bd3e9e2ae8"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[91307, 2079, 863, 22, 110, "Input",ExpressionUUID->"35e6a6d7-1f9f-4e4d-9e8b-274483c8e523"],
-Cell[92173, 2103, 597, 14, 65, "Output",ExpressionUUID->"cc53d75d-c239-4184-8184-c9ded9f46658"]
+Cell[92173, 2103, 597, 14, 64, "Output",ExpressionUUID->"cc53d75d-c239-4184-8184-c9ded9f46658"]
 }, Open  ]],
 Cell[92785, 2120, 153, 3, 35, "Text",ExpressionUUID->"be29cbda-84b6-44b4-9599-f8e0d8f1dea4"],
 Cell[CellGroupData[{
@@ -2327,7 +2728,28 @@ Cell[94427, 2163, 596, 13, 85, "Output",ExpressionUUID->"80e79277-7275-4863-9a47
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[95060, 2181, 912, 22, 165, "Input",ExpressionUUID->"ce6cb358-76ce-4a52-9218-011d19fe3882"],
-Cell[95975, 2205, 1094, 26, 68, "Output",ExpressionUUID->"db1750d5-c037-4acd-aa58-2869793f7a6e"]
+Cell[95975, 2205, 1094, 26, 65, "Output",ExpressionUUID->"db1750d5-c037-4acd-aa58-2869793f7a6e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[97106, 2236, 462, 12, 105, "Input",ExpressionUUID->"da97fefe-eda6-4639-9284-332de2f83eef"],
+Cell[97571, 2250, 1600, 37, 109, "Output",ExpressionUUID->"c51fa9d9-3f7b-40c8-be01-da80686f4c80"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99208, 2292, 557, 14, 124, "Input",ExpressionUUID->"7ac6e147-d9ea-4f14-b26e-0f2d3a6a68e7"],
+Cell[99768, 2308, 1601, 37, 109, "Output",ExpressionUUID->"1fd46706-e8ec-4e6e-94a6-d3ba37ebba2c"]
+}, Open  ]],
+Cell[101384, 2348, 3080, 76, 371, "Input",ExpressionUUID->"ff623888-d641-48b1-9cd5-0c4eb08f310f"],
+Cell[CellGroupData[{
+Cell[104489, 2428, 1285, 29, 162, "Input",ExpressionUUID->"22850095-9fb0-46cf-b172-e2d16c4f40e4"],
+Cell[105777, 2459, 519, 11, 85, "Output",ExpressionUUID->"5619ebf9-c77c-4d70-bf31-77bbfa2792bb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[106333, 2475, 3166, 77, 371, "Input",ExpressionUUID->"0facae8a-3849-4bfd-848c-17f5dca4d5f3"],
+Cell[109502, 2554, 516, 11, 85, "Output",ExpressionUUID->"e52954c0-6018-48cf-b463-2091f9afa7f1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[110055, 2570, 2068, 49, 238, "Input",ExpressionUUID->"39da3046-1a37-4257-ad35-ef1405b6d110"],
+Cell[112126, 2621, 541, 11, 85, "Output",ExpressionUUID->"917ea4b6-d143-4b14-bab8-15e5de1e63ae"]
 }, Open  ]]
 }
 ]
