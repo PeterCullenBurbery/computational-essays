@@ -1,0 +1,44 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[       824,         34]
+NotebookOptionsPosition[       561,         21]
+NotebookOutlinePosition[       964,         37]
+CellTagsIndexPosition[       921,         34]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+},
+WindowSize->{718.5, 735.},
+WindowMargins->{{Automatic, -5.25}, {Automatic, 0}},
+FrontEndVersion->"13.1 for Microsoft Windows (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a112279a-ba1f-4c6a-afb0-c2452a31a764"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+}
+]
+*)
+
+(* End of internal cache information *)
+
