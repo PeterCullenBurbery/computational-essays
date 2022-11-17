@@ -1,0 +1,2235 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     71791,       2227]
+NotebookOptionsPosition[     69389,       2178]
+NotebookOutlinePosition[     69854,       2195]
+CellTagsIndexPosition[     69811,       2192]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8776831650024147`*^9, 
+  3.8776831664901457`*^9}},ExpressionUUID->"f819286c-8336-42f3-af94-\
+e4fc06096609"],
+
+Cell[BoxData[
+ RowBox[{"DateSelect", "[", 
+  RowBox[{
+   TagBox[
+    FrameBox["list"],
+    "Placeholder"], ",", 
+   TagBox[
+    FrameBox["crit"],
+    "Placeholder"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8776831737380457`*^9, 
+  3.8776831828107243`*^9}},ExpressionUUID->"ec248ce3-8ebc-4863-a814-\
+ff1b4663a416"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    TemplateBox[{
+      RowBox[{"\"Tue 1 Jan 1901\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"1901", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False], ",", 
+    TemplateBox[{
+      RowBox[{"\"Sun 31 Dec 2000\""}], 
+      RowBox[{"DateObject", "[", 
+        RowBox[{
+          RowBox[{"{", 
+            RowBox[{"2000", ",", "12", ",", "31"}], "}"}], ",", "\"Day\""}], 
+        "]"}]},
+     "DateObject",
+     Editable->False]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.877683218622652*^9, 3.877683235594818*^9}},
+ CellLabel->
+  "In[148]:=",ExpressionUUID->"908cab11-351d-4c0e-9303-36ee8b5c2f5d"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}}, AutoDelete -> 
+             False, BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {
+                10.869016023673117`, {0., 10.869016023673117`}}], Appearance -> 
+              None, BaseStyle -> {}, 
+              ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+              Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {4., 11.222067992791025`}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Day\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{1901, 1, 1}, {2000, 12, 31}}}, "Day"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.877683246897998*^9},
+ CellLabel->
+  "Out[148]=",ExpressionUUID->"09bd1a41-fda1-439c-99cb-02b540c54cd3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<Sun 31 Dec 2000\>\""}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8776832821549115`*^9, 3.87768329414837*^9}},
+ CellLabel->
+  "In[149]:=",ExpressionUUID->"dde326c9-52d6-4cff-bff7-05d2ebf185a8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Day\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{1901, 1, 1}, {2000, 12, 31}}}, "Day"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.877683295273818*^9},
+ CellLabel->
+  "Out[149]=",ExpressionUUID->"dddee736-6377-4482-94ee-70d77ed78f74"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<Sun 31 Dec 2000\>\""}], "}"}],
+    "]"}], "===", 
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     TemplateBox[{
+       RowBox[{"\"Tue 1 Jan 1901\""}], 
+       RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"1901", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+         "]"}]},
+      "DateObject",
+      Editable->False], ",", 
+     TemplateBox[{
+       RowBox[{"\"Sun 31 Dec 2000\""}], 
+       RowBox[{"DateObject", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{"2000", ",", "12", ",", "31"}], "}"}], ",", "\"Day\""}], 
+         "]"}]},
+      "DateObject",
+      Editable->False]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8776832821549115`*^9, 3.877683302714148*^9}},
+ CellLabel->
+  "In[150]:=",ExpressionUUID->"7515fbda-c759-4ec2-81c8-2e20b8fd4a08"],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.87768330307838*^9},
+ CellLabel->
+  "Out[150]=",ExpressionUUID->"37c88d77-0653-4db4-ab15-fe8d2a565996"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<Sun 31 Dec 2000\>\""}], "}"}], 
+  "]"}]], "Input",
+ CellLabel->
+  "In[151]:=",ExpressionUUID->"8020bc7d-5cd4-4c75-ac6c-a99a0923b98e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["DateInterval",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            DynamicBox[
+             FEPrivate`FrontEndResource["FEExpressions", "DateObjectIcon"], 
+             ImageSizeCache -> {15., {3., 12.}}], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Beginning: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Tue 1 Jan 1901\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Through: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Sun 31 Dec 2000\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Granularity: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Day\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Calendar type: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Gregorian\"", "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox["\"Time zone: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["None", "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  DateInterval[{{{1901, 1, 1}, {2000, 12, 31}}}, "Day"],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.877683310023465*^9},
+ CellLabel->
+  "Out[151]=",ExpressionUUID->"f8ebaa0d-15f1-4cc2-91fe-a1791967651e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateSelect", "[", 
+   RowBox[{
+    RowBox[{"#Day", "==", "1"}], "&"}], "]"}], "[", 
+  RowBox[{"DateInterval", "[", 
+   RowBox[{"{", 
+    RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<Sun 31 Dec 2000\>\""}], "}"}],
+    "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8776833149285493`*^9, 3.8776833264017143`*^9}},
+ CellLabel->
+  "In[152]:=",ExpressionUUID->"9a5006e0-d100-4086-994f-05a4b91703a0"],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.8776833443603764`*^9},
+ CellLabel->
+  "Out[152]=",ExpressionUUID->"877f7efe-5722-4b02-ac5b-e998597f22d2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateSelect", "[", 
+   RowBox[{
+    RowBox[{"#DayName", "==", "Sunday"}], "&"}], "]"}], "[", 
+  RowBox[{
+   RowBox[{"DateSelect", "[", 
+    RowBox[{
+     RowBox[{"#Day", "==", "1"}], "&"}], "]"}], "[", 
+   RowBox[{"DateInterval", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<31 Dec 1905\>\""}], "}"}], 
+    "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8776833489849353`*^9, 3.8776833707693453`*^9}},
+ CellLabel->
+  "In[153]:=",ExpressionUUID->"106a68b1-8a05-44bd-bf02-8488ba9dbe21"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1901\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1901", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1901\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1901", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1902\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1902", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1904\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1904", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1905\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1905", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1905\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1905", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False]}], "}"}]], "Output",
+ CellChangeTimes->{3.877683371951886*^9},
+ CellLabel->
+  "Out[153]=",ExpressionUUID->"f0244085-1f7c-409b-abe2-4a5418e987c1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DateSelect", "[", 
+   RowBox[{
+    RowBox[{"#DayName", "==", "Sunday"}], "&"}], "]"}], "[", 
+  RowBox[{
+   RowBox[{"DateSelect", "[", 
+    RowBox[{
+     RowBox[{"#Day", "==", "1"}], "&"}], "]"}], "[", 
+   RowBox[{"DateInterval", "[", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<31 Dec 2000\>\""}], "}"}], 
+    "]"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8776833489849353`*^9, 3.8776833707693453`*^9}, {
+  3.8776834522077007`*^9, 3.877683454733983*^9}},
+ CellLabel->
+  "In[154]:=",ExpressionUUID->"14cf99cc-189f-4e10-9cf5-73fee9674bd6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1901\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1901", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1901\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1901", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1902\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1902", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1903\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1903", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1904\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1904", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1905\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1905", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1905\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1905", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1906\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1906", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1906\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1906", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1907\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1907", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1907\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1907", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1908\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1908", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1908\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1908", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1909\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1909", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1910\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1910", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1911\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1911", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1911\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1911", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1912\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1912", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1912\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1912", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1913\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1913", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1914\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1914", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1914\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1914", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1914\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1914", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1915\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1915", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1916\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1916", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1917\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1917", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1917\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1917", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1918\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1918", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1918\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1918", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1919\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1919", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1920\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1920", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1920\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1920", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1921\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1921", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1922\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1922", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1922\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1922", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1923\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1923", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1923\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1923", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1924\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1924", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1925\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1925", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1925\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1925", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1925\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1925", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1926\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1926", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1927\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1927", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1928\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1928", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1928\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1928", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1928\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1928", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1929\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1929", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1929\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1929", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1930\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1930", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1931\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1931", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1931\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1931", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1931\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1931", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1932\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1932", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1933\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1933", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1933\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1933", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1934\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1934", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1934\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1934", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1935\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1935", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1935\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1935", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1936\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1936", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1936\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1936", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1937\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1937", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1938\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1938", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1939\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1939", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1939\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1939", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1940\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1940", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1940\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1940", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1941\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1941", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1942\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1942", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1942\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1942", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1942\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1942", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1943\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1943", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1944\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1944", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1945\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1945", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1945\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1945", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1946\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1946", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1946\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1946", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1947\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1947", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1948\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1948", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1948\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1948", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1949\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1949", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1950\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1950", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1950\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1950", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1951\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1951", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1951\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1951", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1952\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1952", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1953\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1953", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1953\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1953", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1953\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1953", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1954\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1954", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1955\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1955", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1956\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1956", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1956\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1956", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1956\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1956", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1957\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1957", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1957\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1957", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1958\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1958", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1959\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1959", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1959\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1959", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1959\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1959", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1960\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1960", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1961\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1961", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1961\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1961", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1962\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1962", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1962\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1962", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1963\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1963", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1963\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1963", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1964\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1964", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1964\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1964", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1965\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1965", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1966\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1966", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1967\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1967", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1967\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1967", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1968\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1968", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1968\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1968", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1969\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1969", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1970\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1970", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1970\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1970", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1970\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1970", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1971\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1971", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1972\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1972", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1973\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1973", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1973\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1973", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1974\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1974", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1974\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1974", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1975\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1975", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1976\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1976", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1976\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1976", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1977\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1977", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1978\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1978", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1978\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1978", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1979\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1979", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1979\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1979", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1980\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1980", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1981\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1981", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1981\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1981", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1981\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1981", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1982\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1982", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1983\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1983", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1984\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1984", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1984\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1984", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1984\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1984", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1985\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1985", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1985\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1985", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1986\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1986", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1987\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1987", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1987\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1987", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1987\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1987", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1988\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1988", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1989\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1989", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1989\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1989", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Apr 1990\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1990", ",", "4", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jul 1990\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1990", ",", "7", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1991\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1991", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1991\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1991", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1992\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1992", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1992\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1992", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1993\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1993", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 May 1994\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1994", ",", "5", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jan 1995\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1995", ",", "1", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 1995\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1995", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Sep 1996\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1996", ",", "9", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Dec 1996\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1996", ",", "12", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Jun 1997\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1997", ",", "6", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Feb 1998\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1998", ",", "2", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Mar 1998\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1998", ",", "3", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Nov 1998\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1998", ",", "11", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Aug 1999\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"1999", ",", "8", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False], ",", 
+   TemplateBox[{
+     RowBox[{"\"Sun 1 Oct 2000\""}], 
+     RowBox[{"DateObject", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           RowBox[{"2000", ",", "10", ",", "1"}], "}"}], ",", "\"Day\""}], 
+       "]"}]},
+    "DateObject",
+    Editable->False]}], "}"}]], "Output",
+ CellChangeTimes->{3.8776834704272814`*^9},
+ CellLabel->
+  "Out[154]=",ExpressionUUID->"609cd0c3-e586-4fda-8a55-d0fcc2ae1f83"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\"\<Tue 1 Jan 1901\>\"", ",", "\"\<31 Dec 2000\>\""}], "}"}], 
+   ",", "\"\<MonthFirstDay\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.8776833489849353`*^9, 3.8776833707693453`*^9}, {
+  3.8776834522077007`*^9, 3.877683454733983*^9}, {3.8776835748461113`*^9, 
+  3.87768359836934*^9}, {3.87768363994497*^9, 3.8776836462158155`*^9}},
+ CellLabel->
+  "In[155]:=",ExpressionUUID->"4db3009e-86a6-4f9a-8a13-46e21814748c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "DateInterval", "notgran", 
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"MonthFirstDay\\\\\\\"\\\"}]\\) is not a \
+valid granularity specification for calendar \\!\\(\\*RowBox[{\\\"Automatic\\\
+\"}]\\).\"", 2, 155, 10, 16939682362330311894, "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.877683646674775*^9},
+ CellLabel->
+  "During evaluation of \
+In[155]:=",ExpressionUUID->"ed2f16db-58e2-44f2-808a-9b47c5e86881"],
+
+Cell[BoxData[
+ RowBox[{"DateInterval", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Tue 1 Jan 1901\"\>", ",", "\<\"31 Dec 2000\"\>"}], "}"}], 
+   ",", "\<\"MonthFirstDay\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{3.8776836468046494`*^9},
+ CellLabel->
+  "Out[155]=",ExpressionUUID->"613c88af-9f57-4fce-b55e-d680307acb39"]
+}, Open  ]]
+},
+WindowSize->{572.4, 579.6},
+WindowMargins->{{Automatic, -2.3999999999998636`}, {Automatic, 0}},
+TaggingRules-><|"TryRealOnly" -> False|>,
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 10, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"3e07a3a7-48b2-4d41-a9af-a5b27867865a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 156, 3, 28, "Input",ExpressionUUID->"f819286c-8336-42f3-af94-e4fc06096609"],
+Cell[717, 25, 314, 11, 33, "Input",ExpressionUUID->"ec248ce3-8ebc-4863-a814-ff1b4663a416"],
+Cell[CellGroupData[{
+Cell[1056, 40, 788, 24, 39, "Input",ExpressionUUID->"908cab11-351d-4c0e-9303-36ee8b5c2f5d"],
+Cell[1847, 66, 5116, 108, 64, "Output",ExpressionUUID->"09bd1a41-fda1-439c-99cb-02b540c54cd3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7000, 179, 308, 7, 28, "Input",ExpressionUUID->"dde326c9-52d6-4cff-bff7-05d2ebf185a8"],
+Cell[7311, 188, 4837, 101, 64, "Output",ExpressionUUID->"dddee736-6377-4482-94ee-70d77ed78f74"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12185, 294, 970, 29, 58, "Input",ExpressionUUID->"7515fbda-c759-4ec2-81c8-2e20b8fd4a08"],
+Cell[13158, 325, 155, 3, 32, "Output",ExpressionUUID->"37c88d77-0653-4db4-ab15-fe8d2a565996"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13350, 333, 241, 6, 28, "Input",ExpressionUUID->"8020bc7d-5cd4-4c75-ac6c-a99a0923b98e"],
+Cell[13594, 341, 4837, 101, 64, "Output",ExpressionUUID->"f8ebaa0d-15f1-4cc2-91fe-a1791967651e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18468, 447, 427, 11, 48, "Input",ExpressionUUID->"9a5006e0-d100-4086-994f-05a4b91703a0"],
+Cell[18898, 460, 162, 3, 32, "Output",ExpressionUUID->"877f7efe-5722-4b02-ac5b-e998597f22d2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19097, 468, 552, 15, 67, "Input",ExpressionUUID->"106a68b1-8a05-44bd-bf02-8488ba9dbe21"],
+Cell[19652, 485, 2548, 86, 102, "Output",ExpressionUUID->"f0244085-1f7c-409b-abe2-4a5418e987c1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22237, 576, 603, 16, 67, "Input",ExpressionUUID->"14cf99cc-189f-4e10-9cf5-73fee9674bd6"],
+Cell[22843, 594, 45198, 1544, 1252, "Output",ExpressionUUID->"609cd0c3-e586-4fda-8a55-d0fcc2ae1f83"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[68078, 2143, 501, 10, 28, "Input",ExpressionUUID->"4db3009e-86a6-4f9a-8a13-46e21814748c"],
+Cell[68582, 2155, 460, 10, 28, "Message",ExpressionUUID->"ed2f16db-58e2-44f2-808a-9b47c5e86881"],
+Cell[69045, 2167, 328, 8, 32, "Output",ExpressionUUID->"613c88af-9f57-4fce-b55e-d680307acb39"]
+}, Open  ]]
+}
+]
+*)
+
