@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    126759,       2559]
+NotebookDataLength[    126811,       2560]
 NotebookOptionsPosition[      9159,        295]
-NotebookOutlinePosition[    122710,       2466]
-CellTagsIndexPosition[    122329,       2452]
+NotebookOutlinePosition[    122762,       2467]
+CellTagsIndexPosition[    122381,       2453]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -293,8 +293,8 @@ Cell[BoxData["24"], "Output",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{574.8, 579.6},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+WindowSize->{574.8, 574.8},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 TaggingRules->{
  "ResourceType" -> "ComputationalEssay", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> <||>, "CreationTimestamp" -> 
@@ -321,7 +321,7 @@ TaggingRules->{
       160, 228, 58, 74, 226, 74, 173, 202, 104, 249, 9, 89, 192, 149, 140}]]],
    "ToolsOpen" -> True, "StatusMessage" -> ""},
 CreateCellID->True,
-FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (October 15, 2022)",
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 10, 2022)",
 StyleDefinitions->Notebook[{
    Cell[
     StyleData[StyleDefinitions -> "Default.nb"]], 
@@ -866,9 +866,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Section", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "4" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Section", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "4") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -892,9 +892,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "5" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "5") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -918,9 +918,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subsubsection", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "6" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subsubsection", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "6") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -944,9 +944,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], Delimiter, DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Title", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "1" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Title", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "1") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -970,9 +970,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Subtitle", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "2" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Subtitle", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "2") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -996,9 +996,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Chapter", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "3" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Chapter", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "3") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -1141,9 +1141,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
              Evaluator -> Automatic], {DynamicBox[
                ToBoxes[
                 
-                Grid[{{"Text", " (" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"Text", (((" (" <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -1167,9 +1167,9 @@ caAsAxgQo4xI04h3G5E+JT7ciIkFYuIUAHu5mtk=
                     False; Null]; Null]]], DynamicBox[
                ToBoxes[
                 
-                Grid[{{"CodeText", " (" <> "Shift+" <> 
-                   If[$OperatingSystem === "MacOSX", "Cmd", "Alt"] <> "+" <> 
-                   "7" <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
+                Grid[{{"CodeText", ((((" (" <> "Shift+") <> 
+                    If[$OperatingSystem === "MacOSX", "Cmd", "Alt"]) <> "+") <> 
+                    "7") <> ")"}}, Alignment -> {{Left, Right}, Automatic}, 
                  ItemSize -> {10, Automatic}], StandardForm]] :> 
              With[{RSNB`nb$ = InputNotebook[], RSNB`$cp$ = $ContextPath}, 
                Quiet[
@@ -2398,8 +2398,9 @@ ACBxmlc=
     CellMargins -> {{66, 66}, {16, 5}}, Evaluatable -> False, ShowCellLabel -> 
     False, MenuSortingValue -> 10000, 
     RasterBoxOptions -> {ImageEditMode -> False}]}, Visible -> False, 
-  FrontEndVersion -> "13.2 for Microsoft Windows (64-bit) (October 15, 2022)",
-   StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+  FrontEndVersion -> 
+  "13.2 for Microsoft Windows (64-bit) (November 10, 2022)", StyleDefinitions -> 
+  "PrivateStylesheetFormatting.nb"],
 ExpressionUUID->"e0fd4ab0-86e1-4deb-91f3-e4038de9feaf"
 ]
 (* End of Notebook Content *)
@@ -2451,16 +2452,16 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"Examples", 120581, 2409},
- {"Your Essay Title", 120767, 2413},
- {"AuthorName", 120947, 2417},
- {"Abstract", 121106, 2421},
- {"TemplateCell", 121288, 2425},
- {"SectionHeader", 121471, 2429},
- {"ExampleTopicSentence", 121647, 2433},
- {"ExampleCodeText", 121822, 2437},
- {"ExampleInput", 121992, 2441},
- {"ExampleOutput", 122158, 2445}
+ {"Examples", 120633, 2410},
+ {"Your Essay Title", 120819, 2414},
+ {"AuthorName", 120999, 2418},
+ {"Abstract", 121158, 2422},
+ {"TemplateCell", 121340, 2426},
+ {"SectionHeader", 121523, 2430},
+ {"ExampleTopicSentence", 121699, 2434},
+ {"ExampleCodeText", 121874, 2438},
+ {"ExampleInput", 122044, 2442},
+ {"ExampleOutput", 122210, 2446}
  }
 *)
 (*NotebookFileOutline
