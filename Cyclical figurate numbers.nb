@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    160410,       4350]
-NotebookOptionsPosition[    132079,       3853]
-NotebookOutlinePosition[    132502,       3869]
-CellTagsIndexPosition[    132459,       3866]
+NotebookDataLength[    161784,       4385]
+NotebookOptionsPosition[    133224,       3884]
+NotebookOutlinePosition[    133647,       3900]
+CellTagsIndexPosition[    133604,       3897]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3849,6 +3849,37 @@ Cell[BoxData[
  CellLabel->
   "Out[394]=",ExpressionUUID->"4e9dfff2-e977-4ed7-b561-3902b197f579"]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Scaling up", "Section",
+ CellChangeTimes->{{3.87829959931478*^9, 
+  3.878299602529354*^9}},ExpressionUUID->"b177abbb-6d20-4660-a77a-\
+698a43984653"],
+
+Cell[BoxData[{
+ RowBox[{"threeFourDigitNumbersTriangularSquarePentagonal", "=", 
+  RowBox[{"Tuples", "[", 
+   RowBox[{"{", 
+    RowBox[{
+    "AllTriangularFourDigitNumbers", ",", "AllSquareFourDigitNumbers", ",", 
+     "AllPentagonalFourDigitNumbers"}], "}"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"PermutationsOfthreeFourDigitNumbersTriangularSquarePentagonal", "=", 
+  RowBox[{"Flatten", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Permutations", "[", "i", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "threeFourDigitNumbersTriangularSquarePentagonal"}], 
+       "}"}]}], "]"}], ",", "1"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Select", "[", "CyclicConditionQ", "]"}], "[", 
+  "PermutationsOfthreeFourDigitNumbersTriangularSquarePentagonal", 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.878299611724368*^9, 
+  3.8782996198527*^9}},ExpressionUUID->"47d1fb7f-81e6-429a-afe9-a667e3a50e6d"]
 }, Open  ]]
 },
 WindowSize->{571.8, 579.6},
@@ -4351,6 +4382,10 @@ Cell[CellGroupData[{
 Cell[131315, 3829, 319, 7, 48, "Input",ExpressionUUID->"3ed8a269-5eec-4651-bf24-f556e4bf5923"],
 Cell[131637, 3838, 414, 11, 32, "Output",ExpressionUUID->"4e9dfff2-e977-4ed7-b561-3902b197f579"]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[132100, 3855, 154, 3, 67, "Section",ExpressionUUID->"b177abbb-6d20-4660-a77a-698a43984653"],
+Cell[132257, 3860, 951, 21, 162, "Input",ExpressionUUID->"47d1fb7f-81e6-429a-afe9-a667e3a50e6d"]
 }, Open  ]]
 }
 ]
