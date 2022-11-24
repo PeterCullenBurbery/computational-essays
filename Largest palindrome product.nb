@@ -1,0 +1,50 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1194,         42]
+NotebookOptionsPosition[       841,         28]
+NotebookOutlinePosition[      1245,         44]
+CellTagsIndexPosition[      1202,         41]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+A palindromic number reads the same both ways. The largest palindrome made \
+from the product of two 2-digit numbers is 9009=\
+\>", "Text",
+ CellChangeTimes->{{3.8782331624758377`*^9, 
+  3.8782331817524395`*^9}},ExpressionUUID->"cb923607-ba00-42c1-896c-\
+9a083f7accc2"]
+},
+WindowSize->{574.8, 574.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cdaf0f18-a70f-4de8-8d37-24ee1e29f121"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 279, 6, 58, "Text",ExpressionUUID->"cb923607-ba00-42c1-896c-9a083f7accc2"]
+}
+]
+*)
+

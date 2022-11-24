@@ -1,0 +1,4490 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    193981,       4482]
+NotebookOptionsPosition[    183832,       4303]
+NotebookOutlinePosition[    184241,       4319]
+CellTagsIndexPosition[    184198,       4316]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+A standard 52 card deck comprises thirteen ranks in four suits. The \
+population size in a standard deck N=52.\
+\>", "Text",
+ CellChangeTimes->{{3.878229297277144*^9, 
+  3.8782293211722775`*^9}},ExpressionUUID->"f946ac5c-c0b0-4732-8741-\
+fd9b69d69fe9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ranks", "=", 
+  RowBox[{"{", 
+   RowBox[{
+   "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", ",", "9", 
+    ",", "10", ",", "\"\<Jack\>\"", ",", "\"\<Queen\>\"", ",", "\"\<King\>\"",
+     ",", "\"\<Ace\>\""}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.878229322579399*^9, 3.878229343794707*^9}},
+ CellLabel->
+  "In[272]:=",ExpressionUUID->"4c8bba71-8d9a-43ef-9e01-326c52cb13c6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", ",", "9", 
+   ",", "10", ",", "\<\"Jack\"\>", ",", "\<\"Queen\"\>", ",", "\<\"King\"\>", 
+   ",", "\<\"Ace\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8782293448307147`*^9, 3.8782303413696623`*^9},
+ CellLabel->
+  "Out[272]=",ExpressionUUID->"3fa3fccc-e77d-4cc9-9877-1e1e5954d23f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "ranks", "]"}]], "Input",
+ CellChangeTimes->{{3.8782293450572586`*^9, 3.8782293468891783`*^9}},
+ CellLabel->
+  "In[273]:=",ExpressionUUID->"44ce9974-9c39-426b-a313-ee831dc46ba8"],
+
+Cell[BoxData["13"], "Output",
+ CellChangeTimes->{3.8782293471714334`*^9, 3.8782303416816864`*^9},
+ CellLabel->
+  "Out[273]=",ExpressionUUID->"b5287dcb-1c06-445f-bd8d-726b79314dc5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"suits", "=", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<Hearts\>\"", ",", "\"\<Spades\>\"", ",", "\"\<Diamonds\>\"", ",", 
+    "\"\<Clubs\>\""}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.878229349540374*^9, 3.8782293584440985`*^9}, {
+  3.8782303369633102`*^9, 3.8782303383318024`*^9}},
+ CellLabel->
+  "In[274]:=",ExpressionUUID->"845507e4-fce5-46d7-9640-691c4079319f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Hearts\"\>", ",", "\<\"Spades\"\>", ",", "\<\"Diamonds\"\>", 
+   ",", "\<\"Clubs\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8782293589391866`*^9, {3.8782303386637278`*^9, 3.8782303419360065`*^9}},
+ CellLabel->
+  "Out[274]=",ExpressionUUID->"55d188f8-45ad-41f4-91fd-304e1dd8d255"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "suits", "]"}]], "Input",
+ CellChangeTimes->{{3.878229359620784*^9, 3.878229361218341*^9}},
+ CellLabel->
+  "In[275]:=",ExpressionUUID->"8004d685-2a4a-4346-87da-3f7501dc3b54"],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.8782293615992007`*^9, 3.8782303422202234`*^9},
+ CellLabel->
+  "Out[275]=",ExpressionUUID->"c6b9fadd-8c80-4a7d-93aa-d932d0cc547d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"standardFiftyTwoCardDeckCards", "=", 
+  RowBox[{"Tuples", "[", 
+   RowBox[{"{", 
+    RowBox[{"ranks", ",", "suits"}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8782293630639243`*^9, 3.8782294207795506`*^9}},
+ CellLabel->
+  "In[276]:=",ExpressionUUID->"74f4a8e3-5753-4f41-bcc7-4cfa2d0b5b42"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8782293671603727`*^9, 3.8782294212423735`*^9}, 
+   3.8782303425141935`*^9},
+ CellLabel->
+  "Out[276]=",ExpressionUUID->"f5d22a69-4389-47c1-9c59-bd1b8a4155f6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "standardFiftyTwoCardDeckCards", "]"}]], "Input",
+ CellChangeTimes->{{3.878229385333009*^9, 3.8782294252059946`*^9}},
+ CellLabel->
+  "In[277]:=",ExpressionUUID->"a1e4d88b-439c-4173-a91a-6d3b12abbbb9"],
+
+Cell[BoxData["52"], "Output",
+ CellChangeTimes->{{3.8782293866542444`*^9, 3.878229425479409*^9}, 
+   3.8782303428898153`*^9},
+ CellLabel->
+  "Out[277]=",ExpressionUUID->"8c7331b0-ff52-47f0-ab47-2ea6b3c0c648"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Partition", "[", 
+    RowBox[{"standardFiftyTwoCardDeckCards", ",", "4"}], "]"}], ",", 
+   RowBox[{"Frame", "->", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229428203868*^9, 3.8782294470317397`*^9}},
+ CellLabel->
+  "In[278]:=",ExpressionUUID->"d6fa89c0-d582-4e9d-9913-c5c5c3326310"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.87822943156499*^9, 3.8782294473813286`*^9}, 
+   3.8782303432377768`*^9},
+ CellLabel->
+  "Out[278]=",ExpressionUUID->"3d36f3db-4224-4f77-b091-6eb6633f0cec"]
+}, Open  ]],
+
+Cell["\<\
+However, modern decks have two additional Jokers which neither have a suit \
+nor a rank, for a total of 54 cards.\
+\>", "Text",
+ CellChangeTimes->{{3.8782294637962914`*^9, 
+  3.8782294871326895`*^9}},ExpressionUUID->"a482652c-7fe1-416d-8ce9-\
+6f8f39b17254"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"modernDeckWithJokersCards", "=", 
+  RowBox[{"Join", "[", 
+   RowBox[{"standardFiftyTwoCardDeckCards", ",", 
+    RowBox[{"{", 
+     RowBox[{"\"\<joker1\>\"", ",", "\"\<joker2\>\""}], "}"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.8782294883133383`*^9, 3.878229507769863*^9}},
+ CellLabel->
+  "In[279]:=",ExpressionUUID->"2f3261c8-dcb5-48fe-b84a-47735fb4e7a0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}], 
+   ",", "\<\"joker1\"\>", ",", "\<\"joker2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.878229508369398*^9, 3.8782303435341673`*^9},
+ CellLabel->
+  "Out[279]=",ExpressionUUID->"d93509a8-46de-4124-8b58-8019034d009c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "modernDeckWithJokersCards", "]"}]], "Input",
+ CellChangeTimes->{{3.878229509406445*^9, 3.8782295110509043`*^9}},
+ CellLabel->
+  "In[280]:=",ExpressionUUID->"0f909b7d-ff13-462c-af67-860efbd90f0f"],
+
+Cell[BoxData["54"], "Output",
+ CellChangeTimes->{3.8782295113536177`*^9, 3.8782303438929577`*^9},
+ CellLabel->
+  "Out[280]=",ExpressionUUID->"1856741f-ddbc-47f9-8ff6-5ffd467914f7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"Partition", "[", 
+    RowBox[{"modernDeckWithJokersCards", ",", 
+     RowBox[{"UpTo", "[", "4", "]"}]}], "]"}], ",", 
+   RowBox[{"Frame", "->", "All"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229515231265*^9, 3.878229527864856*^9}},
+ CellLabel->
+  "In[281]:=",ExpressionUUID->"6f337139-d010-4b80-b28c-2f0e8b8aa7bb"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}]},
+    {"\<\"joker1\"\>", "\<\"joker2\"\>", "", ""}
+   },
+   AutoDelete->False,
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.8782295281841345`*^9, 3.87823034417914*^9},
+ CellLabel->
+  "Out[281]=",ExpressionUUID->"d8a17956-eebb-4996-a9c9-c3430b1fdc76"]
+}, Open  ]],
+
+Cell["\<\
+If we shuffle such a deck and draw cards without replacement, then we would \
+need, on average, approximately 29.05361725 cards so that we have at least \
+one card for each rank.\
+\>", "Text",
+ CellChangeTimes->{{3.8782295325363913`*^9, 3.8782295415359783`*^9}, {
+  3.87822957688816*^9, 
+  3.878229603959322*^9}},ExpressionUUID->"622dd60d-d921-4f88-81a4-\
+262ed919ee63"],
+
+Cell["\<\
+We are drawing without replacement. We take a card out and we don\
+\[CloseCurlyQuote]t put it in back in. This means the total number of cards \
+in the deck decreases as we draw more and more cards. This means we have to \
+model the situation probably with a hypergeometric distribution rather than a \
+binomial distribution, for example.\
+\>", "Text",
+ CellChangeTimes->{{3.878229606387576*^9, 
+  3.878229663269231*^9}},ExpressionUUID->"93abc90e-68ba-452b-8843-\
+9d22d42dffe5"],
+
+Cell["\<\
+If we have at least one card for each rank, we can\[CloseCurlyQuote]t have 0 \
+cards. We can one, two, three, or four a rank but not more. The smallest case \
+with all ranks would be all in one suit like:\
+\>", "Text",
+ CellChangeTimes->{{3.878229673925228*^9, 
+  3.878229718083441*^9}},ExpressionUUID->"0f2565da-e094-4533-81d9-\
+1f63980bf038"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"i", ",", "\"\<Hearts\>\""}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782297208060174`*^9, 3.878229731890791*^9}},
+ CellLabel->
+  "In[282]:=",ExpressionUUID->"a602f99c-80c7-46f9-a5d2-186074438b34"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8782297321872025`*^9, 3.8782303444731703`*^9},
+ CellLabel->
+  "Out[282]=",ExpressionUUID->"38643fa7-08de-4b62-98f4-481675273a2b"]
+}, Open  ]],
+
+Cell["What is the length?", "Text",
+ CellChangeTimes->{{3.8782297359390683`*^9, 
+  3.8782297389163957`*^9}},ExpressionUUID->"f2bab41c-b649-47d6-a779-\
+26ac6682aedd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"i", ",", "\"\<Hearts\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229739686084*^9, 3.878229740794278*^9}},
+ CellLabel->
+  "In[283]:=",ExpressionUUID->"51ed8cfe-cd40-4e40-a3b7-8c342ab7b57f"],
+
+Cell[BoxData["13"], "Output",
+ CellChangeTimes->{3.87822974119701*^9, 3.8782303447509775`*^9},
+ CellLabel->
+  "Out[283]=",ExpressionUUID->"fb1ae26c-dcb1-4be2-88df-fe5029ffcf96"]
+}, Open  ]],
+
+Cell["\<\
+The max would be the whole deck which would be 54 again. We can use the \
+pigeonhole principle to conclude there\[CloseCurlyQuote]s now way to have 13 \
+ranks with 12 cards or less. \
+\>", "Text",
+ CellChangeTimes->{{3.878229743659767*^9, 
+  3.878229780204215*^9}},ExpressionUUID->"f96d7e18-4653-4148-bc45-\
+79ff754ed160"],
+
+Cell["I can use subsets:", "Text",
+ CellChangeTimes->{{3.8782298424466457`*^9, 
+  3.878229845235567*^9}},ExpressionUUID->"e54b02ad-3999-4b28-b5c9-\
+5f1661299f7c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"Subsets", "[", 
+   RowBox[{"modernDeckWithJokersCards", ",", 
+    RowBox[{"{", "2", "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782298302062416`*^9, 3.8782298473276*^9}, {
+  3.878229879971221*^9, 3.8782298857662477`*^9}},
+ CellLabel->
+  "In[284]:=",ExpressionUUID->"f97b4456-9497-458d-86aa-9caaa3a28216"],
+
+Cell[BoxData["1431"], "Output",
+ CellChangeTimes->{{3.87822983589713*^9, 3.8782298480939813`*^9}, {
+   3.8782298803894815`*^9, 3.8782298861640377`*^9}, 3.878230345135725*^9},
+ CellLabel->
+  "Out[284]=",ExpressionUUID->"4e963ea5-8103-4702-994c-1a5463f777a7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Binomial", "[", 
+  RowBox[{"54", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229887701603*^9, 3.8782298902268553`*^9}},
+ CellLabel->
+  "In[285]:=",ExpressionUUID->"b5676031-5635-4aab-9ca1-f80d2332bdfd"],
+
+Cell[BoxData["1431"], "Output",
+ CellChangeTimes->{3.8782298906332765`*^9, 3.8782303454052343`*^9},
+ CellLabel->
+  "Out[285]=",ExpressionUUID->"03bcc1ed-a6a4-46fa-a6ba-80d5673774cc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+AAAAAADwhPz/RLI+hQ==
+    "], {{0, 200.4173695053571}, {412.83577910085535`, 0}}, {0, 255},
+    ColorFunction->RGBColor,
+    ImageResolution->{119.98960000000002`, 119.98960000000002`},
+    SmoothingQuality->"High"],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSize->Automatic,
+  ImageSizeRaw->{412.83577910085535`, 200.4173695053571},
+  PlotRange->{{0, 412.83577910085535`}, {0, 200.4173695053571}}]], "Input",
+ CellLabel->
+  "In[286]:=",ExpressionUUID->"1599a697-091d-4a2b-8584-3b9a7890bade"],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[RasterBox[CompressedData["
+1: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
+AAAAAADwhPz/RLI+hQ==
+    "], {{0, 200.4173695053571}, {412.83577910085535`, 0}}, {0, 255},
+    ColorFunction->RGBColor,
+    ImageResolution->{119.98960000000002`, 119.98960000000002`}],
+   BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+   Selectable->False],
+  DefaultBaseStyle->"ImageGraphics",
+  ImageSizeRaw->{412.83577910085535`, 200.4173695053571},
+  PlotRange->{{0, 412.83577910085535`}, {0, 200.4173695053571}}]], "Output",
+ CellChangeTimes->{3.8782303457663484`*^9},
+ CellLabel->
+  "Out[286]=",ExpressionUUID->"f5b787db-d929-48c7-83bd-0580aacb1393"]
+}, Open  ]],
+
+Cell["The number of subsets of a particular size:", "Text",
+ CellChangeTimes->{{3.8782299454180765`*^9, 
+  3.878229952262035*^9}},ExpressionUUID->"b1f7cd41-0b86-4877-b942-\
+070a11406af0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"54", ",", "i"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "54"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229915371971*^9, 3.878229921670967*^9}},
+ CellLabel->
+  "In[287]:=",ExpressionUUID->"69883707-6fdf-46ff-866c-7fb231d7c871"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "54", ",", "1431", ",", "24804", ",", "316251", ",", "3162510", ",", 
+   "25827165", ",", "177100560", ",", "1040465790", ",", "5317936260", ",", 
+   "23930713170", ",", "95722852680", ",", "343006888770", ",", 
+   "1108176102180", ",", "3245372870670", ",", "8654327655120", ",", 
+   "21094923659355", ",", "47153358767970", ",", "96926348578605", ",", 
+   "183649923622620", ",", "321387366339585", ",", "520341450264090", ",", 
+   "780512175396135", ",", "1085929983159840", ",", "1402659561581460", ",", 
+   "1683191473897752", ",", "1877405874732108", ",", "1946939425648112", ",", 
+   "1877405874732108", ",", "1683191473897752", ",", "1402659561581460", ",", 
+   "1085929983159840", ",", "780512175396135", ",", "520341450264090", ",", 
+   "321387366339585", ",", "183649923622620", ",", "96926348578605", ",", 
+   "47153358767970", ",", "21094923659355", ",", "8654327655120", ",", 
+   "3245372870670", ",", "1108176102180", ",", "343006888770", ",", 
+   "95722852680", ",", "23930713170", ",", "5317936260", ",", "1040465790", 
+   ",", "177100560", ",", "25827165", ",", "3162510", ",", "316251", ",", 
+   "24804", ",", "1431", ",", "54", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.8782299221546745`*^9, 3.878230346218152*^9},
+ CellLabel->
+  "Out[287]=",ExpressionUUID->"dd7dbdd7-fee3-426b-819b-3cc435f4f957"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Binomial", "[", 
+    RowBox[{"54", ",", "i"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "13", ",", "54"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878229915371971*^9, 3.878229921670967*^9}, {
+  3.878229978112708*^9, 3.8782299811455016`*^9}},
+ CellLabel->
+  "In[288]:=",ExpressionUUID->"6babb21f-fa51-4624-a54e-d21022d5a669"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1108176102180", ",", "3245372870670", ",", "8654327655120", ",", 
+   "21094923659355", ",", "47153358767970", ",", "96926348578605", ",", 
+   "183649923622620", ",", "321387366339585", ",", "520341450264090", ",", 
+   "780512175396135", ",", "1085929983159840", ",", "1402659561581460", ",", 
+   "1683191473897752", ",", "1877405874732108", ",", "1946939425648112", ",", 
+   "1877405874732108", ",", "1683191473897752", ",", "1402659561581460", ",", 
+   "1085929983159840", ",", "780512175396135", ",", "520341450264090", ",", 
+   "321387366339585", ",", "183649923622620", ",", "96926348578605", ",", 
+   "47153358767970", ",", "21094923659355", ",", "8654327655120", ",", 
+   "3245372870670", ",", "1108176102180", ",", "343006888770", ",", 
+   "95722852680", ",", "23930713170", ",", "5317936260", ",", "1040465790", 
+   ",", "177100560", ",", "25827165", ",", "3162510", ",", "316251", ",", 
+   "24804", ",", "1431", ",", "54", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.878229981686967*^9, 3.878230346500469*^9},
+ CellLabel->
+  "Out[288]=",ExpressionUUID->"a0f8945e-654e-4a89-b46d-fdc0079feba1"]
+}, Open  ]],
+
+Cell["\<\
+In the first case there\[CloseCurlyQuote]s only one hand of 13 that contains \
+all. How many of 14 contain 13?\
+\>", "Text",
+ CellChangeTimes->{{3.8782299861508007`*^9, 
+  3.878230005861456*^9}},ExpressionUUID->"34a97791-7b83-42d6-9bc4-\
+ec8957350c44"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"all13HeartsIn13Cards", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"i", ",", "\"\<Hearts\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878230030282381*^9, 3.878230034583707*^9}, {
+  3.8782300711638737`*^9, 3.87823007200686*^9}},
+ CellLabel->
+  "In[289]:=",ExpressionUUID->"201184cc-5ba9-4641-85c8-17099a2a9d26"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.87823003511986*^9, 3.8782300724893603`*^9, 
+  3.878230346782696*^9},
+ CellLabel->
+  "Out[289]=",ExpressionUUID->"023b557d-f02e-48bc-b4ad-29ea313db625"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"all13DiamondsIn13Cards", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"i", ",", "\"\<Diamonds\>\""}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.878230030282381*^9, 3.878230034583707*^9}, {
+  3.8782300711638737`*^9, 3.878230081927683*^9}},
+ CellLabel->
+  "In[290]:=",ExpressionUUID->"327f0b2b-e402-47ca-8a8e-1ab019dfd77e"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.878230078116329*^9, 3.8782300822946672`*^9}, 
+   3.878230347066385*^9},
+ CellLabel->
+  "Out[290]=",ExpressionUUID->"8784f6f6-1e17-40f6-85ae-a82bf6079f19"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Join", "[", 
+    RowBox[{"all13DiamondsIn13Cards", ",", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "\"\<Hearts\>\""}], "}"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878230009201996*^9, 3.8782301095499225`*^9}},
+ CellLabel->
+  "In[291]:=",ExpressionUUID->"7a32c7ab-c951-49d0-a65f-39173657c71f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.8782300425665927`*^9, {3.8782300883986645`*^9, 3.878230109910262*^9}, 
+   3.8782303475307646`*^9},
+ CellLabel->
+  "Out[291]=",ExpressionUUID->"85a7fd9f-5d33-4a78-81cb-205e271d3f85"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Join", "[", 
+     RowBox[{"all13DiamondsIn13Cards", ",", 
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "\"\<Hearts\>\""}], "}"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "ranks"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782301223265176`*^9, 3.878230123498045*^9}},
+ CellLabel->
+  "In[292]:=",ExpressionUUID->"1d83d703-a1fc-4e1d-9b0f-7876b06d109d"],
+
+Cell[BoxData["13"], "Output",
+ CellChangeTimes->{3.8782301239142075`*^9, 3.8782303478139534`*^9},
+ CellLabel->
+  "Out[292]=",ExpressionUUID->"58dc9cd2-d8b5-47bd-bf16-4e86ee0437c3"]
+}, Open  ]],
+
+Cell["\<\
+But we could also have spades and clubs so we have 13 ways for hearts, 13 \
+ways for spades, and 13 ways for clubs. That\[CloseCurlyQuote]s 39.\
+\>", "Text",
+ CellChangeTimes->{{3.878230132105773*^9, 
+  3.878230180472397*^9}},ExpressionUUID->"4ec3aefc-be54-40fe-8aa7-\
+237aca3c7beb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"3", " ", "13"}]], "Input",
+ CellChangeTimes->{{3.878230181991003*^9, 3.878230183841692*^9}},
+ CellLabel->
+  "In[293]:=",ExpressionUUID->"aef0834b-44ef-4b22-b20f-a183e89066a6"],
+
+Cell[BoxData["39"], "Output",
+ CellChangeTimes->{3.878230184287434*^9, 3.8782303481035223`*^9},
+ CellLabel->
+  "Out[293]=",ExpressionUUID->"d75e87c9-7ce2-4f6c-8df3-325816717fab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["all13DiamondsIn13Cards"], "Input",
+ CellLabel->
+  "In[294]:=",ExpressionUUID->"404b4d39-0e26-46a6-adde-3d0a631df7c4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.8782302518455973`*^9, 3.878230348498555*^9},
+ CellLabel->
+  "Out[294]=",ExpressionUUID->"0964c94c-1494-48f3-9ac5-2fa5d2b74291"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Complement", "[", 
+  RowBox[{"modernDeckWithJokersCards", ",", "all13DiamondsIn13Cards"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.878230231149786*^9, 3.8782302349792986`*^9}},
+ CellLabel->
+  "In[299]:=",ExpressionUUID->"e6a0c92c-c621-4099-96a7-7d65f2044d87"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"joker1\"\>", ",", "\<\"joker2\"\>", ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.8782302353655663`*^9, {3.8782303487807655`*^9, 3.878230364524083*^9}},
+ CellLabel->
+  "Out[299]=",ExpressionUUID->"0e9f3f24-e7bc-4014-8cbb-8630d15f1bb5"]
+}, Open  ]],
+
+Cell["\<\
+There are 41 cards we can choose to add to the deck with all 13 diamonds:\
+\>", "Text",
+ CellChangeTimes->{{3.8782303716153264`*^9, 
+  3.878230382602619*^9}},ExpressionUUID->"d55b8052-cbab-48f5-8926-\
+274c5d030d88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"Complement", "[", 
+   RowBox[{"modernDeckWithJokersCards", ",", "all13DiamondsIn13Cards"}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878230317023872*^9, 3.8782303182918158`*^9}, {
+  3.8782303572023354`*^9, 3.878230368228815*^9}},
+ CellLabel->
+  "In[300]:=",ExpressionUUID->"ac8237c7-b9a7-4d91-aa74-30a84bb60b50"],
+
+Cell[BoxData["41"], "Output",
+ CellChangeTimes->{
+  3.8782303187078066`*^9, {3.878230349354501*^9, 3.8782303687221613`*^9}},
+ CellLabel->
+  "Out[300]=",ExpressionUUID->"3049ded4-70a4-4e49-8615-617870e4713a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Join", "[", 
+    RowBox[{"all13DiamondsIn13Cards", ",", 
+     RowBox[{"{", "i", "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", 
+     RowBox[{"Complement", "[", 
+      RowBox[{"modernDeckWithJokersCards", ",", "all13DiamondsIn13Cards"}], 
+      "]"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782303919140034`*^9, 3.8782304143123436`*^9}},
+ CellLabel->
+  "In[302]:=",ExpressionUUID->"6ba5d8c1-4c14-4636-8945-f0bb47f2681c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     ",", "\<\"joker1\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], 
+     ",", "\<\"joker2\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Clubs\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Hearts\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"3", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"5", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"6", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"7", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"8", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"9", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"10", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Jack\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"King\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Ace\"\>", ",", "\<\"Diamonds\"\>"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Queen\"\>", ",", "\<\"Spades\"\>"}], "}"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.878230405506779*^9, 3.878230414866232*^9}},
+ CellLabel->
+  "Out[302]=",ExpressionUUID->"377ea258-61d2-4dba-ad64-22f13221b1bf"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Join", "[", 
+     RowBox[{"all13DiamondsIn13Cards", ",", 
+      RowBox[{"{", "i", "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", 
+      RowBox[{"Complement", "[", 
+       RowBox[{"modernDeckWithJokersCards", ",", "all13DiamondsIn13Cards"}], 
+       "]"}]}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782304206263757`*^9, 3.8782304216814566`*^9}},
+ CellLabel->
+  "In[303]:=",ExpressionUUID->"d88ada80-c1d4-467f-8ea3-c9f12f9c6804"],
+
+Cell[BoxData["41"], "Output",
+ CellChangeTimes->{3.8782304220833793`*^9},
+ CellLabel->
+  "Out[303]=",ExpressionUUID->"67f218ad-f990-4095-b811-88d9a9e1c990"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox["1", 
+  RowBox[{"Binomial", "[", 
+   RowBox[{"54", ",", "13"}], "]"}]]], "Input",
+ CellChangeTimes->{{3.878230439977268*^9, 3.8782304459331546`*^9}},
+ CellLabel->
+  "In[304]:=",ExpressionUUID->"7fef1e45-3654-4ec7-9581-4e7213e36679"],
+
+Cell[BoxData[
+ FractionBox["1", "1108176102180"]], "Output",
+ CellChangeTimes->{3.8782304463246384`*^9},
+ CellLabel->
+  "Out[304]=",ExpressionUUID->"c6fcd9b4-1483-4390-94fe-65c7b9e09805"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ FractionBox["41", 
+  RowBox[{"Binomial", "[", 
+   RowBox[{"54", ",", "14"}], "]"}]]], "Input",
+ CellChangeTimes->{{3.8782304483095646`*^9, 3.8782304557929635`*^9}},
+ CellLabel->
+  "In[305]:=",ExpressionUUID->"628304ef-d568-4941-a857-cd10900db461"],
+
+Cell[BoxData[
+ FractionBox["1", "79155435870"]], "Output",
+ CellChangeTimes->{3.8782304562466073`*^9},
+ CellLabel->
+  "Out[305]=",ExpressionUUID->"9358999c-5a9b-49db-a431-8c61e54f71bc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"42", "-", "1"}]], "Input",
+ CellChangeTimes->{{3.878230505461965*^9, 3.878230524010167*^9}},
+ CellLabel->
+  "In[308]:=",ExpressionUUID->"5bdbc57e-dad7-4516-9b89-e4713f8f3b0b"],
+
+Cell[BoxData["41"], "Output",
+ CellChangeTimes->{{3.878230507267017*^9, 3.8782305245526385`*^9}},
+ CellLabel->
+  "Out[308]=",ExpressionUUID->"b4cb99c5-11b5-4990-bbc1-ea440afe4c56"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"13", "+", "1"}]], "Input",
+ CellChangeTimes->{{3.878230508918756*^9, 3.8782305103696833`*^9}},
+ CellLabel->
+  "In[307]:=",ExpressionUUID->"5d8fbcf7-3b24-4886-a08a-2da4c1e7d52e"],
+
+Cell[BoxData["14"], "Output",
+ CellChangeTimes->{3.8782305110889435`*^9},
+ CellLabel->
+  "Out[307]=",ExpressionUUID->"27213af2-24f9-4374-a806-d2696d092942"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"42", "-", "i"}], 
+    RowBox[{"Binomial", "[", 
+     RowBox[{"54", ",", 
+      RowBox[{"13", "+", "i"}]}], "]"}]], ",", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", "1", ",", "41"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.878230483334032*^9, 3.8782305562482257`*^9}},
+ CellLabel->
+  "In[311]:=",ExpressionUUID->"6b5556f1-8183-4d79-beb4-6e7f6e2a260b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["1", "79155435870"], ",", 
+   FractionBox["1", "216358191378"], ",", 
+   FractionBox["1", "540895478445"], ",", 
+   FractionBox["1", "1240877862315"], ",", 
+   FractionBox["1", "2619631042665"], ",", 
+   FractionBox["1", "5101386767295"], ",", 
+   FractionBox["1", "9182496181131"], ",", 
+   FractionBox["1", "15304160301885"], ",", 
+   FractionBox["11", "260170725132045"], ",", 
+   FractionBox["1", "33935311973745"], ",", 
+   FractionBox["1", "45247082631660"], ",", 
+   FractionBox["5", "280531912316292"], ",", 
+   FractionBox["1", "64738133611452"], ",", 
+   FractionBox["1", "69533550916004"], ",", 
+   FractionBox["1", "69533550916004"], ",", 
+   FractionBox["1", "64738133611452"], ",", 
+   FractionBox["5", "280531912316292"], ",", 
+   FractionBox["1", "45247082631660"], ",", 
+   FractionBox["1", "33935311973745"], ",", 
+   FractionBox["11", "260170725132045"], ",", 
+   FractionBox["1", "15304160301885"], ",", 
+   FractionBox["1", "9182496181131"], ",", 
+   FractionBox["1", "5101386767295"], ",", 
+   FractionBox["1", "2619631042665"], ",", 
+   FractionBox["1", "1240877862315"], ",", 
+   FractionBox["1", "540895478445"], ",", 
+   FractionBox["1", "216358191378"], ",", 
+   FractionBox["1", "79155435870"], ",", 
+   FractionBox["1", "26385145290"], ",", 
+   FractionBox["1", "7976904390"], ",", 
+   FractionBox["11", "23930713170"], ",", 
+   FractionBox["1", "531793626"], ",", 
+   FractionBox["1", "115607310"], ",", 
+   FractionBox["1", "22137570"], ",", 
+   FractionBox["1", "3689595"], ",", 
+   FractionBox["1", "527085"], ",", 
+   FractionBox["5", "316251"], ",", 
+   FractionBox["1", "6201"], ",", 
+   FractionBox["1", "477"], ",", 
+   FractionBox["1", "27"], ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8782305453538284`*^9, 3.878230557227211*^9}},
+ CellLabel->
+  "Out[311]=",ExpressionUUID->"a2b33e15-f8b9-44ae-8d16-c7fda81de38d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Total", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"42", "-", "i"}], 
+     RowBox[{"Binomial", "[", 
+      RowBox[{"54", ",", 
+       RowBox[{"13", "+", "i"}]}], "]"}]], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", "41"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878230567545151*^9, 3.878230568613491*^9}},
+ CellLabel->
+  "In[312]:=",ExpressionUUID->"f98f7fd7-7140-4291-a9be-ab7ed0b5f167"],
+
+Cell[BoxData[
+ FractionBox["13856043535605481219", "13331928467941381935"]], "Output",
+ CellChangeTimes->{3.8782305690315237`*^9},
+ CellLabel->
+  "Out[312]=",ExpressionUUID->"0e99df9f-b675-49e2-8fcd-48010a8fda8b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Total", "[", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"42", "-", "i"}], 
+      RowBox[{"Binomial", "[", 
+       RowBox[{"54", ",", 
+        RowBox[{"13", "+", "i"}]}], "]"}]], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "1", ",", "41"}], "}"}]}], "]"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.8782305715315256`*^9, 3.8782305720095606`*^9}},
+ CellLabel->
+  "In[313]:=",ExpressionUUID->"9b84791a-bfeb-406a-b8c0-a26af09da258"],
+
+Cell[BoxData["1.0393127722612983`"], "Output",
+ CellChangeTimes->{3.87823057587572*^9},
+ CellLabel->
+  "Out[313]=",ExpressionUUID->"4441e429-768a-450c-8f5c-57eb5c1e99f3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"13", "+", "41"}]], "Input",
+ CellChangeTimes->{{3.878230611242236*^9, 3.878230612282339*^9}},
+ CellLabel->
+  "In[314]:=",ExpressionUUID->"0c569a78-d9c7-4e12-b7bc-16cb9a2bed53"],
+
+Cell[BoxData["54"], "Output",
+ CellChangeTimes->{3.8782306127135043`*^9},
+ CellLabel->
+  "Out[314]=",ExpressionUUID->"44504d5c-2094-4a8e-986a-ae53dff97ab4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"13", "+", "40"}]], "Input",
+ CellChangeTimes->{{3.878230616891729*^9, 3.8782306196446877`*^9}},
+ CellLabel->
+  "In[315]:=",ExpressionUUID->"75836c10-18b0-4957-8174-cffbd05016e5"],
+
+Cell[BoxData["53"], "Output",
+ CellChangeTimes->{3.8782306200937614`*^9},
+ CellLabel->
+  "Out[315]=",ExpressionUUID->"b4278159-18ce-4ca1-980e-d61375f86df1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Binomial", "[", 
+  RowBox[{"54", ",", "53"}], "]"}]], "Input",
+ CellChangeTimes->{{3.878230594092163*^9, 3.8782306317001233`*^9}},
+ CellLabel->
+  "In[316]:=",ExpressionUUID->"8ee3d827-2611-4535-9cb0-436993eb3fe5"],
+
+Cell[BoxData["54"], "Output",
+ CellChangeTimes->{3.8782306322216473`*^9},
+ CellLabel->
+  "Out[316]=",ExpressionUUID->"a62a2e44-0fb2-43fe-ace7-bf49b15fbd89"]
+}, Open  ]],
+
+Cell["We use the indicator variable.", "Text",
+ CellChangeTimes->{{3.8782307482013974`*^9, 
+  3.8782307543678813`*^9}},ExpressionUUID->"507fe032-7807-4dfe-aad6-\
+5c61f3faccea"],
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["I", "j"], "=", 
+   TagBox[GridBox[{
+      {"\[Piecewise]", GridBox[{
+         {"1", 
+          RowBox[{
+          "if", " ", "we", " ", "draw", " ", "at", " ", "least", " ", "one", 
+           " ", "card", " "}]},
+         {"\[Placeholder]", "\[Placeholder]"}
+        },
+        AllowedDimensions->{2, Automatic},
+        Editable->True,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}},
+           "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.84]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}},
+        Selectable->True]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.35]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    "Piecewise",
+    DeleteWithContents->True,
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False,
+    StripWrapperBoxes->True]}], TraditionalForm]],
+ FormatType->
+  TraditionalForm,ExpressionUUID->"72a84a88-af85-4ac5-a6cd-e45e9acbc493"]], \
+"Text",
+ CellChangeTimes->{{3.878230756737994*^9, 
+  3.878230771453539*^9}},ExpressionUUID->"dcd900fb-2082-46d2-8958-\
+cedbef0af5fd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Binomial", "[", 
+  RowBox[{"15000", ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8782320603181453`*^9, 3.8782320666028013`*^9}},
+ CellLabel->
+  "In[317]:=",ExpressionUUID->"b8b6ad88-73e1-46b2-8565-34064c049913"],
+
+Cell[BoxData["112492500"], "Output",
+ CellChangeTimes->{3.878232067957794*^9},
+ CellLabel->
+  "Out[317]=",ExpressionUUID->"8d973c4d-326b-4b7c-92c8-b4f9749747f8"]
+}, Open  ]]
+},
+WindowSize->{571.8, 509.4},
+WindowMargins->{{284.4, Automatic}, {18, Automatic}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"bd0b91e0-f7a0-4d8e-81f2-dd08b8dbf9e7"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 262, 6, 58, "Text",ExpressionUUID->"f946ac5c-c0b0-4732-8741-fd9b69d69fe9"],
+Cell[CellGroupData[{
+Cell[845, 30, 418, 9, 28, "Input",ExpressionUUID->"4c8bba71-8d9a-43ef-9e01-326c52cb13c6"],
+Cell[1266, 41, 390, 8, 32, "Output",ExpressionUUID->"3fa3fccc-e77d-4cc9-9877-1e1e5954d23f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1693, 54, 216, 4, 28, "Input",ExpressionUUID->"44ce9974-9c39-426b-a313-ee831dc46ba8"],
+Cell[1912, 60, 180, 3, 32, "Output",ExpressionUUID->"b5287dcb-1c06-445f-bd8d-726b79314dc5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2129, 68, 386, 9, 28, "Input",ExpressionUUID->"845507e4-fce5-46d7-9640-691c4079319f"],
+Cell[2518, 79, 330, 7, 32, "Output",ExpressionUUID->"55d188f8-45ad-41f4-91fd-304e1dd8d255"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2885, 91, 212, 4, 28, "Input",ExpressionUUID->"8004d685-2a4a-4346-87da-3f7501dc3b54"],
+Cell[3100, 97, 179, 3, 32, "Output",ExpressionUUID->"c6b9fadd-8c80-4a7d-93aa-d932d0cc547d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3316, 105, 320, 7, 28, "Input",ExpressionUUID->"74f4a8e3-5753-4f41-bcc7-4cfa2d0b5b42"],
+Cell[3639, 114, 4171, 110, 261, "Output",ExpressionUUID->"f5d22a69-4389-47c1-9c59-bd1b8a4155f6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7847, 229, 238, 4, 28, "Input",ExpressionUUID->"a1e4d88b-439c-4173-a91a-6d3b12abbbb9"],
+Cell[8088, 235, 208, 4, 32, "Output",ExpressionUUID->"8c7331b0-ff52-47f0-ab47-2ea6b3c0c648"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8333, 244, 352, 8, 28, "Input",ExpressionUUID->"d6fa89c0-d582-4e9d-9913-c5c5c3326310"],
+Cell[8688, 254, 4359, 127, 256, "Output",ExpressionUUID->"3d36f3db-4224-4f77-b091-6eb6633f0cec"]
+}, Open  ]],
+Cell[13062, 384, 267, 6, 58, "Text",ExpressionUUID->"a482652c-7fe1-416d-8ce9-6f8f39b17254"],
+Cell[CellGroupData[{
+Cell[13354, 394, 388, 9, 48, "Input",ExpressionUUID->"2f3261c8-dcb5-48fe-b84a-47735fb4e7a0"],
+Cell[13745, 405, 4189, 110, 261, "Output",ExpressionUUID->"d93509a8-46de-4124-8b58-8019034d009c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17971, 520, 234, 4, 28, "Input",ExpressionUUID->"0f909b7d-ff13-462c-af67-860efbd90f0f"],
+Cell[18208, 526, 180, 3, 32, "Output",ExpressionUUID->"1856741f-ddbc-47f9-8ff6-5ffd467914f7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18425, 534, 380, 9, 28, "Input",ExpressionUUID->"6f337139-d010-4b80-b28c-2f0e8b8aa7bb"],
+Cell[18808, 545, 4379, 127, 274, "Output",ExpressionUUID->"d8a17956-eebb-4996-a9c9-c3430b1fdc76"]
+}, Open  ]],
+Cell[23202, 675, 380, 8, 81, "Text",ExpressionUUID->"622dd60d-d921-4f88-81a4-262ed919ee63"],
+Cell[23585, 685, 488, 9, 127, "Text",ExpressionUUID->"93abc90e-68ba-452b-8843-9d22d42dffe5"],
+Cell[24076, 696, 354, 7, 81, "Text",ExpressionUUID->"0f2565da-e094-4533-81d9-1f63980bf038"],
+Cell[CellGroupData[{
+Cell[24455, 707, 347, 9, 28, "Input",ExpressionUUID->"a602f99c-80c7-46f9-a5d2-186074438b34"],
+Cell[24805, 718, 1185, 31, 71, "Output",ExpressionUUID->"38643fa7-08de-4b62-98f4-481675273a2b"]
+}, Open  ]],
+Cell[26005, 752, 165, 3, 35, "Text",ExpressionUUID->"f2bab41c-b649-47d6-a779-26ac6682aedd"],
+Cell[CellGroupData[{
+Cell[26195, 759, 383, 10, 28, "Input",ExpressionUUID->"51ed8cfe-cd40-4e40-a3b7-8c342ab7b57f"],
+Cell[26581, 771, 177, 3, 32, "Output",ExpressionUUID->"fb1ae26c-dcb1-4be2-88df-fe5029ffcf96"]
+}, Open  ]],
+Cell[26773, 777, 332, 7, 81, "Text",ExpressionUUID->"f96d7e18-4653-4148-bc45-79ff754ed160"],
+Cell[27108, 786, 162, 3, 35, "Text",ExpressionUUID->"e54b02ad-3999-4b28-b5c9-5f1661299f7c"],
+Cell[CellGroupData[{
+Cell[27295, 793, 366, 8, 28, "Input",ExpressionUUID->"f97b4456-9497-458d-86aa-9caaa3a28216"],
+Cell[27664, 803, 257, 4, 32, "Output",ExpressionUUID->"4e963ea5-8103-4702-994c-1a5463f777a7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27958, 812, 236, 5, 28, "Input",ExpressionUUID->"b5676031-5635-4aab-9ca1-f80d2332bdfd"],
+Cell[28197, 819, 182, 3, 32, "Output",ExpressionUUID->"03bcc1ed-a6a4-46fa-a6ba-80d5673774cc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28416, 827, 32923, 544, 213, "Input",ExpressionUUID->"1599a697-091d-4a2b-8584-3b9a7890bade"],
+Cell[61342, 1373, 32914, 543, 217, "Output",ExpressionUUID->"f5b787db-d929-48c7-83bd-0580aacb1393"]
+}, Open  ]],
+Cell[94271, 1919, 187, 3, 35, "Text",ExpressionUUID->"b1f7cd41-0b86-4877-b942-070a11406af0"],
+Cell[CellGroupData[{
+Cell[94483, 1926, 342, 9, 28, "Input",ExpressionUUID->"69883707-6fdf-46ff-866c-7fb231d7c871"],
+Cell[94828, 1937, 1368, 21, 280, "Output",ExpressionUUID->"dd7dbdd7-fee3-426b-819b-3cc435f4f957"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[96233, 1963, 404, 10, 28, "Input",ExpressionUUID->"6babb21f-fa51-4624-a54e-d21022d5a669"],
+Cell[96640, 1975, 1151, 18, 242, "Output",ExpressionUUID->"a0f8945e-654e-4a89-b46d-fdc0079feba1"]
+}, Open  ]],
+Cell[97806, 1996, 262, 6, 58, "Text",ExpressionUUID->"34a97791-7b83-42d6-9bc4-ec8957350c44"],
+Cell[CellGroupData[{
+Cell[98093, 2006, 442, 11, 28, "Input",ExpressionUUID->"201184cc-5ba9-4641-85c8-17099a2a9d26"],
+Cell[98538, 2019, 1207, 32, 71, "Output",ExpressionUUID->"023b557d-f02e-48bc-b4ad-29ea313db625"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99782, 2056, 447, 11, 28, "Input",ExpressionUUID->"327f0b2b-e402-47ca-8a8e-1ab019dfd77e"],
+Cell[100232, 2069, 1240, 33, 90, "Output",ExpressionUUID->"8784f6f6-1e17-40f6-85ae-a82bf6079f19"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[101509, 2107, 457, 12, 28, "Input",ExpressionUUID->"7a32c7ab-c951-49d0-a65f-39173657c71f"],
+Cell[101969, 2121, 15569, 398, 1003, "Output",ExpressionUUID->"85a7fd9f-5d33-4a78-81cb-205e271d3f85"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[117575, 2524, 498, 13, 48, "Input",ExpressionUUID->"1d83d703-a1fc-4e1d-9b0f-7876b06d109d"],
+Cell[118076, 2539, 180, 3, 32, "Output",ExpressionUUID->"58dc9cd2-d8b5-47bd-bf16-4e86ee0437c3"]
+}, Open  ]],
+Cell[118271, 2545, 293, 6, 58, "Text",ExpressionUUID->"4ec3aefc-be54-40fe-8aa7-237aca3c7beb"],
+Cell[CellGroupData[{
+Cell[118589, 2555, 199, 4, 28, "Input",ExpressionUUID->"aef0834b-44ef-4b22-b20f-a183e89066a6"],
+Cell[118791, 2561, 178, 3, 32, "Output",ExpressionUUID->"d75e87c9-7ce2-4f6c-8df3-325816717fab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[119006, 2569, 131, 2, 28, "Input",ExpressionUUID->"404b4d39-0e26-46a6-adde-3d0a631df7c4"],
+Cell[119140, 2573, 1212, 32, 90, "Output",ExpressionUUID->"0964c94c-1494-48f3-9ac5-2fa5d2b74291"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[120389, 2610, 285, 6, 28, "Input",ExpressionUUID->"e6a0c92c-c621-4099-96a7-7d65f2044d87"],
+Cell[120677, 2618, 3210, 85, 185, "Output",ExpressionUUID->"0e9f3f24-e7bc-4014-8cbb-8630d15f1bb5"]
+}, Open  ]],
+Cell[123902, 2706, 225, 5, 35, "Text",ExpressionUUID->"d55b8052-cbab-48f5-8926-274c5d030d88"],
+Cell[CellGroupData[{
+Cell[124152, 2715, 371, 8, 48, "Input",ExpressionUUID->"ac8237c7-b9a7-4d91-aa74-30a84bb60b50"],
+Cell[124526, 2725, 207, 4, 32, "Output",ExpressionUUID->"3049ded4-70a4-4e49-8615-617870e4713a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[124770, 2734, 506, 13, 67, "Input",ExpressionUUID->"6ba5d8c1-4c14-4636-8945-f0bb47f2681c"],
+Cell[125279, 2749, 48367, 1234, 3134, "Output",ExpressionUUID->"377ea258-61d2-4dba-ad64-22f13221b1bf"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[173683, 3988, 548, 14, 63, "Input",ExpressionUUID->"d88ada80-c1d4-467f-8ea3-c9f12f9c6804"],
+Cell[174234, 4004, 156, 3, 32, "Output",ExpressionUUID->"67f218ad-f990-4095-b811-88d9a9e1c990"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[174427, 4012, 259, 6, 48, "Input",ExpressionUUID->"7fef1e45-3654-4ec7-9581-4e7213e36679"],
+Cell[174689, 4020, 187, 4, 48, "Output",ExpressionUUID->"c6fcd9b4-1483-4390-94fe-65c7b9e09805"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[174913, 4029, 262, 6, 48, "Input",ExpressionUUID->"628304ef-d568-4941-a857-cd10900db461"],
+Cell[175178, 4037, 185, 4, 48, "Output",ExpressionUUID->"9358999c-5a9b-49db-a431-8c61e54f71bc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[175400, 4046, 199, 4, 28, "Input",ExpressionUUID->"5bdbc57e-dad7-4516-9b89-e4713f8f3b0b"],
+Cell[175602, 4052, 180, 3, 32, "Output",ExpressionUUID->"b4cb99c5-11b5-4990-bbc1-ea440afe4c56"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[175819, 4060, 201, 4, 28, "Input",ExpressionUUID->"5d8fbcf7-3b24-4886-a08a-2da4c1e7d52e"],
+Cell[176023, 4066, 156, 3, 32, "Output",ExpressionUUID->"27213af2-24f9-4374-a806-d2696d092942"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[176216, 4074, 432, 12, 49, "Input",ExpressionUUID->"6b5556f1-8183-4d79-beb4-6e7f6e2a260b"],
+Cell[176651, 4088, 1917, 45, 419, "Output",ExpressionUUID->"a2b33e15-f8b9-44ae-8d16-c7fda81de38d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[178605, 4138, 470, 13, 49, "Input",ExpressionUUID->"f98f7fd7-7140-4291-a9be-ab7ed0b5f167"],
+Cell[179078, 4153, 213, 4, 48, "Output",ExpressionUUID->"0e99df9f-b675-49e2-8fcd-48010a8fda8b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[179328, 4162, 514, 15, 49, "Input",ExpressionUUID->"9b84791a-bfeb-406a-b8c0-a26af09da258"],
+Cell[179845, 4179, 170, 3, 32, "Output",ExpressionUUID->"4441e429-768a-450c-8f5c-57eb5c1e99f3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[180052, 4187, 200, 4, 28, "Input",ExpressionUUID->"0c569a78-d9c7-4e12-b7bc-16cb9a2bed53"],
+Cell[180255, 4193, 156, 3, 32, "Output",ExpressionUUID->"44504d5c-2094-4a8e-986a-ae53dff97ab4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[180448, 4201, 202, 4, 28, "Input",ExpressionUUID->"75836c10-18b0-4957-8174-cffbd05016e5"],
+Cell[180653, 4207, 156, 3, 32, "Output",ExpressionUUID->"b4278159-18ce-4ca1-980e-d61375f86df1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[180846, 4215, 237, 5, 28, "Input",ExpressionUUID->"8ee3d827-2611-4535-9cb0-436993eb3fe5"],
+Cell[181086, 4222, 156, 3, 32, "Output",ExpressionUUID->"a62a2e44-0fb2-43fe-ace7-bf49b15fbd89"]
+}, Open  ]],
+Cell[181257, 4228, 176, 3, 35, "Text",ExpressionUUID->"507fe032-7807-4dfe-aad6-5c61f3faccea"],
+Cell[181436, 4233, 1950, 53, 52, "Text",ExpressionUUID->"dcd900fb-2082-46d2-8958-cedbef0af5fd"],
+Cell[CellGroupData[{
+Cell[183411, 4290, 241, 5, 28, "Input",ExpressionUUID->"b8b6ad88-73e1-46b2-8565-34064c049913"],
+Cell[183655, 4297, 161, 3, 32, "Output",ExpressionUUID->"8d973c4d-326b-4b7c-92c8-b4f9749747f8"]
+}, Open  ]]
+}
+]
+*)
+
